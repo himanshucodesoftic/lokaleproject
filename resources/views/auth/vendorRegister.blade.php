@@ -127,9 +127,7 @@ Vendor Request Form</h1>
 <select id="country" class="form-control" name="country">
   
    <option value="">select country</option>
-   @foreach($result['countries'] as $countries_data)
-                          <option value="{{ $countries_data->countries_id }}">{{ $countries_data->countries_name }}</option>
-                        @endforeach
+ 
 </select>									
 
 

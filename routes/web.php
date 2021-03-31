@@ -32,24 +32,24 @@ else{
 
 Route::get('/maintance','Web\IndexController@maintance');
 
-Route::group(['namespace' => 'App','middleware' => ['installer']], function () {
-Route::get('/login', 'Http\Controllers\web\CustomersController@login');
-Route::post('/process-login', 'CustomersController@processLogin');
+// Route::group(['namespace' => 'web','middleware' => ['installer']], function () {
+Route::get('/login', 'App\Http\Controllers\web\CustomersController@login');
+Route::post('/process-login', 'App\Http\Controllers\web\CustomersController@processLogin');
 
-Route::get('/vendorForm', 'Http\Controllers\web\CustomersController@vendor');
+Route::get('/vendorForm', 'App\Http\Controllers\web\CustomersController@vendor');
 Route::post('/confirmVendor', 'CustomersController@confirmVendor');
 
-Route::get('/logout', 'CustomersController@logout')->middleware('Customer');
-});
+Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->middleware('Customer');
+// });
 
 
 
 
 
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 
 Route::get('contact', function () {
@@ -85,13 +85,13 @@ Route::get('wishlist', function () {
 // Route::get('/vendorForm', 'App\Http\Controllers\web\CustomersController@vendor');
 // Route::post('/confirmVendor', 'App\Http\Controllers\web\CustomersController@confirmVendor');
 
-Route::post('/process-login', 'App\Http\Controllers\web\CustomersController@processLogin');
+// Route::post('/process-login', 'App\Http\Controllers\web\CustomersController@processLogin');
 
 
-Route::group(['namespace' => 'Web','middleware' => $middleware], function () {
-	Route::get('general_error/{msg}', function($msg) {
-		 return view('errors.general_error',['msg' => $msg]);
-	});
+// Route::group(['namespace' => 'Web','middleware' => $middleware], function () {
+// 	Route::get('general_error/{msg}', function($msg) {
+// 		 return view('errors.general_error',['msg' => $msg]);
+// 	});
 	// route for to show payment form using get method
 		Route::get('pay', 'RazorpayController@pay')->name('pay');
     	Route::post('/paytm-callback', 'PaytmController@paytmCallback');
@@ -215,6 +215,6 @@ Route::group(['namespace' => 'Web','middleware' => $middleware], function () {
 		Route::get('/editproduct/{id}', 'ProductsController@editProduct');
 		Route::post('/updateproduct', 'ProductsController@updateProduct');
 		Route::post('/deleteproduct', 'ProductsController@deleteProduct');
-	});
+	// });
 
 	Route::get('/test', 'Web\IndexController@test1');

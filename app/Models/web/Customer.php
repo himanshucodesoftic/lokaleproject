@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models\Web;
 
 use App\Http\Controllers\Web\AlertController;
@@ -15,7 +16,8 @@ use Socialite;
 
 class Customer extends Model
 {
-     public function addToCompare($request)
+
+    public function addToCompare($request)
     {
         if (!empty(auth()->guard('customer')->user()->id)) {
             $check = DB::table('compare')->where('product_ids', $request->product_id)->where('customer_id', auth()->guard('customer')->user()->id)->first();

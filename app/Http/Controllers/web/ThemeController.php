@@ -1,7 +1,4 @@
 <?php
-
-namespace App\Http\Controllers\web;
-
 namespace App\Http\Controllers\Web;
 
 use App\Models\Web\Currency;
@@ -17,8 +14,7 @@ use View;
 
 class ThemeController extends Controller
 {
-    
-    public function theme()
+  public function theme()
     {
         $index = new Index();
         $data = $index->finalTheme();
@@ -80,11 +76,11 @@ class ThemeController extends Controller
         $languages = $languages->languages();
         $currencies = $currencies->getter();
         $productcategories = $products->productCategories();
-        // if (Auth::guard('customer')->check()) {
-        //     $count = $index->compareCount();
-        // } else {
-        //     $count = "";
-        // }
+        if (Auth::guard('customer')->check()) {
+            $count = $index->compareCount();
+        } else {
+            $count = "";
+        }
         $title = array('pageTitle' => Lang::get("website.Home"));
         $result = array();
         $result['commonContent'] = $index->commonContent();
@@ -107,11 +103,11 @@ class ThemeController extends Controller
         } elseif ($header_id == 8) {
             $header = (string) View::make('web.headers.headerEight', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
         } elseif ($header_id == 9) {
-            // $header = (string) View::make('web.headers.headerNine', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
+            $header = (string) View::make('web.headers.headerNine', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
         } else {
             $header = (string) View::make('web.headers.headerTen', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
         }
-        // return $header;
+        return $header;
     }
 
     private function mobileHeader()
@@ -124,16 +120,16 @@ class ThemeController extends Controller
         $languages = $languages->languages();
         $currencies = $currencies->getter();
         $productcategories = $products->productCategories();
-        // if (Auth::guard('customer')->check()) {
-        //     $count = $index->compareCount();
-        // } else {
-        //     $count = "";
-        // }
+        if (Auth::guard('customer')->check()) {
+            $count = $index->compareCount();
+        } else {
+            $count = "";
+        }
         $title = array('pageTitle' => Lang::get("website.Home"));
         $result = array();
         $result['commonContent'] = $index->commonContent();
-        // $header = (string) View::make('web.headers.mobile', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
-        // return $header;
+        $header = (string) View::make('inc.header', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
+        return $header;
     }
 
     private function setCarousal($carousel_id)
@@ -151,7 +147,7 @@ class ThemeController extends Controller
 
         $result['slides'] = $slides;
         if ($carousel_id == 1) {
-            $carousel = (string) View::make('auth.vendorRegister', ['result' => $result])->render();
+            $carousel = (string) View::make('web.carousels.boot-carousel-content-full-screen', ['result' => $result])->render();
         } elseif ($carousel_id == 2) {
             $carousel = (string) View::make('web.carousels.boot-carousel-content-full-width', ['result' => $result])->render();
         } elseif ($carousel_id == 3) {
@@ -184,9 +180,9 @@ class ThemeController extends Controller
         } elseif ($banner_id == 7) {
             $banner = (string) View::make('web.banners.banner7', ['result' => $result])->render();
         } elseif ($banner_id == 8) {
-            $banner = (string) View::make('auth.vendorregister', ['result' => $result])->render();
+            $banner = (string) View::make('inc.header', ['result' => $result])->render();
         } elseif ($banner_id == 9) {
-            $banner = (string) View::make('web.banners.banner9', ['result' => $result])->render();
+            $banner = (string) View::make('inc.header', ['result' => $result])->render();
         } elseif ($banner_id == 10) {
             $banner = (string) View::make('web.banners.banner10', ['result' => $result])->render();
         } elseif ($banner_id == 11) {
@@ -248,7 +244,7 @@ class ThemeController extends Controller
         } elseif ($footer_id == 5) {
             $footer = (string) View::make('web.footers.footer5', ['result' => $result])->render();
         } elseif ($footer_id == 6) {
-            $footer = (string) View::make('auth.vendorRegister', ['result' => $result])->render();
+            $footer = (string) View::make('inc.footer', ['result' => $result])->render();
         } elseif ($footer_id == 7) {
             $footer = (string) View::make('web.footers.footer7', ['result' => $result])->render();
         } elseif ($footer_id == 8) {
@@ -287,7 +283,6 @@ class ThemeController extends Controller
         $result['news'] = $news;
         $result['categories'] = $products->parentCategories();
         
-        $footer = (string) View::make('auth.vendorRegister', ['result' => $result])->render();
+        $footer = (string) View::make('inc.footer', ['result' => $result])->render();
         return $footer;
-    }
-}
+    }}

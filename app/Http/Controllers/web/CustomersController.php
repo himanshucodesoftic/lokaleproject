@@ -84,6 +84,7 @@ class CustomersController extends Controller
 
     public function processLogin(Request $request)
     {
+       
         $old_session = Session::getId();
 
         $result = array();
@@ -401,16 +402,21 @@ class CustomersController extends Controller
 
     public function signupProcess(Request $request)
     {
+       
         $old_session = Session::getId();
-
+       
         $firstName = $request->firstName;
+       
         $lastName = $request->lastName;
         $gender = $request->gender;
         $email = $request->email;
         $password = $request->password;
+     
         $date = date('y-md h:i:s');
+        
         //        //validation start
         $validator = Validator::make(
+           
             array(
                 'firstName' => $request->firstName,
                 'lastName' => $request->lastName,
@@ -428,12 +434,14 @@ class CustomersController extends Controller
                 're_password' => 'required | same:password',
             )
         );
+      
         if ($validator->fails()) {
             return redirect('login')->withErrors($validator)->withInput();
         } else {
 
             $res = $this->customer->signupProcess($request);
             //eheck email already exit
+           
             if ($res['email'] == "true") {
                 return redirect('/login')->withInput($request->input())->with('error', Lang::get("website.Email already exist"));
             } else {

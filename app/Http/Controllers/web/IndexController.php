@@ -1,6 +1,5 @@
 <?php
-
-namespace App\Http\Controllers\web;
+namespace App\Http\Controllers\Web;
 
 use App\Models\Web\Currency;
 use App\Models\Web\Index;
