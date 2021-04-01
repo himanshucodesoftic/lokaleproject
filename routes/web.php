@@ -52,9 +52,9 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 // });
 
 
-Route::get('contact', function () {
-    return view('contact');
-});
+// Route::get('contact', function () {
+//     return view('contact');
+// });
 
 
 // Route::get('login', function () {
@@ -126,7 +126,7 @@ Route::get('wishlist', function () {
 		Route::post('addToCompare', 'App\Http\Controllers\web\CustomersController@addToCompare');
 		Route::get('compare', 'App\Http\Controllers\web\CustomersController@Compare')->middleware('Customer');
 		Route::get('deletecompare/{id}', 'App\Http\Controllers\web\CustomersController@DeleteCompare')->middleware('Customer');
-		Route::get('/orders', 'OrdersController@orders')->middleware('Customer');
+		Route::get('/orders', 'App\Http\Controllers\web\OrdersController@orders')->middleware('Customer');
 		
 		Route::post('/order_detail', 'OrdersController@upay')->middleware('Customer');
 		Route::get('/upaysuccess', 'OrdersController@upaysuccess')->middleware('Customer');
@@ -134,8 +134,8 @@ Route::get('wishlist', function () {
 		
 		Route::get('/view-order/{id}', 'OrdersController@viewOrder')->middleware('Customer');
 		Route::post('/updatestatus/', 'OrdersController@updatestatus')->middleware('Customer');
-		Route::get('/shipping-address', 'ShippingAddressController@shippingAddress')->middleware('Customer');
-		Route::post('/addMyAddress', 'ShippingAddressController@addMyAddress')->middleware('Customer');
+		Route::get('/shipping-address', 'App\Http\Controllers\web\ShippingAddressController@shippingAddress')->middleware('Customer');
+		Route::post('/addMyAddress', 'App\Http\Controllers\web\ShippingAddressController@addMyAddress')->middleware('Customer');
 		Route::post('/myDefaultAddress', 'ShippingAddressController@myDefaultAddress')->middleware('Customer');
 		Route::post('/update-address', 'ShippingAddressController@updateAddress')->middleware('Customer');
 		Route::get('/delete-address/{id}', 'ShippingAddressController@deleteAddress')->middleware('Customer');
@@ -158,7 +158,7 @@ Route::get('wishlist', function () {
 		Route::post('/checkout_payment_method', 'OrdersController@checkout_payment_method')->middleware('Customer');
 		Route::post('/paymentComponent', 'OrdersController@paymentComponent')->middleware('Customer');
 		Route::post('/place_order', 'OrdersController@place_order')->middleware('Customer');
-		Route::get('/orders', 'OrdersController@orders')->middleware('Customer');
+		// Route::get('/orders', 'OrdersController@orders')->middleware('Customer');
 		Route::post('/updatestatus/', 'OrdersController@updatestatus')->middleware('Customer');
 		Route::post('/myorders', 'OrdersController@myorders')->middleware('Customer');
 		Route::get('/stripeForm', 'OrdersController@stripeForm')->middleware('Customer');
@@ -192,8 +192,8 @@ Route::get('wishlist', function () {
 		Route::get('login/{social}/callback', 'App\Http\Controllers\web\CustomersController@handleSocialLoginCallback');
 		Route::post('/commentsOrder', 'OrdersController@commentsOrder');
 		Route::post('/subscribeNotification/', 'CustomersController@subscribeNotification');
-		Route::get('/contact', 'IndexController@contactus');
-		Route::post('/processContactUs', 'IndexController@processContactUs');
+		Route::get('/contact', 'App\Http\Controllers\web\IndexController@contactus');
+		Route::post('/processContactUs', 'App\Http\Controllers\web\IndexController@processContactUs');
 		
 		Route::get('/setcookie', 'IndexController@setcookie');
 		Route::get('/newsletter', 'IndexController@newsletter');

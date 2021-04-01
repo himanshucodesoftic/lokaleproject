@@ -62,7 +62,7 @@ class ThemeController extends Controller
     {
         $index = new Index();
 		$result['commonContent'] = $index->commonContent();
-        $top_offer = (string) View::make('inc.header', ['result' => $result])->render();
+        $top_offer = (string) View::make('web.headers.headerNine', ['result' => $result])->render();
         return $top_offer;
     }
 
@@ -128,7 +128,7 @@ class ThemeController extends Controller
         $title = array('pageTitle' => Lang::get("website.Home"));
         $result = array();
         $result['commonContent'] = $index->commonContent();
-        $header = (string) View::make('inc.header', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
+        $header = (string) View::make('web.headers.mobile', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
         return $header;
     }
 
@@ -180,9 +180,9 @@ class ThemeController extends Controller
         } elseif ($banner_id == 7) {
             $banner = (string) View::make('web.banners.banner7', ['result' => $result])->render();
         } elseif ($banner_id == 8) {
-            $banner = (string) View::make('inc.header', ['result' => $result])->render();
+            $banner = (string) View::make('web.banners.banner8', ['result' => $result])->render();
         } elseif ($banner_id == 9) {
-            $banner = (string) View::make('inc.header', ['result' => $result])->render();
+            $banner = (string) View::make('web.banners.banner9', ['result' => $result])->render();
         } elseif ($banner_id == 10) {
             $banner = (string) View::make('web.banners.banner10', ['result' => $result])->render();
         } elseif ($banner_id == 11) {

@@ -1,6 +1,6 @@
 @extends('web.layout')
 @section('content')
-
+<!-- 
 <div class="container-fuild">
   <nav aria-label="breadcrumb">
     <div class="container">
@@ -11,7 +11,7 @@
       </ol>
     </div>
   </nav>
-</div> 
+</div>  -->
 <section class="pro-content">
 <!-- Profile Content -->
 <section class="profile-content">
@@ -25,10 +25,10 @@
               <div class="row">
                 <div class="col-12 col-sm-4 col-md-6">
                   <h4>{{auth()->guard('customer')->user()->first_name}} {{auth()->guard('customer')->user()->last_name}}<br>
-                  <small>@lang('website.Phone'): {{ auth()->guard('customer')->user()->phone }} </small></h4>
+                  <small>Phone: {{ auth()->guard('customer')->user()->phone }} </small></h4>
                 </div>
                 <div class="col-12 col-sm-8 col-md-6 detail">                  
-                  <p class="mb-0">@lang('website.E-mail'):<span>{{auth()->guard('customer')->user()->email}}</span></p>
+                  <p class="mb-0">E-Mail:<span>{{auth()->guard('customer')->user()->email}}</span></p>
                 </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
        <div class="col-12 col-lg-3">
            <div class="heading">
                <h2>
-                   @lang('website.My Account')
+                 My Account
                </h2>
                <hr >
              </div>
@@ -48,37 +48,37 @@
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/profile')}}">
                        <i class="fas fa-user"></i>
-                     @lang('website.Profile')
+                       Profile
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/wishlist')}}">
                        <i class="fas fa-heart"></i>
-                    @lang('website.Wishlist')
+                       Wishlist
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/orders')}}">
                        <i class="fas fa-shopping-cart"></i>
-                     @lang('website.Orders')
+                       Orders
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/shipping-address')}}">
                        <i class="fas fa-map-marker-alt"></i>
-                    @lang('website.Shipping Address')
+                       Shipping Address
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/logout')}}">
                        <i class="fas fa-power-off"></i>
-                     @lang('website.Logout')
+                       Logout
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/change-password')}}">
                        <i class="fas fa-unlock-alt"></i>
-                     @lang('website.Change Password')
+                       Change Password
                    </a>
                </li>
              </ul>
@@ -86,7 +86,7 @@
        <div class="col-12 col-lg-9 ">
            <div class="heading">
                <h2>
-                   @lang('website.Personal Information')
+               Personal Information
                </h2>
                <hr >
              </div>
@@ -146,20 +146,20 @@
                 @endif
 
                  <div class="form-group row">
-                   <label for="firstName" class="col-sm-2 col-form-label">@lang('website.First Name')</label>
+                   <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
                    <div class="col-sm-10">
                      <input type="text" required name="customers_firstname" class="form-control field-validate" id="inputName" value="{{ auth()->guard('customer')->user()->first_name }}" placeholder="@lang('website.First Name')">
                    </div>
                  </div>
                  <div class="form-group row">
-                   <label for="lastName" class="col-sm-2 col-form-label">@lang('website.Last Name')</label>
+                   <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
                    <div class="col-sm-10">
                      <input type="text" required name="customers_lastname" placeholder="@lang('website.Last Name')" class="form-control field-validate" id="lastName" value="{{ auth()->guard('customer')->user()->last_name }}">
                    </div>
                  </div>
 
                  <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label">@lang('website.Gender')</label>
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Gender</label>
                   <div class="from-group  select-control col-sm-4 ">
                  
                       <select class="form-control " name="gender" required id="exampleSelectGender1">
@@ -168,7 +168,7 @@
                       </select> 
                 
                   </div>
-                  <label for="inputPassword" class="col-sm-2 col-form-label">@lang('website.DOB')</label>
+                  <label for="inputPassword" class="col-sm-2 col-form-label">DOB</label>
                   <div class=" col-sm-4">
                       <div class="input-group date">
                         <input readonly name="customers_dob" type="text" id="customers_dob" data-provide="datepicker" class="form-control" placeholder="@lang('website.Date of Birth')" value="{{ auth()->guard('customer')->user()->dob }}" aria-label="date-picker" aria-describedby="date-picker-addon1">
@@ -184,12 +184,12 @@
                 </div>
 
                 <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label">@lang('website.Phone')</label>
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Phone</label>
                   <div class="col-sm-10">
                     <input name="customers_telephone" type="tel"  placeholder="@lang('website.Phone Number')" value="{{ auth()->guard('customer')->user()->phone }}" class="form-control phone-validate">
                   </div>
                 </div>                
-                <button type="submit" class="btn btn-secondary swipe-to-top">@lang('website.Update')</button>
+                <button type="submit" class="btn btn-secondary swipe-to-top">Update</button>
              </form>
 
          <!-- ............the end..... -->

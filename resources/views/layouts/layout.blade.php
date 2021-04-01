@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body>
-@include('inc.header')
+@include('web.headers.headerNine')
 @yield('content')
 
 @include('inc.footer');
