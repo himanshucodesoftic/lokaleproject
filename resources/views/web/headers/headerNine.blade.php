@@ -760,35 +760,12 @@
 					<!-- /logo -->
           
 				</div>
+        
 
 
-        <div class="main-menu">
-            <div id="header_menu">
-              <a href="{{ URL::to('/')}}">
-              @if($result['commonContent']['settings']['sitename_logo']=='logo')
-              <img class="img-fluid" src="{{asset('').$result['commonContent']['settings']['website_logo']}}"
-                alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>" width="100" height="35">
-              @endif            
-              </a>
-              <a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
-            </div>
 
-            <ul>
-              @foreach($result['commonContent']["menuData"] as $menu)
-              <li class="@if(isset($menu->childs) && count($menu->childs) > 0) submenu @endif">
-                <a href="{{ URL::to(''.$menu->link)}}" class="show-submenu">{{$menu->name}}</a>
-                @if(isset($menu->childs) && count($menu->childs) > 0)
-                  <ul>
-                  @foreach($menu->childs as $submenu)
-                    <li><a href="{{ URL::to(''.$submenu->link)}}">{{$submenu->name}}</a></li>
-                  @endforeach
-                  </ul>
-                @endif
-              </li>
-              @endforeach              
-                            
-            </ul>
-          </div>
+
+
 
 
 
@@ -813,181 +790,19 @@
 																<span>HOME STYLES</span>
 															</a></h6>
 															<ul class="tt-megamenu-submenu">
-																<li><a href="index.html">Home — Example 1
-																	<img src="images/loader.svg" data-src="images/custom/tt-layout-img-01.png" alt="Example 1">
-																	<span class="tt-badge tt-fatured">Popular</span>
-																</a></li>
-																<li><a href="index-02.html">Home — Example 2 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-02.png" alt="Example 2"></a></li>
-																<li><a href="index-03.html">Home — Example 3 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-03.png" alt="Example 3"></a></li>
-																<li><a href="index-04.html">Home — Example 4
-																	<img src="images/loader.svg" data-src="images/custom/tt-layout-img-04.png" alt="Example 4">
-																	<span class="tt-badge tt-fatured">Popular</span>
-																</a></li>
-																<li><a href="index-05.html">Home — Example 5 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-05.png" alt="Example 5"></a></li>
-																<li><a href="index-06.html">Home — Example 6 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-06.png" alt="Example 6"></a></li>
-																<li><a href="index-07.html">Home — Example 7 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-07.png" alt="Example 7"></a></li>
-																<li><a href="index-08.html">Home — Example 8 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-08.png" alt="Example 8"></a></li>
-																<li><a href="index-09.html">Home — Example 9 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-09.png" alt="Example 9"></a></li>
-																<li><a href="index-10.html">Home — Example 10 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-10.png" alt="Example 10"></a></li>
-																<li><a href="index-11.html">Home — Example 11 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-11.png" alt="Example 11"></a></li>
-																<li><a href="index-12.html">Home — Example 12 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-12.png" alt="Example 12"></a></li>
-																<li><a href="index-13.html">Home — Example 13 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-13.png" alt="Example 13"></a></li>
-																<li><a href="index-14.html">Home — Example 14 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-14.png" alt="Example 14"></a></li>
-																<li><a href="index-15.html">Home — Example 15 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-15.png" alt="Example 15"></a></li>
-																<li><a href="index-16.html">Home — Example 16
-																	<img src="images/loader.svg" data-src="images/custom/tt-layout-img-16.png" alt="Example 16">
-																	<span class="tt-badge tt-fatured">Popular</span>
-																</a></li>
+  
 																<li><a href="index-17.html">Home — Example 17 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-17.png" alt="Example 17"></a></li>
-																<li><a href="index-18.html">Home — Example 18 <img src="images/loader.svg" data-src="images/custom/tt-layout-img-18.png" alt="Example 18"></a></li>
-																<li><a href="index-19.html">Home — Example 19
-																	<img src="images/loader.svg" data-src="images/custom/tt-layout-img-19.png" alt="Example 19">
-																	<span class="tt-badge tt-new">New</span>
-																</a></li>
-																<li><a href="index-20.html">Home — Example 20
-																	<span class="tt-badge tt-new">New</span>
-																	<img src="images/loader.svg" data-src="images/custom/tt-layout-img-20.png" alt="Example 20">
-																</a></li>
+
 															</ul>
 														</div>
 														<div class="col-sm-4">
-															<h6 class="tt-title-submenu"><a href="index-skin-snowboards.html">
-																<span>NEW SKINS</span>
-															</a></h6>
-															<ul class="tt-megamenu-submenu">
-																<li><a href="index-skin-baby.html">Baby Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-25.png" alt="baby Shop">
-																</a></li>
-																<li><a href="index-skin-beer.html">Beer Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-17.png" alt="Beer Shop">
-																</a></li>
-																<li><a href="index-skin-books02.html">Books Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-18.png" alt="Books Shop">
-																</a></li>
-																<li><a href="index-skin-care.html">Care Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-16.png" alt="Care Shop">
-																</a></li>
-																	<li><a href="index-skin-cakes.html">Cakes Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-23.png" alt="Cakes Shop">
-																</a></li>
-																<li><a href="index-skin-coffee.html">Coffee Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-10.png" alt="Coffee Shop">
-																</a></li>
-																<li><a href="index-skin-comic-books.html">Comic Books Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-21.png" alt="Comic Books Shop">
-																</a></li>
-																<li><a href="index-skin-cookware.html">Cookware Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-13.png" alt="Cookware Shop">
-																</a></li>
-																<li><a href="index-skin-christmas.html">Christmas Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-24.png" alt="Christmas Shop">
-																	<span class="tt-badge tt-custom-color01">Happy New Year</span>
-																</a></li>
-																<li><a href="index-skin-flowers.html">Flowers Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-42.png" alt="Flowers Shop">
-																</a></li>
-																<li><a href="index-skin-food.html">Food Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-08.png" alt="Food Shop">
-																	<span class="tt-badge tt-sale">HOT</span>
-																</a></li>
-																<li><a href="index-skin-furniture02.html">Furniture Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-14.png" alt="Furniture Shopp">
-																</a></li>
-																<li><a href="index-skin-handmade.html">Handmade Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-11.png" alt="Handmade Shop">
-																</a></li>
-																<li><a href="index-skin-oneproducts.html">One Products Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-09.png" alt="One Products Shop">
-																</a></li>
-																<li><a href="index-skin-oneproducts02.html">One Products Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-22.png" alt="One Products Shop">
-																</a></li>
-																<li><a href="index-skin-shirts.html">T-shirts Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-12.png" alt="T-shirts Shop">
-																</a></li>
-																<li><a href="index-skin-tea.html">Tea Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-20.png" alt="Tea Shop">
-																</a></li>
-																<li><a href="index-skin-tools.html">Tools Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-19.png" alt="Tools Shop">
-																</a></li>
-																<li><a href="index-skin-wallets.html">Wallets Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-41.png" alt="Wallets Shop">
-																</a></li>
-																<li><a href="index-skin-watches.html">Watches Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-15.png" alt="Watches Shop">
-																</a></li>
-															</ul>
+														
 														</div>
 														<div class="col-sm-4">
 															<h6 class="tt-title-submenu"><a href="index-skin-snowboards.html">
 																<span>HOME SKINS</span>
 															</a></h6>
-															<ul class="tt-megamenu-submenu">
-																<li><a href="index-skin-bicycle.html">Bicycle Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-28.png" alt="Bicycle Shop">
-																	<span class="tt-badge tt-fatured">Popular</span>
-																</a></li>
-																<li><a href="index-skin-bikes.html">Bikes Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-03.png" alt="Bikes Shop">
-																	<span class="tt-badge tt-fatured">Popular</span>
-																</a></li>
-																<li><a href="index-skin-books.html">Books shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-06.png" alt="Books Shop">
-																</a></li>
-																<li><a href="index-skin-carsshop.html">Cars Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-07.png" alt="Cars Shop">
-																</a></li>
-																<li><a href="index-skin-clothes.html">Clothes Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-27.png" alt="Clothes Shop">
-																</a></li>
-																<li><a href="index-skin-cosmetics.html">Cosmetics Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-34.png" alt="Cosmetics Shop">
-																</a></li>
-																<li><a href="index-skin-food-02.html">Echo Food Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-32.png" alt="Echo Food Shop">
-																</a></li>
-																<li><a href="index-skin-electronics.html">Electronics Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-33.png" alt="Electronics Shop">
-																</a></li>
-																<li><a href="index-skin-furniture.html">Furniture Shop <img src="images/loader.svg" data-src="images/custom/tt-skins-img-05.png" alt="Furniture Shop"></a></li>
-																<li><a href="index-skin-glasses.html">Glasses Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-35.png" alt="Glasses Shop">
-																</a></li>
-																<li><a href="index-skin-gothic.html">Gothic and Rock Clothing
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-26.png" alt="Gothic and Rock Clothing">
-																</a></li>
-																<li><a href="index-skin-jewerly.html">Jewerly Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-36.png" alt="Jewerly Shop">
-																</a></li>
-																<li><a href="index-skin-kids-clothes.html">Kids Clothes Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-31.png" alt="Kids Clothes Shop">
-																</a></li>
-																<li><a href="index-skin-toys.html">Kids Toys Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-30.png" alt="Kids Toys Shop">
-																</a></li>
-																<li><a href="index-skin-lingerie.html">Lingerie Shop <img src="images/loader.svg" data-src="images/custom/tt-skins-img-04.png" alt="Lingerie Shop"></a></li>
-																<li><a href="index-skin-medical.html">Medical Shop <img src="images/loader.svg" data-src="images/custom/tt-skins-img-37.png" alt="Medical Shop"></a></li>
-																<li><a href="index-skin-oneproducts03.html">One Products Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-38.png" alt="One Products Shop">
-																</a></li>
-																<li><a href="index-skin-phones.html">Phones Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-02.png" alt="Phones Shop">
-																</a></li>
-																<li><a href="index-skin-phone-cases.html">Phone Cases Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-39.png" alt="Phone Cases Shop">
-																</a></li>
-																<li><a href="index-skin-snowboards.html">Snowboards Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-01.png" alt="Snowboards Shop">
-																	<span class="tt-badge tt-sale">HOT</span>
-																</a></li>
-																<li><a href="index-skin-weapons.html">Weapons Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-29.png" alt="Weapons Shop">
-																</a></li>
-																<li><a href="index-skin-yoga.html">Yoga Gear Shop
-																	<img src="images/loader.svg" data-src="images/custom/tt-skins-img-40.png" alt="Yoga Gear Shop">
-																</a></li>
-															</ul>
+														
 														</div>
 													</div>
 												</div>
@@ -1536,7 +1351,20 @@
 					</div>
 					<!-- /tt-menu -->
 				</div>
-				<!-- <div class="tt-col-obj tt-obj-options obj-move-right">
+
+
+<div class="tt-col-obj tt-obj-options obj-move-right">
+<!-- 
+	<div class="tt-desctop-parent-account tt-arent-box"> -->
+	<a class="icon-g-64" target="_blank"  href="{{url('wishlist')}}"><strong>{{$result['commonContent']['total_wishlist']}}</strong></a>		
+					<!-- </div> -->
+
+</div>
+
+
+
+
+				<div class="tt-col-obj tt-obj-options obj-move-right"  >
 					<!-- tt-search -->
 					<div class="tt-desctop-parent-search tt-parent-box">
 						<div class="tt-search tt-dropdown-obj">
@@ -1545,9 +1373,10 @@
 							</button>
 							<div class="tt-dropdown-menu">
 								<div class="container">
-									<form>
-										<div class="tt-col">
-											<input type="text" class="tt-search-input" placeholder="Search Products...">
+									<form action="{{ URL::to('/shop')}}" method="get">
+									<input type="hidden" name="category" class="category-value" value="">
+										<div class="tt-col" >
+											<input type="text" class="tt-search-input" placeholder="Search Products..." value="{{ app('request')->input('search') }}">
 											<button class="tt-btn-search" type="submit"></button>
 										</div>
 										<div class="tt-col">
@@ -1627,7 +1456,7 @@
 											</div>
 											<div class="tt-cart-btn">
 												<div class="tt-item">
-													<a href="#" class="btn">PROCEED TO CHECKOUT</a>
+												@include('web.headers.cartButtons.cartButton9')
 												</div>
 												<div class="tt-item">
 													<a href="shopping_cart_02.html" class="btn-link-02 tt-hidden-mobile">View Cart</a>
@@ -1640,6 +1469,14 @@
 							</div>
 						</div>
 					</div>
+
+
+
+
+
+
+
+					
 					<!-- /tt-cart -->
 					<!-- tt-account -->
 					<div class="tt-desctop-parent-account tt-parent-box">
@@ -1650,12 +1487,41 @@
 									<button class="tt-close">Close</button>
 								</div>
 								<div class="tt-dropdown-inner">
+								<?php if(auth()->guard('customer')->check()){ ?>
 									<ul>
-										<li><a href="login.html"><i class="icon-f-76"></i>Sign In</a></li>
-										<li><a href="create-account.html"><i class="icon-f-94"></i>Register</a></li>
-										<li><a href="create-account.html"><i class="icon-f-39"></i>View Cart</a></li>
-										<li><a href="wishlist.html"><i class="icon-n-072"></i>Wishlist</a></li>
-										<li><a href="compare.html"><i class="icon-n-08"></i>Compare</a></li>
+									<li>
+                      <a href="{{url('orders')}}"><i class="icon-n-072"></i>Orders</a>
+                    </li>
+					<li>
+                      <a href="{{url('profile')}}"><i class="icon-f-68"></i>Profile</a>
+                    </li>
+                    <li>
+                      <a href="{{url('shipping-address')}}"><i class="icon-n-072"></i>Shipping Address</a>
+                    </li>
+					@if(session('role_id') != session('vendor_role'))
+                    <li>
+                      <a href="{{URL::to('/vendorForm')}}"><i class="icon-f-68"></i>BecomeVendor</a>
+                    </li>
+                    @endif
+					@if(session('role_id') == session('vendor_role'))
+                    <li>
+                      <a href="{{URL::to('/getmyproduct')}}"><i class="ti-help-alt"></i>MyProducts</a>
+                    </li>
+                    <li>
+                      <a href="{{URL::to('/addProduct')}}"><i class="ti-help-alt"></i>addProduct</a>
+                    </li>
+                    @endif
+					<li>
+                      <a href="{{url('logout')}}"><i class="icon-f-77"></i>Logout</a>
+                    </li>
+                  </ul>
+                  <?php }else{ ?>
+					<a href="{{ URL::to('/login')}}" class="icon-f-94">Login/Register</a><br>
+                    <a class="icon-f-94" href="{{URL::to('/vendorForm')}}" style="margin-top: 10px;">BecomeVendor</a>
+                  <?php } ?>
+              
+
+                    
 										<!--
 										<li><a href="login.html"><i class="icon-f-94"></i>Account</a></li>
 										<li><a href="wishlist.html"><i class="icon-n-072"></i>Wishlist</a></li>
@@ -1670,6 +1536,18 @@
 							</div>
 						</div>
 					</div>
+
+
+
+
+
+
+
+
+
+
+
+					
 					<!-- /tt-account -->
 					<!-- tt-langue and tt-currency -->
 					<div class="tt-desctop-parent-multi tt-parent-box">
@@ -1715,8 +1593,18 @@
 							</div>
 						</div>
 					</div>
+
+
+
+
+
+
+
+
+
+					
 					<!-- /tt-langue and tt-currency -->
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>
@@ -1736,7 +1624,6 @@
 		</div>
 	</div> -->
 </header>
-
 
 
 

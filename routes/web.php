@@ -62,9 +62,9 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 // });
 
 
-Route::get('wishlist', function () {
-        return view('wishlist');
-    });
+// Route::get('wishlist', function () {
+//         return view('wishlist');
+//     });
 
     Route::get('about', function () {
         return view('aboutus');
@@ -93,9 +93,9 @@ Route::get('wishlist', function () {
 // 		 return view('errors.general_error',['msg' => $msg]);
 // 	});
 	// route for to show payment form using get method
-		Route::get('pay', 'RazorpayController@pay')->name('pay');
+		Route::get('pay', 'App\Http\Controllers\web\RazorpayController@pay')->name('pay');
     	Route::post('/paytm-callback', 'PaytmController@paytmCallback');
-		Route::get('/store_paytm', 'PaytmController@store');
+		Route::get('/store_paytm', 'App\Http\Controllers\web\PaytmController@store');
 		// route for make payment request using post method
 		Route::post('dopayment', 'RazorpayController@dopayment')->name('dopayment');
 
@@ -108,9 +108,9 @@ Route::get('wishlist', function () {
 		
 		Route::post('/modal_show', 'ProductsController@ModalShow');
 		Route::post('/reviews', 'ProductsController@reviews');
-		Route::get('/deleteCart', 'CartController@deleteCart');
-		Route::get('/viewcart', 'CartController@viewcart');
-		Route::get('/editcart/{id}/{slug}', 'CartController@editcart');
+		Route::get('/deleteCart', 'App\Http\Controllers\web\CartController@deleteCart');
+		Route::get('/viewcart', 'App\Http\Controllers\web\CartController@viewcart');
+		Route::get('/editcart/{id}/{slug}', 'App\Http\Controllers\web\CartController@editcart');
 		Route::post('/updateCart', 'CartController@updateCart');
 		Route::post('/updatesinglecart', 'CartController@updatesinglecart');
 		Route::get('/cartButton', 'CartController@cartButton');
@@ -128,9 +128,9 @@ Route::get('wishlist', function () {
 		Route::get('deletecompare/{id}', 'App\Http\Controllers\web\CustomersController@DeleteCompare')->middleware('Customer');
 		Route::get('/orders', 'App\Http\Controllers\web\OrdersController@orders')->middleware('Customer');
 		
-		Route::post('/order_detail', 'OrdersController@upay')->middleware('Customer');
-		Route::get('/upaysuccess', 'OrdersController@upaysuccess')->middleware('Customer');
-		Route::get('/upayerror', 'OrdersController@upayerror')->middleware('Customer');
+		Route::post('/order_detail', 'App\Http\Controllers\web\OrdersController@upay')->middleware('Customer');
+		Route::get('/upaysuccess', 'App\Http\Controllers\web\OrdersController@upaysuccess')->middleware('Customer');
+		Route::get('/upayerror', 'App\Http\Controllers\web\OrdersController@upayerror')->middleware('Customer');
 		
 		Route::get('/view-order/{id}', 'OrdersController@viewOrder')->middleware('Customer');
 		Route::post('/updatestatus/', 'OrdersController@updatestatus')->middleware('Customer');
@@ -138,37 +138,37 @@ Route::get('wishlist', function () {
 		Route::post('/addMyAddress', 'App\Http\Controllers\web\ShippingAddressController@addMyAddress')->middleware('Customer');
 		Route::post('/myDefaultAddress', 'ShippingAddressController@myDefaultAddress')->middleware('Customer');
 		Route::post('/update-address', 'ShippingAddressController@updateAddress')->middleware('Customer');
-		Route::get('/delete-address/{id}', 'ShippingAddressController@deleteAddress')->middleware('Customer');
+		Route::get('/delete-address/{id}', 'App\Http\Controllers\web\ShippingAddressController@deleteAddress')->middleware('Customer');
 		Route::post('/ajaxZones', 'ShippingAddressController@ajaxZones');
 		//news section
-		Route::get('/news', 'NewsController@news');
-		Route::get('/news-detail/{slug}', 'NewsController@newsDetail');
-		Route::post('/loadMoreNews', 'NewsController@loadMoreNews');
-		Route::get('/page', 'IndexController@page');
-		Route::get('/shop', 'ProductsController@shop');
-		Route::post('/shop', 'ProductsController@shop');
-		Route::get('/product-detail/{slug}', 'ProductsController@productDetail');
+		Route::get('/news', 'App\Http\Controllers\web\NewsController@news');
+		Route::get('/news-detail/{slug}', 'App\Http\Controllers\web\NewsController@newsDetail');
+		Route::post('/loadMoreNews', 'App\Http\Controllers\web\NewsControllerNewsController@loadMoreNews');
+		Route::get('/page', 'App\Http\Controllers\web\IndexController@page');
+		Route::get('/shop', 'App\Http\Controllers\web\ProductsController@shop');
+		Route::post('/shop', 'App\Http\Controllers\web\ProductsController@shop');
+		Route::get('/product-detail/{slug}', 'App\Http\Controllers\web\ProductsController@productDetail');
 		Route::post('/filterProducts', 'ProductsController@filterProducts');
 		Route::post('/getquantity', 'ProductsController@getquantity');
 
-		Route::get('/guest_checkout', 'OrdersController@guest_checkout');
-		Route::get('/checkout', 'OrdersController@checkout')->middleware('Customer');
-		Route::post('/checkout_shipping_address', 'OrdersController@checkout_shipping_address')->middleware('Customer');
-		Route::post('/checkout_billing_address', 'OrdersController@checkout_billing_address')->middleware('Customer');
-		Route::post('/checkout_payment_method', 'OrdersController@checkout_payment_method')->middleware('Customer');
-		Route::post('/paymentComponent', 'OrdersController@paymentComponent')->middleware('Customer');
-		Route::post('/place_order', 'OrdersController@place_order')->middleware('Customer');
+		Route::get('/guest_checkout', 'App\Http\Controllers\web\OrdersController@guest_checkout');
+		Route::get('/checkout', 'App\Http\Controllers\web\OrdersController@checkout')->middleware('Customer');
+		Route::post('/checkout_shipping_address', 'App\Http\Controllers\web\OrdersController@checkout_shipping_address')->middleware('Customer');
+		Route::post('/checkout_billing_address', 'App\Http\Controllers\web\OrdersController@checkout_billing_address')->middleware('Customer');
+		Route::post('/checkout_payment_method', 'App\Http\Controllers\web\OrdersController@checkout_payment_method')->middleware('Customer');
+		Route::post('/paymentComponent', 'App\Http\Controllers\web\OrdersController@paymentComponent')->middleware('Customer');
+		Route::post('/place_order', 'App\Http\Controllers\web\OrdersController@place_order')->middleware('Customer');
 		// Route::get('/orders', 'OrdersController@orders')->middleware('Customer');
-		Route::post('/updatestatus/', 'OrdersController@updatestatus')->middleware('Customer');
-		Route::post('/myorders', 'OrdersController@myorders')->middleware('Customer');
-		Route::get('/stripeForm', 'OrdersController@stripeForm')->middleware('Customer');
-		Route::get('/view-order/{id}', 'OrdersController@viewOrder')->middleware('Customer');
+		Route::post('/updatestatus/', 'App\Http\Controllers\web\OrdersController@updatestatus')->middleware('Customer');
+		Route::post('/myorders', 'App\Http\Controllers\web\OrdersController@myorders')->middleware('Customer');
+		Route::get('/stripeForm', 'App\Http\Controllers\web\OrdersController@stripeForm')->middleware('Customer');
+		Route::get('/view-order/{id}', 'App\Http\Controllers\web\OrdersController@viewOrder')->middleware('Customer');
 		Route::post('/pay-instamojo', 'OrdersController@payIinstamojo')->middleware('Customer');
-		Route::get('/thankyou', 'OrdersController@thankyou')->middleware('Customer');
+		Route::get('/thankyou', 'App\Http\Controllers\web\OrdersController@thankyou')->middleware('Customer');
 
 		//paystack
-		Route::get('/paystack/transaction', 'OrdersController@paystackTransaction')->middleware('Customer');
-		Route::get('/paystack/verify/transaction', 'OrdersController@authorizepaystackTransaction')->middleware('Customer');
+		Route::get('/paystack/transaction', 'App\Http\Controllers\web\OrdersController@paystackTransaction')->middleware('Customer');
+		Route::get('/paystack/verify/transaction', 'App\Http\Controllers\web\OrdersController@authorizepaystackTransaction')->middleware('Customer');
 		
 		//paystack
 		Route::get('/midtrans/transaction', 'MidtransController@midtransTransaction')->middleware('Customer');
