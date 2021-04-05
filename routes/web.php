@@ -30,7 +30,7 @@ else{
 	$middleware = ['installer'];
 }
 
-Route::get('/maintance','Web\IndexController@maintance');
+Route::get('/maintance','App\Http\Controllers\web\IndexController@maintance');
 
 // Route::group(['namespace' => 'web','middleware' => ['installer']], function () {
 Route::get('/login', 'App\Http\Controllers\web\CustomersController@login');
@@ -47,24 +47,6 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 
 
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-
-
-// Route::get('contact', function () {
-//     return view('contact');
-// });
-
-
-// Route::get('login', function () {
-//     return view('login');
-// });
-
-
-// Route::get('wishlist', function () {
-//         return view('wishlist');
-//     });
 
     Route::get('about', function () {
         return view('aboutus');
@@ -76,23 +58,6 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
     });
 
 
-
-// Route::get('vendorForm', function () {
-//     return view('vendorform');
-// });
-
-
-// Route::get('/vendorForm', 'App\Http\Controllers\web\CustomersController@vendor');
-// Route::post('/confirmVendor', 'App\Http\Controllers\web\CustomersController@confirmVendor');
-
-// Route::post('/process-login', 'App\Http\Controllers\web\CustomersController@processLogin');
-
-
-// Route::group(['namespace' => 'Web','middleware' => $middleware], function () {
-// 	Route::get('general_error/{msg}', function($msg) {
-// 		 return view('errors.general_error',['msg' => $msg]);
-// 	});
-	// route for to show payment form using get method
 		Route::get('pay', 'App\Http\Controllers\web\RazorpayController@pay')->name('pay');
     	Route::post('/paytm-callback', 'PaytmController@paytmCallback');
 		Route::get('/store_paytm', 'App\Http\Controllers\web\PaytmController@store');
@@ -195,23 +160,23 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 		Route::get('/contact', 'App\Http\Controllers\web\IndexController@contactus');
 		Route::post('/processContactUs', 'App\Http\Controllers\web\IndexController@processContactUs');
 		
-		Route::get('/setcookie', 'IndexController@setcookie');
-		Route::get('/newsletter', 'IndexController@newsletter');
+		Route::get('/setcookie', 'App\Http\Controllers\web\IndexController@setcookie');
+		Route::get('/newsletter', 'App\Http\Controllers\web\IndexController@newsletter');
 
-		Route::get('/subscribeMail', 'IndexController@subscribeMail');
+		Route::get('/subscribeMail', 'App\Http\Controllers\web\IndexController@subscribeMail');
 
 		
-		Route::get('/media/add', 'MediaController@add');
-		Route::get('/detail/{id}', 'MediaController@detailimage');
+		Route::get('/media/add', 'App\Http\Controllers\web\MediaController@add');
+		Route::get('/detail/{id}', 'App\Http\Controllers\web\MediaController@detailimage');
 		Route::post('/uploadimage', 'MediaController@fileUpload');
 		Route::post('/regenerateimage', 'MediaController@regenerateimage');
 
-		Route::get('/addProduct', 'ProductsController@addProduct');		
+		Route::get('/addProduct', 'App\Http\Controllers\web\ProductsController@addProduct');		
 		Route::post('/saveinfo', 'ProductsController@saveinfo');
 		Route::post('/savepics', 'ProductsController@savepics');
 		Route::post('/postProduct', 'ProductsController@postProduct');
 
-		Route::get('/getmyproduct', 'ProductsController@getMyProduct');
+		Route::get('/getmyproduct', 'App\Http\Controllers\web\ProductsController@getMyProduct');
 		Route::get('/editproduct/{id}', 'ProductsController@editProduct');
 		Route::post('/updateproduct', 'ProductsController@updateProduct');
 		Route::post('/deleteproduct', 'ProductsController@deleteProduct');

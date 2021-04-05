@@ -20,6 +20,7 @@ use Socialite;
 use Validator;
 use Hash;
 
+
 class CustomersController extends Controller
 {
     public function __construct(

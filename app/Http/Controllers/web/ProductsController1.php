@@ -1,9 +1,5 @@
 <?php
 
-namespace App\Http\Controllers\web;
-
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 //validator is builtin class in laravel
 use App\Models\Web\Currency;
 use App\Models\Web\Index;
@@ -13,18 +9,19 @@ use App\Models\Web\Languages;
 //for authenitcate login data
 use App\Models\Web\Products;
 // use Auth;
-
+use File;
 //for requesting a value
 // use DB;
 //for Carbon a value
-// use Illuminate\Http\Request;
-// use Illuminate\Routing\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 // use Lang;
 // use Session;
 //email
 use App\Models\Core\Vendors;
 use App\Models\Core\Categories;
 use App\Models\Web\Images;
+
 class ProductsController extends Controller
 {
     public function __construct(

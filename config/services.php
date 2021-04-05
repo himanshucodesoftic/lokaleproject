@@ -19,6 +19,11 @@ return [
         'secret' => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
     ],
+    'google' => [
+        'client_id' => 'GOOGLE_CLIENT_ID',
+        'client_secret' => 'GOOGLE_SECRET_KEY',
+        'redirect' => 'http://YOUR_DOMAIN_NAME/login/google/callback',
+      ],
 
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
@@ -28,6 +33,24 @@ return [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
+    ],
+
+
+
+    
+    'sparkpost' => [
+        'secret' => env('SPARKPOST_SECRET'),
+    ],
+
+    'stripe' => [
+        'model' => App\User::class,
+        'key' => env('STRIPE_KEY'),
+        'secret' => env('STRIPE_SECRET'),
+    ],
+    'facebook' => [
+      'client_id' => 'FB_CLIENT_ID',
+      'client_secret' => 'FB_SECRET_KEY',
+      'redirect' => 'http://YOUR_DOMAIN_NAME/login/facebook/callback',
     ],
 
 ];
