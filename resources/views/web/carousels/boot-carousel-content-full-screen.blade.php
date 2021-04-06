@@ -9,7 +9,7 @@
 						<div class="tp-banner revolution">
 							<ul>
 								<li data-thumb="images/slides/01/slide-01.jpg" data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
-									<img src="{{asset('https://www.lokalkw.com/images/media/2021/02/lu1A109902.jpg')}}"  alt="slide1"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" >
+									<img src="{{asset('https://lokalkw.com/images/media/2021/02/lu1A109902.jpg')}}"  alt="slide1"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" >
 									<div class="tp-caption tp-caption1 lft stb"
 										data-x="center"
 										data-y="center"

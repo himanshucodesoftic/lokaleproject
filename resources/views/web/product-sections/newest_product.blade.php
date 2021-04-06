@@ -1,33 +1,55 @@
 <!-- Products content -->
-@if($result['products']['success']==1)
 
-<section class="new-products-content pro-content" >
-  <div class="container">
-    <div class="products-area">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6">
-          <div class="pro-heading-title">
-            <h2> @lang('website.NEW ARRIVAL')
-            </h2>
-            <!--<p>@lang('website.Newest Products Detail')-->
-            <!--   </p>-->
-          </div>
-        </div>
-      </div>
-      <div class="row">      
-        @if($result['products']['success']==1)
+
+
+
+<div id="tt-pageContent">
+	
+
+	<div class="container-indent">
+		<div class="container container-fluid-custom-mobile-padding">
+			<div class="tt-block-title">
+				<h1 class="tt-title">NEW ARRIVAL</h1>
+				<!-- <div class="tt-description">TOP VIEW IN THIS WEEK</div> -->
+			</div>
+			<div class="row tt-layout-product-item">
+      @if($result['products']['success']==1)
         @foreach($result['products']['product_data'] as $key=>$products)
-        <div class="col-12 col-sm-6 col-lg-3">
-          <!-- Product -->
+				<div class="col-6 col-md-4 col-lg-3">
+					<div class="tt-product thumbprod-center">
           @include('web.common.product')
-        </div>
+					</div>
+				</div>
         @endforeach
         @endif
-   
-      </div>
-    </div>
-  </div>  
-</section>
+			</div>
+		</div>
+	</div>
 
 
-@endif
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

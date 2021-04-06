@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
           <div class="pro-heading-title">
-            <h2> @lang('website.Top Selling of the Week')
+            <h2> Top Selling of the Week
 
             </h2>
             <!--<p>-->

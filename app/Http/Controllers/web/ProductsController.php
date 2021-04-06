@@ -19,7 +19,8 @@ use App\Models\Web\Products;
 //for Carbon a value
 // use Illuminate\Http\Request;
 // use Illuminate\Routing\Controller;
-// use Lang;
+use Lang;
+use DB;
 // use Session;
 //email
 use App\Models\Core\Vendors;
