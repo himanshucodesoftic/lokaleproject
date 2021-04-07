@@ -164,7 +164,6 @@ class ThemeController extends Controller
     {
         $index = new Index();
         $result['commonContent'] = $index->commonContent();
-
         if ($banner_id == 1) {
             $banner = (string) View::make('web.banners.banner1', ['result' => $result])->render();
         } elseif ($banner_id == 2) {

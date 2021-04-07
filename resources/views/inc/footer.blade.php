@@ -23,11 +23,11 @@
 				</div>
 				<div class="col-md-auto">
 					<ul class="tt-social-icon">
-						<li><a class="icon-g-64" target="_blank" href="http://www.facebook.com/"></a></li>
-						<li><a class="icon-h-58" target="_blank" href="http://www.facebook.com/"></a></li>
-						<li><a class="icon-g-66" target="_blank" href="http://www.twitter.com/"></a></li>
-						<li><a class="icon-g-67" target="_blank" href="http://www.google.com/"></a></li>
-						<li><a class="icon-g-70" target="_blank" href="https://instagram.com/"></a></li>
+						<!-- <li><a class="icon-g-64" target="_blank" href="http://www.facebook.com/"></a></li> -->
+						<!-- <li><a class="icon-h-58" target="_blank" href="http://www.facebook.com/"></a></li> -->
+						<!-- <li><a class="icon-g-66" target="_blank" href="http://www.twitter.com/"></a></li> -->
+						<li><a class="icon-g-67" target="_blank" href="https://www.instagram.com/lokal_kw/"></a></li>
+						<!-- <li><a class="icon-g-70" target="_blank" href="https://www.instagram.com/lokal_kw/"></a></li> -->
 					</ul>
 				</div>
 			</div>
@@ -43,11 +43,23 @@
 						</h4>
 						<div class="tt-collapse-content">
 							<ul class="tt-list">
-								<li><a href="account_order.html">About Us</a></li>
+
+
+							@if(count($result['commonContent']['pages']))
+            @foreach($result['commonContent']['pages'] as $page)
+            <li><a href="{{ URL::to('/page?name='.$page->slug)}}">{{$page->name}}</a></li>
+            @endforeach
+            @endif
+			<li><a href="{{ URL::to('/profile')}}">My Account</a></li>
+            <li><a href="{{ URL::to('/contact')}}">Contact Us</a></li>
+        
+
+
+								<!-- <li><a href="account_order.html">About Us</a></li>
 								<li><a href="page404.html">Terms & Conditions</a></li>
 								<li><a href="page404.html">test</a></li>
 								<li><a href="login.html">My Accunt</a></li>
-								<li><a href="create-account.html"><i class="fas fa-headphones-alt"></i>Contact Us</a></li>
+								<li><a href="create-account.html"><i class="fas fa-headphones-alt"></i>Contact Us</a></li> -->
 							</ul>
 						</div>
 					</div>
@@ -81,8 +93,8 @@
 						<div class="tt-collapse-content">
 						
 						<ul class="tt-list">
-								<li><a href="listing-collection.html"><i class="fas fa-headphones-alt">+96555456559</i></a></li>
-								<li><a href="listing-collection.html">contact@lokalkw.com</a></li>
+								<li><a href="listing-collection.html"><i class="fas fa-headphones-alt">{{$result['commonContent']['setting'][11]->value}}</i></a></li>
+								<li><a href="mailto:{{$result['commonContent']['setting'][3]->value}}">{{$result['commonContent']['setting'][3]->value}}</a></li>
 						
 							</ul>
 						</div>
@@ -94,7 +106,7 @@
 							<h4 class="tt-collapse-title">
 								Follow us
 							</h4>
-							<li><a class="icon-g-70" target="_blank" href="https://instagram.com/"></a></li>
+							<li><a class="icon-g-67" target="_blank" href="https://www.instagram.com/lokal_kw/"></a></li>
 							<div class="tt-collapse-content">
 								<address>
 

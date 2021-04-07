@@ -183,3 +183,7 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 	// });
 
 	Route::get('/test', 'Web\IndexController@test1');
+
+
+	Route::view('/header', 'web.headers.header');
+

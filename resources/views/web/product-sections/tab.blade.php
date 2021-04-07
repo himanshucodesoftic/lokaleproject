@@ -21,7 +21,7 @@
             @if($result['most_liked']['success']==1)
             <a class="nav-link btn <?php if($result['top_seller']['success'] != 1 && $result['special']['success'] != 1 && $result['most_liked']['success'] == 1) print 'active show'; ?>" data-toggle="tab" href="#liked" role="tab" aria-controls="liked"
               aria-selected="true"><span data-toggle="tooltip" data-placement="bottom"
-                title="@lang('website.MostLiked')">@lang('website.MostLiked')</span></a>
+                title="@lang('website.MostLiked')">MostLiked</span></a>
             @endif
 
 			</div>
@@ -102,6 +102,38 @@
 
 	
 <!-- modal (AddToCartProduct) -->
+<!-- modal (AddToCartProduct) -->
+
+
+
+
+
+
+
+
+
+
+<!-- modalVideoProduct -->
+
+<!-- modal (ModalSubsribeGood) -->
+
+
 </div>
 
+
+
+
+
+
+
+
 @endif
+
+
+
+
+
+
+
+
+
