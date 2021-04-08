@@ -4,9 +4,9 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6">
           <div class="pro-heading-title">
-            <h2> Top Selling of the Week
+            <h4   class="tt-title" style="text-align:center"> Top Selling of the Week
 
-            </h2>
+            </h4>
             <!--<p>-->
             <!--  @lang('website.Top Sellings Of the Week Detail')</p>-->
           </div>

@@ -107,7 +107,9 @@ class ThemeController extends Controller
         } else {
             $header = (string) View::make('web.headers.headerTen', ['count' => $count, 'currencies' => $currencies, 'languages' => $languages, 'productcategories' => $productcategories, 'result' => $result])->render();
         }
+        
         return $header;
+      
     }
 
     private function mobileHeader()

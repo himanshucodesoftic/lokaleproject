@@ -3,6 +3,7 @@
 <?php $qunatity += $cart_data->customers_basket_quantity; ?>
 @endforeach
 
+
 <div class="tt-cart tt-dropdown-obj" data-tooltip="Cart" data-tposition="bottom">
 							<button class="tt-dropdown-toggle">
 								<i class="icon-f-39"></i>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 		<meta charset="utf-8">
-	<title>Wokiee - Responsive HTML5 Template</title>
+	<title>lokalkw</title>
 	<meta name="keywords" content="HTML5 Template">
 	<meta name="description" content="Wokiee - Responsive HTML5 Template">
 	<meta name="author" content="wokiee">

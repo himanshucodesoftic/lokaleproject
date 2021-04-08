@@ -1,19 +1,19 @@
 <footer id="tt-footer">
-	<div class="tt-footer-default tt-color-scheme-02">
+	<div class="tt-footer-default" style="background-color:#2b5a80">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-9">
 					<div class="tt-newsletter-layout-01">
 						<div class="tt-newsletter">
 							<div class="tt-mobile-collapse">
-								<h4 class="tt-collapse-title">
+								<h4 class="tt-collapse-title" style="color:white;">
 									keep in touch
 								</h4>
 								<div class="tt-collapse-content">
 									<form id="newsletterform" class="form-inline form-default" method="post" novalidate="novalidate" action="#">
 										<div class="form-group">
 											<input type="text" name="email" class="form-control" placeholder="your email">
-											<button type="submit" class="btn">JOIN US</button>
+											<button type="submit" class="btn"  style="color:white">JOIN US</button>
 										</div>
 									</form>
 								</div>
@@ -50,7 +50,7 @@
             <li><a href="{{ URL::to('/page?name='.$page->slug)}}">{{$page->name}}</a></li>
             @endforeach
             @endif
-			<li><a href="{{ URL::to('/profile')}}">My Account</a></li>
+			<li><a href="{{ URL::to('/login')}}">My Account</a></li>
             <li><a href="{{ URL::to('/contact')}}">Contact Us</a></li>
         
 

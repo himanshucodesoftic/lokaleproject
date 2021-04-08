@@ -6,7 +6,7 @@
 					<div class="tt-box-info">
 						<ul>
 							<li><i class="icon-f-93"></i><a href="tel:+56647749930">{{$result['commonContent']['setting'][11]->value}}</a>; </li>
-							<li><i class="icon-f-92"></i>All week from 9 am to 9 pm </li>
+							<!-- <li><i class="icon-f-92"></i>All week from 9 am to 9 pm </li> -->
 						</ul>
 					</div>
 				</div>
@@ -15,7 +15,7 @@
 						<!-- <li><a class="icon-g-64" target="_blank" href="http://www.facebook.com/"></a></li> -->
 						<!-- <li><a class="icon-h-58" target="_blank" href="http://www.twitter.com/"></a></li> -->
 						<!-- <li><a class="icon-g-66" target="_blank" href="http://www.google.com/"></a></li> -->
-						<li><a class="icon-g-67" target="_blank" href="https://www.instagram.com/lokal_kw/"></a></li>
+						<li><a class="icon-g-67" target="_blank"  href="https://www.instagram.com/lokal_kw/"></a></li>
 						<!-- <li><a class="icon-g-70" target="_blank" href="#"></a></li> -->
 					</ul>
 				</div>
@@ -46,10 +46,8 @@
 				</div>
 				<!-- mobile logo -->
 				<div class="tt-logo-container">
-					<a class="tt-logo tt-logo-alignment" href="{url('/')}}"><img src="https://lokalkw.com/images/media/2021/02/BqbQS15711.png" alt="">       @if($result['commonContent']['settings']['sitename_logo']=='logo')
-            <img class="img-fluid" src="{{asset('').$result['commonContent']['settings']['website_logo']}}"
-              alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>" width="100" height="35">
-            @endif</a>
+					<a class="tt-logo tt-logo-alignment" href="{url('/')}}"><img src="{{asset('images/logo.png')}}" alt="">    </a>  
+					
    
 				</div>
 				<!-- /mobile logo -->
@@ -74,11 +72,8 @@
 			<div class="tt-header-holder">
 				<div class="tt-col-obj tt-obj-logo">
 					<!-- logo -->
-					<a class="tt-logo tt-logo-alignment" href="{{url('/')}}"><img src="https://lokalkw.com/images/media/2021/02/BqbQS15711.png" alt="">
-          @if($result['commonContent']['settings']['sitename_logo']=='logo')
-              <img class="img-fluid" src="{{asset('').$result['commonContent']['settings']['website_logo']}}"
-                alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>" width="100" height="35">
-              @endif   </a>
+					<a class="tt-logo tt-logo-alignment" href="{{url('/')}}"><img src="{{asset('images/logo.png')}}" style="height:170px !important;border:2px sold red;" alt=""></a>
+        
 					<!-- /logo -->
           
 				</div>
@@ -100,12 +95,12 @@
 						<div class="tt-desctop-menu tt-hover-03">
 
 							<nav>
-							@include('web.common.HeaderCategories')
+							
 								<ul>
 								
 
 
-								@php productCategories(); @endphp
+								
 
 							
 
@@ -117,12 +112,12 @@
 					<!-- /tt-menu -->
 				</div>
 
-				<i class="fas fa-heart"></i>
+			
 <div class="tt-col-obj tt-obj-options obj-move-right">
 <!-- 
 	<div class="tt-desctop-parent-account tt-arent-box"> -->
 	
-	<a class="fa fa-heart" target="_blank"  href="{{url('wishlist')}}"> <strong>{{$result['commonContent']['total_wishlist']}}</strong></a>		
+	<a class="fa fa-heart" target="_blank"   href="{{url('wishlist')}}" style="color:black;padding:10px;">  <span class="tt-badge-cart" style="color:white;">{{$result['commonContent']['total_wishlist']}}</span></a>		
 					<!-- </div> -->
 
 </div>
@@ -215,15 +210,7 @@
               
 
                     
-										<!--
-										<li><a href="login.html"><i class="icon-f-94"></i>Account</a></li>
-										<li><a href="wishlist.html"><i class="icon-n-072"></i>Wishlist</a></li>
-										<li><a href="compare.html"><i class="icon-n-08"></i>Compare</a></li>
-										<li><a href="page404.html"><i class="icon-f-68"></i>Check Out</a></li>
-										<li><a href="login.html"><i class="icon-f-76"></i>Sign In</a></li>
-										<li><a href="page404.html"><i class="icon-f-77"></i>Sign Out</a></li>
-										<li><a href="create-account.html"><i class="icon-f-94"></i>Register</a></li>
-										-->
+								
 									</ul>
 								</div>
 							</div>

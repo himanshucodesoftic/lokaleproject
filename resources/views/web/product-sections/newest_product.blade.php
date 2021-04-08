@@ -9,7 +9,7 @@
 	<div class="container-indent">
 		<div class="container container-fluid-custom-mobile-padding">
 			<div class="tt-block-title">
-				<h1 class="tt-title">NEW ARRIVAL</h1>
+				<h1 class="tt-title" >NEW ARRIVAL</h1>
 				<!-- <div class="tt-description">TOP VIEW IN THIS WEEK</div> -->
 			</div>
 			<div class="row tt-layout-product-item">

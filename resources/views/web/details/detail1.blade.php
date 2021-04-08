@@ -162,40 +162,39 @@
 						<div class="tt-review">
 							<div class="tt-rating">
 
-    @if(!empty($result['detail']['product_data'][0]->flash_start_date) and $result['detail']['product_data'][0]->server_time < $result['detail']['product_data'][0]->flash_start_date )
+							@if(!empty($result['detail']['product_data'][0]->flash_start_date) and $result['detail']['product_data'][0]->server_time < $result['detail']['product_data'][0]->flash_start_date )
 
-                    @else
+@else
 
-                      @if($result['detail']['product_data'][0]->products_type == 0)
+  @if($result['detail']['product_data'][0]->products_type == 0)
 
-                        @if($result['commonContent']['settings']['Inventory'])
-                          @if($result['detail']['product_data'][0]->defaultStock <= 0)
-						  <button class="btn btn-lg swipe-to-top  btn-danger " type="button">@lang('website.Out of Stock')</button>
-                          @else
-						  <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">@lang('website.Add to Cart')</button>
-                           @endif
-                        @else
-                        <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">@lang('website.Add to Cart')</button>
-                         @endif
+	@if($result['commonContent']['settings']['Inventory'])
+	  @if($result['detail']['product_data'][0]->defaultStock <= 0)
+	  <button class="btn btn-lg swipe-to-top  btn-danger " type="button">@lang('website.Out of Stock')</button>
+	  @else
+	  <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button"   products_id="{{$result['detail']['product_data'][0]->products_id}}">Add to Cart</button>
+	  @endif
+	@else
+	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  >Add to Cart</button>
+	@endif
 
-                      @else
+  @else
 
-                        @if($result['commonContent']['settings']['Inventory'])
-						<button class="btn btn-secondary btn-lg swipe-to-top  add-to-Cart stock-cart" hidden type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">@lang('website.Add to Cart')</button>
-                        <button class="btn btn-danger btn btn-lg swipe-to-top  stock-out-cart" hidden type="button">@lang('website.Out of Stock')</button>
-                        @else
-						<button class="btn btn-secondary btn-lg swipe-to-top  add-to-Cart" type="button"
-                          products_id="{{$result['detail']['product_data'][0]->products_id}}">@lang('website.Add to Cart')</button>
-                        @endif
-                      @endif
+	@if($result['commonContent']['settings']['Inventory'])
+	<button class="btn btn-secondary btn-lg swipe-to-top  add-to-Cart stock-cart" hidden type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}" >Add to Cart</button>
+	<button class="btn btn-danger btn btn-lg swipe-to-top  stock-out-cart" hidden type="button">@lang('website.Out of Stock')</button>
+	@else
+	<button class="btn btn-secondary btn-lg swipe-to-top  add-to-Cart" type="button"
+	  products_id="{{$result['detail']['product_data'][0]->products_id}}" style="border:2px solid red "   >Add to Cart</button>
+	@endif
+  @endif
 
-                    @endif
+@endif
 
-                    @if($result['detail']['product_data'][0]->products_type == 2)
-                    <a href="{{$result['detail']['product_data'][0]->products_url}}" target="_blank"
-                      class="btn btn-secondary btn-lg swipe-to-top">@lang('website.External Link')</a>
-                    @endif
-
+@if($result['detail']['product_data'][0]->products_type == 2)
+<a href="{{$result['detail']['product_data'][0]->products_url}}" target="_blank"
+  class="btn btn-secondary btn-lg swipe-to-top">@lang('website.External Link')</a>
+@endif
 
 
 
@@ -644,7 +643,7 @@
                           @if($result['detail']['product_data'][0]->defaultStock <= 0)
                           <button class="btn btn-lg swipe-to-top  btn-danger " type="button">@lang('website.Out of Stock')</button>
                           @else
-                          <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">Add to Cart</button>
+                          <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  style="border:2px solid red;">Add to Cart</button>
                           @endif
                         @else
                         <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">Add to Cart</button>
@@ -653,7 +652,7 @@
                       @else
 
                         @if($result['commonContent']['settings']['Inventory'])
-                        <button class="btn btn-secondary btn-lg swipe-to-top  add-to-Cart stock-cart" hidden type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">Add to Cart</button>
+                        <button class="btn btn-secondary btn-lg swipe-to-top  add-to-Cart stock-cart" hidden type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  >Add to Cart</button>
                         <button class="btn btn-danger btn btn-lg swipe-to-top  stock-out-cart" hidden type="button">@lang('website.Out of Stock')</button>
                         @else
                         <button class="btn btn-secondary btn-lg swipe-to-top  add-to-Cart" type="button"
@@ -700,67 +699,63 @@
 	</div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="jquery-3.5.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+  jQuery(document).ready(function(e) {
+  
+    @if(!empty($result['detail']['product_data'][0]->flash_start_date))
+	
+        @if( date("Y-m-d",$result['detail']['product_data'][0]->server_time) >= date("Y-m-d",$result['detail']['product_data'][0]->flash_start_date))
+        var product_div_{{$result['detail']['product_data'][0]->products_id}} = 'product_div_{{$result['detail']['product_data'][0]->products_id}}';
+      var  counter_id_{{$result['detail']['product_data'][0]->products_id}} = 'counter_{{$result['detail']['product_data'][0]->products_id}}';
+      var inputTime_{{$result['detail']['product_data'][0]->products_id}} = "{{date('M d, Y H:i:s' ,$result['detail']['product_data'][0]->flash_expires_date)}}";
+  
+      // Set the date we're counting down to
+      var countDownDate_{{$result['detail']['product_data'][0]->products_id}} = new Date(inputTime_{{$result['detail']['product_data'][0]->products_id}}).getTime();
+  
+      // Update the count down every 1 second
+      var x_{{$result['detail']['product_data'][0]->products_id}} = setInterval(function() {
+  
+        // Get todays date and time
+        var now = new Date().getTime();
+  
+        // Find the distance between now and the count down date
+        var distance_{{$result['detail']['product_data'][0]->products_id}} = countDownDate_{{$result['detail']['product_data'][0]->products_id}} - now;
+  
+        // Time calculations for days, hours, minutes and seconds
+        var days_{{$result['detail']['product_data'][0]->products_id}} = Math.floor(distance_{{$result['detail']['product_data'][0]->products_id}} / (1000 * 60 * 60 * 24));    
+
+        var hours_{{$result['detail']['product_data'][0]->products_id}} = Math.floor((distance_{{$result['detail']['product_data'][0]->products_id}} % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        if (hours_{{$result['detail']['product_data'][0]->products_id}} < 10) hours_{{$result['detail']['product_data'][0]->products_id}} = '0' + hours_{{$result['detail']['product_data'][0]->products_id}};
+
+        var minutes_{{$result['detail']['product_data'][0]->products_id}} = Math.floor((distance_{{$result['detail']['product_data'][0]->products_id}} % (1000 * 60 * 60)) / (1000 * 60));
+        if (minutes_{{$result['detail']['product_data'][0]->products_id}} < 10) minutes_{{$result['detail']['product_data'][0]->products_id}} = '0' + minutes_{{$result['detail']['product_data'][0]->products_id}};
+
+        var seconds_{{$result['detail']['product_data'][0]->products_id}} = Math.floor((distance_{{$result['detail']['product_data'][0]->products_id}} % (1000 * 60)) / 1000);
+        if (seconds_{{$result['detail']['product_data'][0]->products_id}} < 10) seconds_{{$result['detail']['product_data'][0]->products_id}} = '0' + seconds_{{$result['detail']['product_data'][0]->products_id}};
+
+        var days_text = "@lang('website.Days')";
+        // Display the result in the element with id="demo"
+
+        // document.getElementById(counter_id_{{$result['detail']['product_data'][0]->products_id}}).innerHTML = "<span class='days'>"+days_{{$result['detail']['product_data'][0]->products_id}} + "<small>@lang('website.Days')</small></span> <span class='hours'>" + hours_{{$result['detail']['product_data'][0]->products_id}} + "<small>@lang('website.Hours')</small></span> <span class='mintues'> "
+        // + minutes_{{$result['detail']['product_data'][0]->products_id}} + "<small>@lang('website.Minutes')</small></span> <span class='seconds'>" + seconds_{{$result['detail']['product_data'][0]->products_id}} + "<small>@lang('website.Seconds')</small></span> ";
+
+        document.getElementById(counter_id_{{$result['detail']['product_data'][0]->products_id}}).innerHTML = "<div class='custom_countdown'>"+days_{{$result['detail']['product_data'][0]->products_id}} + "D " + hours_{{$result['detail']['product_data'][0]->products_id}} + ":" + minutes_{{$result['detail']['product_data'][0]->products_id}} + ":" + seconds_{{$result['detail']['product_data'][0]->products_id}} + "</div>";
+  
+        // If the count down is finished, write some text
+        if (distance_{{$result['detail']['product_data'][0]->products_id}} < 0) {
+        clearInterval(x_{{$result['detail']['product_data'][0]->products_id}});
+		
+        //document.getElementById(counter_id_{{$result['detail']['product_data'][0]->products_id}}).innerHTML = "EXPIRED";
+        document.getElementById('product_div_{{$result['detail']['product_data'][0]->products_id}}').remove();
+        }
+      }, 1000);
+          @endif
+      @endif
+
+  });
+  
+</script>

@@ -43,7 +43,7 @@
             <a href="{{ URL::to('shop?type=deals')}}">
           @endif
     <div class="carousel-item active">
-      <img src="https://lokalkw.com/images/media/2021/02/lu1A109902.jpg" class="d-block w-100" src="..." alt="First slide">
+      <img src="{{asset('images/banner.jpg')}}" class="d-block w-100" src="..." alt="First slide">
     </div>
     <!-- <div class="carousel-item">
       <img src="https://lokalkw.com/images/media/2021/02/lu1A109902.jpg" class="d-block w-100" src="..." alt="Second slide">
