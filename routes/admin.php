@@ -16,10 +16,10 @@ Route::group(['middleware' => ['installer']], function () {
     Route::get('/not_allowed', function () {
         return view('errors.not_found');
     });
-    Route::group(['namespace' => 'AdminControllers', 'prefix' => 'admin'], function () {
-        Route::get('/login', 'AdminController@login');
+    // Route::group(['namespace' => 'App\Http\Controllers\AdminControllers', 'prefix' => 'admin'], function () {
+        Route::get('admin/login', 'App\Http\Controllers\AdminControllers\AdminController@login');
         Route::post('/checkLogin', 'AdminController@checkLogin');
-    });
+    // });
 
     Route::get('/home', function () {
         return redirect('/admin/languages/display');

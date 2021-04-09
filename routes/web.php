@@ -4,6 +4,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\web\CustomersController;
 use App\Http\Controllers\web\IndexController;
 
+
+
+
+
+
+
+
+Route::get('admin/adminlogin', 'App\Http\Controllers\AdminControllers\AdminController@login');
+Route::post('/checkLogin', 'AdminController@checkLogin');
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -187,3 +198,7 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 
 	Route::view('/header', 'web.headers.header');
 
+
+
+	//admin
+	
