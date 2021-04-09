@@ -31,7 +31,8 @@ Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\Cu
   Route::get('admin/vendors/add', 'App\Http\Controllers\AdminControllers\VendorsController@add')->middleware('add_customer');
   Route::post('admin/vendors/add', 'App\Http\Controllers\AdminControllers\VendorsController@insert')->middleware('add_customer');
   Route::get('/admin/customers/display', 'App\Http\Controllers\AdminControllers\CustomersController@display')->middleware('view_customer');
-
+  Route::get('/admin/reviews/display', 'App\Http\Controllers\AdminControllers\ProductController@reviews')->middleware('view_reviews');
+      
   /*
 |--------------------------------------------------------------------------
 | Web Routes

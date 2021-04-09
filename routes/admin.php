@@ -243,7 +243,7 @@ Route::group(['middleware' => ['installer']], function () {
     });
 
     Route::group(['prefix' => 'admin/reviews', 'middleware' => 'auth', 'namespace' => 'AdminControllers'], function () {
-        Route::get('/display', 'ProductController@reviews')->middleware('view_reviews');
+        // Route::get('/display', 'ProductController@reviews')->middleware('view_reviews');
         Route::get('/edit/{id}/{status}', 'ProductController@editreviews')->middleware('edit_reviews');
 
     });
