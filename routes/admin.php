@@ -41,7 +41,7 @@ Route::group(['middleware' => ['installer']], function () {
         Route::post('/topoffer/update', 'ThemeController@updateTopOffer');
         
 
-        Route::get('/dashboard/{reportBase}', 'AdminController@dashboard');
+        // Route::get('/dashboard/{reportBase}', 'AdminController@dashboard');
         //add adddresses against customers
         Route::get('/addaddress/{id}/', 'CustomersController@addaddress')->middleware('add_customer');
         Route::post('/addNewCustomerAddress', 'CustomersController@addNewCustomerAddress')->middleware('add_customer');
@@ -68,20 +68,20 @@ Route::group(['middleware' => ['installer']], function () {
     });
 
     Route::group(['prefix' => 'admin/languages', 'middleware' => 'auth', 'namespace' => 'AdminControllers'], function () {
-        Route::get('/display', 'LanguageController@display')->middleware('view_language');
+        // Route::get('/display', 'LanguageController@display')->middleware('view_language');
         Route::post('/default', 'LanguageController@default')->middleware('edit_language');
         Route::get('/add', 'LanguageController@add')->middleware('add_language');
         Route::post('/add', 'LanguageController@insert')->middleware('add_language');
-        Route::get('/edit/{id}', 'LanguageController@edit')->middleware('edit_language');
-        Route::post('/update', 'LanguageController@update')->middleware('edit_language');
-        Route::post('/delete', 'LanguageController@delete')->middleware('delete_language');
+        // Route::get('/edit/{id}', 'LanguageController@edit')->middleware('edit_language');
+        // Route::post('/update', 'LanguageController@update')->middleware('edit_language');
+        // Route::post('/delete', 'LanguageController@delete')->middleware('delete_language');
         Route::get('/filter', 'LanguageController@filter')->middleware('view_language');
 
     });
 
     Route::group(['prefix' => 'admin/media', 'middleware' => 'auth', 'namespace' => 'AdminControllers'], function () {
-        Route::get('/display', 'MediaController@display')->middleware('view_media');
-        Route::get('/add', 'MediaController@add')->middleware('add_media');
+        // Route::get('/display', 'MediaController@display')->middleware('view_media');
+        // Route::get('/add', 'MediaController@add')->middleware('add_media');
         Route::post('/updatemediasetting', 'MediaController@updatemediasetting')->middleware('edit_media');
         Route::post('/uploadimage', 'MediaController@fileUpload')->middleware('add_media');
         Route::post('/delete', 'MediaController@deleteimage')->middleware('delete_media');
@@ -146,7 +146,7 @@ Route::group(['middleware' => ['installer']], function () {
     });
 
     Route::group(['prefix' => 'admin/currencies', 'middleware' => 'auth', 'namespace' => 'AdminControllers'], function () {
-        Route::get('/display', 'CurrencyController@display')->middleware('view_general_setting');
+        // Route::get('/display', 'CurrencyController@display')->middleware('view_general_setting');
         Route::get('/add', 'CurrencyController@add')->middleware('edit_general_setting');
         Route::post('/add', 'CurrencyController@insert')->middleware('edit_general_setting');
         Route::get('/edit/{id}', 'CurrencyController@edit')->middleware('edit_general_setting');
@@ -250,14 +250,14 @@ Route::group(['middleware' => ['installer']], function () {
 
     //vendors
     Route::group(['prefix' => 'admin/vendors', 'middleware' => 'auth', 'namespace' => 'AdminControllers'], function () {
-        Route::get('/requests', 'VendorsController@requests')->middleware('view_customer');
-        Route::get('/accept/{id}', 'VendorsController@accept')->middleware('edit_customer');
+        // Route::get('/requests', 'VendorsController@requests')->middleware('view_customer');
+        // Route::get('/accept/{id}', 'VendorsController@accept')->middleware('edit_customer');
         Route::post('/acceptRequest', 'VendorsController@acceptRequest')->middleware('edit_customer');
         Route::post('/decline', 'VendorsController@decline')->middleware('delete_customer');
 
-        Route::get('/display', 'VendorsController@display')->middleware('view_customer');
-        Route::get('/add', 'VendorsController@add')->middleware('add_customer');
-        Route::post('/add', 'VendorsController@insert')->middleware('add_customer');
+        // Route::get('/display', 'VendorsController@display')->middleware('view_customer');
+        // Route::get('/add', 'VendorsController@add')->middleware('add_customer');
+        // Route::post('/add', 'VendorsController@insert')->middleware('add_customer');
         Route::get('/edit/{id}', 'VendorsController@edit')->middleware('edit_customer');
         Route::post('/update', 'VendorsController@update')->middleware('edit_customer');
         Route::post('/delete', 'VendorsController@delete')->middleware('delete_customer');
@@ -272,9 +272,9 @@ Route::group(['middleware' => ['installer']], function () {
     
 //customers
     Route::group(['prefix' => 'admin/customers', 'middleware' => 'auth', 'namespace' => 'AdminControllers'], function () {
-        Route::get('/display', 'CustomersController@display')->middleware('view_customer');
+        // Route::get('/display', 'CustomersController@display')->middleware('view_customer');
         Route::get('/add', 'CustomersController@add')->middleware('add_customer');
-        Route::post('/add', 'CustomersController@insert')->middleware('add_customer');
+        // Route::post('/add', 'CustomersController@insert')->middleware('add_customer');
         Route::get('/edit/{id}', 'CustomersController@edit')->middleware('edit_customer');
         Route::post('/update', 'CustomersController@update')->middleware('edit_customer');
         Route::post('/delete', 'CustomersController@delete')->middleware('delete_customer');

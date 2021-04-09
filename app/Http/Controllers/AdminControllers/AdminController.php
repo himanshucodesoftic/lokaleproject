@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\AdminControllers;
 use App\Models\Core\Languages;
 use App\Models\Core\Setting;
@@ -18,9 +17,10 @@ use Auth;
 use ZipArchive;
 use File;
 use App\Models\Core\User;
+
 class AdminController extends Controller
 {
-    private $domain;
+	private $domain;
     public function __construct(Admin $admin, Setting $setting, Order $order, Customers $customers)
     {
         $this->Setting = $setting;
@@ -30,6 +30,7 @@ class AdminController extends Controller
     }
 
 	public function dashboard(Request $request){
+		
 		$title 			  = 	array('pageTitle' => Lang::get("labels.title_dashboard"));
 		$language_id      = 	'1';
 
@@ -198,6 +199,7 @@ class AdminController extends Controller
 			$products_ids[] =$vproduct->products_id;
 		}
   		$result['lowLimit'] = $lowLimit;
+	
   		$result['outOfStock'] = count($products_ids);
   		$result['totalProducts'] = count($products);
 		
@@ -206,6 +208,7 @@ class AdminController extends Controller
   		$result['customers'] = User::where('role_id','=',2)->get();//->chunk(21);
 		$result['totalCustomers'] = count(User::where('role_id','=',2)->get());
 		$result['reportBase'] = $reportBase; 
+	
 
 
 		$result['commonContent'] = $this->Setting->commonContent();
@@ -1273,5 +1276,6 @@ class AdminController extends Controller
 		DB::table('categories_role')->where('categories_role_id', $request->id)->delete();
 		return redirect()->back()->withErrors([Lang::get("labels.AdminRemoveCategoryMessage")]);
 	}
+
 
 }

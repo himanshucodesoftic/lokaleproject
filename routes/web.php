@@ -12,10 +12,27 @@ use App\Http\Controllers\web\IndexController;
 
 
 Route::get('admin/adminlogin', 'App\Http\Controllers\AdminControllers\AdminController@login');
-Route::post('/checkLogin', 'AdminController@checkLogin');
+Route::post('admin/checkLogin', 'App\Http\Controllers\AdminControllers\AdminController@checkLogin');
 
+Route::get('admin/dashboard/{reportBase}', 'App\Http\Controllers\AdminControllers\AdminController@dashboard');
+Route::get('admin/media/add', 'App\Http\Controllers\AdminControllers\MediaController@add')->middleware('add_media');
+Route::get('admin/media/display', 'App\Http\Controllers\AdminControllers\MediaController@display')->middleware('view_media');
+Route::get('admin/languages/display', 'App\Http\Controllers\AdminControllers\LanguageController@display')->middleware('view_language');
+Route::get('admin/languages/edit/{id}', 'App\Http\Controllers\AdminControllers\LanguageController@edit')->middleware('edit_language');
+Route::post('/admin/languages/update', 'App\Http\Controllers\AdminControllers\LanguageController@update')->middleware('edit_language');
+Route::post('admin/languages/delete', 'App\Http\Controllers\AdminControllers\LanguageController@delete')->middleware('delete_language');
+// Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\CurrencyController@display')->middleware('view_language');
+Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\CurrencyController@display')->middleware('view_general_setting');
+ 
+  Route::get('/admin/vendors/requests', 'App\Http\Controllers\AdminControllers\VendorsController@requests')->middleware('view_customer');
+       
+  Route::get('admin/vendors/accept/{id}', 'App\Http\Controllers\AdminControllers\VendorsController@accept')->middleware('edit_customer');
+  Route::get('admin/vendors/display', 'App\Http\Controllers\AdminControllers\VendorsController@display')->middleware('view_customer');
+  Route::get('admin/vendors/add', 'App\Http\Controllers\AdminControllers\VendorsController@add')->middleware('add_customer');
+  Route::post('admin/vendors/add', 'App\Http\Controllers\AdminControllers\VendorsController@insert')->middleware('add_customer');
+  Route::get('/admin/customers/display', 'App\Http\Controllers\AdminControllers\CustomersController@display')->middleware('view_customer');
 
-/*
+  /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -51,6 +68,7 @@ Route::get('/vendorForm', 'App\Http\Controllers\web\CustomersController@vendor')
 Route::post('/confirmVendor', 'CustomersController@confirmVendor');
 
 Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->middleware('Customer');
+
 // });
 
 
