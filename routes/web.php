@@ -55,7 +55,8 @@ Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\Cu
   Route::get('/admin/admins', 'App\Http\Controllers\AdminControllers\AdminController@admins')->middleware('view_manage_admin');
   Route::get('/admin/manageroles', 'App\Http\Controllers\AdminControllers\AdminController@manageroles')->middleware('manage_role');
   Route::get('/admin/deliveryboys/display', 'App\Http\Controllers\AdminControllers\DeliveryBoysController@display')->middleware('view_deliveryboy');
-       
+  Route::get('/admin/customers/edit/{id}', 'App\Http\Controllers\AdminControllers\CustomersController@edit')->middleware('edit_customer');
+
   /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -83,7 +84,8 @@ else{
 }
 
 Route::get('/maintance','App\Http\Controllers\web\IndexController@maintance');
-
+Route::get('/edit/{id}', 'VendorsController@edit')->middleware('edit_customer');
+      
 // Route::group(['namespace' => 'web','middleware' => ['installer']], function () {
 Route::get('/login', 'App\Http\Controllers\web\CustomersController@login');
 Route::post('/process-login', 'App\Http\Controllers\web\CustomersController@processLogin');

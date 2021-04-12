@@ -275,7 +275,7 @@ Route::group(['middleware' => ['installer']], function () {
         // Route::get('/display', 'CustomersController@display')->middleware('view_customer');
         Route::get('/add', 'CustomersController@add')->middleware('add_customer');
         // Route::post('/add', 'CustomersController@insert')->middleware('add_customer');
-        Route::get('/edit/{id}', 'CustomersController@edit')->middleware('edit_customer');
+        // Route::get('/edit/{id}', 'CustomersController@edit')->middleware('edit_customer');
         Route::post('/update', 'CustomersController@update')->middleware('edit_customer');
         Route::post('/delete', 'CustomersController@delete')->middleware('delete_customer');
         Route::get('/filter', 'CustomersController@filter')->middleware('view_customer');
