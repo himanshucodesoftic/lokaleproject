@@ -1,4 +1,4 @@
-<li class="dropdown">
+<li class="dropdown" >
 
     <?php $qunatity=0; ?>
         @foreach($result['commonContent']['cart'] as $cart_data)

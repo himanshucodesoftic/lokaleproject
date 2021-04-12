@@ -3,7 +3,8 @@
 namespace App\Http\Middleware\customer;
 
 use Closure;
-use Illuminate\Http\Request;
+use DB;
+use Auth;
 
 class view_customer
 {
@@ -14,8 +15,16 @@ class view_customer
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
-        return $next($request);
+      $check =  DB::table('manage_role')
+                 ->where('user_types_id',Auth()->user()->role_id)
+                 ->where('customers_view',1)
+                 ->first();
+        if($check == null){
+          return  redirect('not_allowed');
+        }else{
+          return $next($request);
+        }
     }
 }

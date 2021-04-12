@@ -534,11 +534,11 @@ class Setting extends Model
     public function commonContent()
     {
         $result = array();
-        // $roles = DB::table('manage_role')
-        //            ->where('user_types_id',Auth()->user()->role_id)
-        //            ->first();
+        $roles = DB::table('manage_role')
+                   ->where('user_types_id',Auth()->user()->role_id)
+                   ->first();
 
-        // $result['roles'] = $roles;        
+        $result['roles'] = $roles;        
 
         $settings = DB::table('settings')->get();
         $setting = array();
@@ -560,4 +560,5 @@ class Setting extends Model
 
         return $result;
     }
+
 }

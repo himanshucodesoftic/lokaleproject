@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Validator;
 
 class Manufacturers extends Model
 {
-    public function __construct()
+  public function __construct()
   {
       $varsetting = new SiteSettingController();
       $this->varsetting = $varsetting;
@@ -303,4 +303,5 @@ class Manufacturers extends Model
 
 
     }
+
 }

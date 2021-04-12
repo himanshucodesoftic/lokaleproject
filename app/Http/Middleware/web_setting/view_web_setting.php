@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Middleware\web_setting;
 
 use Closure;
@@ -14,16 +15,16 @@ class view_web_setting
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
-        $check =  DB::table('manage_role')
-        ->where('user_types_id',Auth()->user()->role_id)
-        ->where('website_setting_view',1)
-        ->first();
-if($check == null){
- return  redirect('not_allowed');
-}else{
- return $next($request);
-}
+      $check =  DB::table('manage_role')
+                 ->where('user_types_id',Auth()->user()->role_id)
+                 ->where('website_setting_view',1)
+                 ->first();
+        if($check == null){
+          return  redirect('not_allowed');
+        }else{
+          return $next($request);
+        }
     }
 }

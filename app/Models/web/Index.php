@@ -158,8 +158,8 @@ class Index extends Model
         $en_id = DB::table('languages')->where('name','English')->first()->languages_id;
         session()->put('en_id', $en_id);
 
-        $ar_id = DB::table('languages')->where('name','Arabic')->first()->languages_id;
-        session()->put('ar_id', $ar_id);
+        // $ar_id = DB::table('languages')->where('name','Arabic')->first()->languages_id;
+        // session()->put('ar_id', $ar_id);
 
         $result = array();
         $result['currency'] = $currency;

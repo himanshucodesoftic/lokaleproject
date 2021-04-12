@@ -3,7 +3,6 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Http\Request;
 
 class Installation
 {
@@ -14,12 +13,11 @@ class Installation
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
-        if(!file_exists(storage_path('installed'))){
-            return redirect('/login');
-          }
-            return $next($request);
-        }
+      if(!file_exists(storage_path('installed'))){
+        return redirect('/install');
+      }
+        return $next($request);
     }
-
+}

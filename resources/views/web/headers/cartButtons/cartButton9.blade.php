@@ -4,7 +4,7 @@
 @endforeach
 
 
-<div class="tt-cart tt-dropdown-obj" data-tooltip="Cart" data-tposition="bottom">
+<div class="tt-cart tt-dropdown-obj dropdown dropdown-cart" data-tooltip="Cart" data-tposition="bottom">
 							<button class="tt-dropdown-toggle">
 								<i class="icon-f-39"></i>
 								<span class="tt-badge-cart">{{ $qunatity }}</span>

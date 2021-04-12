@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class AddressController extends Controller
 {
-   
+
     public function getzones(Request $request)
     {
         $getZones = array();

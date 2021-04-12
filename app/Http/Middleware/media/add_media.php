@@ -1,11 +1,11 @@
 <?php
 
-
 namespace App\Http\Middleware\media;
 
 use Closure;
 use DB;
 use Auth;
+
 class add_media
 {
     /**
@@ -17,7 +17,7 @@ class add_media
      */
     public function handle($request, Closure $next)
     {
-        $check =  DB::table('manage_role')
+      $check =  DB::table('manage_role')
                  ->where('user_types_id',Auth()->user()->role_id)
                  ->where('add_media',1)
                  ->first();

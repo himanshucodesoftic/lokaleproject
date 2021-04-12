@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 
-
 use Closure;
 use Session;
 use Config;
@@ -20,7 +19,7 @@ class language
      */
     public function handle($request, Closure $next)
     {
-        if(file_exists(storage_path('installed'))){
+      if(file_exists(storage_path('installed'))){
     		if(Session::has('locale')){
     			$locale = Session::get('locale', Config::get('app.locale'));
     		}else{
@@ -33,5 +32,4 @@ class language
       }
         return $next($request);
     }
-    }
-
+}

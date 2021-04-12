@@ -6,10 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Kyslik\ColumnSortable\Sortable;
 
-
 class Languages extends Model
 {
-   
+
     use Sortable;
 
     public function images(){
@@ -177,5 +176,6 @@ class Languages extends Model
          return $languages;
 
      }
+
 
 }

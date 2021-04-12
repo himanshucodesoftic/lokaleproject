@@ -1,7 +1,5 @@
 <?php
 
-
-
 namespace App\Http\Middleware\media;
 
 use Closure;
@@ -28,5 +26,5 @@ class view_media
         }else{
           return $next($request);
         }
-}
+    }
 }

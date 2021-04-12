@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Http\Controllers\AdminControllers;
 
 use App;
@@ -14,7 +13,7 @@ use App\Models\Core\Setting;
 
 class LanguageController extends Controller
 {
-  
+
     public function __construct(Languages $language, Images $images, Setting $setting)
     {
 
@@ -177,4 +176,5 @@ class LanguageController extends Controller
             'status' => 1,
         ]);
     }
+
 }

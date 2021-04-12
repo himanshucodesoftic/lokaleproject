@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models\Core;
 
 use Illuminate\Database\Eloquent\Model;
@@ -6,9 +7,10 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Kyslik\ColumnSortable\Sortable;
 use Image;
+
 class Images extends Model
 {
-      //
+    //
 use Sortable;
 public $sortable =['id','name'];
 
@@ -346,4 +348,6 @@ public $sortable =['id','name'];
 
         return $namethumbnail;
     }
+
+    
 }

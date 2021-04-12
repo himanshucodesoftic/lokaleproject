@@ -23,7 +23,7 @@ Route::post('/admin/languages/update', 'App\Http\Controllers\AdminControllers\La
 Route::post('admin/languages/delete', 'App\Http\Controllers\AdminControllers\LanguageController@delete')->middleware('delete_language');
 // Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\CurrencyController@display')->middleware('view_language');
 Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\CurrencyController@display')->middleware('view_general_setting');
- 
+   
   Route::get('/admin/vendors/requests', 'App\Http\Controllers\AdminControllers\VendorsController@requests')->middleware('view_customer');
        
   Route::get('admin/vendors/accept/{id}', 'App\Http\Controllers\AdminControllers\VendorsController@accept')->middleware('edit_customer');
@@ -32,7 +32,30 @@ Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\Cu
   Route::post('admin/vendors/add', 'App\Http\Controllers\AdminControllers\VendorsController@insert')->middleware('add_customer');
   Route::get('/admin/customers/display', 'App\Http\Controllers\AdminControllers\CustomersController@display')->middleware('view_customer');
   Route::get('/admin/reviews/display', 'App\Http\Controllers\AdminControllers\ProductController@reviews')->middleware('view_reviews');
-      
+  Route::get('admin/orderstatus', 'App\Http\Controllers\AdminControllers\SiteSettingController@orderstatus')->middleware('view_order');
+    
+  Route::get('admin/orders/display', 'App\Http\Controllers\AdminControllers\OrdersController@display')->middleware('view_order');
+       
+  Route::get('admin/countries/display', 'App\Http\Controllers\AdminControllers\CountriesController@index')->middleware('view_tax');
+  Route::get('/admin/zones/display', 'App\Http\Controllers\AdminControllers\ZonesController@index')->middleware('view_tax');
+  Route::get('/admin/tax/taxclass/display', 'App\Http\Controllers\AdminControllers\TaxController@taxindex')->middleware('view_tax');
+  Route::get('/admin/tax/taxrates/display', 'App\Http\Controllers\AdminControllers\TaxController@displaytaxrates')->middleware('view_tax');
+  Route::get('/admin/coupons/display', 'App\Http\Controllers\AdminControllers\CouponsController@display')->middleware('view_coupon');
+  Route::get('admin/shippingmethods/display', 'App\Http\Controllers\AdminControllers\ShippingMethodsController@display')->middleware('view_shipping');
+         
+  Route::get('/admin/paymentmethods/index', 'App\Http\Controllers\AdminControllers\PaymentMethodsController@index')->middleware('view_payment');
+  Route::get('/admin/newscategories/display', 'App\Http\Controllers\AdminControllers\NewsCategoriesController@display')->middleware('view_news');
+  Route::get('/admin/news/display', 'App\Http\Controllers\AdminControllers\NewsController@display')->middleware('view_news');
+  Route::get('admin/pushnotification', 'App\Http\Controllers\AdminControllers\SiteSettingController@pushNotification')->middleware('view_general_setting');
+  Route::get('/admin/devices/display', 'App\Http\Controllers\AdminControllers\NotificationController@devices')->middleware('view_notification');
+  Route::get('/admin/devices/notifications/', 'App\Http\Controllers\AdminControllers\NotificationController@notifications')->middleware('view_notification');
+  Route::get('admin/managements/backup', 'App\Http\Controllers\AdminControllers\ManagementsController@backup')->middleware('edit_management');
+  Route::get('/admin/managements/import', 'App\Http\Controllers\AdminControllers\ManagementsController@import')->middleware('edit_management');
+  Route::get('/admin/managements/updater', 'App\Http\Controllers\AdminControllers\ManagementsController@updater')->middleware('edit_management');
+  Route::get('/admin/admins', 'App\Http\Controllers\AdminControllers\AdminController@admins')->middleware('view_manage_admin');
+  Route::get('/admin/manageroles', 'App\Http\Controllers\AdminControllers\AdminController@manageroles')->middleware('manage_role');
+  Route::get('/admin/deliveryboys/display', 'App\Http\Controllers\AdminControllers\DeliveryBoysController@display')->middleware('view_deliveryboy');
+       
   /*
 |--------------------------------------------------------------------------
 | Web Routes

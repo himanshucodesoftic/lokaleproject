@@ -11,9 +11,11 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Lang;
 use Exception;
 use App\Models\Core\Images;
+
+
 class CurrencyController extends Controller
 {
-    public function __construct(Currency $currencies, Setting $setting)
+  public function __construct(Currency $currencies, Setting $setting)
   {
     $this->currencies = $currencies;
     $this->Setting = $setting;

@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\AdminControllers;
 
 use App\Models\Core\Vendors;
@@ -18,6 +17,7 @@ use Kyslik\ColumnSortable\Sortable;
 
 class VendorsController extends Controller
 {
+    //
     public function __construct(Vendors $vendors, Setting $setting)
     {
         $this->Vendors = $vendors;

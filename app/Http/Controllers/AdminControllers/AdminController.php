@@ -30,7 +30,6 @@ class AdminController extends Controller
     }
 
 	public function dashboard(Request $request){
-		
 		$title 			  = 	array('pageTitle' => Lang::get("labels.title_dashboard"));
 		$language_id      = 	'1';
 
@@ -199,7 +198,6 @@ class AdminController extends Controller
 			$products_ids[] =$vproduct->products_id;
 		}
   		$result['lowLimit'] = $lowLimit;
-	
   		$result['outOfStock'] = count($products_ids);
   		$result['totalProducts'] = count($products);
 		
@@ -208,7 +206,6 @@ class AdminController extends Controller
   		$result['customers'] = User::where('role_id','=',2)->get();//->chunk(21);
 		$result['totalCustomers'] = count(User::where('role_id','=',2)->get());
 		$result['reportBase'] = $reportBase; 
-	
 
 
 		$result['commonContent'] = $this->Setting->commonContent();

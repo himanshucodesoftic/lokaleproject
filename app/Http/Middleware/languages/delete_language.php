@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Http\Middleware\languages;
 
 use Closure;
@@ -18,7 +17,7 @@ class delete_language
      */
     public function handle($request, Closure $next)
     {
-        $check =  DB::table('manage_role')
+      $check =  DB::table('manage_role')
                  ->where('user_types_id',Auth()->user()->role_id)
                  ->where('language_delete',1)
                  ->first();

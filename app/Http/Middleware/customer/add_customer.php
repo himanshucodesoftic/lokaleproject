@@ -2,11 +2,9 @@
 
 namespace App\Http\Middleware\customer;
 
-
+use Closure;
 use DB;
 use Auth;
-use Closure;
-use Illuminate\Http\Request;
 
 class add_customer
 {
@@ -17,9 +15,9 @@ class add_customer
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
-        $check =  DB::table('manage_role')
+      $check =  DB::table('manage_role')
                  ->where('user_types_id',Auth()->user()->role_id)
                  ->where('customers_create',1)
                  ->first();
@@ -29,5 +27,4 @@ class add_customer
           return $next($request);
         }
     }
-    }
-
+}

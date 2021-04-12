@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Middleware\web_setting;
 
 use Closure;
@@ -14,9 +15,9 @@ class website_routes
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
-        $check =  DB::table('settings')
+      $check =  DB::table('settings')
                  ->where('name','is_web_purchased')
                  ->where('value',1)
                  ->first();

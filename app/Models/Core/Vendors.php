@@ -1,12 +1,9 @@
 <?php
 
-namespace App\Models\core;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+namespace App\Models\Core;
 
 use http\Env\Request;
-// use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use PhpParser\Node\Stmt\Return_;
@@ -16,8 +13,10 @@ use App\Models\Core\Setting;
 use Illuminate\Support\Facades\Lang;
 use App\Http\Controllers\AdminControllers\SiteSettingController;
 use App\Http\Controllers\AdminControllers\AlertController;
+
 class Vendors extends Model
 {
+    //
     use Sortable;
     protected $table = 'vendors';
     public function address_book(){

@@ -172,10 +172,10 @@
 	  @if($result['detail']['product_data'][0]->defaultStock <= 0)
 	  <button class="btn btn-lg swipe-to-top  btn-danger " type="button">@lang('website.Out of Stock')</button>
 	  @else
-	  <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button"   products_id="{{$result['detail']['product_data'][0]->products_id}}">Add to Cart</button>
+	  <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button"   products_id="{{$result['detail']['product_data'][0]->products_id}}" >Add to Cart</button>
 	  @endif
 	@else
-	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  >Add to Cart</button>
+	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  onclick="alert('{{$result['detail']['product_data'][0]->products_id}}')"  style="border:2px solid red;" >Add to Cart</button>
 	@endif
 
   @else
@@ -643,7 +643,7 @@
                           @if($result['detail']['product_data'][0]->defaultStock <= 0)
                           <button class="btn btn-lg swipe-to-top  btn-danger " type="button">@lang('website.Out of Stock')</button>
                           @else
-                          <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  style="border:2px solid red;">Add to Cart</button>
+                          <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  >Add to Cart</button>
                           @endif
                         @else
                         <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">Add to Cart</button>

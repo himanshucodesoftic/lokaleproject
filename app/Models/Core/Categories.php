@@ -1,14 +1,5 @@
 <?php
 
-namespace App\Models\core;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-
-
-
-
 namespace App\Models\Core;
 
 use Illuminate\Database\Eloquent\Model;
@@ -16,10 +7,9 @@ use Illuminate\Support\Facades\DB;
 use Kyslik\ColumnSortable\Sortable;
 use App\Http\Controllers\AdminControllers\SiteSettingController;
 
-
-
 class Categories extends Model
 {
+    //
     use Sortable;
     public function images(){
         return $this->belongsTo('App\Images');

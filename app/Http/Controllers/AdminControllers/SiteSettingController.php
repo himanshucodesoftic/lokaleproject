@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers\AdminControllers;
 
 use App\Http\Controllers\Controller;
@@ -11,7 +12,7 @@ use Illuminate\Support\Facades\Lang;
 
 class SiteSettingController extends Controller
 {
- 
+
     public function __construct()
     {
         $setting = new Setting();
@@ -634,4 +635,5 @@ class SiteSettingController extends Controller
 
         return view("admin.settings.general.loginsetting", $title)->with('result', $result);
     }
+
 }

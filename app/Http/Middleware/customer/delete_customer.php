@@ -3,7 +3,8 @@
 namespace App\Http\Middleware\customer;
 
 use Closure;
-use Illuminate\Http\Request;
+use Auth;
+use DB;
 
 class delete_customer
 {
@@ -14,16 +15,16 @@ class delete_customer
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle($request, Closure $next)
     {
-        $check =  DB::table('manage_role')
-        ->where('user_types_id',Auth()->user()->role_id)
-        ->where('customers_delete',1)
-        ->first();
-if($check == null){
- return  redirect('not_allowed');
-}else{
- return $next($request);
-}
+      $check =  DB::table('manage_role')
+                 ->where('user_types_id',Auth()->user()->role_id)
+                 ->where('customers_delete',1)
+                 ->first();
+        if($check == null){
+          return  redirect('not_allowed');
+        }else{
+          return $next($request);
+        }
     }
 }

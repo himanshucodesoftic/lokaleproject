@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers\AdminControllers;
 
 use App\Http\Controllers\AdminControllers\AlertController;
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Lang;
 
 class ProductController extends Controller
 {
-   
+
     public function __construct(Products $products, Languages $language, Images $images, Categories $category, Setting $setting,
         Manufacturers $manufacturer, Reviews $reviews) {
         $this->category = $category;
