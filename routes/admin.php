@@ -85,9 +85,9 @@ Route::group(['middleware' => ['installer']], function () {
         Route::post('/updatemediasetting', 'MediaController@updatemediasetting')->middleware('edit_media');
         Route::post('/uploadimage', 'MediaController@fileUpload')->middleware('add_media');
         Route::post('/delete', 'MediaController@deleteimage')->middleware('delete_media');
-        Route::get('/detail/{id}', 'MediaController@detailimage')->middleware('view_media');
+        // Route::get('/detail/{id}', 'MediaController@detailimage')->middleware('view_media');
         Route::get('/refresh', 'MediaController@refresh');
-        Route::post('/regenerateimage', 'MediaController@regenerateimage')->middleware('add_media');
+        // Route::post('/regenerateimage', 'MediaController@regenerateimage')->middleware('add_media');
     });
 
     Route::group(['prefix' => 'admin/theme', 'middleware' => 'auth', 'namespace' => 'AdminControllers'], function () {

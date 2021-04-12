@@ -56,7 +56,8 @@ Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\Cu
   Route::get('/admin/manageroles', 'App\Http\Controllers\AdminControllers\AdminController@manageroles')->middleware('manage_role');
   Route::get('/admin/deliveryboys/display', 'App\Http\Controllers\AdminControllers\DeliveryBoysController@display')->middleware('view_deliveryboy');
   Route::get('/admin/customers/edit/{id}', 'App\Http\Controllers\AdminControllers\CustomersController@edit')->middleware('edit_customer');
-
+  Route::get('/admin/media/detail/{id}', 'App\Http\Controllers\AdminControllers\MediaController@detailimage')->middleware('view_media');
+  Route::post('/admin/media/regenerateimage', 'App\Http\Controllers\AdminControllers\MediaController@regenerateimage');
   /*
 |--------------------------------------------------------------------------
 | Web Routes
