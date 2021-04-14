@@ -330,3 +330,18 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 
 	//admin
 	
+	Route::view('/index','index');
+	Route::view('/about','about');
+	Route::view('/termscondition','termscondition');
+
+	Route::view('/here','here');
+	
+	Route::view('/404','404');
+
+
+	Route::get('locale/{locale}',function($locale)
+	{
+Session::put('locale',$locale);
+return redirect()->back();
+
+	});

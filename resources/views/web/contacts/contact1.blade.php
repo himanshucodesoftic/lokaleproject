@@ -12,13 +12,14 @@
 		<div class="container container-fluid-custom-mobile-padding">
 			<div class="tt-contact02-col-list">
 				<div class="row">
-					<div class="col-sm-12 col-md-4 ml-sm-auto mr-sm-auto">
-						<div class="tt-contact-info">
+					<div class="col-sm-12 col-md-4 ml-sm-auto mr-sm-auto" >
+						<div class="tt-contact-info" >
 							<i class="tt-icon icon-f-93"></i>
 							<h6 class="tt-title">Help Center</h6>
-							<address>
+							<address >
+							<p  style="text-decoration:none;">
 							+96555456559 - contact@lokalkw.com
-							<br>
+							</p><br>
 							MON to FRI 9am-6pm SAT 9am-2pm
 							</address>
 						</div>
