@@ -58,6 +58,88 @@ Route::get('admin/currencies/display', 'App\Http\Controllers\AdminControllers\Cu
   Route::get('/admin/customers/edit/{id}', 'App\Http\Controllers\AdminControllers\CustomersController@edit')->middleware('edit_customer');
   Route::get('/admin/media/detail/{id}', 'App\Http\Controllers\AdminControllers\MediaController@detailimage')->middleware('view_media');
   Route::post('/admin/media/regenerateimage', 'App\Http\Controllers\AdminControllers\MediaController@regenerateimage');
+ //14/04/2021 
+  Route::get('admin/editorderstatus/{id}', 'App\Http\Controllers\AdminControllers\SiteSettingController@editorderstatus')->middleware('edit_product');
+  Route::post('/admin/orders/updateOrderStatus', 'App\Http\Controllers\AdminControllers\SiteSettingController@updateOrderStatus')->middleware('edit_order');
+  Route::get('/admin/orders/vieworder/{id}', 'App\Http\Controllers\AdminControllers\OrdersController@vieworder')->middleware('view_order');
+  Route::get('admin/orders/invoiceprint/{id}', 'App\Http\Controllers\AdminControllers\OrdersController@invoiceprint')->middleware('view_order');
+  Route::post('/admin/orders/updateOrder', 'App\Http\Controllers\AdminControllers\OrdersController@updateOrder')->middleware('edit_order');
+  Route::post('/admin/orders/deleteOrder', 'App\Http\Controllers\AdminControllers\OrdersController@deleteOrder')->middleware('edit_order');
+  Route::get('/admin/customers-orders-report', 'App\Http\Controllers\AdminControllers\ReportsController@statsCustomers')->middleware('report');
+  Route::get('/admin/customer-orders-print', 'App\Http\Controllers\AdminControllers\ReportsController@customerOrdersPrint')->middleware('report');
+  Route::get('admin/salesreport', 'App\Http\Controllers\AdminControllers\ReportsController@salesreport')->middleware('report');
+       
+  Route::get('admin/couponreport', 'App\Http\Controllers\AdminControllers\ReportsController@couponReport')->middleware('report');
+  Route::get('admin/couponreport-print', 'App\Http\Controllers\AdminControllers\ReportsController@couponReportPrint')->middleware('report');
+  Route::get('/admin/countries/edit/{id}', 'App\Http\Controllers\AdminControllers\CountriesController@edit')->middleware('edit_tax');
+  Route::post('/admin/countries/update', 'App\Http\Controllers\AdminControllers\CountriesController@update')->middleware('edit_tax');
+  Route::post('/admin/countries/delete', 'App\Http\Controllers\AdminControllers\CountriesController@delete')->middleware('delete_tax');
+  Route::get('/admin/zones/add', 'App\Http\Controllers\AdminControllers\ZonesController@add')->middleware('add_tax');
+  Route::post('/admin/zones/add', 'App\Http\Controllers\AdminControllers\ZonesController@insert')->middleware('add_tax');
+  Route::get('/admin/tax/taxclass/filter', 'App\Http\Controllers\AdminControllers\TaxController@filtertaxclass')->middleware('view_tax');
+  Route::get('/admin/tax/taxclass/add', 'App\Http\Controllers\AdminControllers\TaxController@addtaxclass')->middleware('add_tax');
+  Route::post('/admin/tax/taxclass/add', 'App\Http\Controllers\AdminControllers\TaxController@inserttaxclass')->middleware('add_tax'); 
+  Route::get('/admin/tax/taxrates/filter', 'App\Http\Controllers\AdminControllers\TaxController@filtertaxrates')->middleware('view_tax');
+  Route::get('/admin/tax/taxrates/add', 'App\Http\Controllers\AdminControllers\TaxController@addtaxrate')->middleware('add_tax');
+  Route::post('/admin/tax/taxrates/add', 'App\Http\Controllers\AdminControllers\TaxController@inserttaxrate')->middleware('add_tax');
+  Route::get('/admin/zones/edit/{id}', 'App\Http\Controllers\AdminControllers\ZonesController@edit')->middleware('edit_tax');
+  Route::post('/admin/zones/update', 'App\Http\Controllers\AdminControllers\ZonesController@update')->middleware('edit_tax');    
+  Route::post('/admin/zones/delete', 'App\Http\Controllers\AdminControllers\ZonesController@delete')->middleware('delete_tax');
+  Route::get('/admin/tax/taxclass/edit/{id}', 'App\Http\Controllers\AdminControllers\TaxController@edittaxclass')->middleware('edit_tax');
+  Route::post('/admin/tax/taxclass/update', 'App\Http\Controllers\AdminControllers\TaxController@updatetaxclass')->middleware('edit_tax');
+  Route::get('/admin/tax/taxrates/edit/{id}', 'App\Http\Controllers\AdminControllers\TaxController@edittaxrate')->middleware('edit_tax');
+  Route::post('/admin/tax/taxrates/update', 'App\Http\Controllers\AdminControllers\TaxController@updatetaxrate')->middleware('edit_tax');
+  Route::post('/admin/tax/taxclass/delete', 'App\Http\Controllers\AdminControllers\TaxController@deletetaxclass')->middleware('delete_tax'); 
+  Route::post('/admin/tax/taxrates/delete', 'App\Http\Controllers\AdminControllers\TaxController@deletetaxrate')->middleware('delete_tax'); 
+  Route::get('/admin/coupons/edit/{id}', 'App\Http\Controllers\AdminControllers\CouponsController@edit')->middleware('edit_coupon');
+  Route::post('/admin/coupons/update', 'App\Http\Controllers\AdminControllers\CouponsController@update')->middleware('edit_coupon');
+  Route::post('/admin/coupons/delete', 'App\Http\Controllers\AdminControllers\CouponsController@delete')->middleware('delete_coupon');
+  Route::get('/admin/shippingmethods/detail/{table_name}', 'App\Http\Controllers\AdminControllers\ShippingMethodsController@detail')->middleware('edit_shipping');
+  Route::post('/admin/shippingmethods/update', 'App\Http\Controllers\AdminControllers\ShippingMethodsController@update')->middleware('edit_shipping');
+  Route::get('/admin/paymentmethods/display/{id}', 'App\Http\Controllers\AdminControllers\PaymentMethodsController@display')->middleware('view_payment');
+  Route::post('/admin/paymentmethods/update', 'App\Http\Controllers\AdminControllers\PaymentMethodsController@update')->middleware('edit_payment');
+  Route::get('/admin/newscategories/add', 'App\Http\Controllers\AdminControllers\NewsCategoriesController@add')->middleware('add_news');
+  Route::post('/admin/newscategories/add', 'App\Http\Controllers\AdminControllers\NewsCategoriesController@insert')->middleware('add_news');
+  Route::get('/admin/news/edit/{id}', 'App\Http\Controllers\AdminControllers\NewsController@edit')->middleware('edit_news');
+  Route::post('admin/news/update', 'App\Http\Controllers\AdminControllers\NewsController@update')->middleware('edit_news');
+  Route::post('admin/news/delete', 'App\Http\Controllers\AdminControllers\NewsController@delete')->middleware('delete_news');
+  Route::get('/admin/news/add', 'App\Http\Controllers\AdminControllers\NewsController@add')->middleware('add_news');
+  Route::post('/admin/news/add', 'App\Http\Controllers\AdminControllers\NewsController@insert')->middleware('add_news');
+  Route::post('/admin/updateSetting', 'App\Http\Controllers\AdminControllers\SiteSettingController@updateSetting')->middleware('edit_general_setting');
+  Route::get('/admin/setting', 'App\Http\Controllers\AdminControllers\SiteSettingController@setting')->middleware('edit_general_setting');
+  Route::get('/admin/facebooksettings', 'App\Http\Controllers\AdminControllers\SiteSettingController@facebookSettings')->middleware('view_general_setting');
+  Route::get('admin/googlesettings', 'App\Http\Controllers\AdminControllers\SiteSettingController@googleSettings')->middleware('view_general_setting');
+  Route::get('admin/alertsetting', 'App\Http\Controllers\AdminControllers\SiteSettingController@alertSetting')->middleware('view_general_setting');
+  Route::post('admin/updateAlertSetting', 'App\Http\Controllers\AdminControllers\SiteSettingController@updateAlertSetting');
+  Route::get('admin/firebase', 'App\Http\Controllers\AdminControllers\SiteSettingController@firebase')->middleware('view_general_setting');
+  Route::get('admin/webPagesSettings/{id}', 'App\Http\Controllers\AdminControllers\ThemeController@index2');
+  Route::post('admin/theme/setting/setPages', 'App\Http\Controllers\AdminControllers\ThemeController@setPages');
+  Route::get('admin/topoffer/display', 'App\Http\Controllers\AdminControllers\ThemeController@topoffer');
+  Route::post('admin/topoffer/update', 'App\Http\Controllers\AdminControllers\ThemeController@updateTopOffer');
+  Route::get('admin/sliders', 'App\Http\Controllers\AdminControllers\AdminSlidersController@sliders')->middleware('website_routes');
+  Route::get('admin/editslide/{id}', 'App\Http\Controllers\AdminControllers\AdminSlidersController@editslide')->middleware('website_routes');
+  Route::post('admin/deleteSlider/', 'App\Http\Controllers\AdminControllers\AdminSlidersController@deleteSlider')->middleware('website_routes');
+  Route::get('admin/homebanners', 'App\Http\Controllers\AdminControllers\HomeBannersController@display')->middleware('view_web_setting', 'website_routes');
+  Route::post('admin/homebanners/insert', 'App\Http\Controllers\AdminControllers\HomeBannersController@insert')->middleware('view_web_setting', 'website_routes');
+  Route::get('admin/constantbanners', 'App\Http\Controllers\AdminControllers\AdminConstantController@constantBanners')->middleware('website_routes');
+      
+  Route::get('admin/menus', 'App\Http\Controllers\AdminControllers\MenusController@menus')->middleware('view_web_setting', 'website_routes');
+  Route::get('admin/editmenu/{id}', 'App\Http\Controllers\AdminControllers\MenusController@editmenu')->middleware('edit_web_setting', 'website_routes');
+  Route::post('admin/updatemenu', 'App\Http\Controllers\AdminControllers\MenusController@updatemenu')->middleware('edit_web_setting', 'website_routes');
+  Route::post('admin/deletemenu', 'App\Http\Controllers\AdminControllers\MenusController@deletemenu')->middleware('edit_web_setting', 'website_routes');
+  Route::get('admin/webpages', 'App\Http\Controllers\AdminControllers\PagesController@webpages')->middleware('view_web_setting', 'website_routes');
+  Route::get('admin/editwebpage/{id}', 'App\Http\Controllers\AdminControllers\PagesController@editwebpage')->middleware('edit_web_setting', 'website_routes');
+  Route::post('admin/updatewebpage', 'App\Http\Controllers\AdminControllers\PagesController@updatewebpage')->middleware('edit_web_setting', 'website_routes');
+  Route::get('admin/seo', 'App\Http\Controllers\AdminControllers\SiteSettingController@seo')->middleware('view_web_setting', 'website_routes');
+  Route::get('admin/customstyle', 'App\Http\Controllers\AdminControllers\SiteSettingController@customstyle')->middleware('view_web_setting', 'website_routes');
+  Route::get('admin/newsletter', 'App\Http\Controllers\AdminControllers\SiteSettingController@newsletter')->middleware('view_web_setting', 'website_routes');
+  Route::get('admin/instafeed', 'App\Http\Controllers\AdminControllers\SiteSettingController@instafeed')->middleware('view_web_setting', 'website_routes');
+  Route::get('admin/websettings', 'App\Http\Controllers\AdminControllers\SiteSettingController@webSettings')->middleware('view_web_setting', 'website_routes');
+  Route::get('admin/banners', 'App\Http\Controllers\AdminControllers\BannersController@banners')->middleware('view_app_setting');
+  Route::get('admin/banners/edit/{id}', 'App\Http\Controllers\AdminControllers\BannersController@editbanner')->middleware('edit_app_setting');
+  Route::post('admin/banners/update', 'App\Http\Controllers\AdminControllers\BannersController@updateBanner')->middleware('edit_app_setting');
+  Route::post('/admin/banners/delete', 'BannersController@deleteBanner')->middleware('edit_app_setting');
+     
   /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -243,6 +325,7 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 
 	Route::view('/header', 'web.headers.header');
 
+	Route::get('brand', 'App\Http\Controllers\BrandController@showbrands');
 
 
 	//admin

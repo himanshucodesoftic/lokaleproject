@@ -1,10 +1,23 @@
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <!-- Shop Page One content -->
   <div class="container-fuild">
     <nav aria-label="breadcrumb">
       <div class="container">
         <ol class="breadcrumb">
           @if(!empty($result['category_name']) and !empty($result['sub_category_name']))
-          <li class="breadcrumb-item"><a href="{{ URL::to('/')}}">@lang('website.Home')</a></li>
+          <li class="breadcrumb-item"><a href="{{ URL::to('/')}}" style="text-decoration:none;color:black">Home</a></li>
           <li class="breadcrumb-item"><a href="{{ URL::to('/shop')}}">@lang('website.Shop')</a></li>
           <li class="breadcrumb-item"><a
               href="{{ URL::to('/shop?category='.$result['category_slug'])}}">{{$result['category_name']}}</a></li>
@@ -12,8 +25,8 @@
           @elseif(!empty($result['category_name']) and empty($result['sub_category_name']))
           <li class="breadcrumb-item active">{{$result['category_name']}}</li>
           @else
-          <li class="breadcrumb-item"><a href="{{ URL::to('/')}}">@lang('website.Home')</a></li>
-          <li class="breadcrumb-item active">@lang('website.Shop')</li>
+          <li class="breadcrumb-item"><a href="{{ URL::to('/')}}" style="text-decoration:none;color:black">Home</a></li>
+          <li class="breadcrumb-item active">Shop</li>
           @endif
         </ol>
       </div>
@@ -27,7 +40,7 @@
   <section class="pro-content" style="padding-bottom: 50px;">
     <div class="container">
       <div class="page-heading-title">
-        <h2> @lang('website.Shop')
+        <h2> Shop
         </h2>
 
       </div>
@@ -41,7 +54,7 @@
             <div class="filter_col">
             <div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
 
-            <div class="right-menu-categories">
+            <div class="right-menu-categories" style="2px solid red;">
               @include('web.common.shopCategories')
               @php shopCategories(); @endphp
             </div>
@@ -68,7 +81,7 @@
               @endif              
 
               <div class="filter_type version_2" style="border: 1px solid #ededed; margin: 20px 0px 15px 0px; padding: 0 15px;">
-								<h4><a style="padding: 13px 6px 6px; margin: 0px 0px 0 0px;">@lang('website.Price')</a></h4>
+								<h4><a style="padding: 13px 6px 6px; margin: 0px 0px 0 0px;">Price</a></h4>
 								<div id="filter_4">
 									<ul>
 										<li>
@@ -194,15 +207,15 @@
             @if(!empty($result['commonContent']['manufacturers']) and count($result['commonContent']['manufacturers'])>0)
             <div class="range-slider-main" style='margin-bottom: 30px;'>
               <a class=" main-manu" data-toggle="collapse" href="#brands" role="button" aria-expanded="false"
-                aria-controls="men-cloth">
-                @lang('website.Brands')
+                aria-controls="men-cloth" style="color:black;text-decoration:none;">
+                Brands
               </a>
               
               <div id="brands" style="margin-top: 13px;">
                 <ul class="unorder-list">
                   @foreach($result['commonContent']['manufacturers'] as $item)
-                  <li class="list-item">
-                    <a class="brands-btn list-item" href="{{ URL::to('/shop?brand='.$item->manufacturer_name)}}"
+                  <li class="list-item" >
+                    <a class="brands-btn list-item" style="text-decoration:none;color:black"href="{{ URL::to('/shop?brand='.$item->manufacturer_name)}}"
                       role="button">{{$item->manufacturer_name}}</a>
                   </li>
                   @endforeach
@@ -213,24 +226,24 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-9">
+          <div class="col-12 col-lg-9" >
             <!-- /top_banner -->
             @if($result['products']['success']==1)
-            <form id="load_products_form">
+            <form id="load_products_form" >
               
             <div id="stick_here"></div>
 						<div class="toolbox elemento_stick add_bottom_30">
 							<div class="container">
 								<ul class="clearfix">
-									<li>
+									<!-- <li> -->
                     <div class="form-inline justify-content-end"><!-- form -->
                       <div class="form-group">
-                        <label>@lang('website.Sort')</label>
+                        <label>Sort</label>
                         <div class="select-control">
                           <select name="type" id="sortbytype" class="form-control"
                           style="padding: 0 5px; border: none; width: 62px; height: 23px; background: transparent; font-size: 13px;">
                             <option value="desc" @if(app('request')->input('type')=='desc') selected
-                              @endif>@lang('website.Newest')</option>
+                              @endif>Newest</option>
                             <option value="atoz" @if(app('request')->input('type')=='atoz') selected
                               @endif>@lang('website.A - Z')</option>
                             <option value="ztoa" @if(app('request')->input('type')=='ztoa') selected
@@ -251,7 +264,7 @@
                       &nbsp;&nbsp;
 
                       <div class="form-group">
-                        <label>@lang('website.Limit')</label>
+                        <label>Limit</label>
                         <div class="select-control">
                           <select class="form-control" name="limit" id="sortbylimit"
                           style="padding: 0 5px; border: none; width: 35px; height: 23px; background: transparent;font-size: 13px;">
@@ -265,18 +278,18 @@
                         </div>
                       </div>
                     </div>
-									</li>
+									<!-- </li> -->
 
-									<li>
+									<!-- <li> -->
 										<a href="javascript:void(0);" id="grid"><i class="ti-view-grid"></i></a>
 										<a href="javascript:void(0);" id="list"><i class="ti-view-list"></i></a>
-									</li>
+									<!-- </li> -->
 
-									<li>
+									<!-- <li> -->
 										<a href="#0" class="open_filters">
-											<i class="ti-filter"></i><span>Filters</span>
+											<i class="ti-filter" ></i><span  >Filters</span>
 										</a>
-									</li>
+									<!-- </li> -->
 								</ul>
 							</div>
 						</div>
@@ -290,8 +303,8 @@
                       </div>
 
                       <div class="col-12 col-lg-6">
-                        <div><!-- form -->
-                          <input type="hidden" name="min_price" value="0">
+                        <div><!--   form -->
+                          <input ty pe="hidden" name="min_price" value="0">
                           <input type="hidden" name="max_price" value="{{$result['filters']['maxPrice']}}">
                           @if(isset($_GET['price']))
                           <input type="hidden" name="price" value="{{ $_GET['price'] }}">
@@ -375,7 +388,23 @@
             </div>
             @endif
             @else
-            <h3>@lang('website.No Record Found!')</h3>
+            <div class="tt-breadcrumb">
+	<div class="container">
+		<ul>
+			<li><a href="{{url('/')}}">Home</a></li>
+			<li>Your Search Returns No Results</li>
+		</ul>
+	</div>
+</div>
+<div id="tt-pageContent">
+	<div class="container-indent nomargin">
+		<div class="tt-empty-search">
+			<span class="tt-icon icon-f-85"></span>
+			<h1 class="tt-title">YOUR SEARCH RETURNS NO RESULTS.</h1>
+			<p>Search results for <span class="tt-base-dark-color">'dddddd'</span></p>
+		</div>
+	</div>
+</div>
             @endif
             </form>
 

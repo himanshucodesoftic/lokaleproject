@@ -1,4 +1,4 @@
-<footer id="tt-footer">
+<footer id="tt-footer" >
 	<div class="tt-footer-default" style="background-color:#2b5a80">
 		<div class="container">
 			<div class="row">
@@ -42,16 +42,16 @@
 						Information
 						</h4>
 						<div class="tt-collapse-content">
-							<ul class="tt-list">
+							<ul class="tt-list"  >
 
 
 							@if(count($result['commonContent']['pages']))
             @foreach($result['commonContent']['pages'] as $page)
-            <li><a href="{{ URL::to('/page?name='.$page->slug)}}">{{$page->name}}</a></li>
+            <li ><a href="{{ URL::to('/page?name='.$page->slug)}}" style="text-decoration:none;color:black!important">{{$page->name}}</a></li>
             @endforeach
             @endif
-			<li><a href="{{ URL::to('/login')}}">My Account</a></li>
-            <li><a href="{{ URL::to('/contact')}}">Contact Us</a></li>
+			<li><a href="{{ URL::to('/login')}} " style="text-decoration:none;color:black!important">My Account</a></li>
+            <li><a href="{{ URL::to('/contact')}}"style="text-decoration:none;color:black!important">Contact Us</a></li>
         
 
 
@@ -70,15 +70,15 @@
 						<h4 class="tt-collapse-title">
 							CATEGORIES
 						</h4>
-						<div class="tt-collapse-content">
+						<div class="tt-collapse-content" >
 							<ul class="tt-list">
 
 							
-								<li><a href="listing-collection.html"> New in Lokal</a></li>
-								<li><a href="listing-collection.html">Apparel</a></li>
-								<li><a href="listing-collection.html">Accessories</a></li>
-								<li><a href="listing-collection.html">Face + body</a></li>
-								<li><a href="listing-collection.html">Brands</a></li>
+								<li><a href="listing-collection.html"  style="text-decoration:none;color:black!important"> New in Lokal</a></li>
+								<li><a href="listing-collection.html"  style="text-decoration:none;color:black!important">Apparel</a></li>
+								<li><a href="listing-collection.html" style="text-decoration:none;color:black!important">Accessories</a></li>
+								<li><a href="listing-collection.html" style="text-decoration:none;color:black!important">Face + body</a></li>
+								<li><a href="listing-collection.html" style="text-decoration:none;color:black!important">Brands</a></li>
 								<!-- <li><a href="listing-collection.html">Clearence</a></li> -->
 							</ul>
 						</div>
@@ -92,9 +92,9 @@
 						</h4>
 						<div class="tt-collapse-content">
 						
-						<ul class="tt-list">
-								<li><a href="listing-collection.html"><i class="fas fa-headphones-alt">{{$result['commonContent']['setting'][11]->value}}</i></a></li>
-								<li><a href="mailto:{{$result['commonContent']['setting'][3]->value}}">{{$result['commonContent']['setting'][3]->value}}</a></li>
+						<ul class="tt-list" style="font-family:var(--bs-font-sans-serif)!important;">
+								<li><a href="listing-collection.html"  style="text-decoration:none;color:black!important"><i class="fas fa-headphones-alt">{{$result['commonContent']['setting'][11]->value}}</i></a></li>
+								<li><a href="mailto:{{$result['commonContent']['setting'][3]->value}}"  style="text-decoration:none;color:black!important">{{$result['commonContent']['setting'][3]->value}}</a></li>
 						
 							</ul>
 						</div>
@@ -106,7 +106,7 @@
 							<h4 class="tt-collapse-title">
 								Follow us
 							</h4>
-							<li><a class="icon-g-67" target="_blank" href="https://www.instagram.com/lokal_kw/"></a></li>
+							<a class="icon-g-67" style="text-decoration:none;color:black!important"  target="_blank" href="https://www.instagram.com/lokal_kw/"></a>
 							<div class="tt-collapse-content">
 								<address>
 
@@ -121,18 +121,18 @@
 	</div>
 	<div class="tt-footer-custom">
 		<div class="container">
-			<div class="tt-row">
+			<div class="tt-row justify-content-center">
 				<div class="tt-col-left">
 					<div class="tt-col-item tt-logo-col">
 						<!-- logo -->
-						<a class="tt-logo tt-logo-alignment" href="index.html">
+						<a class="tt-logo tt-logo-alignment" href="/">
 							<span class="tt-title">Lokal</span>
 						</a>
 						<!-- /logo -->
 					</div>
 					<div class="tt-col-item">
 						<!-- copyright -->
-						<div class="tt-box-copyright">
+						<div class="tt-box-copyright" >
 							&copy; Lokal. All Rights Reserved
 						</div>
 						<!-- /copyright -->
@@ -142,23 +142,7 @@
 					<div class="tt-col-item">
 						<!-- payment-list -->
 						<ul class="tt-payment-list">
-							<!-- <li><a href="page404.html"><span class="icon-Stripe"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span>
-			                </span></a></li>
-							<li><a href="page404.html"> <span class="icon-paypal-2">
-			                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
-			                </span></a></li>
-							<li><a href="page404.html"><span class="icon-visa">
-			                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
-			                </span></a></li>
-							<li><a href="page404.html"><span class="icon-mastercard">
-			                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span>
-			                </span></a></li>
-							<li><a href="page404.html"><span class="icon-discover">
-			                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span>
-			                </span></a></li>
-							<li><a href="page404.html"><span class="icon-american-express">
-			                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
-			                </span></a></li> -->
+							
 						</ul>
 						<!-- /payment-list -->
 					</div>

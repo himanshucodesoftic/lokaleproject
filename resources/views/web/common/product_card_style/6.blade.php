@@ -1,5 +1,5 @@
 
-<div class="product product6">
+<div class="product product6" >
   <article>
     <div class="thumb">
       <div class="badges">

@@ -1,5 +1,5 @@
 
-						<div class="tt-image-box">
+						<div class="tt-image-box"  >
             <?php
         $currency = \App\Models\Core\Currency::where('id',session('currency_id'))->pluck('decimal_places');
         $decimal_places = count($currency) > 0 ? $currency[0] : 2;
@@ -43,8 +43,8 @@
 
 							<a  products_id="<?= $products->products_id ?>"  class="tt-btn-wishlist"  title="@lang('website.Wishlist')"></a>
 							<a  products_id="{{$products->products_id}}" class="tt-btn-compare"></a>
-							<a href="product.html">
-								<span class="tt-img"><img src="{{asset('').$products->image_path}}" alt="{{$products->products_name}}"></span>
+							<a " href="{{ URL::to('/product-detail/'.$products->products_slug)}}">
+								<span class="tt-img"><img  src="{{asset('').$products->image_path}}"  alt="{{$products->products_name}}"></span>
 								<span class="tt-img-roll-over"><img src="{{asset('').$products->image_path}}" alt="{{$products->products_name}}"></span>
 								<span class="tt-label-location">
 									<span class="tt-label-new">New</span>
@@ -54,7 +54,9 @@
 						<div class="tt-description">
 							<div class="tt-row">
 								<ul class="tt-add-info">
-									<li><a href="#">T-SHIRTS</a></li>
+									<li>
+									<!-- <a href="#">T-SHIRTS</a> -->
+									</li>
 								</ul>
 								<div class="tt-rating">
 									<i class="icon-star"></i>
@@ -64,7 +66,7 @@
 									<i class="icon-star-empty"></i>
 								</div>
 							</div>
-							<h2 class="tt-title"><a href="{{ URL::to('/product-detail/'.$products->products_slug)}}">{{$products->products_name}}</a></h2>
+							<h2 class="tt-title"><a href="{{ URL::to('/product-detail/'.$products->products_slug)}}" style="text-decoration:none;">{{$products->products_name}}</a></h2>
               <p><?php
 
 $cat_name = '';
@@ -85,7 +87,7 @@ echo $cat_name;
 							</div>
 							<div class="tt-product-inside-hover">
 								<div class="tt-row-btn">
-                <a class="btn  btn-secondary swipe-to-top tt-btn-addtocart thumbprod-button-bg" href="{{ URL::to('/product-detail/'.$products->products_slug)}}" data-toggle="tooltip" data-placement="bottom" title="@lang('website.View Detail')">@lang('website.View Detail')</a>
+                <a class="btn  btn-secondary swipe-to-top tt-btn-addtocart thumbprod-button-bg" href="{{ URL::to('/product-detail/'.$products->products_slug)}}" data-toggle="tooltip" data-placement="bottom" title="@lang('website.View Detail')" style="background-color:#2b5a80">View Detail</a>
 									<!-- <a href="{{ URL::to('/product-detail/'.$products->products_slug)}}"  class="tt-btn-addtocart thumbprod-button-bg" data-toggle="modal" data-target="#modalAddToCartProduct">View  Detail</a> -->
 								</div>
 								<div class="tt-row-btn">

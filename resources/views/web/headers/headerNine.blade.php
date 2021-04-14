@@ -1,41 +1,33 @@
-<header id="tt-header" class="embed-mobilemenu" >
-	<div class="tt-mobile-border">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<header id="tt-header" class="embed-mobilemenu"  >
+	<div class="tt-mobile-border " >
 		<div class="container">
 			<div class="tt-header-row tt-top-row">
 				<div class="tt-col-left">
 					<div class="tt-box-info">
 						<ul>
 							<li><i class="icon-f-93"></i><a href="tel:+56647749930">{{$result['commonContent']['setting'][11]->value}}</a>; </li>
-							<!-- <li><i class="icon-f-92"></i>All week from 9 am to 9 pm </li> -->
 						</ul>
 					</div>
 				</div>
 				<div class="tt-col-right ml-auto">
 					<ul class="tt-social-icon">
-						<!-- <li><a class="icon-g-64" target="_blank" href="http://www.facebook.com/"></a></li> -->
-						<!-- <li><a class="icon-h-58" target="_blank" href="http://www.twitter.com/"></a></li> -->
-						<!-- <li><a class="icon-g-66" target="_blank" href="http://www.google.com/"></a></li> -->
 						<li><a class="icon-g-67" target="_blank"  href="https://www.instagram.com/lokal_kw/"></a></li>
-						<!-- <li><a class="icon-g-70" target="_blank" href="#"></a></li> -->
-					</ul>
+						</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- tt-mobile menu -->
-	<nav class="panel-menu mobile-main-menu" >
-	
-	<ul>
-		
 
-	<ul>
+	<nav class="panel-menu mobile-main-menu" >
+
 
 		<div class="mm-navbtn-names">
 			<div class="mm-closebtn">Close</div>
 			<div class="mm-backbtn">Back</div>
 		</div>
 	</nav>
-	<!-- tt-mobile-header -->
+
 	<div class="tt-mobile-header"  style="background-color:#2b5a80">
 		<div class="container-fluid">
 			<div class="tt-header-row">
@@ -44,39 +36,36 @@
 						<i class="icon-h-26"></i>
 					</div>
 				</div>
-				<!-- mobile logo -->
+		
 				<div class="tt-logo-container">
 					<a class="tt-logo tt-logo-alignment" href="{url('/')}}"><img src="{{asset('images/logo.png')}}" alt="">    </a>  
 					
    
 				</div>
-				<!-- /mobile logo -->
-				<!-- search -->
+		
 				<div class="tt-mobile-parent-search tt-parent-box"></div>
-				<!-- /search -->
-				<!-- cart -->
+		
 				<div class="tt-mobile-parent-cart tt-parent-box"></div>
-				<!-- /cart -->
-				<!-- account -->
+			
 				<div class="tt-mobile-parent-account tt-parent-box"></div>
-				<!-- /account -->
-				<!-- currency -->
+			
 				<div class="tt-mobile-parent-multi tt-parent-box"></div>
-				<!-- /currency -->
+			
 			</div>
 		</div>
 	</div>
-	<!-- tt-desktop-header -->
+
 	<div class="tt-desktop-header" style="background-color:#2b5a80">
 		<div class="container">
 			<div class="tt-header-holder">
 				<div class="tt-col-obj tt-obj-logo">
-					<!-- logo -->
+
 					<a class="tt-logo tt-logo-alignment" href="{{url('/')}}"><img src="{{asset('images/logo.png')}}" style="height:170px !important;border:2px sold red;" alt=""></a>
         
-					<!-- /logo -->
+		
           
 				</div>
+
         
 
 
@@ -109,16 +98,14 @@
 
 						</div>
 					</div>
-					<!-- /tt-menu -->
+		
 				</div>
 
 			
 <div class="tt-col-obj tt-obj-options obj-move-right">
-<!-- 
-	<div class="tt-desctop-parent-account tt-arent-box"> -->
+
+	<a class="fa fa-heart" target="_blank"   href="{{url('wishlist')}}" style="color:black;padding:10px;text-decoration:none;">  <span class="tt-badge-cart" style="color:white;">{{$result['commonContent']['total_wishlist']}}</span></a>		
 	
-	<a class="fa fa-heart" target="_blank"   href="{{url('wishlist')}}" style="color:black;padding:10px;">  <span class="tt-badge-cart" style="color:white;">{{$result['commonContent']['total_wishlist']}}</span></a>		
-					<!-- </div> -->
 
 </div>
 
@@ -152,8 +139,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- /tt-search -->
-					<!-- tt-cart -->
+
 					<div class="tt-desctop-parent-cart tt-parent-box">
 					@include('web.headers.cartButtons.cartButton9')
 					</div>
@@ -162,11 +148,6 @@
 
 
 
-
-
-					
-					<!-- /tt-cart -->
-					<!-- tt-account -->
 					<div class="tt-desctop-parent-account tt-parent-box">
 						<div class="tt-account tt-dropdown-obj">
 							<button class="tt-dropdown-toggle"  data-tooltip="My Account" data-tposition="bottom"><i class="icon-f-94"></i></button>
@@ -227,9 +208,6 @@
 
 
 
-					
-					<!-- /tt-account -->
-					<!-- tt-langue and tt-currency -->
 					<div class="tt-desctop-parent-multi tt-parent-box">
 						<div class="tt-multi-obj tt-dropdown-obj">
 							<button class="tt-dropdown-toggle" data-tooltip="Settings" data-tposition="bottom"><i class="icon-f-79"></i></button>
@@ -283,27 +261,17 @@
 
 
 					
-					<!-- /tt-langue and tt-currency -->
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- stuck nav -->
-	<!-- <div class="tt-stuck-nav" id="js-tt-stuck-nav">
-		<div class="container">
-			<div class="tt-header-row ">
-				<div class="tt-stuck-parent-menu"></div>
-				<div class="tt-logo-container">
-					<a class="tt-logo tt-logo-alignment" href="index.html"><img src="images/custom/logo.png" alt=""></a>
-				</div>
-				<div class="tt-stuck-parent-search tt-parent-box"></div>
-				<div class="tt-stuck-parent-cart tt-parent-box"></div>
-				<div class="tt-stuck-parent-account tt-parent-box"></div>
-				<div class="tt-stuck-parent-multi tt-parent-box"></div>
-			</div>
-		</div>
-	</div> -->
-	<script>
+
+
+</header>
+
+
+
+<script>
     $('.dropdown-cart, .dropdown-access').hover(function () {
       $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(300);
     }, function () {
@@ -315,8 +283,3 @@
       $(this).find('.dropdown-menu').css('display', 'block');
     });
   </script>
-
-</header>
-
-
-

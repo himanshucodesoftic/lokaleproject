@@ -1,4 +1,4 @@
-<div class="product product3">
+<div class="product product3"  >
   <article>
     <div class="thumb">
       <div class="badges">

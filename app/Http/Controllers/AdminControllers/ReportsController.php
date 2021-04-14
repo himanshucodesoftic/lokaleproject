@@ -30,7 +30,7 @@ class ReportsController extends Controller
         $this->myVarsetting = new SiteSettingController($setting);
         $this->myVaralter = new AlertController($setting);
         $this->Setting = $setting;
-        //$this->DeliveryBoys = $deliveryBoys;
+        // $this->DeliveryBoys = $deliveryBoys;
         $this->Customers = $customers;
         $this->Currency = $currency;
         $this->Products = $products;

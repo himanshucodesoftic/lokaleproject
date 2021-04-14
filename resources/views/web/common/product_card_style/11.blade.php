@@ -1,6 +1,6 @@
 
 
-<div class="product product13 ratingstar">
+<div class="product product13 ratingstar" >
   <article>
     <div class="thumb">
       <div class="badges">

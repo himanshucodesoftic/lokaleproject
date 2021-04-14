@@ -1,4 +1,4 @@
-<div class="product product14 ratingstar">
+<div class="product product14 ratingstar" >
   <article>
   <div class="thumb">
 

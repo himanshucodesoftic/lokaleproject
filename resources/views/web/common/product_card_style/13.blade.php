@@ -1,4 +1,4 @@
-<div class="product product9 ratingstar">
+<div class="product product9 ratingstar" style="border:2px soid red;">
   <article>
     <div class="thumb">
       <div class="badges">

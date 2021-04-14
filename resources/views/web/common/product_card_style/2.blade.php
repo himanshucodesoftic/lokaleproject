@@ -1,4 +1,4 @@
-<div class="product2">
+<div class="product2" >
   <article>
     <div class="pro-thumb">
 

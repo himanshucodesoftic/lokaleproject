@@ -1,4 +1,5 @@
 
+
 @if($result['special']['success']==1 or $result['top_seller']['success']==1 or $result['most_liked']['success']==1 )
 
 <div id="tt-pageContent" >
@@ -6,10 +7,10 @@
 	
 	<div class="container-indent">
 		<div class="container container-fluid-custom-mobile-padding">
-			<div class="tt-block-title">
-				<h1 class="tt-title">WELCOME TO STORE</h1>
+			<div class="tt-block-title" >
+				<h1 class="tt-title" style="font-size:35px">WELCOME TO STORE</h1>
 				@if($result['top_seller']['success']==1)
-            <a class="nav-link btn active show" data-toggle="tab" href="#featured" role="tab"><span
+            <a class="nav-link btn active show" style="border:2px solid green" data-toggle="tab" href="#featured" role="tab"><span
                 data-toggle="tooltip" data-placement="bottom"
                 title="@lang('website.TopSales')">@lang('website.TopSales')</span></a>
             @endif
@@ -19,9 +20,9 @@
                 title="@lang('website.Special')">@lang('website.Special')</span></a>
             @endif
             @if($result['most_liked']['success']==1)
-            <a class="nav-link btn <?php if($result['top_seller']['success'] != 1 && $result['special']['success'] != 1 && $result['most_liked']['success'] == 1) print 'active show'; ?>" data-toggle="tab" href="#liked" role="tab" aria-controls="liked"
-              aria-selected="true"><span data-toggle="tooltip" data-placement="bottom"
-                title="@lang('website.MostLiked')">MostLiked</span></a>
+            <a class=" <?php if($result['top_seller']['success'] != 1 && $result['special']['success'] != 1 && $result['most_liked']['success'] == 1) print 'active show'; ?>"  style="color:black;text-decoration:none;font-size:25px;margin-top:30px;" data-toggle="tab" href="#liked" role="tab" aria-controls="liked"
+              aria-selected="true"  ><span data-toggle="tooltip" data-placement="bottom"
+                title="@lang('website.MostLiked')">Most Liked</span></a>
             @endif
 
 			</div>

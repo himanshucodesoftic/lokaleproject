@@ -175,7 +175,7 @@
 	  <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button"   products_id="{{$result['detail']['product_data'][0]->products_id}}" >Add to Cart</button>
 	  @endif
 	@else
-	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  onclick="alert('{{$result['detail']['product_data'][0]->products_id}}')"  style="border:2px solid red;" >Add to Cart</button>
+	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  onclick="alert('{{$result['detail']['product_data'][0]->products_id}}')"   >Add to Cart</button>
 	@endif
 
   @else
@@ -698,6 +698,8 @@
 		</div>
 	</div>
 </div>
+
+
 
 <script src="jquery-3.5.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
