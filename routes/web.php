@@ -337,7 +337,9 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 	Route::view('/here','here');
 	
 	Route::view('/404','404');
-
+	
+	Route::view('/newlogin','newlogin');
+	
 
 	Route::get('locale/{locale}',function($locale)
 	{

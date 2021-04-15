@@ -14,12 +14,9 @@
 	</div>
 </div>
 <div id="tt-pageContent">
-	<div class="nomargin container-indent">
-		<div class="tt-about-box" style="background-image: url(images/custom/about-img-01.jpg);">
-			<img class="img-mobile" src="images/custom/about-img-01.jpg" alt="">
-			<div class="container">
+<div class="container" style="margin-top:30px;">
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-md-12">
 						<h1 class="tt-title">	A marketplace that joins local home-businesses and special kuwaiti brands.</h1>
 						<p>
                         Here you will find everything LOKAL.						</p>
@@ -30,12 +27,18 @@
 					
 					</div>
 				</div>
-			</div>
+			</div>	
+
+
+<!-- <div class="nomargin container-indent">
+		<div class="tt-about-box" style="background-image: url(images/custom/about-img-01.jpg);">
+			<img class="img-mobile" src="images/custom/about-img-01.jpg" alt="">
+			
 		</div>
-	</div>
-	<div class="container-indent">
+	</div> -->
+	<!-- <div class="container-indent"> -->
 		<div class="container">
-			<div class="tt-about-col-list">
+			<div class="tt-about-col-list" style="margin-top:none !important">
 				<div class="row">
 					<div class="col-md-6">
 						<!-- <h5 class="tt-title">OUR STORES</h5> -->
@@ -44,7 +47,7 @@
 						</div> -->
 
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-12">
 						<h5 class="tt-title">CONTACTS</h5>
 						<div class="tt-box-info">
 							<!-- <p>
@@ -67,7 +70,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	<!-- </div> -->
 </div>
 
 @endsection

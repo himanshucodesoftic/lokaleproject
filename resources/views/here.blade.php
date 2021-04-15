@@ -23,20 +23,23 @@
 							@lang('home.HelpCenter')</h6>
 							<address >
 							<p  style="text-decoration:none;">
-							+96555456559 - contact@lokalkw.com
+							@lang('home.+96555456559')
+							 - contact@lokalkw.com
 							</p><br>
-							MON to FRI 9am-6pm SAT 9am-2pm
+							@lang('home.+MONtoFRI9am-6pmSAT9am-2pm')
+						
 							</address>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-4">
 						<div class="tt-contact-info">
 							<i class="tt-icon icon-f-24"></i>
-							<h6 class="tt-title">Showroom</h6>
+							<h6 class="tt-title">@lang('home.Showroom')</h6>
 							<address>
-							address City State, Zip Country,<br>
-							
-MON to FRI 9am-6pm SAT 9am-2pm<br>
+							@lang('home.addressCityState,ZipCountry,')
+							<br>
+							@lang('home.MONtoFRI9am-6pmSAT9am-2pm')
+<br>
 							
 							</address>
 						</div>
@@ -44,10 +47,12 @@ MON to FRI 9am-6pm SAT 9am-2pm<br>
 					<div class="col-sm-6 col-md-4">
 						<div class="tt-contact-info">
 							<i class="tt-icon icon-f-92"></i>
-							<h6 class="tt-title">Orders</h6>
+							<h6 class="tt-title">	@lang('home.Orders')</h6>
 							<address>
-							+96555456559 - orders@lokalkw.com<br>
-							MON to FRI 9am-6pm SAT 9am-2pm
+							@lang('home.+96555456559-orders@lokalkw.com')
+						<br>
+						@lang('home.MONtoFRI9am-6pmSAT9am-2pm')
+					
 							</address>
 						</div>
 					</div>

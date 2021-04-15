@@ -10810,7 +10810,7 @@ html.ie .tt-desctop-parent-menu {
 	desktop header
 */
 .tt-desktop-header {
-  position: relative;
+  /*position: relative;*/
   z-index: 8; }
   @media (max-width: 1024px) {
     .tt-desktop-header {
@@ -14185,7 +14185,7 @@ footer {
       footer .tt-color-scheme-01 .tt-footer-box .tt-social-icon li:not(:last-child):not(:first-child) {
         margin: 0px 9px; }
     footer .tt-color-scheme-02 {
-      background: #2879fe;
+      background: #2b5a80;
       color: #ffffff; }
       footer .tt-color-scheme-02 .tt-list li a,
       footer .tt-color-scheme-02 .tt-mobile-collapse .tt-collapse-content .tt-list li a {
@@ -14350,9 +14350,9 @@ footer {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
-          justify-content: flex-start;
+          /*justify-content: flex-start;
           align-content: flex-start;
-          align-items: flex-start;
+          align-items: flex-start;*/
           width: 100%; }
         footer .tt-footer-custom:not(:last-child) .tt-col-item {
           width: 100%; }
@@ -22378,7 +22378,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
     .slider-revolution .tp-bullets .bullet {
       width: 14px;
       height: 14px;
-      background-color: #dadada;
+      background-color: #2b5a80;
       margin: 0 5px;
       border-radius: 50%;
       cursor: pointer; }
@@ -23811,7 +23811,9 @@ html:not(.ie) #loader .dot {
         line-height: 2.65;
         cursor: pointer;
         text-align: center;
-        background-color: #2879fe; }
+        /*background-color: #2879fe;*/ 
+         background-color:#ffffff;
+      }
         #tt-boxedbutton .rtlbutton .box-btn i {
           font-size: 20px;
           line-height: 1.65; }
@@ -26376,7 +26378,7 @@ Content
     padding: 0;
     color: #191919; }
     .tt-block-title .tt-title a {
-      color: #2879fe;
+      color: #2b5a80;
       text-decoration: none;
       display: inline-block;
       position: relative;
@@ -26388,7 +26390,7 @@ Content
         bottom: 2px;
         height: 2px;
         width: 100%;
-        background: #2879fe; }
+        background: #2b5a80; }
     .tt-block-title .tt-title a:hover {
       border-color: transparent;
       color: #2879fe; }
@@ -28198,7 +28200,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
     transition: 0.4s;
     width: 62px;
     height: 62px;
-    background-color: rgba(40, 121, 254, 0.75);
+    background-color: #2b5a80!important;
     color: #ffffff;
     font-size: 0;
     line-height: 0;
@@ -28324,7 +28326,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
   .tt-services-block .tt-col-icon {
     align-self: flex-start;
     font-size: 50px;
-    color: #2879fe; }
+    color: #2b5a80; }
     .tt-services-block .tt-col-icon [class^="icon-"] {
       position: relative;
       top: -5px; }
@@ -30776,3 +30778,134 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
   .slick-dots-02 .slick-dots .slick-active button:before {
     opacity: 1;
     border-width: 2px; }
+
+
+
+
+
+
+
+
+
+    .fullpage-container
+    {
+      margin-right:-100px!important;
+      margin-left:-100px!important;
+      padding-right: 1px!important;
+      padding-left:1px!important;
+    }
+
+    .tp-caption1-wd-4-change a
+    {
+       background-color: #ffffff!important;
+       color: #2b5a80 !important;
+      
+    }
+    
+
+    header .tt-dropdown-obj .tt-dropdown-toggle
+    {
+      color:#ffffff;
+    }
+
+    /*.second-slide img
+    {
+      max-width: 100%!important;
+      height: auto!important;
+
+      display: block!important;
+      background-repeat: no-repeat!important;
+      background-size: auto!important;
+  
+    }*/
+    .tt-white-color-change
+    {
+      color:#000000!important;
+    }
+    .tp-caption1-wd-4-change
+    {
+      margin-top:16em!important;
+    }
+    .first-text-section
+    {
+      text-align: center!important;
+    }
+    .sectione-heading
+    {
+       color:#2b5a80!important;
+    }
+    .most-liked-button
+    {
+      background-color:#2b5a80;
+      border-radius:10px;
+      color:#ffffff;  
+      border-color: #ffffff;
+      font-size:22px;
+    }
+    .tt-description:hover .tt-background
+    {
+       background-color:#2b5a80!important;
+    }
+    .tt-description:hover .tt-title-small
+    {
+      color:#ffffff!important;
+    }
+    .tt-description:hover .tt-title-large
+    {
+      color:#ffffff!important;
+    }
+    .tt-description:hover .tt-base-color
+    {
+      color:#000000!important;
+    }
+    .tt-title-small:hover{
+      background-color:#2b5a80!important;
+    }
+    .tt-block-title h2
+    {
+      color:#2b5a80!important;
+      
+    
+    }
+    .tt-header
+    {
+      position:fixed!important;
+    }
+    .tt-stuck-nav
+    {
+      background-color:#2b5a80!important;   
+    }
+    /*.tt-desktop-header
+    {
+      position:fixed!important;
+    }*/
+    .tt-btn-addtocart
+    {
+      background-color:#2b5a80!important;
+    }
+    .tt-btn-quickview
+    {
+      background-color: #2b5a80!important;
+      color: #ffffff!important;
+    }
+    .tt-btn-quickview:hover
+    {
+      color: #000000!important;
+    }
+    .tt-btn-wishlist
+    {
+      background-color: #2b5a80!important;
+      color: #ffffff!important;
+    }
+    .tt-btn-wishlist:hover
+    {
+      color: #000000!important;
+    }
+    .tt-btn-compare
+    {
+      background-color: #2b5a80!important;
+      color: #ffffff!important;
+    }
+    .tt-btn-compare:hover{
+      color:#000000!important;
+    }
