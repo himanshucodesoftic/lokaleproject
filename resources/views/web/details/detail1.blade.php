@@ -30,9 +30,9 @@
 		<div class="tt-mobile-product-layout visible-xs"  >
 			<div class="tt-mobile-product-slider arrow-location-center" id="zoom-mobile__slider">
 				<div><img data-lazy="images/test.jpg" alt=""></div>
-				<div><img data-lazy="images/product/product-01-02.jpg"  alt=""></div>
-				<div><img data-lazy="images/product/product-01-03.jpg" alt=""></div>
-				<div><img data-lazy="images/product/product-01-04.jpg" alt=""></div>
+				<div><img src="{{asset('').$result['detail']['product_data'][0]->default_images }}"   alt=""></div>
+				<div><img src="{{asset('').$result['detail']['product_data'][0]->default_images }}"  alt=""></div>
+				<div><img src="{{asset('').$result['detail']['product_data'][0]->default_images }}" alt=""></div>
 				<div>
 					<div class="tt-video-block">
 						<a href="#" class="link-video"></a>
@@ -99,15 +99,90 @@
 					<div class="tt-product-single-info">
 						<div class="tt-add-info">
 							<ul>
-								<li><span>ProductID:</span> 001</li>
-								<li><span>Category:</span> HandBags</li>
-								<li><span>Availability:</span> 40 in Stock</li>
+								<li><span>ProductID:</span> {{$result['detail']['product_data'][0]->products_id}}</li>
+								<li><span>Category:</span>  <?php
+                  $cates = '';  
+                ?></li>
+    @foreach($result['detail']['product_data'][0]->categories as $key=>$category)
+                <?php
+                  $cates =  "<a href=".url('shop?category='.$category->categories_name).">".$category->categories_name."</a>";
+                ?>
+                @endforeach
+                <?php 
+                  echo $cates;
+                ?>
+
+								<li><span>Availability:</span>
+								@if($result['detail']['product_data'][0]->products_type == 0)
+                @if($result['commonContent']['settings']['Inventory'])
+                  @if($result['detail']['product_data'][0]->defaultStock < 0) <span class="text-secondary">
+                    @lang('website.Out of Stock')</span>
+                  @else
+				  <span class="text-secondary">In stock</span>
+                  @endif
+                @else
+                  <span class="text-secondary">In stock</span>
+                @endif
+              @endif
+							</li>
 							</ul>
 						</div>
-						<h1 class="tt-title">Women HandBag for Daily Use</h1>
+						<h1 class="tt-title">{{$result['detail']['product_data'][0]->products_name}}</h1>
 						<div class="tt-price">
 							<span class="new-price">$299</span>
 						</div>
+
+						@if($result['detail']['product_data'][0]->products_type == 1)
+                <span class="text-secondary variable-stock"></span>
+              @endif
+
+              @if($result['detail']['product_data'][0]->products_type == 2)
+                <span class="text-secondary">@lang('website.External')</span>
+              @endif
+
+			  @if($result['detail']['product_data'][0]->products_min_order>0)
+                <div class="pro-single-info" id="min_max_setting3"><b>@lang('website.Min Order Limit') :
+                  </b>{{$result['detail']['product_data'][0]->products_min_order}}</div>
+              @endif
+			  <div class="pro-single-info"  @if($result['detail']['product_data'][0]->products_max_stock==9999) style="display:none;" @endif id="min_max_setting2"><b>@lang('website.Max Order Limit') :</b>{{$result['detail']['product_data'][0]->products_max_stock}}
+
+
+			  <form name="attributes" id="add-Product-form" method="post">
+              <input type="hidden" name="products_id" value="{{$result['detail']['product_data'][0]->products_id}}">
+              
+              <input type="hidden" name="products_price" id="products_price"
+                  value="@if(!empty($result['detail']['product_data'][0]->flash_price)) {{$result['detail']['product_data'][0]->flash_price+0}} @elseif(!empty($result['detail']['product_data'][0]->discount_price)){{$result['detail']['product_data'][0]->discount_price+0}}@else{{$result['detail']['product_data'][0]->products_price+0}}@endif">
+
+              <input type="hidden" name="checkout" id="checkout_url"
+                value="@if(!empty(app('request')->input('checkout'))) {{ app('request')->input('checkout') }} @else false @endif">
+
+              <input type="hidden" id="max_order"
+                value="@if(!empty($result['detail']['product_data'][0]->products_max_stock)){{ $result['detail']['product_data'][0]->products_max_stock }}@else 0 @endif">
+              
+              @if(!empty($result['cart']))
+              <input type="hidden" name="customers_basket_id" value="{{$result['cart'][0]->customers_basket_id}}">
+              @endif
+
+              <div class="badges" style="margin-bottom: 16px;">
+
+                 <?php
+                $discount_percentage = 0;
+                if(!empty($result['detail']['product_data'][0]->discount_price)){
+                  $discount_price = $result['detail']['product_data'][0]->discount_price * session('currency_value');
+                }
+                $orignal_price = $result['detail']['product_data'][0]->products_price * session('currency_value');
+
+                if(!empty($result['detail']['product_data'][0]->discount_price)){
+
+                  if(($orignal_price+0)>0){
+                    $discounted_price = $orignal_price-$discount_price;
+                    $discount_percentage = $discounted_price/$orignal_price*100;
+                  }else{
+                    $discount_percentage = 0;
+                    $discounted_price = 0;
+                  }
+                }
+                ?>   
 						<div class="tt-review">
 							<div class="tt-rating">
 								<i class="icon-star"></i>
