@@ -1,17 +1,9 @@
 @extends('web.layout')
 @section('content')
 
+  <?php  echo $final_theme['carousel']; ?>
+ 
 
-
-
-
-
-
-<?php  echo $final_theme['carousel']; ?>
-  <!-- Fixed Carousel Content -->
-
-  <!-- Banners Content -->
-  <!-- Products content -->
 
   <?php
 
@@ -100,6 +92,8 @@
   ?>
   <br><br>
  
+
+
 @include('web.common.scripts.addToCompare')
 @include('web.common.scripts.Like')
 @endsection

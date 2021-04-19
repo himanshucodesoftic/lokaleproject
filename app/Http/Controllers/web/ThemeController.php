@@ -61,8 +61,10 @@ class ThemeController extends Controller
     private function setTopOffer()
     {
         $index = new Index();
+      echo "$index";
 		$result['commonContent'] = $index->commonContent();
         $top_offer = (string) View::make('web.headers.headerNine', ['result' => $result])->render();
+        
         return $top_offer;
     }
 

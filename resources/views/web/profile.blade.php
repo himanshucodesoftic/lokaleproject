@@ -1,17 +1,6 @@
 @extends('web.layout')
 @section('content')
-<!-- 
-<div class="container-fuild">
-  <nav aria-label="breadcrumb">
-    <div class="container">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ URL::to('/')}}">@lang('website.Home')</a></li>
-        <li class="breadcrumb-item active" aria-current="page">@lang('website.myProfile')</li>
 
-      </ol>
-    </div>
-  </nav>
-</div>  -->
 <section class="pro-content">
 <!-- Profile Content -->
 <section class="profile-content">
@@ -19,16 +8,16 @@
     <div class="row">
 
       <div class="col-12 media-main">
-        <div class="media">
-            <h3>{{ substr(auth()->guard('customer')->user()->first_name, 0, 1)}}</h3>
+        <div class="media" >
+            <!-- <h3 >First Name:{{ substr(auth()->guard('customer')->user()->first_name, 0, 1)}}</h3> -->
             <div class="media-body">
               <div class="row">
                 <div class="col-12 col-sm-4 col-md-6">
-                  <h4>{{auth()->guard('customer')->user()->first_name}} {{auth()->guard('customer')->user()->last_name}}<br>
-                  <small>Phone: {{ auth()->guard('customer')->user()->phone }} </small></h4>
+                  <!-- <h4>Last Name:{{auth()->guard('customer')->user()->first_name}} {{auth()->guard('customer')->user()->last_name}}<br> -->
+                  <!-- <small>Phone: {{ auth()->guard('customer')->user()->phone }} </small></h4> -->
                 </div>
                 <div class="col-12 col-sm-8 col-md-6 detail">                  
-                  <p class="mb-0">E-Mail:<span>{{auth()->guard('customer')->user()->email}}</span></p>
+                  <p class="mb-0 ">E-Mail:<span>{{auth()->guard('customer')->user()->email}}</span></p>
                 </div>
                 </div>
             </div>

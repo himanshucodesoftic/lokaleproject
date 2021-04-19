@@ -4034,7 +4034,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%; }
 
 .datepicker table tr td.day:hover {
-  color: #2879fe;
+  color: #2B5A80;
   cursor: pointer; }
 
 .datepicker table tr td.old,
@@ -4075,7 +4075,7 @@ a.text-dark:hover, a.text-dark:focus {
 .datepicker table tr td.today:hover[disabled],
 .datepicker table tr td.today.disabled[disabled],
 .datepicker table tr td.today.disabled:hover[disabled] {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .datepicker table tr td.today:active,
 .datepicker table tr td.today:hover:active,
@@ -4085,13 +4085,13 @@ a.text-dark:hover, a.text-dark:focus {
 .datepicker table tr td.today:hover.active,
 .datepicker table tr td.today.disabled.active,
 .datepicker table tr td.today.disabled:hover.active {
-  color: #2879fe \9; }
+  color: #2B5A80 \9; }
 
 .datepicker table tr td.active,
 .datepicker table tr td.active:hover,
 .datepicker table tr td.active.disabled,
 .datepicker table tr td.active.disabled:hover {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .datepicker table tr td.active:hover,
 .datepicker table tr td.active:hover:hover,
@@ -4113,7 +4113,7 @@ a.text-dark:hover, a.text-dark:focus {
 .datepicker table tr td.active:hover[disabled],
 .datepicker table tr td.active.disabled[disabled],
 .datepicker table tr td.active.disabled:hover[disabled] {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .datepicker table tr td.active:active,
 .datepicker table tr td.active:hover:active,
@@ -4123,7 +4123,7 @@ a.text-dark:hover, a.text-dark:focus {
 .datepicker table tr td.active:hover.active,
 .datepicker table tr td.active.disabled.active,
 .datepicker table tr td.active.disabled:hover.active {
-  color: #2879fe \9; }
+  color: #2B5A80 \9; }
 
 .datepicker table tr td span {
   display: block;
@@ -4135,7 +4135,7 @@ a.text-dark:hover, a.text-dark:focus {
   cursor: pointer; }
 
 .datepicker table tr td span:hover {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .datepicker table tr td span.disabled,
 .datepicker table tr td span.disabled:hover {
@@ -4147,7 +4147,7 @@ a.text-dark:hover, a.text-dark:focus {
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active.disabled,
 .datepicker table tr td span.active.disabled:hover {
-  background-color: #2879fe;
+  background-color: #2B5A80;
   color: #fff; }
 
 .datepicker table tr td span.active:hover,
@@ -4170,7 +4170,7 @@ a.text-dark:hover, a.text-dark:focus {
 .datepicker table tr td span.active:hover[disabled],
 .datepicker table tr td span.active.disabled[disabled],
 .datepicker table tr td span.active.disabled:hover[disabled] {
-  background-color: #2879fe; }
+  background-color: #2B5A80; }
 
 .datepicker table tr td span.active:active,
 .datepicker table tr td span.active:hover:active,
@@ -4195,7 +4195,7 @@ a.text-dark:hover, a.text-dark:focus {
 .datepicker thead tr:first-child th:hover,
 .datepicker tfoot tr:first-child th:hover {
   color: #fff;
-  background: #2879fe; }
+  background: #2B5A80; }
 
 .input-append.date .add-on i,
 .input-prepend.date .add-on i {
@@ -4461,7 +4461,7 @@ button::-moz-focus-inner {
     font-size: 20px;
     line-height: 1; }
   .mfp-close:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .mfp-counter {
   top: 0;
@@ -4512,7 +4512,7 @@ button.mfp-arrow {
 
 .mfp-arrow:hover,
 button.mfp-arrow:hover {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .mfp-arrow:before {
   display: block; }
@@ -8355,7 +8355,7 @@ img.tp-slider-alternative-image {
 
 .icon-AES256 .path1:before {
   content: "\eab6";
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .icon-AES256 .path2:before {
   content: "\eab7";
@@ -8405,7 +8405,7 @@ img.tp-slider-alternative-image {
 .icon-AES256 .path11:before {
   content: "\eac2";
   margin-left: -1.9072265625em;
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .icon-american-express .path1:before {
   content: "\eac3";
@@ -9651,7 +9651,7 @@ img.tp-slider-alternative-image {
 */
 /* tt-top-panel */
 .tt-top-panel {
-  background: #2879fe; }
+  background: #2B5A80; }
   .tt-top-panel .tt-row {
     display: flex;
     flex-direction: row;
@@ -9708,9 +9708,9 @@ img.tp-slider-alternative-image {
   .tt-top-panel.tt-color-dark {
     background: #191919; }
     .tt-top-panel.tt-color-dark a:not([class]) {
-      color: #2879fe; }
+      color: #2B5A80; }
       .tt-top-panel.tt-color-dark a:not([class]):before {
-        background-color: #2879fe; }
+        background-color: #2B5A80; }
     .tt-top-panel.tt-color-dark .tt-btn-close:before {
       color: #777777; }
     .tt-top-panel.tt-color-dark .tt-btn-close:hover:before {
@@ -9777,7 +9777,7 @@ header {
       line-height: 1.1;
       font-family: "Hind", sans-serif;
       font-weight: 500;
-      color: #2879fe;
+      color: #2B5A80;
       text-transform: uppercase; }
     header .tt-logo:hover .tt-title {
       color: #191919; }
@@ -9801,7 +9801,7 @@ header {
       padding: 5px 8px;
       font-size: 20px;
       line-height: 1;
-      color: #191919;
+      color: #6b3c3c;
       background: none;
       border: none;
       display: inline-block;
@@ -9809,7 +9809,7 @@ header {
       header .tt-dropdown-obj .tt-dropdown-toggle i {
         pointer-events: none; }
     header .tt-dropdown-obj .tt-dropdown-toggle:hover {
-      color: #2879fe; }
+      color: #f1f1f1; }
     header .tt-dropdown-obj .tt-dropdown-menu {
       display: none;
       background: #ffffff;
@@ -9837,7 +9837,7 @@ header {
       max-width: inherit; } }
   header .tt-dropdown-obj.active .tt-dropdown-toggle {
     z-index: 2;
-    color: #2879fe; }
+    color: #ffffff; }
   header .tt-cart .tt-dropdown-menu,
   header .tt-account .tt-dropdown-menu,
   header .tt-multi-obj .tt-dropdown-menu {
@@ -9947,9 +9947,9 @@ header {
           header .tt-account .tt-dropdown-menu .tt-dropdown-inner ul li a .icon-n-08 {
             margin-right: 10px; }
         header .tt-account .tt-dropdown-menu .tt-dropdown-inner ul li a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
           header .tt-account .tt-dropdown-menu .tt-dropdown-inner ul li a:hover [class^="icon-"] {
-            color: #2879fe; } }
+            color: #2B5A80; } }
   header .tt-account ul {
     list-style: none;
     margin: 0;
@@ -9977,9 +9977,9 @@ header {
           font-size: 16px;
           margin-right: 11px; }
       header .tt-account ul li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
         header .tt-account ul li a:hover [class^="icon-"] {
-          color: #2879fe; }
+          color: #2B5A80; }
   @media (min-width: 1025px) {
     header .tt-multi-obj .tt-dropdown-menu .tt-dropdown-inner {
       padding: 35px 20px 30px 41px; } }
@@ -9997,13 +9997,13 @@ header {
             font-size: 20px;
             color: #191919; }
         header .tt-multi-obj .tt-dropdown-menu .tt-dropdown-inner ul li a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
           header .tt-multi-obj .tt-dropdown-menu .tt-dropdown-inner ul li a:hover [class^="icon-"] {
-            color: #2879fe; }
+            color: #2B5A80; }
       header .tt-multi-obj .tt-dropdown-menu .tt-dropdown-inner ul li.active a {
-        color: #2879fe; }
+        color: #2B5A80; }
         header .tt-multi-obj .tt-dropdown-menu .tt-dropdown-inner ul li.active a [class^="icon-"] {
-          color: #2879fe; }
+          color: #2B5A80; }
     header .tt-multi-obj .tt-dropdown-menu .tt-dropdown-inner ul:not(:first-child) {
       border-top: 1px solid #e9e7e7; } }
   header .tt-multi-obj ul {
@@ -10030,13 +10030,13 @@ header {
           color: #191919;
           transition: color 0.2s linear; }
       header .tt-multi-obj ul li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
         header .tt-multi-obj ul li a:hover [class^="icon-"] {
-          color: #2879fe; }
+          color: #2B5A80; }
     header .tt-multi-obj ul li.active a {
-      color: #2879fe; }
+      color: #2B5A80; }
       header .tt-multi-obj ul li.active a [class^="icon-"] {
-        color: #2879fe; }
+        color: #2B5A80; }
   header .tt-multi-obj ul:not(:first-child) {
     margin-top: 22px; }
   header .tt-multi-obj .tt-mobile-add + ul {
@@ -10072,9 +10072,9 @@ header {
       color: #777777;
       transition: color 0.2s linear; }
     header .tt-dropdown-obj:not(.tt-search) .tt-mobile-add .tt-close:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
       header .tt-dropdown-obj:not(.tt-search) .tt-mobile-add .tt-close:hover:before {
-        color: #2879fe; }
+        color: #2B5A80; }
     header .tt-dropdown-obj:not(.tt-search) .tt-mobile-add .tt-title {
       padding: 18px 0 17px 30px; }
     header .tt-dropdown-obj:not(.tt-search) .tt-mobile-add .tt-title + .tt-close {
@@ -10087,7 +10087,7 @@ header {
     display: inline-block;
     width: 18px;
     height: 18px;
-    background: #2879fe;
+    background: #2B5A80;
     color: #ffffff;
     border-radius: 50%;
     position: absolute;
@@ -10129,7 +10129,7 @@ header {
         header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-list .tt-item a:not([class]) .tt-title {
           color: #191919; }
       header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-list .tt-item a:not([class]):hover .tt-title {
-        color: #2879fe; }
+        color: #2B5A80; }
       header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-list .tt-item .tt-item-img + .tt-item-descriptions {
         margin-left: 20px; }
       header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-list .tt-item .tt-item-descriptions {
@@ -10176,7 +10176,7 @@ header {
         font-family: "wokiee";
         transition: color 0.2s linear; }
       header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-list .tt-item-close .tt-btn-close:hover:before {
-        color: #2879fe; }
+        color: #2B5A80; }
     header .tt-cart .tt-cart-layout .tt-cart-content .tt-cart-total-row {
       display: flex;
       flex-direction: row;
@@ -10288,7 +10288,7 @@ header {
       header .tt-search .tt-dropdown-menu .tt-btn-search:before {
         content: "\e9b4"; }
       header .tt-search .tt-dropdown-menu .tt-btn-search:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       header .tt-search .tt-dropdown-menu .tt-info-text {
         position: absolute;
         top: 0;
@@ -10313,7 +10313,7 @@ header {
         content: "\e9b3";
         line-height: 1; }
       header .tt-search .tt-dropdown-menu .tt-btn-close:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       header .tt-search .tt-dropdown-menu .tt-description {
         text-align: center; }
       header .tt-search .tt-dropdown-menu .tt-price {
@@ -10411,9 +10411,9 @@ header {
         font-size: 20px;
         line-height: 1; }
       header .tt-search .tt-dropdown-menu .tt-btn-close:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       header .tt-search .tt-dropdown-menu .tt-btn-search {
-        color: #2879fe;
+        color: #2B5A80;
         font-size: 20px;
         line-height: 1;
         font-family: "wokiee";
@@ -10592,13 +10592,13 @@ header {
                   header .tt-search .search-results ul > li a .tt-description .tt-price span {
                     display: inline-block; }
             header .tt-search .search-results ul > li a:hover .tt-title {
-              color: #2879fe; } }
+              color: #2B5A80; } }
   header .tt-search .tt-view-all {
     background: none;
     border: none;
     padding: 0;
     margin-top: 15px;
-    color: #2879fe;
+    color: #2B5A80;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.2s linear; }
@@ -10685,9 +10685,9 @@ header {
       header .tt-color-scheme-01 .tt-box-info ul li a:hover {
         color: #888888; }
       header .tt-color-scheme-01 .tt-box-info ul li a.tt-link-underline {
-        color: #2879fe; }
+        color: #2B5A80; }
         header .tt-color-scheme-01 .tt-box-info ul li a.tt-link-underline:before {
-          background-color: #2879fe; }
+          background-color: #2B5A80; }
         header .tt-color-scheme-01 .tt-box-info ul li a.tt-link-underline:hover:before {
           background-color: transparent; }
     header .tt-color-scheme-01 .tt-box-info ul li [class^="icon-"] {
@@ -10701,29 +10701,29 @@ header {
       background: transparent; }
     header .tt-color-scheme-01 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown > a:hover {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-01 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown.active > a {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-01 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown.selected > a {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-01 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown > a {
       color: #ffffff;
       background: transparent; }
     header .tt-color-scheme-01 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown > a:hover {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-01 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown.active > a {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-01 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown.selected > a {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-01 .tt-dropdown-obj .tt-dropdown-toggle {
       color: #ffffff; }
     header .tt-color-scheme-01 .tt-dropdown-obj .tt-dropdown-toggle:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
     header .tt-color-scheme-01 .tt-menu-toggle:not(:hover) i {
       color: #ffffff; }
   header .tt-color-scheme-02 {
@@ -10734,7 +10734,7 @@ header {
       header .tt-color-scheme-02 .tt-box-info ul li a:hover {
         color: #888888; }
     header .tt-color-scheme-02 .tt-box-info ul li [class^="icon-"] {
-      color: #2879fe; }
+      color: #2B5A80; }
     header .tt-color-scheme-02 .tt-social-icon li a {
       color: #cdcdcd; }
     header .tt-color-scheme-02 .tt-social-icon li a:hover {
@@ -10744,29 +10744,29 @@ header {
       background: transparent; }
     header .tt-color-scheme-02 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown > a:hover {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-02 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown.active > a {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-02 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown.selected > a {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-02 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown > a {
       color: #191919;
       background: transparent; }
     header .tt-color-scheme-02 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown > a:hover {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-02 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown.active > a {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-02 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown.selected > a {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-02 .tt-dropdown-obj .tt-dropdown-toggle {
       color: #191919; }
     header .tt-color-scheme-02 .tt-dropdown-obj .tt-dropdown-toggle:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
   header .tt-color-scheme-03 {
     background: transparent;
     color: #888888; }
@@ -10775,29 +10775,29 @@ header {
       background: transparent; }
     header .tt-color-scheme-03 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown > a:hover {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-03 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown.active > a {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-03 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown.selected > a {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     header .tt-color-scheme-03 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown > a {
       color: #ffffff;
       background: transparent; }
     header .tt-color-scheme-03 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown > a:hover {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-03 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown.active > a {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-03 .tt-desctop-menu:not(.tt-hover-02) nav > ul li.dropdown.selected > a {
-      color: #2879fe;
+      color: #2B5A80;
       background: transparent; }
     header .tt-color-scheme-03 .tt-dropdown-obj .tt-dropdown-toggle {
       color: #ffffff; }
     header .tt-color-scheme-03 .tt-dropdown-obj .tt-dropdown-toggle:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
   header [class^="tt-color-scheme-"].tt-search-container {
     background: #ffffff; }
 
@@ -10810,7 +10810,7 @@ html.ie .tt-desctop-parent-menu {
 	desktop header
 */
 .tt-desktop-header {
-  /*position: relative;*/
+  position: relative;
   z-index: 8; }
   @media (max-width: 1024px) {
     .tt-desktop-header {
@@ -11074,7 +11074,7 @@ header .container-fluid {
       color: #191919;
       transition: color 0.2s linear; }
   .tt-desctop-menu .header-menu-product a:hover .tt-title {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-desctop-menu .header-menu-product .tt-product .tt-description {
     padding-top: 6px; }
   .tt-desctop-menu nav > ul {
@@ -11115,13 +11115,13 @@ header .container-fluid {
       color: #191919;
       transition: all 0.2s linear; }
     .tt-desctop-menu .tt-title-submenu:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
       .tt-desctop-menu .tt-title-submenu:hover a {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-desctop-menu .tt-title-submenu.active {
-      color: #2879fe; }
+      color: #2B5A80; }
       .tt-desctop-menu .tt-title-submenu.active a {
-        color: #2879fe; }
+        color: #2B5A80; }
   .tt-desctop-menu .tt-title-submenu + .slick-slider,
   .tt-desctop-menu .tt-title-submenu + .tt-menu-slider {
     margin-top: 4px; }
@@ -11151,7 +11151,7 @@ header .container-fluid {
           opacity: 0;
           transition: all 0.2s linear; }
       .tt-desctop-menu .tt-megamenu-submenu > li > a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
         .tt-desctop-menu .tt-megamenu-submenu > li > a:hover img {
           visibility: visible;
           right: -34px;
@@ -11160,7 +11160,7 @@ header .container-fluid {
         left: 0;
         opacity: 1; }
     .tt-desctop-menu .tt-megamenu-submenu > li.active > a {
-      color: #2879fe; }
+      color: #2B5A80; }
     .tt-desctop-menu .tt-megamenu-submenu li a:not(:only-child):after {
       content: "";
       speak: none;
@@ -11211,9 +11211,9 @@ header .container-fluid {
           color: #777777;
           transition: all 0.2s linear; }
         .tt-desctop-menu .tt-megamenu-submenu > li ul li a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
       .tt-desctop-menu .tt-megamenu-submenu > li ul li.active > a {
-        color: #2879fe; }
+        color: #2B5A80; }
   .tt-desctop-menu ul.tt-sub-img {
     display: block; }
     .tt-desctop-menu ul.tt-sub-img li {
@@ -11278,19 +11278,19 @@ header .container-fluid {
   padding-right: 0; }
 
 .tt-desctop-menu:not(.tt-hover-02) li.dropdown > a {
-  color: #191919;
+  color: #f0f0f0;
   background: transparent; }
 
 .tt-desctop-menu:not(.tt-hover-02) li.dropdown > a:hover {
-  color: #2879fe;
+  color: #f0f0f0;
   background: transparent; }
 
 .tt-desctop-menu:not(.tt-hover-02) li.dropdown.active > a {
-  color: #2879fe;
+  color: #f0f0f0;
   background: transparent; }
 
 .tt-desctop-menu:not(.tt-hover-02) li.dropdown.selected > a {
-  color: #2879fe;
+  color: #f0f0f0;
   background: transparent; }
 
 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown > a {
@@ -11298,20 +11298,20 @@ header .container-fluid {
   padding-right: 13px; }
 
 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown > a {
-  color: #191919;
+  color: #f0f0f0;
   background: transparent; }
 
 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown > a:hover {
   color: #ffffff;
-  background: #2879fe; }
+  background: #2B5A80; }
 
 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown.active > a {
   color: #ffffff;
-  background: #2879fe; }
+  background: #2B5A80; }
 
 .tt-desctop-menu.tt-hover-02 nav > ul li.dropdown.selected > a {
   color: #ffffff;
-  background: #2879fe; }
+  background: #2B5A80; }
 
 /*
 	tt-mobile-header
@@ -11393,7 +11393,7 @@ header .container-fluid {
     position: relative;
     display: inline-block; }
   .tt-menu-toggle.stylization-02 {
-    background-color: #2879fe;
+    background-color: #2B5A80;
     padding: 10px 11px 5px;
     transition: background-color 0.2s linear;
     border-radius: 6px; }
@@ -11406,7 +11406,7 @@ header .container-fluid {
         color: #ffffff; }
 
 body:not(.touch-device) .tt-menu-toggle:not(.stylization-02):hover i {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 /* visibility desktop and mobile header */
 @media (max-width: 1024px) {
@@ -11523,7 +11523,7 @@ body:not(.touch-device) .tt-menu-toggle:not(.stylization-02):hover i {
         margin-right: -20px; } }
   @media (min-width: 1025px) {
     .stuck.tt-stuck-nav {
-      background: #ffffff; } }
+      background: #2B5A80; } }
 
 /* tt-promo-02 (header banners) */
 .tt-promo-02 {
@@ -11761,7 +11761,7 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
         position: relative;
         transition: all 0.2s linear; }
       .panel-menu ul li a:hover {
-        color: #2879fe;
+        color: #2B5A80;
         background: transparent; }
   .panel-menu #mm0.mmpanel a:not(.mm-close) {
     font-family: "Hind", sans-serif;
@@ -11771,10 +11771,10 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
     .panel-menu #mm0.mmpanel a:not(.mm-close):after {
       color: #191919; }
   .panel-menu #mm0.mmpanel a:not(.mm-close):hover {
-    color: #2879fe;
+    color: #2B5A80;
     background-color: transparent; }
     .panel-menu #mm0.mmpanel a:not(.mm-close):hover:after {
-      color: #2879fe; }
+      color: #2B5A80; }
   .panel-menu #mm0.mmpanel .mm-next-level:after {
     top: 12px; }
   .panel-menu .mmpanel:not(#mm0) a:not(.mm-original-link) {
@@ -11823,11 +11823,11 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
   .panel-menu .mm-close:hover,
   .panel-menu .mm-prev-level:hover,
   .panel-menu .mm-next-level:hover {
-    color: #2879fe;
+    color: #2B5A80;
     background-color: transparent; }
   .panel-menu .mm-close:hover:before .mm-prev-level:hover:before,
   .panel-menu .mm-next-level:hover:after {
-    color: #2879fe; }
+    color: #2B5A80; }
   .panel-menu li.mm-close-parent {
     margin-bottom: 15px; }
     .panel-menu li.mm-close-parent .mm-close {
@@ -11842,10 +11842,10 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
       top: 1px;
       color: #777777; }
     .panel-menu li.mm-close-parent .mm-close:hover {
-      color: #2879fe;
+      color: #2B5A80;
       background-color: transparent; }
       .panel-menu li.mm-close-parent .mm-close:hover:before {
-        color: #2879fe; }
+        color: #2B5A80; }
   .panel-menu .mm-prev-level {
     padding: 15px 16px 13px 29px;
     color: #777777;
@@ -11859,10 +11859,10 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
     top: 1px;
     color: #777777; }
   .panel-menu .mm-prev-level:hover {
-    color: #2879fe;
+    color: #2B5A80;
     background-color: transparent; }
     .panel-menu .mm-prev-level:hover:before {
-      color: #2879fe; }
+      color: #2B5A80; }
   .panel-menu .mm-next-level {
     color: #191919;
     background-color: transparent; }
@@ -11874,10 +11874,10 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
     position: absolute;
     color: #777777; }
   .panel-menu .mm-next-level:hover {
-    color: #2879fe;
+    color: #2B5A80;
     background-color: transparent; }
     .panel-menu .mm-next-level:hover:after {
-      color: #2879fe; }
+      color: #2B5A80; }
   .panel-menu .mm-original-link {
     font-family: "Hind", sans-serif;
     font-weight: 500;
@@ -11887,10 +11887,10 @@ html.ie .desctop-menu-large .tt-stuck-nav .tt-stuck-parent-menu .tt-desctop-menu
     padding-right: 10px;
     color: #777777; }
   .panel-menu .mm-original-link:hover {
-    color: #2879fe;
+    color: #2B5A80;
     background-color: transparent; }
     .panel-menu .mm-original-link:hover:before {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .mm-open {
   overflow: hidden; }
@@ -12136,7 +12136,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
   color: #191919;
   display: inline-block; }
   .header-tel-info [class^="icon"] {
-    color: #2879fe;
+    color: #2B5A80;
     font-size: 18px;
     line-height: 1; }
 
@@ -12189,7 +12189,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
     border: none;
     outline: none;
     color: #ffffff;
-    background: #2879fe;
+    background: #2B5A80;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.05em;
@@ -12280,7 +12280,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
               .tt-search-type2 .search-results ul > li a .tt-description .tt-price span {
                 display: inline-block; }
         .tt-search-type2 .search-results ul > li a:hover .tt-title {
-          color: #2879fe; }
+          color: #2B5A80; }
         .tt-search-type2 .search-results ul > li:nth-child(1), .tt-search-type2 .search-results ul > li:nth-child(2), .tt-search-type2 .search-results ul > li:nth-child(3), .tt-search-type2 .search-results ul > li:nth-child(4) {
           display: block; }
   .tt-search-type2 .tt-view-all {
@@ -12288,7 +12288,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
     border: none;
     padding: 0;
     margin-top: 15px;
-    color: #2879fe;
+    color: #2B5A80;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.2s linear; }
@@ -12416,7 +12416,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
   transition: color 0.2s linear; }
 
 .single-currency-box .tt-dropdown-toggle:hover .tt-text {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 /* /desktop-header */
 .headertype3 .header-inline-options-box > *:not(:first-child) {
@@ -12483,7 +12483,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
     color: #777777;
     transition: color 0.2s linear; }
     .tt-account-textlink a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 /* Object - single-currency-box */
 .single-currency-box.tt-dropdown-obj {
@@ -12515,13 +12515,13 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
             font-size: 20px;
             color: #191919; }
         .single-currency-box .tt-dropdown-menu .tt-dropdown-inner ul li a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
           .single-currency-box .tt-dropdown-menu .tt-dropdown-inner ul li a:hover [class^="icon-"] {
-            color: #2879fe; }
+            color: #2B5A80; }
       .single-currency-box .tt-dropdown-menu .tt-dropdown-inner ul li.active a {
-        color: #2879fe; }
+        color: #2B5A80; }
         .single-currency-box .tt-dropdown-menu .tt-dropdown-inner ul li.active a [class^="icon-"] {
-          color: #2879fe; }
+          color: #2B5A80; }
     .single-currency-box .tt-dropdown-menu .tt-dropdown-inner ul:not(:first-child) {
       border-top: 1px solid #e9e7e7; } }
 
@@ -12549,13 +12549,13 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
         color: #191919;
         transition: color 0.2s linear; }
     .single-currency-box ul li a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
       .single-currency-box ul li a:hover [class^="icon-"] {
-        color: #2879fe; }
+        color: #2B5A80; }
   .single-currency-box ul li.active a {
-    color: #2879fe; }
+    color: #2B5A80; }
     .single-currency-box ul li.active a [class^="icon-"] {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .single-currency-box ul:not(:first-child) {
   margin-top: 22px; }
@@ -12628,7 +12628,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
       display: inline-block;
       width: 18px;
       height: 18px;
-      background: #2879fe;
+      background: #2B5A80;
       color: #ffffff;
       border-radius: 50%;
       position: absolute;
@@ -12640,7 +12640,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
     .tt-obj-link .tt-dropdown-toggle i {
       font-size: 37px;
       line-height: 1;
-      color: #2879fe;
+      color: #2B5A80;
       top: 0px;
       position: relative;
       transition: color 0.2s linear; }
@@ -12678,7 +12678,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
     .tt-desktop-header .tt-cart02 .tt-dropdown-toggle i {
       font-size: 37px;
       line-height: 1;
-      color: #2879fe;
+      color: #2B5A80;
       top: -1px;
       position: relative; }
 
@@ -12820,7 +12820,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
     display: none; } }
 
 #tt-header {
-  background: #ffffff; }
+  background: #2B5A80; }
   #tt-header .tt-desktop-header .tt-obj-search-type2 {
     position: relative;
     top: 0px;
@@ -12895,7 +12895,7 @@ html.ie .tt-header-holder .tt-desctop-menu.tt-menu-small {
   max-width: 26px; }
 
 header .tt-dropdown-obj .tt-dropdown-toggle {
-  color: #191919; }
+  color: #ffffff; }
 
 .headertype4 .tt-top-panel .tt-row {
   font-size: 24px;
@@ -13144,8 +13144,8 @@ header .tt-dropdown-obj .tt-dropdown-toggle {
           text-align: center;
           transition: color 0.2s linear; }
         #tt-header.headertype5 .tt-desctop-menu#tt-desctop-menu__icon nav > ul > li > a:hover {
-          border-color: #2879fe;
-          background-color: #2879fe;
+          border-color: #2B5A80;
+          background-color: #2B5A80;
           color: #ffffff; }
           #tt-header.headertype5 .tt-desctop-menu#tt-desctop-menu__icon nav > ul > li > a:hover .tt-icon {
             color: #ffffff; }
@@ -13213,7 +13213,7 @@ header .tt-dropdown-obj .tt-dropdown-toggle {
     top: -7px;
     left: 18px; }
   #tt-header.headertype5 .tt-desktop-header .tt-header-holder .tt-cart02 .tt-dropdown-toggle .tt-icon {
-    color: #2879fe;
+    color: #2B5A80;
     transition: color 0.2s linear; }
   #tt-header.headertype5 .tt-desktop-header .tt-header-holder .tt-cart02 .tt-dropdown-toggle .tt-text {
     margin-left: 9px;
@@ -13658,7 +13658,7 @@ footer {
     position: relative;
     top: 5px;
     font-family: "Hind", sans-serif;
-    color: #2879fe;
+    color: #2B5A80;
     font-weight: 500;
     transition: color 0.2s linear; }
     footer .tt-logo .tt-title span {
@@ -13888,11 +13888,11 @@ footer {
   footer .tt-footer-box .tt-link-icon .tt-icon {
     position: relative;
     top: 3px;
-    color: #2879fe; }
+    color: #2B5A80; }
     footer .tt-footer-box .tt-link-icon .tt-icon + .tt-text {
       margin-left: 10px; }
   footer .tt-footer-box .tt-link-icon .tt-text {
-    color: #2879fe;
+    color: #2B5A80;
     text-decoration: underline;
     transition: color 0.2s linear; }
   footer .tt-footer-box .tt-link-icon:hover .tt-text {
@@ -14137,11 +14137,11 @@ footer {
         footer .tt-color-scheme-01 .tt-collapse-title a {
           color: #191919; }
         footer .tt-color-scheme-01 .tt-collapse-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
       footer .tt-color-scheme-01 .tt-collapse-content {
         color: #777777; }
         footer .tt-color-scheme-01 .tt-collapse-content a {
-          color: #2879fe; }
+          color: #2B5A80; }
         footer .tt-color-scheme-01 .tt-collapse-content a:hover {
           color: #191919; }
       footer .tt-color-scheme-01 .tt-list li a,
@@ -14149,7 +14149,7 @@ footer {
         color: #777777; }
       footer .tt-color-scheme-01 .tt-list li a:hover,
       footer .tt-color-scheme-01 .tt-mobile-collapse .tt-collapse-content .tt-list li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       footer .tt-color-scheme-01 address span {
         color: #191919; }
       footer .tt-color-scheme-01 .tt-newsletter .form-control:not(:active):not(:focus) {
@@ -14158,7 +14158,7 @@ footer {
         border-color: #ffffff; }
       footer .tt-color-scheme-01 .tt-newsletter .form-control:focus {
         color: #777777;
-        border-color: #2879fe;
+        border-color: #2B5A80;
         background: #ffffff; }
       footer .tt-color-scheme-01 .tt-newsletter ::-webkit-input-placeholder {
         color: #777777; }
@@ -14169,7 +14169,7 @@ footer {
       footer .tt-color-scheme-01 .tt-newsletter :-ms-input-placeholder {
         color: #777777; }
       footer .tt-color-scheme-01 .tt-newsletter .btn {
-        background: #2879fe;
+        background: #2B5A80;
         color: #ffffff; }
       footer .tt-color-scheme-01 .tt-newsletter .btn:hover {
         background: #000000;
@@ -14181,11 +14181,11 @@ footer {
       footer .tt-color-scheme-01 .tt-footer-box .tt-social-icon li a {
         color: #191919; }
         footer .tt-color-scheme-01 .tt-footer-box .tt-social-icon li a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
       footer .tt-color-scheme-01 .tt-footer-box .tt-social-icon li:not(:last-child):not(:first-child) {
         margin: 0px 9px; }
     footer .tt-color-scheme-02 {
-      background: #2b5a80;
+      background: #2B5A80;
       color: #ffffff; }
       footer .tt-color-scheme-02 .tt-list li a,
       footer .tt-color-scheme-02 .tt-mobile-collapse .tt-collapse-content .tt-list li a {
@@ -14221,7 +14221,7 @@ footer {
         background: #303030;
         color: #ffffff; }
       footer .tt-color-scheme-02 .tt-newsletter .btn:hover {
-        background: #000000;
+        background: #2B5A80;
         color: #ffffff; }
       footer .tt-color-scheme-02 .tt-social-icon li a {
         color: #ffffff; }
@@ -14235,7 +14235,7 @@ footer {
       footer .tt-color-scheme-03 .tt-mobile-collapse .tt-collapse-content {
         color: #888888; }
         footer .tt-color-scheme-03 .tt-mobile-collapse .tt-collapse-content a {
-          color: #2879fe; }
+          color: #2B5A80; }
         footer .tt-color-scheme-03 .tt-mobile-collapse .tt-collapse-content a:hover {
           color: #ffffff; }
       footer .tt-color-scheme-03 .tt-box-copyright {
@@ -14245,10 +14245,10 @@ footer {
         color: #888888; }
       footer .tt-color-scheme-03 .tt-list li a:hover,
       footer .tt-color-scheme-03 .tt-mobile-collapse .tt-collapse-content .tt-list li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       footer .tt-color-scheme-03 .tt-list li.active a,
       footer .tt-color-scheme-03 .tt-mobile-collapse .tt-collapse-content .tt-list li.active a {
-        color: #2879fe; }
+        color: #2B5A80; }
       footer .tt-color-scheme-03 address span {
         color: #ffffff; }
       footer .tt-color-scheme-03 .tt-social-icon li a {
@@ -14260,7 +14260,7 @@ footer {
         border-color: #ffffff;
         color: #777777; }
       footer .tt-color-scheme-03 .tt-newsletter .form-control:focus {
-        border-color: #2879fe;
+        border-color: #2B5A80;
         background: #ffffff;
         color: #777777; }
       footer .tt-color-scheme-03 .tt-newsletter ::-webkit-input-placeholder {
@@ -14272,7 +14272,7 @@ footer {
       footer .tt-color-scheme-03 .tt-newsletter :-ms-input-placeholder {
         color: #777777; }
       footer .tt-color-scheme-03 .tt-newsletter .btn {
-        background: #2879fe;
+        background: #2B5A80;
         color: #ffffff; }
       footer .tt-color-scheme-03 .tt-newsletter .btn:hover {
         background: #000000;
@@ -14301,7 +14301,7 @@ footer {
         border-color: #ffffff;
         color: #ffffff; }
       footer .tt-color-scheme-04 .tt-newsletter .form-control:focus {
-        border-color: #2879fe;
+        border-color: #2B5A80;
         background: #ffffff;
         color: #ffffff; }
       footer .tt-color-scheme-04 .tt-newsletter ::-webkit-input-placeholder {
@@ -14313,7 +14313,7 @@ footer {
       footer .tt-color-scheme-04 .tt-newsletter :-ms-input-placeholder {
         color: #777777; }
       footer .tt-color-scheme-04 .tt-newsletter .btn {
-        background: #2879fe;
+        background: #2B5A80;
         color: #ffffff; }
       footer .tt-color-scheme-04 .tt-newsletter .btn:hover {
         background: #000000;
@@ -14350,9 +14350,9 @@ footer {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
-          /*justify-content: flex-start;
+          justify-content: flex-start;
           align-content: flex-start;
-          align-items: flex-start;*/
+          align-items: flex-start;
           width: 100%; }
         footer .tt-footer-custom:not(:last-child) .tt-col-item {
           width: 100%; }
@@ -14421,7 +14421,7 @@ footer {
         text-align: left;
         outline: none; }
       footer .tt-mobile-collapse .tt-collapse-title:hover:not(:focus) {
-        color: #2879fe; }
+        color: #2B5A80; }
       footer .tt-mobile-collapse .tt-collapse-title:before {
         content: '\e9b1';
         font-family: "wokiee";
@@ -14461,7 +14461,7 @@ footer {
         border-color: #ffffff; }
       footer .tt-newsletter .form-control:focus {
         color: #777777;
-        border-color: #2879fe;
+        border-color: #2B5A80;
         background: #ffffff; }
       footer .tt-newsletter ::-webkit-input-placeholder {
         color: #777777; }
@@ -14472,7 +14472,7 @@ footer {
       footer .tt-newsletter :-ms-input-placeholder {
         color: #777777; }
       footer .tt-newsletter .btn {
-        background: #2879fe;
+        background: #2B5A80;
         color: #ffffff; }
       footer .tt-newsletter .btn:hover {
         background: #000000;
@@ -14480,9 +14480,9 @@ footer {
       footer .tt-list li a {
         color: #888888; }
       footer .tt-list li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       footer address a {
-        color: #2879fe; }
+        color: #2B5A80; }
       footer address a:hover {
         color: #191919; }
       footer address span {
@@ -14501,7 +14501,7 @@ footer {
         footer .tt-social-icon li a:hover {
           color: #191919; }
       footer .tt-logo .tt-title {
-        color: #2879fe; } }
+        color: #2B5A80; } }
   footer > *:nth-child(1) {
     margin-top: 0; }
 
@@ -14541,7 +14541,7 @@ footer {
       color: #ffffff; }
       .f-mobile-dark + .tt-back-to-top:hover {
         background: #222222;
-        color: #2879fe; } }
+        color: #2B5A80; } }
 
 /*---------------------------------------*/
 /*--------     5. Blog pages     --------*/
@@ -14653,7 +14653,7 @@ footer {
   .tt-listing-post .tt-post .tt-post-content .tt-tag a {
     display: inline-block;
     padding: 2px 5px;
-    color: #2879fe;
+    color: #2B5A80;
     transition: color 0.2s linear, background-color 0.2s linear; }
   .tt-listing-post .tt-post .tt-post-content .tt-tag a:hover {
     color: #191919; }
@@ -14668,7 +14668,7 @@ footer {
     color: #191919;
     display: inline-block; }
   .tt-listing-post .tt-post .tt-post-content .tt-title a:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .tt-listing-post .tt-post .tt-post-content .tt-description {
   margin-top: 24px; }
@@ -14705,9 +14705,9 @@ footer {
       display: inline-block;
       transition: color 0.2s linear, background-color 0.2s linear; }
   .tt-listing-post .tt-post .tt-post-content .tt-meta .tt-comments a:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
     .tt-listing-post .tt-post .tt-post-content .tt-meta .tt-comments a:hover .tt-icon {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .tt-listing-post .tt-post .tt-post-content .tt-btn {
   margin-top: 33px; }
@@ -14777,7 +14777,7 @@ footer {
     float: left;
     transition: color 0.2s linear; }
   .tt-video-block .link-video:hover:before {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-video-block .link-video:before {
     content: '\ea0b';
     font-family: "wokiee";
@@ -14790,7 +14790,7 @@ footer {
 /* .tt-box-link */
 .tt-box-link {
   background: #f7f8fa;
-  color: #2879fe;
+  color: #2B5A80;
   display: block;
   font-size: 14px;
   padding: 5px 16px 9px 12px;
@@ -14841,7 +14841,7 @@ footer {
     .tt-post-single .tt-tag a {
       display: inline-block;
       padding: 2px 5px;
-      color: #2879fe;
+      color: #2B5A80;
       transition: color 0.2s linear, background-color 0.2s linear; }
     .tt-post-single .tt-tag a:hover {
       color: #191919; }
@@ -14917,7 +14917,7 @@ footer {
     color: #999999;
     text-align: left; }
     .tt-post-single .post-meta a {
-      color: #2879fe;
+      color: #2B5A80;
       letter-spacing: 0.02em;
       transition: color 0.2s linear, background-color 0.2s linear; }
     .tt-post-single .post-meta a:hover {
@@ -15032,7 +15032,7 @@ footer {
     .tt-comments-layout .tt-item div[class^="tt-comments-level-"] .tt-content p {
       margin-top: 7px; }
     .tt-comments-layout .tt-item div[class^="tt-comments-level-"] .tt-content .tt-btn {
-      color: #2879fe;
+      color: #2B5A80;
       font-size: 20px;
       line-height: 1;
       display: inline-block;
@@ -15127,11 +15127,11 @@ footer {
       margin-top: -2px;
       margin-left: -5px;
       letter-spacing: 0.03em;
-      color: #2879fe; }
+      color: #2B5A80; }
       .tt-blog-thumb .tt-title-description .tt-tag a {
         display: inline-block;
         padding: 2px 5px;
-        color: #2879fe;
+        color: #2B5A80;
         transition: color 0.2s linear, background-color 0.2s linear; }
       .tt-blog-thumb .tt-title-description .tt-tag a:hover {
         color: #191919; }
@@ -15149,7 +15149,7 @@ footer {
         display: inline-block;
         transition: color 0.2s linear, background-color 0.2s linear; }
       .tt-blog-thumb .tt-title-description .tt-title a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-blog-thumb .tt-title-description p {
       margin-top: 13px; }
     .tt-blog-thumb .tt-title-description .tt-meta {
@@ -15188,9 +15188,9 @@ footer {
           display: inline-block;
           transition: color 0.2s linear, background-color 0.2s linear; }
       .tt-blog-thumb .tt-title-description .tt-meta .tt-comments a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
         .tt-blog-thumb .tt-title-description .tt-meta .tt-comments a:hover .tt-icon {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-blog-thumb .tt-title-description > *:nth-child(1) {
       margin-top: 0; }
   @media (max-width: 575px) {
@@ -15265,7 +15265,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
     cursor: pointer;
     transition: color 0.2s linear, background-color 0.2s linear; }
   .tt-form-search .tt-btn-icon:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 /* tt-aside-info */
 .tt-aside-info {
@@ -15301,7 +15301,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
       display: inline-block;
       transition: color 0.2s linear, background-color 0.2s linear; }
     .tt-list-inline li a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 /* tt-aside-subscribe-box */
 .tt-aside-subscribe-box form {
@@ -15318,14 +15318,14 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
 .tt-aside-post .item .tt-tag {
   font-size: 12px;
   line-height: 22px;
-  color: #2879fe;
+  color: #2B5A80;
   font-weight: 400;
   margin: -2px 0 0 -5px;
   padding: 0 0 5px 0;
   font-family: "Hind", sans-serif;
   letter-spacing: 0.02em; }
   .tt-aside-post .item .tt-tag a {
-    color: #2879fe;
+    color: #2B5A80;
     padding: 2px 5px;
     transition: color 0.2s linear; }
   .tt-aside-post .item .tt-tag a:hover {
@@ -15347,7 +15347,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
 .tt-aside-post .item > a:not([class]):hover {
   color: #777777; }
   .tt-aside-post .item > a:not([class]):hover .tt-title {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .tt-aside-post .item p {
   margin-top: 5px; }
@@ -15400,9 +15400,9 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
         font-weight: 500;
         transition: color 0.2s linear; }
       .tt-pagination ul li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-pagination ul li.active a {
-      color: #2879fe; }
+      color: #2B5A80; }
   .tt-pagination .btn-pagination {
     font-family: "wokiee";
     font-size: 20px;
@@ -15414,7 +15414,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
     top: -2px;
     transition: color 0.2s linear; }
   .tt-pagination .btn-pagination:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-pagination .btn-prev:before {
     content: "\e9cd"; }
   .tt-pagination .btn-next:before {
@@ -15514,7 +15514,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
         .tt-layout-01-post .tt-post .tt-post-content .tt-tag a {
           display: inline-block;
           padding: 2px 5px;
-          color: #2879fe;
+          color: #2B5A80;
           transition: color 0.2s linear, background-color 0.2s linear; }
         .tt-layout-01-post .tt-post .tt-post-content .tt-tag a:hover {
           color: #191919; }
@@ -15530,7 +15530,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
           color: #191919;
           display: inline-block; }
         .tt-layout-01-post .tt-post .tt-post-content .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
       .tt-layout-01-post .tt-post .tt-post-content .tt-description {
         margin-top: 14px; }
       .tt-layout-01-post .tt-post .tt-post-content .tt-meta {
@@ -15566,9 +15566,9 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
             display: inline-block;
             transition: color 0.2s linear, background-color 0.2s linear; }
         .tt-layout-01-post .tt-post .tt-post-content .tt-meta .tt-comments a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
           .tt-layout-01-post .tt-post .tt-post-content .tt-meta .tt-comments a:hover .tt-icon {
-            color: #2879fe; }
+            color: #2B5A80; }
       .tt-layout-01-post .tt-post .tt-post-content .tt-btn {
         margin-top: 23px; }
       .tt-layout-01-post .tt-post .tt-post-content > *:nth-child(1):not(.tt-tag) {
@@ -15581,7 +15581,7 @@ html:not(.ie) .tt-blog-thumb .tt-title-description .tt-background {
         .tt-layout-01-post .tt-post .tt-post-content .tt-description {
           margin-top: 7px; } }
   .tt-layout-01-post .tt-post:hover .tt-post-img i {
-    color: #2879fe; }
+    color: #2B5A80; }
   @media (min-width: 576px) {
     .tt-layout-01-post .tt-post:hover .tt-post-content .tt-background {
       top: -10px;
@@ -15874,7 +15874,7 @@ html:not(.ie) .tt-layout-01-post .tt-post-content .tt-background {
         content: '\e9b5';
         display: inline-block; }
       .tt-portfolio-content figure figcaption .tt-btn-zomm:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       .tt-portfolio-content figure figcaption .tt-title {
         font-size: 16px;
         line-height: 1.3;
@@ -15887,7 +15887,7 @@ html:not(.ie) .tt-layout-01-post .tt-post-content .tt-background {
         .tt-portfolio-content figure figcaption .tt-title a {
           color: #ffffff; }
         .tt-portfolio-content figure figcaption .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
       .tt-portfolio-content figure figcaption p {
         margin-top: 4px;
         letter-spacing: 0.005em; }
@@ -16008,7 +16008,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
         color: #191919;
         transition: all 0.2s linear; }
       .tt-product-single-info .tt-add-info ul li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product-single-info .tt-add-info ul li:not(:first-child) {
       margin-top: 6px; }
   .tt-product-single-info .tt-add-info span:fist-child {
@@ -16026,7 +16026,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
     line-height: 40px;
     font-family: "Hind", sans-serif;
     font-weight: 500;
-    color: #2879fe; }
+    color: #2B5A80; }
     .tt-product-single-info .tt-price span {
       display: inline-block; }
     .tt-product-single-info .tt-price .sale-price {
@@ -16034,7 +16034,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
       margin-right: 7px; }
     .tt-product-single-info .tt-price .old-price,
     .tt-product-single-info .tt-price .old-price .money {
-      color: #2879fe;
+      color: #2B5A80;
       text-decoration: line-through; }
   .tt-product-single-info .tt-review {
     display: flex;
@@ -16051,7 +16051,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
       .tt-product-single-info .tt-review .tt-rating .icon-star-empty:before {
         color: #d4d4d4; }
     .tt-product-single-info .tt-review a {
-      color: #2879fe;
+      color: #2B5A80;
       display: inline-block;
       transition: all 0.2s linear; }
       .tt-product-single-info .tt-review a:hover {
@@ -16233,7 +16233,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
   align-content: flex-start;
   align-items: center; }
   .tt-review-block .tt-row-custom-02 a {
-    color: #2879fe;
+    color: #2B5A80;
     font-size: 14px;
     text-decoration: underline; }
   .tt-review-block .tt-row-custom-02 a:hover {
@@ -16328,7 +16328,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
     letter-spacing: 0.03em;
     padding: 0 0 6px 0; }
     .tt-review-block .tt-review-form .tt-message-info span {
-      color: #2879fe; }
+      color: #2B5A80; }
   .tt-review-block .tt-review-form .tt-rating-indicator {
     display: flex;
     flex-direction: row;
@@ -16526,7 +16526,7 @@ html.edge .tt-portfolio-content figure:hover figcaption {
   position: relative;
   cursor: pointer; }
   .video-link-product [class^="icon-"] {
-    color: #2879fe;
+    color: #2B5A80;
     font-size: 30px;
     line-height: 30px;
     transition: all 0.2s linear; }
@@ -16644,7 +16644,7 @@ html.win.ie .tt-options-swatch.options-middle li a {
 
 .product-information-buttons a {
   display: inline-flex;
-  color: #2879fe;
+  color: #2B5A80;
   font-size: 14px;
   transition: color 0.2s linear; }
   .product-information-buttons a:first-child {
@@ -16691,7 +16691,7 @@ ul.tt-options-swatch {
     color: #777777; }
   ul.tt-options-swatch li:hover a:not(.options-color):not(.options-color-img),
   ul.tt-options-swatch li.active a:not(.options-color):not(.options-color-img) {
-    background: #2879fe;
+    background: #2B5A80;
     color: #ffffff; }
   ul.tt-options-swatch li .options-color {
     font-size: 0;
@@ -16730,7 +16730,7 @@ ul.tt-options-swatch {
   ul.tt-options-swatch li .options-color:before {
     border: 0px solid #ffffff; }
   ul.tt-options-swatch li .options-color:after {
-    border: 0px solid #2879fe; }
+    border: 0px solid #2B5A80; }
   ul.tt-options-swatch li .options-color:hover:before {
     border-width: 6px; }
   ul.tt-options-swatch li .options-color:hover:after {
@@ -16764,7 +16764,7 @@ ul.tt-options-swatch {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 6px;
-        border: 0px solid #2879fe;
+        border: 0px solid #2B5A80;
         transition: border-width 0.1s linear; }
       ul.tt-options-swatch li .options-color-img img {
         -o-object-fit: cover;
@@ -16878,7 +16878,7 @@ ul.tt-options-swatch {
   bottom: 10px; }
 
 .tt-product-single-img .tt-btn-zomm:hover {
-  background: #2879fe;
+  background: #2B5A80;
   color: #ffffff; }
 
 .zoomContainer {
@@ -17192,7 +17192,7 @@ html.ie.gecko body.modal-open {
     line-height: 1;
     font-weight: 500; }
     .tt-modal-addtocart.desctope .tt-modal-messages [class^="icon-"] {
-      color: #2879fe; }
+      color: #2B5A80; }
   .tt-modal-addtocart.desctope .tt-modal-product {
     margin-top: 26px; }
     .tt-modal-addtocart.desctope .tt-modal-product .tt-img img {
@@ -17208,7 +17208,7 @@ html.ie.gecko body.modal-open {
       .tt-modal-addtocart.desctope .tt-modal-product .tt-title a {
         color: #191919; }
         .tt-modal-addtocart.desctope .tt-modal-product .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-modal-addtocart.desctope .tt-modal-product .tt-qty {
       font-family: "Hind", sans-serif;
       font-weight: 500;
@@ -17234,7 +17234,7 @@ html.ie.gecko body.modal-open {
       color: #191919;
       margin-top: 11px; }
       .tt-modal-addtocart.desctope .tt-cart-total .tt-total .tt-price {
-        color: #2879fe;
+        color: #2B5A80;
         font-size: 24px; }
   .tt-modal-addtocart.desctope [class^="col"] .btn {
     margin-top: 20px; }
@@ -17263,7 +17263,7 @@ html.ie.gecko body.modal-open {
     font-weight: 500;
     padding-bottom: 13px; }
     .tt-modal-addtocart.mobile .tt-modal-messages [class^="icon-"] {
-      color: #2879fe; }
+      color: #2B5A80; }
   .tt-modal-addtocart.mobile [class^="btn"] {
     padding-top: 9px;
     padding-bottom: 9px; }
@@ -17343,7 +17343,7 @@ html.ie.gecko body.modal-open {
       font-size: 20px;
       line-height: 1; }
     .modal .modal-header .close:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
   .modal .modal-body:not(.no-background) {
     background-color: #ffffff;
     border-radius: 6px; }
@@ -17424,7 +17424,7 @@ html.ie.gecko body.modal-open {
   margin-top: -5px; }
 
 .tt-modal-newsletter .tt-modal-newsletter-promo .tt-title-large {
-  color: #2879fe;
+  color: #2B5A80;
   font-size: 64px;
   line-height: 1.1;
   font-weight: 500;
@@ -17462,7 +17462,7 @@ html.ie.gecko body.modal-open {
     .tt-modal-newsletter .row-social-icon .tt-social-icon li a {
       color: #d8d8d8; }
     .tt-modal-newsletter .row-social-icon .tt-social-icon li a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .tt-modal-newsletter .checkbox-group {
   color: #ffffff;
@@ -17476,7 +17476,7 @@ html.ie.gecko body.modal-open {
     .tt-modal-newsletter .checkbox-group label .check:before {
       left: 0; }
   .tt-modal-newsletter .checkbox-group label:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 @media (min-width: 501px) {
   .tt-modal-newsletter .subscribe-form .input-group .btn {
@@ -17566,7 +17566,7 @@ html.ie.gecko body.modal-open {
         transition: color 0.2s linear;
         text-decoration: none; }
         .tt-layout-product-info-02 ul:not([class]) > li a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-layout-product-info-02 ul:not([class]) > li:before {
       content: '';
       width: 3px;
@@ -17596,7 +17596,7 @@ html.ie.gecko body.modal-open {
   font-weight: 500; }
   .tt-modal-subsribe-good i {
     font-size: 30px;
-    color: #2879fe;
+    color: #2B5A80;
     position: relative;
     top: 5px;
     margin-right: 1px; }
@@ -17617,7 +17617,7 @@ html.ie.gecko body.modal-open {
   font-weight: 500; }
 
 #ModalVerifyAge .tt-modal-verifyage .tt-title {
-  color: #2879fe;
+  color: #2B5A80;
   font-weight: 600;
   font-size: 28px;
   line-height: 34px; }
@@ -17760,7 +17760,7 @@ html.ie.gecko body.modal-open {
     margin-top: 5px; }
 
 #ModalDiscount .tt-modal-discount .tt-link-underline {
-  color: #2879fe;
+  color: #2B5A80;
   text-decoration: underline; }
   #ModalDiscount .tt-modal-discount .tt-link-underline:hover {
     text-decoration: none; }
@@ -18027,7 +18027,7 @@ body.modal-newsletter03 .modal-backdrop {
     width: 280px; } }
 
 body.modal-newsletter04 .modal-backdrop {
-  background: linear-gradient(0deg, #2879FE 0%, #C928FE 100%);
+  background: linear-gradient(0deg, #2B5A80 0%, #C928FE 100%);
   opacity: 1; }
 
 #Modalnewsletter04 .modal-header .close:hover {
@@ -18237,7 +18237,7 @@ body.modal-newsletter05 .modal-backdrop {
   .tt-filters-options .tt-btn-toggle {
     display: none; }
     .tt-filters-options .tt-btn-toggle a {
-      color: #2879fe;
+      color: #2B5A80;
       transition: color 0.2s linear;
       font-weight: 500;
       letter-spacing: -0.02em;
@@ -18254,7 +18254,7 @@ body.modal-newsletter05 .modal-backdrop {
       margin-right: 7px;
       font-weight: normal;
       transition: color 0.2s linear;
-      color: #2879fe; }
+      color: #2B5A80; }
     .tt-filters-options .tt-btn-toggle a:hover {
       color: #191919; }
       .tt-filters-options .tt-btn-toggle a:hover:before {
@@ -18492,7 +18492,7 @@ body.no-scroll {
         letter-spacing: 0.04em;
         color: #191919; }
       .tt-btn-col-close a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
         .tt-btn-col-close a:hover:before {
           color: #191919; } }
   @media (max-width: 1024px) {
@@ -18505,7 +18505,7 @@ body.no-scroll {
         top: 1px;
         color: #191919; }
       .tt-btn-col-close a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
         .tt-btn-col-close a:hover:before {
           color: #191919; }
       .tt-btn-col-close a:after {
@@ -18607,7 +18607,7 @@ html.ie .tt-btn-col-close {
     font-weight: normal;
     color: #191919; }
   .tt-collapse .tt-collapse-title:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
     .tt-collapse .tt-collapse-title:hover:after {
       color: #191919; }
   .tt-collapse .tt-collapse-title + .tt-collapse-content {
@@ -18666,13 +18666,13 @@ html.ie .tt-btn-col-close {
       font-family: "wokiee";
       color: #191919; }
     .tt-filter-list li a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
       .tt-filter-list li a:hover:before {
         color: #191919; }
   .tt-filter-list li.active {
-    color: #2879fe; }
+    color: #2B5A80; }
     .tt-filter-list li.active a:before {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .tt-filter-list + .btn-link-02 {
   margin-top: 6px; }
@@ -18695,9 +18695,9 @@ html.ie .tt-btn-col-close {
     letter-spacing: 0.01em;
     transition: color 0.2s linear; }
   .tt-list-row li a:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-list-row li.active a {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-list-row li:last-child a {
     padding-bottom: 0; }
 
@@ -18762,7 +18762,7 @@ html.ie .tt-btn-col-close {
   opacity: 1; }
 
 .tt-aside .tt-item:hover .tt-title {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 /* tt-filter-list (aside filter block)*/
 .tt-filter-detach-option .filters-mobile .filters-row-select:not(:first-child) {
@@ -18977,7 +18977,7 @@ html.ie .tt-btn-col-close {
           transition: color 0.2s linear; }
         .tt-product.tt-view .tt-description .tt-add-info li a:hover,
         .tt-product-design02.tt-view .tt-description .tt-add-info li a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-product.tt-view .tt-description .tt-title,
     .tt-product-design02.tt-view .tt-description .tt-title {
       font-family: "Hind", sans-serif;
@@ -18989,7 +18989,7 @@ html.ie .tt-btn-col-close {
         color: #191919; }
         .tt-product.tt-view .tt-description .tt-title a:hover,
         .tt-product-design02.tt-view .tt-description .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-product.tt-view .tt-description .tt-price,
     .tt-product-design02.tt-view .tt-description .tt-price {
       display: flex;
@@ -19039,7 +19039,7 @@ html.ie .tt-btn-col-close {
       display: inline-block;
       position: relative;
       letter-spacing: 0.04em;
-      color: #2879fe;
+      color: #2B5A80;
       font-size: 14px;
       margin-top: 2px;
       transition: color 0.2s linear; }
@@ -19052,7 +19052,7 @@ html.ie .tt-btn-col-close {
       margin-right: 6px;
       font-weight: normal;
       position: relative;
-      color: #2879fe;
+      color: #2B5A80;
       transition: color 0.2s linear; }
     .tt-product.tt-view .tt-description .tt-btn-addtocart:hover,
     .tt-product-design02.tt-view .tt-description .tt-btn-addtocart:hover {
@@ -19078,7 +19078,7 @@ html.ie .tt-btn-col-close {
         font-family: "wokiee"; }
       .tt-product.tt-view .tt-description .tt-btn-quickview:hover,
       .tt-product-design02.tt-view .tt-description .tt-btn-quickview:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product.tt-view .tt-description .tt-btn-wishlist,
     .tt-product-design02.tt-view .tt-description .tt-btn-wishlist {
       font-size: 16px;
@@ -19097,10 +19097,10 @@ html.ie .tt-btn-col-close {
         font-family: "wokiee"; }
       .tt-product.tt-view .tt-description .tt-btn-wishlist:hover,
       .tt-product-design02.tt-view .tt-description .tt-btn-wishlist:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       .tt-product.tt-view .tt-description .tt-btn-wishlist.active,
       .tt-product-design02.tt-view .tt-description .tt-btn-wishlist.active {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product.tt-view .tt-description .tt-btn-compare,
     .tt-product-design02.tt-view .tt-description .tt-btn-compare {
       font-size: 16px;
@@ -19119,10 +19119,10 @@ html.ie .tt-btn-col-close {
         font-family: "wokiee"; }
       .tt-product.tt-view .tt-description .tt-btn-compare:hover,
       .tt-product-design02.tt-view .tt-description .tt-btn-compare:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       .tt-product.tt-view .tt-description .tt-btn-compare.active,
       .tt-product-design02.tt-view .tt-description .tt-btn-compare.active {
-        color: #2879fe; }
+        color: #2B5A80; }
     @media (max-width: 370px) {
       .tt-product.tt-view .tt-description .tt-btn-quickview,
       .tt-product.tt-view .tt-description .tt-btn-wishlist,
@@ -19232,7 +19232,7 @@ html.ie .tt-btn-col-close {
           line-height: 1;
           margin-top: -2px; }
         .tt-product:not(.tt-view) .tt-image-box .tt-btn-quickview:hover {
-          background: #2879fe;
+          background: #2B5A80;
           color: #ffffff; }
       .tt-product:not(.tt-view) .tt-image-box .tt-btn-wishlist {
         display: flex;
@@ -19260,10 +19260,10 @@ html.ie .tt-btn-col-close {
           line-height: 1;
           margin-top: 1px; }
         .tt-product:not(.tt-view) .tt-image-box .tt-btn-wishlist:hover {
-          background: #2879fe;
+          background: #2B5A80;
           color: #ffffff; }
         .tt-product:not(.tt-view) .tt-image-box .tt-btn-wishlist.active {
-          background: #2879fe;
+          background: #2B5A80;
           color: #ffffff; }
       .tt-product:not(.tt-view) .tt-image-box .tt-btn-compare {
         display: flex;
@@ -19291,10 +19291,10 @@ html.ie .tt-btn-col-close {
           line-height: 1;
           margin-top: 1px; }
         .tt-product:not(.tt-view) .tt-image-box .tt-btn-compare:hover {
-          background: #2879fe;
+          background: #2B5A80;
           color: #ffffff; }
         .tt-product:not(.tt-view) .tt-image-box .tt-btn-compare.active {
-          background: #2879fe;
+          background: #2B5A80;
           color: #ffffff; }
       .tt-product:not(.tt-view) .tt-image-box .tt-btn-quickview + .tt-btn-wishlist {
         top: 61px; }
@@ -19379,7 +19379,7 @@ html.ie .tt-btn-col-close {
             color: #999999;
             transition: color 0.2s linear; }
           .tt-product:not(.tt-view) .tt-description .tt-add-info li a:hover {
-            color: #2879fe; }
+            color: #2B5A80; }
       .tt-product:not(.tt-view) .tt-description .tt-title {
         font-family: "Hind", sans-serif;
         font-size: 14px;
@@ -19388,7 +19388,7 @@ html.ie .tt-btn-col-close {
         .tt-product:not(.tt-view) .tt-description .tt-title a {
           color: #191919; }
           .tt-product:not(.tt-view) .tt-description .tt-title a:hover {
-            color: #2879fe; }
+            color: #2B5A80; }
       .tt-product:not(.tt-view) .tt-description .tt-select {
         background-color: #f7f8fa;
         color: #777777;
@@ -19447,11 +19447,11 @@ html.ie .tt-btn-col-close {
         display: inline-block;
         position: relative;
         letter-spacing: 0.04em;
-        color: #2879fe;
+        color: #2B5A80;
         font-size: 14px;
         transition: color 0.2s linear; }
         .tt-product:not(.tt-view) .tt-description .tt-btn-addtocart.thumbprod-button-bg {
-          background-color: #2879fe;
+          background-color: #2B5A80;
           color: #ffffff;
           padding: 3px 16px 9px;
           border-radius: 6px;
@@ -19459,7 +19459,7 @@ html.ie .tt-btn-col-close {
           .tt-product:not(.tt-view) .tt-description .tt-btn-addtocart.thumbprod-button-bg:before {
             color: #ffffff; }
           .tt-product:not(.tt-view) .tt-description .tt-btn-addtocart.thumbprod-button-bg:hover {
-            background-color: #2267d8;
+            background-color: #2c6594;
             color: #ffffff; }
             .tt-product:not(.tt-view) .tt-description .tt-btn-addtocart.thumbprod-button-bg:hover:before {
               color: #ffffff; }
@@ -19471,7 +19471,7 @@ html.ie .tt-btn-col-close {
         margin-right: 6px;
         font-weight: normal;
         position: relative;
-        color: #2879fe;
+        color: #2B5A80;
         transition: color 0.2s linear; }
       .tt-product:not(.tt-view) .tt-description .tt-btn-addtocart:hover {
         color: #191919; }
@@ -19646,7 +19646,7 @@ html.ie .tt-btn-col-close {
             color: #191919;
             transition: all 0.2s linear; }
           .tt-product-design02:not(.tt-view) .tt-description .tt-add-info li a:hover {
-            color: #2879fe; }
+            color: #2B5A80; }
       .tt-product-design02:not(.tt-view) .tt-description .tt-title {
         font-family: "Hind", sans-serif;
         font-size: 14px;
@@ -19655,7 +19655,7 @@ html.ie .tt-btn-col-close {
         .tt-product-design02:not(.tt-view) .tt-description .tt-title a {
           color: #191919; }
         .tt-product-design02:not(.tt-view) .tt-description .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
       .tt-product-design02:not(.tt-view) .tt-description .tt-price {
         display: flex;
         flex-direction: row;
@@ -19696,18 +19696,18 @@ html.ie .tt-btn-col-close {
       line-height: 0; }
     .tt-product-design02:not(.tt-view) .tt-options-swatch li:hover a:not(.options-color) {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     .tt-product-design02:not(.tt-view) .tt-options-swatch li:hover .options-color:before {
       border-color: #ffffff; }
     .tt-product-design02:not(.tt-view) .tt-options-swatch li.active a:not(.options-color) {
       color: #ffffff;
-      background: #2879fe; }
+      background: #2B5A80; }
     .tt-product-design02:not(.tt-view) .tt-options-swatch li.active .options-color:before {
       border-color: #ffffff; }
     .tt-product-design02:not(.tt-view) .tt-btn-addtocart {
       font-size: 20px;
       line-height: 1;
-      color: #2879fe;
+      color: #2B5A80;
       font-size: 14px;
       font-weight: 400;
       font-family: "Hind", sans-serif;
@@ -19718,7 +19718,7 @@ html.ie .tt-btn-col-close {
     .tt-product-design02:not(.tt-view) .tt-btn-addtocart:before {
       content: '\e986';
       font-family: "wokiee";
-      color: #2879fe;
+      color: #2B5A80;
       font-size: 20px;
       top: 3px;
       margin-right: 6px;
@@ -19745,9 +19745,9 @@ html.ie .tt-btn-col-close {
         content: '\e9a8';
         font-family: "wokiee"; }
       .tt-product-design02:not(.tt-view) .tt-btn-quickview:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       .tt-product-design02:not(.tt-view) .tt-btn-quickview.active {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product-design02:not(.tt-view) .tt-btn-wishlist {
       font-size: 16px;
       line-height: 1;
@@ -19764,9 +19764,9 @@ html.ie .tt-btn-col-close {
         content: '\eb16';
         font-family: "wokiee"; }
       .tt-product-design02:not(.tt-view) .tt-btn-wishlist:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       .tt-product-design02:not(.tt-view) .tt-btn-wishlist.active {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product-design02:not(.tt-view) .tt-btn-compare {
       font-size: 16px;
       line-height: 1;
@@ -19783,9 +19783,9 @@ html.ie .tt-btn-col-close {
         content: '\eb18';
         font-family: "wokiee"; }
       .tt-product-design02:not(.tt-view) .tt-btn-compare:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
       .tt-product-design02:not(.tt-view) .tt-btn-compare.active {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product-design02:not(.tt-view) .tt-btn-link {
       font-size: 20px;
       line-height: 1;
@@ -19797,7 +19797,7 @@ html.ie .tt-btn-col-close {
       content: '\e91e';
       font-family: "wokiee"; }
     .tt-product-design02:not(.tt-view) .tt-btn-link:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
     .tt-product-design02:not(.tt-view) .tt-description.scrollable {
       padding-top: 0;
       padding-bottom: 0; }
@@ -19990,7 +19990,7 @@ html.ie .tt-btn-col-close {
           transition: color 0.2s linear; }
         .tt-product:not(.tt-view) .tt-description .tt-add-info li a:hover,
         .tt-product-design02:not(.tt-view) .tt-description .tt-add-info li a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-product:not(.tt-view) .tt-description .tt-title,
     .tt-product-design02:not(.tt-view) .tt-description .tt-title {
       font-family: "Hind", sans-serif;
@@ -20002,7 +20002,7 @@ html.ie .tt-btn-col-close {
         color: #191919; }
         .tt-product:not(.tt-view) .tt-description .tt-title a:hover,
         .tt-product-design02:not(.tt-view) .tt-description .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-product:not(.tt-view) .tt-description .tt-select,
     .tt-product-design02:not(.tt-view) .tt-description .tt-select {
       background-color: #f7f8fa;
@@ -20080,7 +20080,7 @@ html.ie .tt-btn-col-close {
       color: #ffffff;
       font-size: 12px;
       padding: 2px 16px 11px;
-      background: #2879fe;
+      background: #2B5A80;
       border-radius: 5px;
       transition: background 0.2s linear; }
       .tt-product:not(.tt-view) .tt-description .tt-btn-addtocart:before,
@@ -20127,7 +20127,7 @@ html.ie .tt-btn-col-close {
         font-family: "wokiee"; }
       .tt-product:not(.tt-view) .tt-description .tt-btn-quickview.active,
       .tt-product-design02:not(.tt-view) .tt-description .tt-btn-quickview.active {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product:not(.tt-view) .tt-description .tt-btn-wishlist,
     .tt-product-design02:not(.tt-view) .tt-description .tt-btn-wishlist {
       font-size: 16px;
@@ -20146,7 +20146,7 @@ html.ie .tt-btn-col-close {
         font-family: "wokiee"; }
       .tt-product:not(.tt-view) .tt-description .tt-btn-wishlist.active,
       .tt-product-design02:not(.tt-view) .tt-description .tt-btn-wishlist.active {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product:not(.tt-view) .tt-description .tt-btn-compare,
     .tt-product-design02:not(.tt-view) .tt-description .tt-btn-compare {
       font-size: 16px;
@@ -20165,7 +20165,7 @@ html.ie .tt-btn-col-close {
         font-family: "wokiee"; }
       .tt-product:not(.tt-view) .tt-description .tt-btn-compare.active,
       .tt-product-design02:not(.tt-view) .tt-description .tt-btn-compare.active {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-product:not(.tt-view) .tt-description > *:nth-child(1),
     .tt-product-design02:not(.tt-view) .tt-description > *:nth-child(1) {
       margin-top: 0; } }
@@ -20224,7 +20224,7 @@ html.ie .tt-btn-col-close {
       padding: 19px 0 13px;
       white-space: nowrap;
       background-color: rgba(255, 255, 255, 0.9);
-      color: #2879fe;
+      color: #2B5A80;
       border-radius: 6px; }
       .tt-countdown_box .countdown-row .countdown-section .countdown-amount {
         font-size: 16px;
@@ -20408,7 +20408,7 @@ html.ie .tt-btn-col-close {
       color: #191919;
       transition: all 0.2s linear; }
     .tt-productone .tt-description .tt-add-info li a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .tt-productone .tt-description .tt-title {
   font-weight: 500;
@@ -20419,7 +20419,7 @@ html.ie .tt-btn-col-close {
   .tt-productone .tt-description .tt-title a {
     color: #191919; }
   .tt-productone .tt-description .tt-title a:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .tt-productone .tt-description .tt-rating {
   margin-top: 4px; }
@@ -20465,7 +20465,7 @@ html.ie .tt-btn-col-close {
   padding: 8px 8px;
   display: inline-block; }
   .tt-productone .tt-description .tt-productone__btn-icon:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-productone .tt-description .tt-productone__btn-icon:not(:first-child) {
     margin-left: 5px; }
 
@@ -20721,7 +20721,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
     color: #191919; }
   .tt-promo-box:not(.hover-type-2):hover .btn-underline {
     border-color: transparent;
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .tt-promo-box.hover-type-2:hover .tt-description-wrapper .tt-background {
   background: rgba(40, 121, 254, 0.9); }
@@ -20733,9 +20733,9 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
   border-color: transparent; }
 
 .tt-promo-box.hover-type-3:hover .tt-description-wrapper .tt-title-large:not(.tt-base-color) {
-  color: #2879fe; }
+  color: #2B5A80; }
   .tt-promo-box.hover-type-3:hover .tt-description-wrapper .tt-title-large:not(.tt-base-color) span {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .tt-promo-box.hover-type-4 img {
   -webkit-transform: scale(1);
@@ -21229,7 +21229,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
         line-height: 19px;
         color: #999999; }
   .tt-collection-item:hover .tt-description .tt-title {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-collection-item.hover-type-02 .tt-image-box {
     overflow: hidden; }
   .tt-collection-item.hover-type-02 img {
@@ -21290,14 +21290,14 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
     .tt-promo02 .tt-description a.tt-title {
       display: inline-block; }
       .tt-promo02 .tt-description a.tt-title:hover > * {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-promo02 .tt-description p {
       font-size: 14px;
       line-height: 22px;
       margin-top: 4px;
       transition: color 0.2s linear; }
       .tt-promo02 .tt-description p a {
-        color: #2879fe;
+        color: #2B5A80;
         text-decoration: underline; }
         .tt-promo02 .tt-description p a:hover {
           text-decoration: none; }
@@ -21334,7 +21334,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
     .tt-promo02 .tt-description [class^="btn"]:nth-child(1) {
       margin-top: 6px !important; }
   .tt-promo02.tt-no-btn:hover .tt-description .tt-title > * {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-promo02 .tt-description:first-child {
     padding-top: 0; }
   .tt-promo02 a {
@@ -21464,7 +21464,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
     cursor: pointer;
     transition: color 0.2s linear; }
     .tt-promo-fixed .tt-btn-close:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
   .tt-promo-fixed .tt-btn-close:before {
     display: block;
     content: "\e9b3"; }
@@ -21500,7 +21500,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
       display: inline-block;
       transition: color 0.2s linear; }
       .tt-promo-fixed .tt-description a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-promo-fixed .tt-description p {
       margin: 0;
       font-size: 14px;
@@ -21546,7 +21546,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
   display: inline-block;
   transition: color 0.2s linear; }
   .tt-shopcart-table .tt-btn-close:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-shopcart-table .tt-btn-close:before {
     content: "\ea21"; }
 
@@ -21563,7 +21563,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
   .tt-shopcart-table .tt-title a {
     color: #191919; }
     .tt-shopcart-table .tt-title a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .tt-shopcart-table .tt-price {
   color: #191919;
@@ -21703,7 +21703,7 @@ html:not(.ie) .tt-promo-box .tt-description .tt-description-wrapper .tt-backgrou
       padding-top: 19px; }
     .tt-shopcart-table01 tfoot tr td {
       font-size: 24px;
-      color: #2879fe;
+      color: #2B5A80;
       font-weight: 500;
       text-align: right;
       padding: 0px 0; }
@@ -21744,7 +21744,7 @@ table + *[class^="btn"] {
   .tt-shopcart-table-02 .tt-btn-close:before {
     content: "\ea21"; }
   .tt-shopcart-table-02 .tt-btn-close:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .tt-shopcart-table-02 .tt-product-img img {
   max-width: 100px;
@@ -21759,7 +21759,7 @@ table + *[class^="btn"] {
   .tt-shopcart-table-02 .tt-title a {
     color: #191919; }
     .tt-shopcart-table-02 .tt-title a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .tt-shopcart-table-02 .tt-list-description {
   list-style: none;
@@ -21932,7 +21932,7 @@ table + *[class^="btn"] {
   font-family: "Hind", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  color: #2879fe;
+  color: #2B5A80;
   margin-top: 20px;
   letter-spacing: 0.02em;
   display: inline-block;
@@ -21968,7 +21968,7 @@ table + *[class^="btn"] {
   .tt-shopping-layout .tt-shop-btn *[class^="btn"] {
     margin-left: 37px; }
   .tt-shopping-layout .tt-shop-btn svg {
-    fill: #2879fe;
+    fill: #2B5A80;
     width: 20px;
     height: 20px;
     position: relative;
@@ -22000,7 +22000,7 @@ table + *[class^="btn"] {
     padding-bottom: 11px;
     padding-right: 10px; }
     .tt-table-shop-01 tbody td a {
-      color: #2879fe;
+      color: #2B5A80;
       transition: color 0.2s linear; }
       .tt-table-shop-01 tbody td a:hover {
         color: #191919; }
@@ -22024,7 +22024,7 @@ table + *[class^="btn"] {
     padding-bottom: 7px;
     padding-right: 10px; }
     .tt-table-shop-02 tbody td a {
-      color: #2879fe;
+      color: #2B5A80;
       transition: color 0.2s linear; }
       .tt-table-shop-02 tbody td a:hover {
         color: #191919; }
@@ -22078,11 +22078,11 @@ table + *[class^="btn"] {
   .tt-shop-info .tt-item .tt-title + .tt-description {
     margin-top: 17px; }
   .tt-shop-info .tt-item .tt-description strong {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-shop-info .tt-item .tt-description p {
     margin-top: 0; }
   .tt-shop-info .tt-item .tt-description a {
-    color: #2879fe;
+    color: #2B5A80;
     transition: color 0.2s linear; }
     .tt-shop-info .tt-item .tt-description a:hover {
       color: #191919; }
@@ -22123,7 +22123,7 @@ table + *[class^="btn"] {
       width: 100%;
       height: 100%;
       top: attr(data-style-top);
-      background-color: #2879fe;
+      background-color: #2B5A80;
       border-radius: 50%;
       transition: background-color 0.2s linear; }
     .tt-lookbook .tt-hotspot .tt-btn:before {
@@ -22237,7 +22237,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
   .tt-hotspot-content .tt-btn-close:before {
     content: "\e9b3"; }
   .tt-hotspot-content .tt-btn-close:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-hotspot-content .tt-img {
     width: 99px;
     min-width: 99px; }
@@ -22256,7 +22256,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
       .tt-hotspot-content .tt-description .tt-title a {
         color: #191919; }
         .tt-hotspot-content .tt-description .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-hotspot-content .tt-description .tt-price {
       color: #191919;
       font-weight: 500;
@@ -22378,7 +22378,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
     .slider-revolution .tp-bullets .bullet {
       width: 14px;
       height: 14px;
-      background-color: #2b5a80;
+      background-color: #dadada;
       margin: 0 5px;
       border-radius: 50%;
       cursor: pointer; }
@@ -22408,7 +22408,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
         font-size: 35px;
         line-height: 35px; } }
     .slider-revolution .video-play a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
   .slider-revolution .video-play .btn-pause {
     display: none; }
   .slider-revolution .video-play.pause .btn-play {
@@ -22429,7 +22429,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
     font-family: "Hind", sans-serif; }
   .slider-revolution [class^="btn"] {
     position: inherit;
-    background-color: #2879fe;
+    background-color: #2B5A80;
     color: #ffffff; }
     .slider-revolution [class^="btn"]:hover {
       background-color: #2267d8;
@@ -22490,7 +22490,7 @@ body:not(.touch-device) .tt-hotspot .tt-btn:hover:after {
       margin-top: 10px;
       max-width: 250px; }
     .slider-revolution .tp-caption1-wd-4 {
-      margin-top: 17px; } }
+      margin-top: 17px!; } }
   @media (min-width: 461px) and (max-width: 575px) {
     .slider-revolution .tp-caption1-wd-1 {
       font-size: 15px;
@@ -23147,14 +23147,14 @@ body.is-loaded .loading-content {
   height: .5em;
   display: inline-block;
   vertical-align: middle;
-  background: #2879fe;
+  background: #2B5A80;
   border-radius: 50%;
   margin: 0 .125em;
   -webkit-animation: loading-dots-middle-dots .5s linear infinite;
   animation: loading-dots-middle-dots .5s linear infinite; }
 
 .loading-dots.dark-gray i {
-  background: #2879fe; }
+  background: #2B5A80; }
 
 .loading-dots i:first-child {
   -webkit-animation: loading-dots-first-dot .5s infinite;
@@ -23489,7 +23489,7 @@ body.loaded #loader-wrapper {
     border-radius: 50%;
     background-color: black;
     position: absolute;
-    background: #2879fe; }
+    background: #2B5A80; }
   #loader .dot:nth-child(2) {
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s; }
@@ -23811,9 +23811,7 @@ html:not(.ie) #loader .dot {
         line-height: 2.65;
         cursor: pointer;
         text-align: center;
-        /*background-color: #2879fe;*/ 
-         background-color:#ffffff;
-      }
+        background-color: #2B5A80; }
         #tt-boxedbutton .rtlbutton .box-btn i {
           font-size: 20px;
           line-height: 1.65; }
@@ -23822,7 +23820,7 @@ html:not(.ie) #loader .dot {
         float: left;
         height: 35px;
         line-height: 2.65;
-        background-color: #2879fe;
+        background-color: #2B5A80;
         width: 0;
         font-weight: 300;
         padding: 0 0px 0 0;
@@ -23836,7 +23834,7 @@ html:not(.ie) #loader .dot {
         height: 35px;
         font-weight: 300;
         line-height: 2.65;
-        color: #2879fe;
+        color: #2B5A80;
         transition: width 0.2s linear; }
       #tt-boxedbutton .rtlbutton:hover {
         width: auto; }
@@ -23914,7 +23912,7 @@ html:not(.ie) #loader .dot {
           transform: scale(1);
           transition: all 0.2s linear; }
           #tt-boxedbutton .rtlbutton-color .box-description ul li a.colorswatch1 {
-            background-color: #2879fe; }
+            background-color: #2B5A80; }
           #tt-boxedbutton .rtlbutton-color .box-description ul li a.colorswatch2 {
             background-color: #08da97; }
           #tt-boxedbutton .rtlbutton-color .box-description ul li a.colorswatch3 {
@@ -24281,7 +24279,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-description .tt-title a {
         color: #191919; }
         .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-description .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-description .tt-price {
       display: flex;
       flex-direction: row;
@@ -24302,7 +24300,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-description .tt-description .tt-price span {
         display: inline-block; }
   .tt-wishlist-box .tt-wishlist-list .tt-item .tt-col-btn .tt-btn-addtocart {
-    background: #2879fe;
+    background: #2B5A80;
     font-family: "Hind", sans-serif;
     border: none;
     color: #ffffff;
@@ -24443,7 +24441,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
         content: "\ea83";
         font-family: "wokiee"; }
       .tt-compare-table .tt-item .tt-image-box .tt-remove-item:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-compare-table .tt-item .tt-image-box .tt-label-location {
       display: flex;
       flex-direction: row;
@@ -24489,7 +24487,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       .tt-compare-table .tt-item .tt-image-box .tt-title a {
         color: #191919; }
         .tt-compare-table .tt-item .tt-image-box .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-compare-table .tt-item .tt-image-box .tt-price {
       display: flex;
       flex-direction: row;
@@ -24510,7 +24508,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       .tt-compare-table .tt-item .tt-image-box .tt-price span {
         display: inline-block; }
   .tt-compare-table .tt-item .tt-btn-addtocart {
-    background: #2879fe;
+    background: #2B5A80;
     font-family: "Hind", sans-serif;
     border: none;
     color: #ffffff;
@@ -24568,7 +24566,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
   .tt-compare-table .slick-track {
     margin: 0; }
   .tt-compare-table .slick-arrow:hover {
-    background: #2879fe;
+    background: #2B5A80;
     color: #ffffff; }
   .tt-compare-table .slick-arrow:before {
     font-family: "wokiee";
@@ -24652,7 +24650,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
         content: "\ea83";
         font-family: "wokiee"; }
       .tt-compare-table02 .tt-col-item .tt-image-box .tt-remove-item:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-compare-table02 .tt-col-item .tt-image-box .tt-img {
       margin-top: 2px; }
       .tt-compare-table02 .tt-col-item .tt-image-box .tt-img img {
@@ -24699,7 +24697,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
       .tt-compare-table02 .tt-col-item .tt-image-box .tt-title a {
         color: #191919; }
         .tt-compare-table02 .tt-col-item .tt-image-box .tt-title a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
     .tt-compare-table02 .tt-col-item .tt-image-box .tt-price {
       display: flex;
       flex-direction: row;
@@ -24730,7 +24728,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
     .tt-compare-table02 .tt-col-item .tt-value:last-child {
       padding: 20px; }
   .tt-compare-table02 .tt-col-item .tt-btn-addtocart {
-    background: #2879fe;
+    background: #2B5A80;
     font-family: "Hind", sans-serif;
     border: none;
     color: #ffffff;
@@ -24786,7 +24784,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
   .tt-compare-table02 .slick-track {
     margin: 0; }
   .tt-compare-table02 .slick-arrow:hover {
-    background: #2879fe;
+    background: #2B5A80;
     color: #ffffff; }
   .tt-compare-table02 .slick-arrow:before {
     font-family: "wokiee";
@@ -24824,7 +24822,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
     font-weight: 500;
     letter-spacing: 0.05em;
     color: #ffffff;
-    background: #2879fe;
+    background: #2B5A80;
     padding: 11px 40px 7px 20px;
     min-width: 200px;
     border: none;
@@ -24908,7 +24906,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
         .tt-menu-categories .tt-dropdown-menu nav > ul > li > a span {
           display: inline-block; }
         .tt-menu-categories .tt-dropdown-menu nav > ul > li > a:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
           .tt-menu-categories .tt-dropdown-menu nav > ul > li > a:hover img {
             opacity: 1; }
           .tt-menu-categories .tt-dropdown-menu nav > ul > li > a:hover path {
@@ -24938,7 +24936,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
         top: 9px;
         pointer-events: none; }
       .tt-menu-categories .tt-dropdown-menu nav > ul > li:hover > a {
-        color: #2879fe; }
+        color: #2B5A80; }
         .tt-menu-categories .tt-dropdown-menu nav > ul > li:hover > a > img {
           opacity: 0.5; }
       .tt-menu-categories .tt-dropdown-menu nav > ul > li:hover .dropdown-menu {
@@ -25022,13 +25020,13 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
           color: #191919;
           transition: all 0.2s linear; }
         .tt-menu-categories .tt-dropdown-menu nav > ul .tt-title-submenu:hover {
-          color: #2879fe; }
+          color: #2B5A80; }
           .tt-menu-categories .tt-dropdown-menu nav > ul .tt-title-submenu:hover a {
-            color: #2879fe; }
+            color: #2B5A80; }
         .tt-menu-categories .tt-dropdown-menu nav > ul .tt-title-submenu.active {
-          color: #2879fe; }
+          color: #2B5A80; }
           .tt-menu-categories .tt-dropdown-menu nav > ul .tt-title-submenu.active a {
-            color: #2879fe; }
+            color: #2B5A80; }
       .tt-menu-categories .tt-dropdown-menu nav > ul .tt-title-submenu + .slick-slider,
       .tt-menu-categories .tt-dropdown-menu nav > ul .tt-title-submenu + .tt-menu-slider {
         margin-top: 4px; }
@@ -25065,7 +25063,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
               opacity: 0;
               transition: all 0.2s linear; }
           .tt-menu-categories .tt-dropdown-menu nav > ul .tt-megamenu-submenu > li > a:hover {
-            color: #2879fe; }
+            color: #2B5A80; }
             .tt-menu-categories .tt-dropdown-menu nav > ul .tt-megamenu-submenu > li > a:hover img {
               visibility: visible;
               right: -34px;
@@ -25074,7 +25072,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
             left: 0;
             opacity: 1; }
         .tt-menu-categories .tt-dropdown-menu nav > ul .tt-megamenu-submenu > li.active > a {
-          color: #2879fe; }
+          color: #2B5A80; }
         .tt-menu-categories .tt-dropdown-menu nav > ul .tt-megamenu-submenu li:hover > ul {
           visibility: visible;
           opacity: 1; }
@@ -25129,17 +25127,17 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
               color: #777777;
               transition: all 0.2s linear; }
             .tt-menu-categories .tt-dropdown-menu nav > ul .tt-megamenu-submenu > li ul li a:hover {
-              color: #2879fe; }
+              color: #2B5A80; }
           .tt-menu-categories .tt-dropdown-menu nav > ul .tt-megamenu-submenu > li ul li.active > a {
-            color: #2879fe; }
+            color: #2B5A80; }
       .tt-menu-categories .tt-dropdown-menu nav > ul [class^="tt-promo"] {
         margin-bottom: 9px; }
   .tt-menu-categories .tt-dropdown-menu nav > ul li.acitve > a {
-    color: #2879fe; }
+    color: #2B5A80; }
     .tt-menu-categories .tt-dropdown-menu nav > ul li.acitve > a svg path {
       fill: #191919; }
     .tt-menu-categories .tt-dropdown-menu nav > ul li.acitve > a [class^="icon"] {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 /*mobile toggle btn*/
 .tt-categories-toggle {
@@ -25154,7 +25152,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
   color: #191919;
   transition: color 0.2s linear; }
   .tt-categories-toggle:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .tt-dropdown-promo {
   display: flex;
@@ -25246,7 +25244,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
   top: calc(50% - 14px); }
 
 .widget-hotspot {
-  background: #2879fe;
+  background: #2B5A80;
   width: 32px;
   height: 32px;
   font-size: 14px;
@@ -25285,7 +25283,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
     right: -3px; } }
 
 .hotspot-modal-tm-1 .snpt-modal.hotspot-modal .ico-close:hover {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .snptico-close:before {
   content: "\ea0f";
@@ -25310,14 +25308,14 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
 
 .hotspot-modal .modal-dialog .next-chevron:hover:before,
 .hotspot-modal .modal-dialog .prev-chevron:hover:before {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .hotspot-modal--frontend .product-images-slide img {
   border-bottom-left-radius: 0px !important;
   border-top-left-radius: 0px !important; }
 
 .hotspot-modal-tm-1 public-modal > .hotspot-modal .public-hotspot-info-holder .public-hotspot-info .public-hotspot-info__btn-buy.snpt-cta-btn {
-  background: #2879fe;
+  background: #2B5A80;
   color: #ffffff;
   border-radius: 0 !important;
   padding: 11px 19px 10px;
@@ -25352,7 +25350,7 @@ html.ie #tt-boxedbutton .rtlbutton-color:hover .box-description {
   height: auto; }
 
 .hotspot-modal-tm-1 .snpt-modal.hotspot-modal .hotspot {
-  background: #2879fe;
+  background: #2B5A80;
   color: #ffffff;
   width: 30px;
   height: 30px;
@@ -25416,7 +25414,7 @@ a:focus {
   padding-right: 0; }
 
 .btn {
-  background: #2879fe;
+  background: #2d5474;
   font-family: "Hind", sans-serif;
   border: none;
   color: #ffffff;
@@ -25472,7 +25470,7 @@ button:focus {
   box-shadow: none; }
 
 .btn:hover {
-  background: #2267d8;
+  background: #2B5A80;
   color: #ffffff;
   outline: none; }
 
@@ -25514,12 +25512,12 @@ button:focus {
   color: #ffffff; }
 
 .btn.btn-dark:hover {
-  background: #2879fe;
+  background: #2B5A80;
   color: #ffffff; }
 
 /* btn-type02 */
 .btn-type02 {
-  background: linear-gradient(180deg, #7EC0FE 0%, #2879FE 100%);
+  background: linear-gradient(180deg, #7EC0FE 0%, #2B5A80 100%);
   border: 2px solid #000000;
   font-family: "Hind", sans-serif;
   color: #ffffff;
@@ -25552,7 +25550,7 @@ button:focus {
     height: 100%;
     opacity: 0;
     transition: opacity 0.2s linear;
-    background: linear-gradient(180deg, #2879FE 0%, #7EC0FE 100%); }
+    background: linear-gradient(180deg, #2B5A80 0%, #7EC0FE 100%); }
   @media (max-width: 575px) {
     .btn-type02 {
       font-size: 12px;
@@ -25588,16 +25586,16 @@ button:focus {
 /* /btn-type02 */
 .btn.btn-border {
   background: transparent;
-  color: #2879fe;
-  border: 2px solid #2879fe;
+  color: #2B5A80;
+  border: 2px solid #2B5A80;
   height: 40px;
   padding-left: 29px;
   padding-right: 29px; }
 
 .btn.btn-border:hover {
-  background: #191919;
+  background: #2B5A80;
   color: #ffffff;
-  border-color: #191919; }
+  border-color: #2B5A80; }
 
 .btn.btn-border01 {
   background: transparent;
@@ -25618,7 +25616,7 @@ button:focus {
 .btn-link:focus {
   display: inline-block;
   font-size: 14px;
-  color: #2879fe;
+  color: #2B5A80;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -25639,7 +25637,7 @@ button:focus {
 .btn-link-02:focus {
   display: inline-block;
   font-size: 14px;
-  color: #2879fe;
+  color: #2B5A80;
   text-decoration: none;
   transition: all 0.2s linear; }
 
@@ -25655,10 +25653,10 @@ button:focus {
   font-weight: 500;
   letter-spacing: 0.04em;
   font-family: "Hind", sans-serif;
-  border-bottom: 1px solid #2879fe;
+  border-bottom: 1px solid #2B5A80;
   transition: all 0.2s linear; }
   .btn-underline:not([class$="color"]) {
-    color: #2879fe; }
+    color: #2B5A80; }
   .btn-underline:hover {
     text-decoration: none;
     color: #191919;
@@ -25688,7 +25686,7 @@ button:focus {
     margin-top: 20px; } }
 
 .tt-link {
-  color: #2879fe;
+  color: #2B5A80;
   transition: all 0.2s linear; }
   .tt-link:hover {
     color: #191919; }
@@ -25716,7 +25714,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #191919;
     transition: color 0.2s linear, background-color 0.2s linear; }
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 h1:not(.tt-title-subpages):not([class^="tt-title"]):not([class^="tt-collapse"]):not([class^="tt-aside"]) {
   font-size: 46px;
@@ -25969,7 +25967,7 @@ input::-ms-clear {
     width: 89%; } }
 
 .link {
-  color: #2879fe;
+  color: #2B5A80;
   transition: all 0.2s linear; }
 
 .link:hover {
@@ -26060,14 +26058,14 @@ input::-ms-clear {
       color: #191919;
       transition: all 0.2s linear; }
   .tt-list-dot > li a:hover {
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-list-dot > li:not(:first-child) {
     margin-top: 6px; }
   .tt-list-dot > li:before {
     content: '';
     width: 3px;
     height: 3px;
-    background: #2879fe;
+    background: #2B5A80;
     display: inline-block;
     position: absolute;
     top: 8px;
@@ -26134,7 +26132,7 @@ input::-ms-clear {
   .tt-blockquote .tt-icon {
     font-size: 36px;
     line-height: 26px;
-    color: #2879fe; }
+    color: #2B5A80; }
   .tt-blockquote .tt-title {
     font-size: 30px;
     line-height: 40px;
@@ -26171,7 +26169,7 @@ input::-ms-clear {
       line-height: 31px; } }
 
 .tt-blockquote.add-hover:hover .tt-title {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .tt-blockquote:not(:first-child) {
   margin-top: 21px; }
@@ -26378,7 +26376,7 @@ Content
     padding: 0;
     color: #191919; }
     .tt-block-title .tt-title a {
-      color: #2b5a80;
+      color: #2B5A80;
       text-decoration: none;
       display: inline-block;
       position: relative;
@@ -26390,10 +26388,10 @@ Content
         bottom: 2px;
         height: 2px;
         width: 100%;
-        background: #2b5a80; }
+        background: #2B5A80; }
     .tt-block-title .tt-title a:hover {
       border-color: transparent;
-      color: #2879fe; }
+      color: #2B5A80; }
       .tt-block-title .tt-title a:hover:before {
         background: transparent; }
   .tt-block-title .tt-title-small {
@@ -26404,13 +26402,13 @@ Content
     padding: 0;
     color: #191919; }
     .tt-block-title .tt-title-small a {
-      color: #2879fe;
+      color: #2B5A80;
       text-decoration: none;
       display: inline-block;
-      border-bottom: 2px solid #2879fe;
+      border-bottom: 2px solid #2B5A80;
       transition: border 0.2s linear; }
     .tt-block-title .tt-title-small a:hover {
-      color: #2879fe;
+      color: #2B5A80;
       border-color: transparent; }
   .tt-block-title .tt-description {
     font-size: 16px;
@@ -26453,7 +26451,7 @@ Content
       .tt-box-faq-listing .tt-box-faq .tt-title a {
         color: #191919; }
       .tt-box-faq-listing .tt-box-faq .tt-title a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-box-faq-listing .tt-box-faq p {
       margin-top: 16px; }
     @media (min-width: 790px) {
@@ -26569,7 +26567,7 @@ Content
       margin-top: 25px;
       color: #191919; }
       .tt-about-box .tt-blockquote-02 .tt-icon {
-        color: #2879fe; }
+        color: #2B5A80; }
       .tt-about-box .tt-blockquote-02 .tt-title {
         margin-top: 0px;
         padding-bottom: 0;
@@ -26676,7 +26674,7 @@ Content
     .tt-contact-box a {
       color: #ffffff; }
       .tt-contact-box a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-contact-box .tt-title {
       color: #ffffff;
       font-size: 34px;
@@ -26765,7 +26763,7 @@ Content
 .tt-contact-info .tt-icon {
   font-size: 55px;
   line-height: 1.1;
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .tt-contact-info .tt-title {
   font-size: 20px;
@@ -26893,7 +26891,7 @@ textarea:focus:-ms-input-placeholder {
   border-color: red; }
 
 .form-default .form-control:focus {
-  border-color: #2879fe;
+  border-color: #2B5A80;
   background: #ffffff; }
 
 .form-default .tt-required {
@@ -26961,7 +26959,7 @@ textarea:focus:-ms-input-placeholder {
       z-index: 10;
       -webkit-transform: scale(0);
       transform: scale(0);
-      background: #2879fe;
+      background: #2B5A80;
       border-radius: 2px;
       width: 17px;
       height: 17px;
@@ -26980,7 +26978,7 @@ textarea:focus:-ms-input-placeholder {
       font-weight: 400; }
 
 .checkbox-group:hover label {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 input[type=checkbox]:checked ~ label .check {
   opacity: 1;
@@ -27002,7 +27000,7 @@ input[type=checkbox]:checked ~ label .check {
     -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
-    background-color: #2879fe; }
+    background-color: #2B5A80; }
   .radio .outer {
     width: 16px;
     height: 16px;
@@ -27018,7 +27016,7 @@ input[type=checkbox]:checked ~ label .check {
     top: 2px;
     left: 2px;
     display: block;
-    background-color: #2879fe;
+    background-color: #2B5A80;
     opacity: 0;
     position: relative;
     -webkit-transform: scale(0);
@@ -27031,7 +27029,7 @@ input[type=checkbox]:checked ~ label .check {
     opacity: 1; }
 
 .radio:hover {
-  color: #2879fe; }
+  color: #2B5A80; }
   .radio:hover .inner {
     -webkit-transform: scale(1);
     transform: scale(1); }
@@ -27116,7 +27114,7 @@ input[type=checkbox]:checked ~ label .check {
     .tt-box-thumb .tt-title a {
       color: #191919; }
     .tt-box-thumb .tt-title a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
   .tt-box-thumb p {
     margin-top: 15px;
     padding-left: 5px;
@@ -27511,10 +27509,10 @@ input[type=checkbox]:checked ~ label .check {
       display: inline-block;
       position: relative; }
       .tt-login-form .tt-item .additional-links a {
-        color: #2879fe;
+        color: #2B5A80;
         transition: all 0.2s linear; }
       .tt-login-form .tt-item .additional-links a:hover {
-        color: #191919; }
+        color: #2B5A80; }
   @media (max-width: 789px) {
     .tt-login-form {
       display: block;
@@ -27576,7 +27574,7 @@ input[type=checkbox]:checked ~ label .check {
     border-radius: 50%;
     transition: all 0.2s linear; }
   .tt-slick-button .slick-arrow:hover {
-    background: #2879fe;
+    background: #2B5A80;
     color: #ffffff; }
   .tt-slick-button .slick-arrow:before {
     font-family: "wokiee";
@@ -27608,7 +27606,7 @@ input[type=checkbox]:checked ~ label .check {
     border-radius: 50%;
     transition: all 0.2s linear; }
   .tt-slick-button-vertical .slick-arrow:hover {
-    background: #2879fe;
+    background: #2B5A80;
     color: #ffffff; }
   .tt-slick-button-vertical .slick-arrow:before {
     font-family: "wokiee";
@@ -27649,7 +27647,7 @@ input[type=checkbox]:checked ~ label .check {
   transition: all 0.2s linear; }
 
 .arrow-location-01 .slick-arrow:hover {
-  background: #2879fe;
+  background: #2B5A80;
   color: #ffffff; }
 
 .arrow-location-01 .slick-arrow:before {
@@ -27688,7 +27686,7 @@ input[type=checkbox]:checked ~ label .check {
   transition: all 0.2s linear; }
 
 .arrow-location-02 .slick-arrow:hover {
-  background: #2879fe;
+  background: #2B5A80;
   color: #ffffff; }
 
 .arrow-location-02 .slick-arrow:before {
@@ -27727,7 +27725,7 @@ input[type=checkbox]:checked ~ label .check {
   transition: all 0.2s linear; }
 
 .arrow-location-03 .slick-arrow:hover {
-  color: #2879fe;
+  color: #2B5A80;
   background: transparent; }
 
 .arrow-location-03 .slick-arrow:before {
@@ -27765,7 +27763,7 @@ input[type=checkbox]:checked ~ label .check {
   transition: all 0.2s linear; }
 
 .arrow-location-tab .slick-arrow:hover {
-  background: #2879fe;
+  background: #2B5A80;
   color: #ffffff; }
 
 .arrow-location-tab .slick-arrow:before {
@@ -27817,7 +27815,7 @@ input[type=checkbox]:checked ~ label .check {
   transition: all 0.2s linear; }
 
 .arrow-location-right-top .slick-arrow:hover {
-  background: #2879fe;
+  background: #2B5A80;
   color: #ffffff; }
 
 .arrow-location-right-top .slick-arrow:before {
@@ -27908,7 +27906,7 @@ input[type=checkbox]:checked ~ label .check {
 
 .arrow-location-center-02 .slick-arrow:hover {
   color: #ffffff;
-  background: #2879fe; }
+  background: #2B5A80; }
 
 .arrow-location-center-02 .slick-arrow:before {
   font-family: "wokiee";
@@ -27950,7 +27948,7 @@ input[type=checkbox]:checked ~ label .check {
 
 .arrow-location-center-03 .slick-arrow:hover {
   color: #ffffff;
-  background: #2879fe; }
+  background: #2B5A80; }
 
 .arrow-location-center-03 .slick-arrow:before {
   font-family: "wokiee";
@@ -28200,7 +28198,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
     transition: 0.4s;
     width: 62px;
     height: 62px;
-    background-color: #2b5a80!important;
+    background-color: rgba(40, 121, 254, 0.75);
     color: #ffffff;
     font-size: 0;
     line-height: 0;
@@ -28248,7 +28246,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
     line-height: 1; }
   .tt-back-to-top:hover {
     background: #ffffff;
-    color: #2879fe; } }
+    color: #2B5A80; } }
 
 /* tt-breadcrumb */
 .tt-breadcrumb {
@@ -28272,7 +28270,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
         color: #777777;
         transition: color 0.2s linear; }
       .tt-breadcrumb ul li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-breadcrumb ul li:not(:first-child):before {
       content: '/';
       position: absolute;
@@ -28326,7 +28324,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
   .tt-services-block .tt-col-icon {
     align-self: flex-start;
     font-size: 50px;
-    color: #2b5a80; }
+    color: #2B5A80; }
     .tt-services-block .tt-col-icon [class^="icon-"] {
       position: relative;
       top: -5px; }
@@ -28369,7 +28367,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
 .tt-services-block:hover {
   text-decoration: none; }
   .tt-services-block:hover .tt-title {
-    color: #2879fe; }
+    color: #2B5A80; }
 
 .tt-product-single-aside > *:not(:first-child) {
   margin-top: 30px; }
@@ -28438,7 +28436,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
     transition: opacity 0.2s linear;
     opacity: 0; }
   .tt-img-box:hover {
-    border-color: #2879fe; }
+    border-color: #2B5A80; }
   .tt-img-box:hover:before {
     opacity: 1; }
   @media (min-width: 1025px) {
@@ -28496,7 +28494,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
     .tt-layout-vertical .tt-title a {
       color: #191919; }
       .tt-layout-vertical .tt-title a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
   .tt-layout-vertical .tt-description .tt-rating {
     margin-left: -1px; }
   .tt-layout-vertical .tt-description .tt-add-info {
@@ -28510,7 +28508,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
       .tt-layout-vertical .tt-description .tt-add-info li a {
         color: #999999; }
       .tt-layout-vertical .tt-description .tt-add-info li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
   .tt-layout-vertical .tt-description .tt-price {
     font-size: 16px;
     line-height: 20px;
@@ -28682,7 +28680,7 @@ body:not(.touch-device) .arrow-location-center-02.tt-arrow-hover:hover .slick-ar
   .tt-content-info:hover {
     color: #777777; }
     .tt-content-info:hover .tt-title {
-      color: #2879fe; }
+      color: #2B5A80; }
   @media (min-width: 1230px) {
     .tt-content-info {
       padding-left: 20%;
@@ -28766,9 +28764,9 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
       display: inline-block;
       transition: all 0.2s linear; }
       .tt-items-categories ul li a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .tt-items-categories ul li.active a {
-      color: #2879fe; }
+      color: #2B5A80; }
 
 .tt-items-categories .tt-title-block + [class^="btn"] {
   margin-top: 14px; }
@@ -28777,7 +28775,7 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
   margin-top: 0; }
 
 .tt-items-categories.active .tt-title {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .container-bg {
   background-size: cover; }
@@ -28846,7 +28844,7 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
       background-position: center; }
       .tt-btn-img.tt-layout-01 .tt-img:before {
         content: '';
-        background: #2879fe;
+        background: #2B5A80;
         display: block;
         position: absolute;
         top: 0;
@@ -28918,7 +28916,7 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
       bottom: 0px;
       left: 0px; }
     .tt-btn-img.tt-layout-02:hover:before {
-      border: 2px solid #2879fe; }
+      border: 2px solid #2B5A80; }
 
 /* tab */
 .tab-pane:not(.active) {
@@ -28938,7 +28936,7 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
   top: 0; }
   .tt-loader svg path,
   .tt-loader svg rect {
-    fill: #2879fe; }
+    fill: #2B5A80; }
 
 /*
 	v-tabs-img-nav
@@ -29063,10 +29061,10 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
   .tt-tabs-imgbox.tt-layout-color01 .nav-tabs li a {
     color: #777777; }
     .tt-tabs-imgbox.tt-layout-color01 .nav-tabs li a:hover {
-      color: #2879fe;
+      color: #2B5A80;
       background-color: rgba(255, 255, 255, 0.9); }
     .tt-tabs-imgbox.tt-layout-color01 .nav-tabs li a.active {
-      color: #2879fe;
+      color: #2B5A80;
       background-color: rgba(255, 255, 255, 0.9); }
   .tt-tabs-imgbox.tt-layout-color02 .tt-title-small,
   .tt-tabs-imgbox.tt-layout-color02 .tt-title-large {
@@ -29196,7 +29194,7 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
 
 /* color text */
 .tt-base-color {
-  color: #2879fe; }
+  color: #2B5A80; }
 
 .tt-base-dark-color {
   color: #191919; }
@@ -29622,7 +29620,7 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
     font-size: 14px;
     line-height: 22px; }
   .tt-layout-newsletter03 a {
-    color: #2879FE;
+    color: #2B5A80;
     text-decoration: none; }
     .tt-layout-newsletter03 a:hover {
       text-decoration: underline; }
@@ -29818,7 +29816,7 @@ html:not(.mac):not(.touch-device) .tt-carousel-brands .slick-track {
       .tt-layout-box06 .tt-list-dot-custom > li:not(:first-child) {
         margin-top: 12px; }
     .tt-layout-box06 .tt-list-dot-custom > li a:hover {
-      color: #2879fe; }
+      color: #2B5A80; }
     .tt-layout-box06 .tt-list-dot-custom > li:before {
       content: '';
       width: 9px;
@@ -30521,7 +30519,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
     .obj-data .tt-title a {
       color: #333333; }
       .obj-data .tt-title a:hover {
-        color: #2879fe; }
+        color: #2B5A80; }
     .obj-data .tt-title + * {
       margin-top: 0; }
   .obj-data:not(.text-right), .obj-data:not(.text-left) {
@@ -30580,7 +30578,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
       padding: 7px 11px 4px;
       display: inline-block;
       position: relative;
-      background: linear-gradient(180deg, #7EC0FE 0%, #2879FE 100%);
+      background: linear-gradient(180deg, #7EC0FE 0%, #2B5A80 100%);
       box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
       border-radius: 5px; }
       .nav-tabs__default02 li > a:before {
@@ -30592,7 +30590,7 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, #2879FE 0%, #7EC0FE 100%);
+        background: linear-gradient(180deg, #2B5A80 0%, #7EC0FE 100%);
         opacity: 0;
         transition: opacity 0.2s linear;
         border-radius: 5px; }
@@ -30782,66 +30780,41 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
 
 
 
+    /* My changes */
 
 
 
-
-
-    .fullpage-container
-    {
-      margin-right:-100px!important;
-      margin-left:-100px!important;
-      padding-right: 1px!important;
-      padding-left:1px!important;
-    }
-
-    .tp-caption1-wd-4-change a
-    {
-       background-color: #ffffff!important;
-       color: #2b5a80 !important;
-      
-    }
-    
-
-    header .tt-dropdown-obj .tt-dropdown-toggle
-    {
-      color:#ffffff;
-    }
-
-    /*.second-slide img
-    {
-      max-width: 100%!important;
-      height: auto!important;
-
-      display: block!important;
-      background-repeat: no-repeat!important;
-      background-size: auto!important;
-  
-    }*/
-    .tt-white-color-change
-    {
-      color:#000000!important;
-    }
     .tp-caption1-wd-4-change
     {
-      margin-top:16em!important;
+      margin-top:24em;
+    }
+    .tp-caption1-wd-4-change a
+    {
+      background-color:#ffffff!important;
+      color:#2b5a80!important;
     }
     .first-text-section
     {
       text-align: center!important;
     }
-    .sectione-heading
+    .first-text-section h1
     {
-       color:#2b5a80!important;
+      color:#2b5a80!important;
     }
     .most-liked-button
     {
-      background-color:#2b5a80;
-      border-radius:10px;
-      color:#ffffff;  
-      border-color: #ffffff;
-      font-size:22px;
+      background-color: #2b5a80!important;
+      border-radius: 8px;
+      color:#ffffff;
+      border-color:#ffffff;
+      font-size: 22px;
     }
+    .tt-description:hover .tt-background
+    {
+       background-color:#2b5a80!important;
+    }
+
+
     .tt-description:hover .tt-background
     {
        background-color:#2b5a80!important;
@@ -30864,21 +30837,19 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
     .tt-block-title h2
     {
       color:#2b5a80!important;
-      
-    
     }
-    .tt-header
+
+    .tt-back-to-top
     {
-      position:fixed!important;
+      background-color: #2b5a80;
     }
-    .tt-stuck-nav
+
+    .tt-footer-custom
     {
-      background-color:#2b5a80!important;   
+      text-align: center!important;
     }
-    /*.tt-desktop-header
-    {
-      position:fixed!important;
-    }*/
+
+
     .tt-btn-addtocart
     {
       background-color:#2b5a80!important;
@@ -30909,3 +30880,5 @@ html:not(.mac):not(.touch-device) .tt-bg-fill {
     .tt-btn-compare:hover{
       color:#000000!important;
     }
+    
+    
