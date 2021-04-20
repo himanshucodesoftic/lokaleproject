@@ -205,9 +205,9 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 		Route::get('/','App\Http\Controllers\web\IndexController@index');
 		Route::post('/change_language', 'WebSettingController@changeLanguage');
 		Route::post('/change_currency', 'WebSettingController@changeCurrency');
-		Route::post('/addToCart', 'CartController@addToCart');
-		Route::post('/addToCartFixed', 'CartController@addToCartFixed');
-		Route::post('/addToCartResponsive', 'CartController@addToCartResponsive');
+		Route::post('/addToCart', 'App\Http\Controllers\web\CartController@addToCart');
+		Route::post('/addToCartFixed', 'App\Http\Controllers\web\CartController@addToCartFixed');
+		Route::post('/addToCartResponsive', 'App\Http\Controllers\web\CartController@addToCartResponsive');
 		
 		Route::post('/modal_show', 'ProductsController@ModalShow');
 		Route::post('/reviews', 'ProductsController@reviews');

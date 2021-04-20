@@ -481,6 +481,7 @@ jQuery(document).on('click', '.add-to-Cart', function(e){
 	var formData = jQuery("#add-Product-form").serialize();
 	
  var url = jQuery('#checkout_url').val();
+
  var message;
  jQuery.ajax({
 	 url: '{{ URL::to("/addToCart")}}',

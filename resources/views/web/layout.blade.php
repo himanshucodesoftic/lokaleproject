@@ -90,10 +90,7 @@ $(function(){
 @include('inc.footer')
     <!-- Optional JavaScript; choose one of the two! -->
 
-	@if($result['commonContent']['setting'][124]->value)
-                  <img class="img-fluid" src="{{asset('').$result['commonContent']['setting'][124]->value }}"
-                    alt="blogImage">
-                  @endif
+	
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js')}}" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
@@ -105,13 +102,13 @@ $(function(){
 <a href="#" class="tt-back-to-top" id="js-back-to-top">BACK TO TOP</a>
 
 @include('web.common.modal1')
-
+@include('web.common.scripts')
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 	<script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js')}}"></script>
     <script src="{{asset('separate-include/single-product/single-product.js')}}"></script>
     <!-- <script src="{{asset('https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js')}}" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-     <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js')}}" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script> --> -->
+     <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js')}}" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script> --> s
     
 </body>
 </html>

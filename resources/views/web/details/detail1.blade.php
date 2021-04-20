@@ -251,11 +251,110 @@
 							Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 						</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
 						<div class="tt-wrapper">
+
+						<form name="attributes" id="add-Product-form" method="post">
+						<input type="hidden" name="products_id" value="{{$result['detail']['product_data'][0]->products_id}}">
+              
+              <input type="hidden" name="products_price" id="products_price"
+                  value="@if(!empty($result['detail']['product_data'][0]->flash_price)) {{$result['detail']['product_data'][0]->flash_price+0}} @elseif(!empty($result['detail']['product_data'][0]->discount_price)){{$result['detail']['product_data'][0]->discount_price+0}}@else{{$result['detail']['product_data'][0]->products_price+0}}@endif">
+
+              <input type="hidden" name="checkout" id="checkout_url"
+                value="@if(!empty(app('request')->input('checkout'))) {{ app('request')->input('checkout') }} @else false @endif">
+
+              <input type="hidden" id="max_order"
+                value="@if(!empty($result['detail']['product_data'][0]->products_max_stock)){{ $result['detail']['product_data'][0]->products_max_stock }}@else 0 @endif">
+              
+              @if(!empty($result['cart']))
+              <input type="hidden" name="customers_basket_id" value="{{$result['cart'][0]->customers_basket_id}}">
+              @endif
+
+              <div class="badges" style="margin-bottom: 16px;">
+
+                <?php
+                  $current_date = date("Y-m-d", strtotime("now"));
+
+                  $string = substr($result['detail']['product_data'][0]->products_date_added, 0, strpos($result['detail']['product_data'][0]->products_date_added, ' '));
+                  $date=date_create($string);
+         
+
+                  $after_date = date_format($date,"Y-m-d");
+
+                  if($after_date>=$current_date){
+                    print '<span class="ribbon new" style="top: 0px;">';
+                    print __('website.New');
+                    print '</span>';
+                  }
+                ?>
+
+                <?php
+                $discount_percentage = 0;
+                if(!empty($result['detail']['product_data'][0]->discount_price)){
+                  $discount_price = $result['detail']['product_data'][0]->discount_price * session('currency_value');
+                }
+                $orignal_price = $result['detail']['product_data'][0]->products_price * session('currency_value');
+
+                if(!empty($result['detail']['product_data'][0]->discount_price)){
+
+                  if(($orignal_price+0)>0){
+                    $discounted_price = $orignal_price-$discount_price;
+                    $discount_percentage = $discounted_price/$orignal_price*100;
+                  }else{
+                    $discount_percentage = 0;
+                    $discounted_price = 0;
+                  }
+                }
+                ?>                
+                @if($discount_percentage>0)
+                  <span class="ribbon off" style="left: 85px;top: 0px;" data-toggle="tooltip" title="<?php echo (int)$discount_percentage; ?>% @lang('website.off')"><?php echo (int)$discount_percentage; ?>%</span>    
+                @endif
+                
+                @if($result['detail']['product_data'][0]->is_feature == 1)
+                  <span class="ribbon hot" style="left: 85px;top: 0px;">@lang('website.Featured')</span>
+                @endif
+                <br>
+              </div>
+
+
+              @if(!empty($result['detail']['product_data'][0]->flash_start_date))
+              <div class="countdown pro-timer" style="position: relative; bottom: 1px;" data-toggle="tooltip" data-placement="bottom"
+                title="@lang('website.Countdown Timer')"
+                id="counter_{{$result['detail']['product_data'][0]->products_id}}">
+                <div class='custom_countdown'>0D 00:00:00</div>
+              </div>
+              @endif
 							<div class="tt-row-custom-01">
 								<div class="col-item">
 									<div class="tt-input-counter style-01">
-										<span class="minus-btn"></span>
+		
+									<span class="minus-btn"></span>
 										<input type="text" value="1" size="5">
 										<span class="plus-btn"></span>
 									</div>
@@ -276,7 +375,7 @@
 	  <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">@lang('website.Add to Cart')</button>
 	  @endif
 	@else
-	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">@lang('website.Add to Cart')</button>
+	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"   style="border:2px solid red;">@lang('website.Add to Cart')</button>
 	@endif
 
   @else
@@ -286,7 +385,7 @@
 	<button class="btn btn-danger btn btn-lg swipe-to-top  stock-out-cart" hidden type="button">@lang('website.Out of Stock')</button>
 	@else
 	<button class="btn btn-secondary btn-lg swipe-to-top  add-to-Cart" type="button"
-	  products_id="{{$result['detail']['product_data'][0]->products_id}}"> <i class="icon-f-39"></i>@lang('website.Add to Cart')</button>
+	  products_id="{{$result['detail']['product_data'][0]->products_id}}" > <i class="icon-f-39"></i>@lang('website.Add to Cart')</button>
 	@endif
   @endif
 
@@ -297,9 +396,11 @@
                     @endif
 									<!-- <a href="#" class="btn btn-lg"><i class="icon-f-39"></i>ADD TO CART</a> -->
 								</div>
-							</div>
-						</div>
 				
+							</div>
+			
+						</div>
+						</form>
 						<div class="tt-collapse-block">
 							<div class="tt-item">
 								<div class="tt-collapse-title">DESCRIPTION</div>
@@ -473,3 +574,64 @@
 	</div>
 </div>
 </div>
+
+
+
+
+
+
+
+<script>
+
+  jQuery(document).ready(function(e) {
+  
+    @if(!empty($result['detail']['product_data'][0]->flash_start_date))
+        @if( date("Y-m-d",$result['detail']['product_data'][0]->server_time) >= date("Y-m-d",$result['detail']['product_data'][0]->flash_start_date))
+        var product_div_{{$result['detail']['product_data'][0]->products_id}} = 'product_div_{{$result['detail']['product_data'][0]->products_id}}';
+      var  counter_id_{{$result['detail']['product_data'][0]->products_id}} = 'counter_{{$result['detail']['product_data'][0]->products_id}}';
+      var inputTime_{{$result['detail']['product_data'][0]->products_id}} = "{{date('M d, Y H:i:s' ,$result['detail']['product_data'][0]->flash_expires_date)}}";
+  
+      // Set the date we're counting down to
+      var countDownDate_{{$result['detail']['product_data'][0]->products_id}} = new Date(inputTime_{{$result['detail']['product_data'][0]->products_id}}).getTime();
+  
+      // Update the count down every 1 second
+      var x_{{$result['detail']['product_data'][0]->products_id}} = setInterval(function() {
+  
+        // Get todays date and time
+        var now = new Date().getTime();
+  
+        // Find the distance between now and the count down date
+        var distance_{{$result['detail']['product_data'][0]->products_id}} = countDownDate_{{$result['detail']['product_data'][0]->products_id}} - now;
+  
+        // Time calculations for days, hours, minutes and seconds
+        var days_{{$result['detail']['product_data'][0]->products_id}} = Math.floor(distance_{{$result['detail']['product_data'][0]->products_id}} / (1000 * 60 * 60 * 24));    
+
+        var hours_{{$result['detail']['product_data'][0]->products_id}} = Math.floor((distance_{{$result['detail']['product_data'][0]->products_id}} % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        if (hours_{{$result['detail']['product_data'][0]->products_id}} < 10) hours_{{$result['detail']['product_data'][0]->products_id}} = '0' + hours_{{$result['detail']['product_data'][0]->products_id}};
+
+        var minutes_{{$result['detail']['product_data'][0]->products_id}} = Math.floor((distance_{{$result['detail']['product_data'][0]->products_id}} % (1000 * 60 * 60)) / (1000 * 60));
+        if (minutes_{{$result['detail']['product_data'][0]->products_id}} < 10) minutes_{{$result['detail']['product_data'][0]->products_id}} = '0' + minutes_{{$result['detail']['product_data'][0]->products_id}};
+
+        var seconds_{{$result['detail']['product_data'][0]->products_id}} = Math.floor((distance_{{$result['detail']['product_data'][0]->products_id}} % (1000 * 60)) / 1000);
+        if (seconds_{{$result['detail']['product_data'][0]->products_id}} < 10) seconds_{{$result['detail']['product_data'][0]->products_id}} = '0' + seconds_{{$result['detail']['product_data'][0]->products_id}};
+
+        var days_text = "@lang('website.Days')";
+        // Display the result in the element with id="demo"
+
+        // document.getElementById(counter_id_{{$result['detail']['product_data'][0]->products_id}}).innerHTML = "<span class='days'>"+days_{{$result['detail']['product_data'][0]->products_id}} + "<small>@lang('website.Days')</small></span> <span class='hours'>" + hours_{{$result['detail']['product_data'][0]->products_id}} + "<small>@lang('website.Hours')</small></span> <span class='mintues'> "
+        // + minutes_{{$result['detail']['product_data'][0]->products_id}} + "<small>@lang('website.Minutes')</small></span> <span class='seconds'>" + seconds_{{$result['detail']['product_data'][0]->products_id}} + "<small>@lang('website.Seconds')</small></span> ";
+
+        document.getElementById(counter_id_{{$result['detail']['product_data'][0]->products_id}}).innerHTML = "<div class='custom_countdown'>"+days_{{$result['detail']['product_data'][0]->products_id}} + "D " + hours_{{$result['detail']['product_data'][0]->products_id}} + ":" + minutes_{{$result['detail']['product_data'][0]->products_id}} + ":" + seconds_{{$result['detail']['product_data'][0]->products_id}} + "</div>";
+  
+        // If the count down is finished, write some text
+        if (distance_{{$result['detail']['product_data'][0]->products_id}} < 0) {
+        clearInterval(x_{{$result['detail']['product_data'][0]->products_id}});
+        //document.getElementById(counter_id_{{$result['detail']['product_data'][0]->products_id}}).innerHTML = "EXPIRED";
+        document.getElementById('product_div_{{$result['detail']['product_data'][0]->products_id}}').remove();
+        }
+      }, 1000);
+          @endif
+      @endif
+
+  });
+</script>
