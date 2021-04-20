@@ -395,10 +395,12 @@ class ProductsController extends Controller
         $result['simliar_products'] = $simliar_products;
 
         $cart = '';
+       
         $result['cartArray'] = $this->products->cartIdArray($cart);
 
         //liked products
         $result['liked_products'] = $this->products->likedProducts();
+        
         return view("web.common.modal1")->with('result', $result);
     }
 
@@ -744,4 +746,13 @@ class ProductsController extends Controller
     public function deleteProduct(Request $request) {
         
     }
+
+
+
+
+
+
+
+
+   
 }

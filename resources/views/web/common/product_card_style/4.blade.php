@@ -54,7 +54,7 @@
 						<div class="tt-image-box">
 							<a href="#" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"	data-tooltip="Quick View" data-tposition="left"></a>
 							<a  class="tt-btn-wishlist" products_id="<?= $products->products_id ?>" data-tooltip="Add to Wishlist" data-tposition="left"></a>
-							<a products_id="{{$products->products_id}}"class="tt-btn-compare" data-tooltip="Add to Compare" data-tposition="left"></a>
+							<!-- <a products_id="{{$products->products_id}}"class="tt-btn-compare" data-tooltip="Add to Compare" data-tposition="left"></a> -->
 							<a href="{{ URL::to('/product-detail/'.$products->products_slug)}}">
 								<span class="tt-img"><img src="{{asset('').$products->image_path}}"  alt=""></span>
 								<span class="tt-img-roll-over"><img src="{{asset('').$products->image_path}}" alt=""></span>
@@ -107,9 +107,9 @@ echo $cat_name;
 									<a href="#" class="tt-btn-addtocart thumbprod-button-bg" data-toggle="modal" data-target="#modalAddToCartProduct" style="background-color:#2b5a80!important;">ADD TO CART</a>
 								</div>
 								<div class="tt-row-btn">
-									<a href="#" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"></a>
+									<a href="#"   products_id="{{$products->products_id}}" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"></a>
 									<a href="#" class="tt-btn-wishlist"></a>
-									<a href="myFunction3({{$products->products_id}})" class="tt-btn-compare"></a>
+			
 								</div>
 							</div>
 						</div>

@@ -4401,7 +4401,7 @@ jQuery(function($) {
 
 			if(ttwindowWidth > 1024 && hasalready){
 				$.ajax({
-						url: 'ajax-content/ajax_desktop_menu.html',
+						url: 'ajax-content/ajax_desktop_menu.blade.php',
 						success: function(data) {
 							var $item = $(data);
 							$('#js-include-desktop-menu').append($item);

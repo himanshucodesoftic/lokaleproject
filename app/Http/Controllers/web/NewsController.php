@@ -7,6 +7,7 @@ namespace App\Http\Controllers\Web;
 use Validator;
 
 use DB;
+use DB as DBraw;
 //for password encryption or hash protected
 use Hash;
 
@@ -156,4 +157,39 @@ $result['news'] = $news;
 $result['categories'] = $this->products->categories();
 return view("web.news-detail", ['title' => $title,'final_theme' => $final_theme])->with('result', $result);
 }
+
+
+
+
+
+public function category(Request $request)
+    {
+        $sel_query = "SELECT * from categories_description";
+        $res_query = DBraw::select($sel_query);
+        $res_query = json_decode(json_encode($res_query), true);
+        if (count($res_query)) {
+            foreach ($res_query as $res) {
+
+             
+                $productlist[] = array(
+                    'categories_description_id' => $res['categories_description_id'],
+                
+                    'categories_id' => $res['categories_id'], 
+                       'categories_name' => $res['categories_name'],
+                       'categories_description'=>$res['categories_description']
+                );
+            }
+        } else {
+            $productlist = array();
+        }
+        return view('public.ajax-content.ajax_desktop_menu', compact(['productlist']));
+    }
+
+
+
+
+
+
+
+
 }

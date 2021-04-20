@@ -326,7 +326,7 @@ Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->mi
 	Route::view('/header', 'web.headers.header');
 
 	Route::get('brand', 'App\Http\Controllers\BrandController@showbrands');
-
+	Route::get('/new1', 'App\Http\Controllers\web\NewsController@category');
 
 	//admin
 	
