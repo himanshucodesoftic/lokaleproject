@@ -8,7 +8,7 @@
 
 <div class="tt-cart tt-dropdown-obj" data-tooltip="Cart" data-tposition="bottom" style="border:2px solid red;">
 							<button class="tt-dropdown-toggle">
-								<i class="icon-f-39"></i>
+							<i class="fal fa-shopping-bag"></i>
 								<span class="tt-badge-cart cart_bt" >{{ $qunatity }}</span>
 							</button>
 							@if(count($result['commonContent']['cart'])>0)

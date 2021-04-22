@@ -1,6 +1,32 @@
 
   
   
+  <div class="tt-breadcrumb" >
+	<div class="container">
+		<ul>
+    @if(!empty($result['category_name']) and !empty($result['sub_category_name']))
+			<li><a href="{{url('/')}}">Home</a></li>
+   
+      <li><a href="{{ URL::to('/shop')}}">shop</a></li>
+		
+
+      <li><a href="{{ URL::to('/shop?category='.$result['category_slug'])}}">{{$result['category_name']}}</a></li>
+
+
+
+      <li><a href="{{ URL::to('/shop')}}">{{$result['sub_category_name']}}</a></li>
+      @elseif(!empty($result['category_name']) and empty($result['sub_category_name']))
+      <li><a href="">{{$result['category_name']}}</a></li>
+      @else
+      <li><a href="{{url('/')}}">Home</a></li>
+   
+   <li><a href="{{ URL::to('/shop')}}">shop</a></li>
+       
+      @endif
+		</ul>
+	</div>
+</div>
+
   
   
   
@@ -10,28 +36,6 @@
   
   
   
-  
-  <!-- Shop Page One content -->
-  <div class="container-fuild">
-    <nav aria-label="breadcrumb">
-      <div class="container">
-        <ol class="breadcrumb">
-          @if(!empty($result['category_name']) and !empty($result['sub_category_name']))
-          <li class="breadcrumb-item"><a href="{{ URL::to('/')}}" style="text-decoration:none;color:black">Home</a></li>
-          <li class="breadcrumb-item"><a href="{{ URL::to('/shop')}}">@lang('website.Shop')</a></li>
-          <li class="breadcrumb-item"><a
-              href="{{ URL::to('/shop?category='.$result['category_slug'])}}">{{$result['category_name']}}</a></li>
-          <li class="breadcrumb-item active">{{$result['sub_category_name']}}</li>
-          @elseif(!empty($result['category_name']) and empty($result['sub_category_name']))
-          <li class="breadcrumb-item active">{{$result['category_name']}}</li>
-          @else
-          <li class="breadcrumb-item"><a href="{{ URL::to('/')}}" style="text-decoration:none;color:black">Home</a></li>
-          <li class="breadcrumb-item active">Shop</li>
-          @endif
-        </ol>
-      </div>
-    </nav>
-  </div>
 
 
 

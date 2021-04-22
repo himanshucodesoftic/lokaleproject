@@ -1,4 +1,4 @@
-<div id="loader-wrapper" >
+<div id="loader-wrapper"  >
 	<div id="loader">
 		<div class="dot"></div>
 		<div class="dot"></div>
@@ -10,7 +10,7 @@
 	</div>
 </div>
 
-<header id="tt-header">
+<header id="tt-header" >
 	<!-- tt-mobile menu -->
 
 
@@ -18,12 +18,29 @@
 	<nav class="panel-menu mobile-main-menu">
 		
 <ul>
+
+
+<li >
+
+
+<li class="mm-close-parent"><a href="#close" data-target="#close" class="mm-close">close</a></li>
+<!-- <a href="#">
+close
+</a> -->
+</li> 
 @foreach($result['commonContent']["menuData"] as $menu)
               <li class="@if(isset($menu->childs) && count($menu->childs) > 0) submenu @endif">
-                <a href="{{ URL::to(''.$menu->link)}}" class="show-submenu">{{$menu->name}}</a>
+                
+
+				<a href="{{ URL::to(''.$menu->link)}}" class="show-submenu">{{$menu->name}}</a>
                 @if(isset($menu->childs) && count($menu->childs) > 0)
+
                   <ul>
+				  <li>
+				  <a href="#" data-target="#" class="mm-prev-level">Back</a>
+</li>
                   @foreach($menu->childs as $submenu)
+
                     <li><a href="{{ URL::to(''.$submenu->link)}}">{{$submenu->name}}</a></li>
                   @endforeach
                   </ul>
@@ -31,15 +48,12 @@
               </li>
               @endforeach 
 
+	
 </ul>
 
 
 
-
-		<div class="mm-navbtn-names">
-			<div class="mm-closebtn">Close</div>
-			<div class="mm-backbtn">Back</div>
-		</div>
+		
 	</nav>
 	<!-- tt-mobile-header -->
 
@@ -87,7 +101,7 @@
 		</div>
 	</div>
 	<!-- tt-desktop-header -->
-	<div class="tt-desktop-header">
+	<div class="tt-desktop-header  text-center justify-content-center">
 		
 		<div class="container">
 			<div class="tt-header-holder">
@@ -102,9 +116,45 @@
 				</div>
 				<div class="tt-col-obj tt-obj-menu">
 					<!-- tt-menu -->
+
+
+					
 					<div class="tt-desctop-parent-menu tt-parent-box">
-						<div class="tt-desctop-menu tt-hover-03" id="js-include-desktop-menu"></div>
-					</div>
+					 <div class="tt-desctop-menu tt-hover-03" id="">
+                              
+							<nav class="" >
+
+
+							 <ul> 
+							 @foreach($result['commonContent']["menuData"] as $menu)
+
+									 <li class="dropdown megamenu selected">
+										
+									
+									</li>
+									<li class="dropdown megamenu">
+										<a href="">{{$menu->name}}</a>
+										@if(isset($menu->childs) && count($menu->childs) > 0)
+										<div class="dropdown-menu">
+											<div class="row tt-col-list">
+												<div class="col">
+												@foreach($menu->childs as $submenu)
+													<h6 class="tt-title-submenu"><a href="{{ URL::to(''.$submenu->link)}}">{{$submenu->name}}</a></h6>											
+												
+												@endforeach</div>									
+											</div>
+										</div>
+										@endif
+									</li>
+							@endforeach
+								</ul>  
+							 </nav>
+
+			
+					
+					 </div>
+					
+			     </div>
 					<!-- /tt-menu -->
 				</div>
 				<div class="tt-col-obj tt-obj-options obj-move-right" >
@@ -188,8 +238,8 @@
 								<div class="tt-dropdown-inner">
 									<ul>
 										<li class="active"><a href="#">English</a></li>
-										<li><a href="#">Deutsch</a></li>
-										<li><a href="#">Español</a></li>
+										<li><a href="locale/dubai">Deutsch</a></li>
+										<li><a href="locale/en">Español</a></li>
 										<li><a href="#">Français</a></li>
 									</ul>
 									<ul>
@@ -207,10 +257,19 @@
 		</div>
 	</div>
 	<!-- stuck nav -->
-	<div class="tt-stuck-nav" id="js-tt-stuck-nav">
+	<div class="tt-stuck-nav  text-center justify-content-center" id="js-tt-stuck-nav">
 		<div class="container">
 			<div class="tt-header-row ">
-				<div class="tt-stuck-parent-menu"></div>
+			<div class="tt-col-obj tt-obj-logo" >
+					<!-- logo -->
+					@if($result['commonContent']['settings']['sitename_logo']=='logo')
+              <img class="img-fluid" src="{{asset('').$result['commonContent']['settings']['website_logo']}}"
+                alt="<?=stripslashes($result['commonContent']['settings']['website_name'])?>" width="100" height="35">
+              @endif
+					<!-- <a class="tt-logo tt-logo-alignment" href="index.html"><img src="{{url('images/logo.png')}}" alt=""></a> -->
+					<!-- /logo -->
+				</div>
+				<div class="tt-stuck-parent-menu text-center justify-content-center" style="text-align:center;"></div>
 				<div class="tt-stuck-parent-search tt-parent-box"></div>
 				<div class="tt-stuck-parent-cart tt-parent-box"></div>
 				<div class="tt-stuck-parent-account tt-parent-box"></div>

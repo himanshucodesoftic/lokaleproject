@@ -9,7 +9,9 @@
 			<div class="row">
 				<div class="col-md-12 col-sm-12 mt-5 mb-5">
 					 <div class="first-text-section">
-						 <h1 class="sectione-heading">WELCOME TO STORE</h1>
+						 <h1 class="sectione-heading">
+						@lang('home.msg')	
+						</h1>
 
 
 						 @if($result['top_seller']['success']==1)

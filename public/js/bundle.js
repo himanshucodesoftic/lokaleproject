@@ -2278,7 +2278,7 @@ $.fn.parse_mm = function(mmpanel) {
 	$mm_curent.find('ul').each(function(index){
 		$btnBack = false;
 		$mm_block = $(get_mm_block()).attr("id", "mm"+index).append($(this));
-		if (index == 0) {
+		if (index === 0) {
 			$mm_block.addClass("mmopened").addClass("mmcurrent").removeClass("mmhidden");
 			$btnBack = getButtonClose($mm_curent.find(".mm-closebtn").html(), mmpanel.mm_close_button);
 
@@ -2348,7 +2348,7 @@ $.fn.closemm = function(mmpanel){
 function mm_destroy(_parent, mmpanel){
 	if(!mmpanel.remember_state) {
 		_parent.find(".mmpanel").toggleClass("mmsubopened mmcurrent mmopened", false).addClass("mmhidden");
-		_parent.find("#mm0").addClass("mmopened").addClass("mmcurrent").removeClass("mmhidden");
+		_parent.find("#").addClass("mmopened").addClass("mmcurrent").removeClass("mmhidden");
 	}
 	_parent.toggleClass("mmhide mmitemopen", false).hide();
 	$("body").removeClass("mm-open");
@@ -2361,11 +2361,11 @@ function get_mm_block(){
 }
 function getButtonBack(value, _default) {
 	value = value == undefined ? _default : value;
-	return '<li><a href="#" data-target="#" class="mm-prev-level">'+value+'</a></li>';
+	return '';
 }
 function getButtonClose(value, _default) {
 	value = value == undefined ? _default : value;
-	return '<li class="mm-close-parent"><a href="#close" data-target="#close" class="mm-close">'+value+'</a></li>';
+	return '';
 }
 function getFullscreenBg() {
 	return '<div class="mm-fullscreen-bg"></div>';
@@ -4388,29 +4388,29 @@ jQuery(function($) {
 					}
 		};
 
-		/*
-			layoutDesktopMenu
-		*/
-		var layoutDesktopMenu = $('#js-include-desktop-menu');
-		if (layoutDesktopMenu.length){
-			includeMenu();
-		};
-		function includeMenu(layoutDesktopMenu){
-			var ttwindowWidth = window.innerWidth || $window.width(),
-				hasalready = $('#js-include-desktop-menu').children().length == 0;
+		// /*
+		// 	layoutDesktopMenu
+		// */
+		// var layoutDesktopMenu = $('#js-include-desktop-menu');
+		// if (layoutDesktopMenu.length){
+		// 	includeMenu();
+		// };
+		// function includeMenu(layoutDesktopMenu){
+		// 	var ttwindowWidth = window.innerWidth || $window.width(),
+		// 		hasalready = $('#js-include-desktop-menu').children().length == 0;
 
-			if(ttwindowWidth > 1024 && hasalready){
-				$.ajax({
-						url: 'ajax-content/ajax_desktop_menu.blade.php',
-						success: function(data) {
-							var $item = $(data);
-							$('#js-include-desktop-menu').append($item);
-							new LazyLoad();
-							toggle_header_menu();
-						}
-				});
-			};
-		};
+		// 	if(ttwindowWidth > 1024 && hasalready){
+		// 		$.ajax({
+		// 				url: 'ajax-content/ajax_desktop_menu.blade.php',
+		// 				success: function(data) {
+		// 					var $item = $(data);
+		// 					$('#js-include-desktop-menu').append($item);
+		// 					new LazyLoad();
+		// 					toggle_header_menu();
+		// 				}
+		// 		});
+		// 	};
+		// };
 
 
 		var ttCachedWidth = $window.width();

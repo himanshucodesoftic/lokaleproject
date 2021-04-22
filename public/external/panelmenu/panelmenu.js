@@ -206,11 +206,13 @@ function get_mm_block(){
 }
 function getButtonBack(value, _default) {
 	value = value == undefined ? _default : value;
-	return '<li><a href="#" data-target="#" class="mm-prev-level">'+value+'</a></li>';
+	return '';
+	// '<li><a href="#" data-target="#" class="mm-prev-level">'+value+'</a></li>
 }
 function getButtonClose(value, _default) {
 	value = value == undefined ? _default : value;
-	return '<li class="mm-close-parent"><a href="#close" data-target="#close" class="mm-close">'+value+'</a></li>';
+	return '';
+	// <li class="mm-close-parent"><a href="#close" data-target="#close" class="mm-close">'+value+'</a></li>
 }
 function getFullscreenBg() {
 	return '<div class="mm-fullscreen-bg"></div>';

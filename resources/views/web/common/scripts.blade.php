@@ -484,16 +484,22 @@ jQuery(document).on('click', '.add-to-Cart', function(e){
 
  var message;
  jQuery.ajax({
-	 url: '{{ URL::to("/addToCart")}}',
+	 url: '{{url("/addToCart")}}',
+	
 	 headers: {'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')},
 
 	 type: "POST",
 	 data: formData,
 
 	 success: function (res) {
+		 alert(res.success);
+		console.log(res.success);
 		 if(res['status'] == 'exceed'){
+			
 		   notificationWishlist("@lang('website.Ops! Product is available in stock But Not Active For Sale. Please contact to the admin')");
       }
+
+	  alert(ajax);
 		 else {
 				jQuery('.cart_bt').html('<strong>'+ res +'</strong>');
 			 jQuery(parent).addClass('active');
