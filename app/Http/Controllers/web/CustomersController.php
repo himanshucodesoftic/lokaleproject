@@ -131,9 +131,9 @@ class CustomersController extends Controller
 
         $title = array('pageTitle' => Lang::get("website.requestVendor"));
       
-        // $final_theme = $this->theme->theme();
+        $final_theme = $this->theme->theme();
        
-        // $result['commonContent'] = $this->index->commonContent();
+        $result['commonContent'] = $this->index->commonContent();
         return view("auth.vendorRegister", ['title' => $title])->with('result', $result);
    
     }

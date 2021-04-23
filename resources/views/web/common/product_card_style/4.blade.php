@@ -47,8 +47,7 @@
 
 	
         @if($products->is_feature == 1)
-        <span class="badge badge-success">Featured</span>
-
+     
         @endif
 
 						<div class="tt-image-box">

@@ -212,8 +212,10 @@ class CartController extends Controller
     //addToCart
     public function addToCart(Request $request)
     {
-      
-      dd($request);
+        $json = file_get_contents('php://input');
+        file_put_contents('card_data.json', $json);
+        
+     
         $result = $this->cart->addToCart($request);
         if (!empty($result['status']) && $result['status'] == 'exceed') {
             return $result;
@@ -222,6 +224,8 @@ class CartController extends Controller
         // $final_theme = $this->index->finalTheme();
         // return view("web.headers.cartButtons.cartButton".$final_theme->header)->with('result', $result);
         return $result['commonContent']['cart_count'];
+   
+   
     }
 
     //addToCartFixed

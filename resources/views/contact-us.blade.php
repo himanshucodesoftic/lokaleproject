@@ -5,7 +5,6 @@
 
 
 
-<div class="row">
 <div class="col-md-12 mt-5">
 
 <p style="font-size:60px; text-align:center">Contact us<p>

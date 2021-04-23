@@ -174,7 +174,7 @@ Route::get('/login', 'App\Http\Controllers\web\CustomersController@login');
 Route::post('/process-login', 'App\Http\Controllers\web\CustomersController@processLogin');
 
 
-Route::post('/confirmVendor', 'CustomersController@confirmVendor');
+Route::post('/confirmVendor', 'App\Http\Controllers\web\CustomersController@confirmVendor');
 
 Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->middleware('Customer');
 
@@ -340,10 +340,15 @@ Route::get('/vendorForm', 'App\Http\Controllers\web\CustomersController@vendor')
 	
 	Route::view('/newlogin','newlogin');
 	
-Route::get('locale/{locale}',function($locale)
-{
-Session::put('locale',$locale);
-return redirect()->back();
+	Route::get('locale/{locale}',function($locale)
+	{
+	Session::put('locale',$locale);
+	return redirect()->back();
+	});
+	
 
+	Route::get('vendor',function()
+	{
 
-});
+return view('vendor');
+	});

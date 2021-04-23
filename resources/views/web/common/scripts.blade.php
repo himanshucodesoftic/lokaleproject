@@ -325,8 +325,9 @@ jQuery(document).on('click','#allow-cookies', function(e){
 	var message ;
   jQuery(function ($) {
 	jQuery.ajax({
-
+		
 		url: '{{ URL::to("/addToCart")}}',
+	
     headers: {'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')},
 
 		type: "POST",
@@ -478,28 +479,31 @@ jQuery(document).on('click', '.qtyminus', function(e){
 
 //add-to-Cart with custom options
 jQuery(document).on('click', '.add-to-Cart', function(e){
-	var formData = jQuery("#add-Product-form").serialize();
-	
+	var formData = jQuery("#add-Product-form").serializeArray();
+
  var url = jQuery('#checkout_url').val();
 
  var message;
+ var csrf=  jQuery('#csrf').val();
+ console.log(csrf);
  jQuery.ajax({
-	 url: '{{url("/addToCart")}}',
+	 url:'http://127.0.0.1:8000/addToCart' ,
 	
-	 headers: {'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')},
+	
+	 headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+},
 
 	 type: "POST",
 	 data: formData,
 
 	 success: function (res) {
-		 alert(res.success);
-		console.log(res.success);
+		 console.log(res);
 		 if(res['status'] == 'exceed'){
 			
 		   notificationWishlist("@lang('website.Ops! Product is available in stock But Not Active For Sale. Please contact to the admin')");
       }
 
-	  alert(ajax);
+
 		 else {
 				jQuery('.cart_bt').html('<strong>'+ res +'</strong>');
 			 jQuery(parent).addClass('active');

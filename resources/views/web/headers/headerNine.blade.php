@@ -122,18 +122,32 @@ close
 					<div class="tt-desctop-parent-menu tt-parent-box">
 					 <div class="tt-desctop-menu tt-hover-03" id="">
                               
-							<nav class="" >
 
 
 							 <ul> 
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
 							 @foreach($result['commonContent']["menuData"] as $menu)
 
-									 <li class="dropdown megamenu selected">
+									 <li class="dropdown megamenu selected @if(isset($menu->childs) && count($menu->childs) > 0) submenu @endif">
 										
 									
 									</li>
 									<li class="dropdown megamenu">
-										<a href="">{{$menu->name}}</a>
+										<a href="{{ URL::to(''.$menu->link)}}">{{$menu->name}}</a>
 										@if(isset($menu->childs) && count($menu->childs) > 0)
 										<div class="dropdown-menu">
 											<div class="row tt-col-list">
@@ -237,16 +251,9 @@ close
 								</div>
 								<div class="tt-dropdown-inner">
 									<ul>
-										<li class="active"><a href="#">English</a></li>
-										<li><a href="locale/dubai">Deutsch</a></li>
-										<li><a href="locale/en">Español</a></li>
-										<li><a href="#">Français</a></li>
-									</ul>
-									<ul>
-										<li class="active"><a href="#"><i class="icon-h-59"></i>USD - US Dollar</a></li>
-										<li><a href="#"><i class="icon-h-60"></i>EUR - Euro</a></li>
-										<li><a href="#"><i class="icon-h-61"></i>GBP - British Pound Sterling</a></li>
-									</ul>
+										<li class="active"><a href="locale/ch">English</a></li>
+										<li><a href="locale/kh">Deutsch</a></li>
+											</ul>
 								</div>
 							</div>
 						</div>
@@ -257,7 +264,7 @@ close
 		</div>
 	</div>
 	<!-- stuck nav -->
-	<div class="tt-stuck-nav  text-center justify-content-center" id="js-tt-stuck-nav">
+	<div class="tt-stuck-nav" id="js-tt-stuck-nav">
 		<div class="container">
 			<div class="tt-header-row ">
 			<div class="tt-col-obj tt-obj-logo" >
@@ -269,7 +276,7 @@ close
 					<!-- <a class="tt-logo tt-logo-alignment" href="index.html"><img src="{{url('images/logo.png')}}" alt=""></a> -->
 					<!-- /logo -->
 				</div>
-				<div class="tt-stuck-parent-menu text-center justify-content-center" style="text-align:center;"></div>
+				<div class="tt-stuck-parent-menu"></div>
 				<div class="tt-stuck-parent-search tt-parent-box"></div>
 				<div class="tt-stuck-parent-cart tt-parent-box"></div>
 				<div class="tt-stuck-parent-account tt-parent-box"></div>

@@ -28,7 +28,7 @@
 	<div class="container-indent">
 		<!-- mobile product slider  -->
 		<div class="tt-mobile-product-layout visible-xs">
-			<div class="tt-mobile-product-slider arrow-location-center" id="zoom-mobile__slider" >
+			<div class="tt-mobile-product-slider arrow-location-center" id="zoom-mobile__slider">
 				<div><img data-lazy="images/product/product-01.jpg" alt=""></div>
 				<div><img data-lazy="images/product/product-01-02.jpg" alt=""></div>
 				<div><img data-lazy="images/product/product-01-03.jpg" alt=""></div>
@@ -53,17 +53,21 @@
 		<!-- /mobile product slider  -->
 		<div class="container container-fluid-mobile" >
 			<div class="row">
-				<div class="col-6 hidden-xs" >
+				<div class="col-6 hidden-xs"  >
 					<div class="tt-product-vertical-layout" >
-						<div class="tt-product-single-img">
-							<div>
-							@foreach( $result['detail']['product_data'][0]->images as $key=>$images )
+						<div class="tt-product-single-img"   >
+						<a href="{{asset('').$result['detail']['product_data'][0]->default_images }}" title="Photo title" data-effect="mfp-zoom-in"><img
+                src="{{asset('').$result['detail']['product_data'][0]->default_images }}" alt="" style="width: 100%;margin-bottom: 10px;"></a>
+          <
+						@foreach( $result['detail']['product_data'][0]->images as $key=>$images )
             @if($images->image_type == 'ACTUAL')
 								<button class="tt-btn-zomm tt-top-right"><i class="icon-f-86"></i></button>
 							
 								<img class="{{asset('').$images->image_path }}"   src="{{asset('').$images->image_path }}" data-zoom-image="{{asset('').$images->image_path }}" alt="">
 								@endif
           @endforeach
+
+							<div>
 								<div id="custom-product-item">
 										<button type="button" class="slick-arrow slick-prev">Previous</button>
 										<button type="button" class="slick-arrow slick-next">Next</button>
@@ -71,7 +75,7 @@
 							</div>
 						</div>
 						<div class="tt-product-single-carousel-vertical" style="height:30px;"> 
-							<ul id="smallGallery" class="tt-slick-button-vertical  slick-animated-show-js" style="border:2px solid red;height:50px;">
+							<ul id="smallGallery" class="tt-slick-button-vertical  slick-animated-show-js" style="height:50px;">
 								<li><a class="zoomGalleryActive" href="#" data-image="images/product/product-01.jpg" data-zoom-image="images/product/product-01.jpg"><img src="images/product/product-01.jpg" alt=""></a></li>
 								<li><a href="#" data-image="images/product/product-01-02.jpg" data-zoom-image="images/product/product-01-02.jpg"><img src="images/product/product-01-02.jpg" alt=""></a></li>
 								<li><a href="#" data-image="images/product/product-01-03.jpg" data-zoom-image="images/product/product-01-03.jpg"><img src="images/product/product-01-03.jpg" alt=""></a></li>
@@ -104,10 +108,10 @@
 					<div class="tt-product-single-info">
 						<div class="tt-add-info">
 							<ul>
-								<li><span>ProductID:</span> {{$result['detail']['product_data'][0]->products_id}}</li>
+								<!-- <li><span>ProductID:</span> {{$result['detail']['product_data'][0]->products_id}}</li>
 								<li><span>Category:</span> 
-								
-								<?php
+								 -->
+								<!-- <?php
                   $cates = '';  
                 ?>
                 @foreach($result['detail']['product_data'][0]->categories as $key=>$category)
@@ -139,14 +143,14 @@
 
               @if($result['detail']['product_data'][0]->products_type == 2)
                 <span class="text-secondary">@lang('website.External')</span>
-              @endif
+              @endif -->
             </div>
 
             <p>
-              @if($result['detail']['product_data'][0]->products_min_order>0)
+              <!-- @if($result['detail']['product_data'][0]->products_min_order>0)
                 <div class="pro-single-info" id="min_max_setting3"><b>Min Order Limit :
                   </b>{{$result['detail']['product_data'][0]->products_min_order}}</div>
-              @endif
+              @endif -->
 </li>
 							</ul>
 						</div>
@@ -248,7 +252,48 @@
 
 
 						<div class="tt-wrapper">
-							Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+						ProductID:	{{$result['detail']['product_data'][0]->products_id}}
+						<br>
+						Category:
+						<?php
+                  $cates = '';  
+                ?>
+                @foreach($result['detail']['product_data'][0]->categories as $key=>$category)
+                <?php
+                  $cates =  "<a href=".url('shop?category='.$category->categories_name).">".$category->categories_name."</a>";
+                ?>
+                @endforeach
+                <?php 
+                  echo $cates;
+                ?>
+				<br>
+				@if($result['detail']['product_data'][0]->products_type == 0)
+                @if($result['commonContent']['settings']['Inventory'])
+                  @if($result['detail']['product_data'][0]->defaultStock < 0) <span class="text-secondary">
+                    @lang('website.Out of Stock')</span>
+                  @else
+                    <span class="text-secondary">@lang('website.In stock')</span>
+                  @endif
+                @else
+                  <span class="text-secondary">@lang('website.In stock')</span>
+                @endif
+              @endif
+
+              @if($result['detail']['product_data'][0]->products_type == 1)
+                <span class="text-secondary variable-stock"></span>
+              @endif
+
+              @if($result['detail']['product_data'][0]->products_type == 2)
+                <span class="text-secondary">@lang('website.External')</span>
+              @endif	
+			  
+			  @if($result['detail']['product_data'][0]->products_min_order>0)
+                <div class="pro-single-info" id="min_max_setting3"><b>Min Order Limit :
+                  </b>{{$result['detail']['product_data'][0]->products_min_order}}</div>
+              @endif
+			  
+			  
+			  
 						</div>
 
 
@@ -285,6 +330,11 @@
               
               <input type="hidden" name="products_price" id="products_price"
                   value="@if(!empty($result['detail']['product_data'][0]->flash_price)) {{$result['detail']['product_data'][0]->flash_price+0}} @elseif(!empty($result['detail']['product_data'][0]->discount_price)){{$result['detail']['product_data'][0]->discount_price+0}}@else{{$result['detail']['product_data'][0]->products_price+0}}@endif">
+
+
+				  <input type="hidden" name="_token" id="csrf"
+                  value="{{csrf_token()}}">
+
 
               <input type="hidden" name="checkout" id="checkout_url"
                 value="@if(!empty(app('request')->input('checkout'))) {{ app('request')->input('checkout') }} @else false @endif">
@@ -375,7 +425,7 @@
 	  <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">@lang('website.Add to Cart')</button>
 	  @endif
 	@else
-	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"   style="border:2px solid red;">@lang('website.Add to Cart')</button>
+	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"   >@lang('website.Add to Cart')</button>
 	@endif
 
   @else
@@ -405,7 +455,7 @@
 							<div class="tt-item">
 								<div class="tt-collapse-title">DESCRIPTION</div>
 								<div class="tt-collapse-content">
-								<?=stripslashes($result['detail']['product_data'][0]->products_description)?>
+								<p><?=stripslashes($result['detail']['product_data'][0]->products_description)?></p>
 							 Weight:	{{$result['detail']['product_data'][0]->products_weight}}{{$result['detail']['product_data'][0]->products_weight_unit}}</td>
                              Manufacture:{{$result['detail']['product_data'][0]->manufacturer_name}}
 								</div>
