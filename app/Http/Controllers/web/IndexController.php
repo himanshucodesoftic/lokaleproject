@@ -1,6 +1,6 @@
 <?php
 namespace App\Http\Controllers\Web;
-
+use Illuminate\Support\Facades\DB;
 use App\Models\Web\Currency;
 use App\Models\Web\Index;
 use App\Models\Web\Languages;
@@ -14,7 +14,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Mail;
 use Lang;
 use View;
-use DB;
+use DB as Dbraw;
 use Cookie;
 
 class IndexController extends Controller
@@ -182,7 +182,7 @@ class IndexController extends Controller
          }
          // dd($category_section);
          $result['category_section'] = $category_section;
-        return view("web.index", ['title' => $title, 'final_theme' => $final_theme])->with(['result' => $result]);
+        return view("web.index", ['title' => $title, 'final_theme' => $final_theme,])->with(['result' => $result]);
     }
 
     public function maintance()

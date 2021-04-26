@@ -111,8 +111,8 @@
 </a>
 								</h2>
 								<ul class="tt-list-description">
-									<li>Size: 22</li>
-									<li>Color: Green</li>
+									<li></li>
+									<li></li>
 								</ul>
 								<ul class="tt-list-parameters">
 									<li>
@@ -155,140 +155,46 @@
 									</li>
 									<li>
 										<div class="tt-price subtotal">
-											$124
+										
 										</div>
 									</li>
 								</ul>
 							</td>
 							<td>
 								<div class="tt-price">
-									$124
+								
 								</div>
 							</td>
 							<td>
 								<div class="detach-quantity-desctope">
 									<div class="tt-input-counter style-01">
 										<span class="minus-btn"></span>
-										<input type="text" value="1" size="5">
+										<input name="quantity[]" type="text" size="5" readonly value="{{$products->customers_basket_quantity}}" class="form-control qty" min="{{$products->min_order}}" max="{{$products->max_order}}">
+                            
+										<!-- <input type="text" value="1" size="5"> -->
 										<span class="plus-btn"></span>
 									</div>
 								</div>
 							</td>
 							<td>
 								<div class="tt-price subtotal">
-									$124
+								@if(!empty($products->final_price))
+                    {{Session::get('symbol_left')}}{{$flash_price+0}}{{Session::get('symbol_right')}}
+                    @elseif(!empty($products->discount_price))
+                    {{Session::get('symbol_left')}}{{$discount_price+0}}{{Session::get('symbol_right')}}
+                    <span> {{Session::get('symbol_left')}}{{$orignal_price+0}}{{Session::get('symbol_right')}}</span>
+                    @else
+                    {{Session::get('symbol_left')}}{{$orignal_price+0}}{{Session::get('symbol_right')}}
+                    @endif
+
 								</div>
 							</td>
 							<td>
-								<a href="#" class="tt-btn-close"></a>
+								<a href="{{ URL::to('/deleteCart?id='.$products->customers_basket_id)}}" class="tt-btn-close"></a>
 							</td>
 						</tr>
-						<tr>
-							<td>
-								<div class="tt-product-img">
-									<img src="images/loader.svg" data-src="images/product/product-02.jpg" alt="">
-								</div>
-							</td>
-							<td>
-								<h2 class="tt-title">
-									<a href="#">Flared Shift Dress</a>
-								</h2>
-								<ul class="tt-list-description">
-									<li>Size: 22</li>
-									<li>Color: Green</li>
-								</ul>
-								<ul class="tt-list-parameters">
-									<li>
-										<div class="tt-price">
-											$12
-										</div>
-									</li>
-									<li>
-										<div class="detach-quantity-mobile"></div>
-									</li>
-									<li>
-										<div class="tt-price subtotal">
-											$12
-										</div>
-									</li>
-								</ul>
-							</td>
-							<td>
-								<div class="tt-price">
-									$12
-								</div>
-							</td>
-							<td>
-								<div class="detach-quantity-desctope">
-									<div class="tt-input-counter style-01">
-										<span class="minus-btn"></span>
-										<input type="text" value="1" size="5">
-										<span class="plus-btn"></span>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="tt-price subtotal">
-									$12
-								</div>
-							</td>
-							<td>
-								<a href="#" class="tt-btn-close"></a>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="tt-product-img">
-									<img src="images/loader.svg" data-src="images/product/product-03.jpg" alt="">
-								</div>
-							</td>
-							<td>
-								<h2 class="tt-title">
-									<a href="#">Flared Shift Dress</a>
-								</h2>
-								<ul class="tt-list-description">
-									<li>Size: 22</li>
-									<li>Color: Green</li>
-								</ul>
-								<ul class="tt-list-parameters">
-									<li>
-										<div class="tt-price">
-											$317
-										</div>
-									</li>
-									<li>
-										<div class="detach-quantity-mobile"></div>
-									</li>
-									<li>
-										<div class="tt-price subtotal">
-											$317
-										</div>
-									</li>
-								</ul>
-							</td>
-							<td>
-								<div class="tt-price">
-									$317
-								</div>
-							</td>
-							<td>
-								<div class="detach-quantity-desctope">
-									<div class="tt-input-counter style-01">
-										<span class="minus-btn"></span>
-										<input type="text" value="1" size="5">
-										<span class="plus-btn"></span>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="tt-price subtotal">
-									$317
-								</div>
-							</td>
-							<td>
-								<a href="#" class="tt-btn-close"></a>
-							</td>
-						</tr>
+						
+						
 					</tbody>
 					@endforeach
 				</table>
@@ -350,7 +256,7 @@
 									</tr>
 								</tfoot>
 							</table>
-							<a href="#" class="btn btn-lg"><span class="icon icon-check_circle"></span>PROCEED TO CHECKOUT</a>
+							<a href="{{ url('/checkout')}}" class="btn btn-lg"><span class="icon icon-check_circle"></span>PROCEED TO CHECKOUT</a>
 						</div>
 					</div>
 				</div>

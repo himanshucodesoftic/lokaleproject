@@ -13,7 +13,7 @@
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="locale/en">Navbar</a>
+  <a class="navbar-brand" href="locale/db">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -43,7 +43,7 @@
 </nav>
 
 @include('new')
-    <h1>@lang('home.msg')</h1>
+    <h1>@lang('home.WelcometoLOCAL')</h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

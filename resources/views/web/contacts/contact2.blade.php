@@ -3,7 +3,7 @@
 <div class="row"  >
 <div class="col-md-12 mt-5">
 
-<p style="font-size:60px; text-align:center">@lang('home.home')<p>
+<p style="font-size:60px; text-align:center">@lang('home.contactus')<p>
 
 </div>
 
@@ -15,18 +15,18 @@
 					<div class="col-sm-12 col-md-4 ml-sm-auto mr-sm-auto">
 						<div class="tt-contact-info">
 							<i class="tt-icon icon-f-93"></i>
-							<h6 class="tt-title">Help Center</h6>
+							<h6 class="tt-title">@lang('home.helpcenter')</h6>
 							<address>
 							{{$result['commonContent']['setting'][11]->value}}</a> - <a href="#0">{{$result['commonContent']['setting'][3]->value}}</a>
 							<br>
-							MON to FRI 9am-6pm SAT 9am-2pm
+	@lang('home.MONtoFRI9am-6pmSAT9am-2pm')
 							</address>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-4">
 						<div class="tt-contact-info">
 							<i class="tt-icon icon-f-24"></i>
-							<h6 class="tt-title">Showroom</h6>
+							<h6 class="tt-title">@lang('home.Showroom')</h6>
 							<address>
 							<div>
                             {{$result['commonContent']['setting'][4]->value}}
@@ -36,8 +36,7 @@
 
                             </div>
                             <br>
-							
-MON to FRI 9am-6pm SAT 9am-2pm<br>
+							@lang('home.MONtoFRI9am-6pmSAT9am-2pm')<br>
 							
 							</address>
 						</div>
@@ -45,13 +44,13 @@ MON to FRI 9am-6pm SAT 9am-2pm<br>
 					<div class="col-sm-6 col-md-4">
 						<div class="tt-contact-info">
 							<i class="tt-icon icon-f-92"></i>
-							<h6 class="tt-title">Orders</h6>
+							<h6 class="tt-title">	@lang('home.orders')</h6>
 							<address>
 							
                             <a href="#0">{{$result['commonContent']['setting'][11]->value}}</a> - <a href="#0">{{$result['commonContent']['setting'][70]->value}}</a>
       
                             <br>
-							MON to FRI 9am-6pm SAT 9am-2pm
+							@lang('home.MONtoFRI9am-6pmSAT9am-2pm')
 							</address>
 						</div>
 					</div>
@@ -90,16 +89,16 @@ MON to FRI 9am-6pm SAT 9am-2pm<br>
       <input name="_token" value="{{ csrf_token() }}" type="hidden">		<div class="row">
 					<div class="col-md-6">
 						<div class="form-group">
-							<input type="text" name="name" class="form-control" id="inputName" placeholder="Your Name (required)">
+							<input type="text" name="name" class="form-control" id="inputName" placeholder="@lang('home.yourname')">
 						</div>
 						<div class="form-group">
-							<input type="text" name="email" class="form-control" id="inputEmail" placeholder="Your Email (required)">
+							<input type="text" name="email" class="form-control" id="inputEmail" placeholder="@lang('home.youremail')">
 						</div>
 						
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<textarea  name="message" class="form-control" rows="7" placeholder="write your Your Message"  id="textareaMessage"></textarea>
+							<textarea  name="message" class="form-control" rows="7" placeholder="@lang('home.writeyourmessage')"  id="textareaMessage"></textarea>
 						</div>
 					</div>
 				</div>

@@ -249,7 +249,7 @@ close
 								<div class="tt-mobile-add">
 									<button class="tt-close">Close</button>
 								</div>
-								<div class="tt-dropdown-inner">
+								<div class="tt-dropdown-inner" style="border:2px solid red;">
 									<ul>
 										<li class="active"><a href="locale/ch">English</a></li>
 										<li class="rtlbutton rtlbutton-js active"><a href="locale/en">Deutsch</a></li>

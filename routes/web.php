@@ -798,8 +798,4 @@ Route::get('/vendorForm', 'App\Http\Controllers\web\CustomersController@vendor')
 return view('vendor');
 	});
 
-	Route::get('new',function()
-	{
-
-return view('new');
-	});
+Route::get('vendor_list',"App\Http\Controllers\NewController@index");

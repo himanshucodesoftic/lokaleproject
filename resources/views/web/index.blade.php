@@ -211,6 +211,16 @@
 
 
 
+
+
+
+
+  <tr>
+    <td></td>
+
+     </tr>
+
+
 @include('web.common.scripts.addToCompare')
 @include('web.common.scripts.Like')
 @endsection

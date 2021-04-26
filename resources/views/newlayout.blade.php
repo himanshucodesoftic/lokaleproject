@@ -26,7 +26,7 @@ $(function(){
 
 </head>
 <body>
-@include('web.headers.headerNine')
+
 @yield('content')
 @include('inc.footer')
     <!-- Optional JavaScript; choose one of the two! -->

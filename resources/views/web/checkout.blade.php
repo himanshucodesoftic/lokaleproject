@@ -835,8 +835,7 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" id="pay_instamojo" class="btn btn-dark">@lang('website.Pay')
-                                {{$web_setting[19]->value}}{{number_format((float)$total_price+0, 2, '.', '')}}</button>
-                            </div>
+                                  </div>
                           </form>
                         </div>
                       </div>
@@ -875,8 +874,7 @@
                                   </div>
                                   <button type="submit" class="btn btn-dark"
                                     data-tid="elements_examples.form.pay_button">@lang('website.Pay')
-                                    {{$web_setting[19]->value}}{{number_format((float)$total_price+0, 2, '.', '')}}</button>
-
+                               
                                   <div class="error" role="alert"><svg xmlns="https://www.w3.org/2000/svg" width="17"
                                       height="17" viewBox="0 0 17 17">
                                       <path class="base" fill="#000"
