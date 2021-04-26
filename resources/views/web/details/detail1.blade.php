@@ -405,7 +405,12 @@
 									<div class="tt-input-counter style-01">
 		
 									<span class="minus-btn"></span>
-										<input type="text" value="1" size="5">
+
+									<input type="text" readonly name="quantity" class="qty2" size="5"
+                      value="@if(!empty($result['cart'])) {{$result['cart'][0]->customers_basket_quantity}} @else @if($result['detail']['product_data'][0]->products_min_order>0 and $result['detail']['product_data'][0]->defaultStock > $result['detail']['product_data'][0]->products_min_order) {{$result['detail']['product_data'][0]->products_min_order}} @else 1 @endif @endif"
+                      min="{{$result['detail']['product_data'][0]->products_min_order}}"
+                      max="{{$result['detail']['product_data'][0]->products_max_stock}}">
+										<!-- <input type="text" value="1" size="5"> -->
 										<span class="plus-btn"></span>
 									</div>
 								</div>
@@ -425,7 +430,7 @@
 	  <button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}">@lang('website.Add to Cart')</button>
 	  @endif
 	@else
-	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"   >@lang('website.Add to Cart')</button>
+	<button class="btn btn-secondary btn-lg swipe-to-top add-to-Cart" type="button" products_id="{{$result['detail']['product_data'][0]->products_id}}"  style="border:2px solid red;"  >@lang('website.Add to Cart')</button>
 	@endif
 
   @else

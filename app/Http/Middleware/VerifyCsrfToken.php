@@ -11,6 +11,6 @@ protected $addHttpCookie = true;
 
 
 protected $except = [
-'paytm-callback'
+'/addToCart'
 ];
 }

@@ -57,7 +57,6 @@
                                             <div class="form-group">
                                                 <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Thumbnail_height') }}</label>
                                                 <div class="col-sm-10 col-md-4">
-                                                    {!! Form::text($web_setting[87]->value,  $web_setting[87]->value, array('class'=>'form-control number-validate', 'id'=>$web_setting[87]->value, 'name'=>'ThumbnailHeight')) !!}
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.Thumbnail_height') }}</span>
                                                 </div>
 
@@ -66,7 +65,6 @@
                                             <div class="form-group">
                                                     <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Thumbnail_width') }}</label>
                                                     <div class="col-sm-10 col-md-4">
-                                                        {!! Form::text($web_setting[88]->value,  $web_setting[88]->value, array('class'=>'form-control number-validate', 'id'=>$web_setting[88]->value, 'name'=>'ThumbnailWidth')) !!}
                                                         <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.Thumbnail_width') }}</span>
                                                     </div>
 
@@ -77,8 +75,7 @@
                                                 <div class="form-group">
                                                     <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Medium_height') }}</label>
                                                     <div class="col-sm-10 col-md-4">
-                                                        {!! Form::text($web_setting[89]->value,  $web_setting[89]->value, array('class'=>'form-control number-validate', 'id'=>$web_setting[89]->value, 'name'=>'MediumHeight')) !!}
-                                                        <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.Medium_height') }}</span>
+                                                         <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.Medium_height') }}</span>
                                                     </div>
 
                                                 </div>
@@ -86,7 +83,6 @@
                                                 <div class="form-group">
                                                     <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Medium_width') }}</label>
                                                     <div class="col-sm-10 col-md-4">
-                                                        {!! Form::text($web_setting[90]->value,  $web_setting[90]->value, array('class'=>'form-control number-validate', 'id'=>$web_setting[90]->value, 'name'=>'MediumWidth')) !!}
                                                         <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.Medium_width') }}</span>
                                                     </div>
 
@@ -96,7 +92,6 @@
                                                 <div class="form-group">
                                                     <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Large_height') }}</label>
                                                     <div class="col-sm-10 col-md-4">
-                                                        {!! Form::text($web_setting[91]->value,  $web_setting[91]->value, array('class'=>'form-control number-validate', 'id'=>$web_setting[91]->value, 'name'=>'LargeHeight')) !!}
                                                         <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.Large_height') }}</span>
                                                     </div>
 
@@ -105,8 +100,7 @@
                                                 <div class="form-group">
                                                     <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Large_width') }}</label>
                                                     <div class="col-sm-10 col-md-4">
-                                                        {!! Form::text($web_setting[92]->value,  $web_setting[92]->value, array('class'=>'form-control number-validate', 'id'=>$web_setting[92]->value, 'name'=>'LargeWidth')) !!}
-                                                        <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.Large_width') }}</span>
+                                                          <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.Large_width') }}</span>
                                                     </div>
 
                                                 </div>

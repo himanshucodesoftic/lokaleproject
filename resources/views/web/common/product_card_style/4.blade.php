@@ -105,8 +105,8 @@ echo $cat_name;
 								<div class="tt-row-btn">
 									<a href="#" class="tt-btn-addtocart thumbprod-button-bg" data-toggle="modal" data-target="#modalAddToCartProduct" style="background-color:#2b5a80!important;">ADD TO CART</a>
 								</div>
-								<div class="tt-row-btn">
-									<a href="#"   products_id="{{$products->products_id}}" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"></a>
+								<div class="tt-row-btn modal_show">
+									<a href="#"    products_id="{{$products->products_id}}" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"></a>
 									<a href="#" class="tt-btn-wishlist"></a>
 			
 								</div>

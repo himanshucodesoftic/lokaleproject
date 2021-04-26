@@ -252,8 +252,30 @@ close
 								<div class="tt-dropdown-inner">
 									<ul>
 										<li class="active"><a href="locale/ch">English</a></li>
-										<li><a href="locale/kh">Deutsch</a></li>
+										<li class="rtlbutton rtlbutton-js active"><a href="locale/en">Deutsch</a></li>
+										<div id="tt-boxedbutton">
+
+<div class="rtlbutton boxbutton-js">
+
+
+</div>
+<div class="rtlbutton rtlbutton-js active">
+	<div class="box-btn">
+	<a href="locale/en">	RTL
+	</a>
+	</div>
+	<div class="box-description">
+		Use demo with&nbsp;<strong>RTL</strong>
+	</div>
+	<div class="box-disable">
+	<button onClick="window.location.reload();">Refresh Page</button>
+
+	</div>
+</div>
+
+</div>
 											</ul>
+											
 								</div>
 							</div>
 						</div>

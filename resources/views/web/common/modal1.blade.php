@@ -1,13 +1,17 @@
 
 
-<div class="modal  fade"  id="modalAddToCartProduct" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">
+
+              
+
+
+<div class="modal  fade"  id="myModal" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content ">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon icon-clear"></span></button>
 			</div>
 			<div class="modal-body">
-				<div class="tt-modal-addtocart mobile">
+				<div class="tt-modal-addtocart mobile" id="products-detail">
 					<div class="tt-modal-messages">
 						<i class="icon-f-68"></i> Added to cart successfully!
 					</div>

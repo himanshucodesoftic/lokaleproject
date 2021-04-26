@@ -1408,11 +1408,12 @@ jQuery(document).on('click', '#stripe_ajax', function(e){
 
 jQuery(document).on('click', '.modal_show', function(e){
 	var parent = jQuery(this);
+	alert(parent);
 	var products_id = jQuery(this).attr('products_id');
 	var message ;
   jQuery(function ($) {
 	jQuery.ajax({
-	url: '{{ URL::to("/modal_show")}}',
+	url: '{{ URL::to("/modal_shw")}}',
     headers: {'X-CSRF-TOKEN': jQuery('meta[name="csrf-token"]').attr('content')},
 
 		type: "POST",
