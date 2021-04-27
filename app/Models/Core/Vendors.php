@@ -162,8 +162,7 @@ class Vendors extends Model
         // ]);
 
         $statusData['status'] = 0;
-        $statusData['request_email'] = $vendor_request_data->email;
-        $statusData['vendor_title'] = $vendor_request_data->title;
+
         $statusData['message'] = Lang::get("labels.requestRejected");
         $statusData['password'] = '';
         // $statusData['url'] = '';

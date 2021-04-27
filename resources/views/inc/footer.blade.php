@@ -85,25 +85,6 @@
 	</div>
 
 
-	<div class="tt-footer-col tt-color-scheme-01">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-lg-4 col-xl-4">
-					<div class="tt-mobile-collapse">
-						<h4 class="tt-collapse-title">
-							INFORMATION
-						</h4>
-						<a href="locale/db">arabic</a>
-										<a href="locale/en">english</a>
-									
-						
-						
-						
-						</div>
-</div>
-</div>
-</div>
-</div>
 
 
 

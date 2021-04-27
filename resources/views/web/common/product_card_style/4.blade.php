@@ -1,16 +1,5 @@
 
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 						<div class="tt-product thumbprod-center">
 						<?php
         $currency = \App\Models\Core\Currency::where('id',session('currency_id'))->pluck('decimal_places');

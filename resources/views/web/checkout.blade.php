@@ -2,7 +2,7 @@
 @section('content')
 
 <!-- checkout Content -->
-<section class="checkout-area">
+<section class="checkout-area" >
 
   @if(session::get('paytm') == 'success')
   @php Session(['paytm' => 'sasa']); @endphp

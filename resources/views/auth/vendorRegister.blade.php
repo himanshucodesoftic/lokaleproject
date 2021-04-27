@@ -1,7 +1,7 @@
 @extends('web.layout')
 
 @section('content')
-<div class="tt-breadcrumb">
+<div class="tt-breadcrumb"  style="border:2px solid red">
 	<div class="container">
 		<ul>
 			<li><a href="{{url('/')}}">Home</a></li>
