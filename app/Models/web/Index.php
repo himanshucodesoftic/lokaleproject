@@ -142,15 +142,15 @@ class Index extends Model
             session(['language_name' => $languages[0]->name]);
         }
 
-        if (!Session::has('custom_locale')) {
-            $locale = $languages[0]->code;
-            session()->put('language_id', $languages[0]->languages_id);
-            session()->put('direction', $languages[0]->direction);
-            session()->put('locale', $languages[0]->code);
-            session()->put('language_name', $languages[0]->name);
-            session()->put('language_image', $languages[0]->image_path);
-            App::setLocale($locale);
-        }
+        // if (!Session::has('custom_locale')) {
+        //     $locale = $languages[0]->code;
+        //     session()->put('language_id', $languages[0]->languages_id);
+        //     session()->put('direction', $languages[0]->direction);
+        //     session()->put('locale', $languages[0]->code);
+        //     session()->put('language_name', $languages[0]->name);
+        //     session()->put('language_image', $languages[0]->image_path);
+        //     App::setLocale($locale);
+        // }
 
         $vendor_role = DB::table('user_types')->where('user_types_name', 'Vendors')->first()->user_types_id;
         session()->put('vendor_role', $vendor_role);

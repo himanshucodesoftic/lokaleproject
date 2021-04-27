@@ -86,22 +86,17 @@ class NewController extends Controller
 public function vendorproduct(Request $request, $jspid)
     {
 
-        $Images = new Images();
-        $allimage = $Images->vendorimages();
-        // return view("admin.media.loadimages")->with('allimage', $allimage); 
 
-        $final_theme = $this->theme->theme();
-        $result['commonContent'] = $this->index->commonContent();
-     
-        return view('web.vendor_page')->with('allimage', $allimage);
+
 
         // $users = DB::select('select * from products');
 
-        // $users = DB::select('SELECT vendors.vendor_id,	products.		products_slug, products.products_image
-        // FROM products
-        //  INNER JOIN vendors
-        //  ON vendors.vendor_id = products.vendor_id');
-        // return view('web.vendor_page',['users'=>$users]);
+        $users = DB::select('SELECT vendors.vendor_id,	products.	products_id, products.products_image
+       FROM products
+         INNER JOIN vendors
+         ON vendors.vendor_id = products.vendor_id');
+        
+        return view('web.vendor_page',['users'=>$users]);
 
 
         // $id = $jspid;

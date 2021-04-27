@@ -785,9 +785,12 @@ Route::get('/vendorForm', 'App\Http\Controllers\web\CustomersController@vendor')
 	
 	Route::view('/newlogin','newlogin');
 	
-	Route::get('locale/{locale}',function($locale)
+	Route::get('/locale/{locale}',function($locale)
 	{
-	Session::put('locale',$locale);
+                Session::put('locale',$locale);
+                // print_r( Session::get('locale'));
+                // 
+
 	return redirect()->back();
 	});
 	

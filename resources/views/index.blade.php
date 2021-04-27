@@ -240,7 +240,7 @@
 	<div class="container-indent">
 		<div class="container container-fluid-custom-mobile-padding">
 			<div class="tt-block-title pt-5 mt-5 mb-5">
-				<h2 >TOP SELLING OF THE WEEK</h2>
+				<h2>@lang('topsellingof</h2>
 				<div class="tt-description"></div>
 			</div>
 			<div class="row tt-layout-product-item">

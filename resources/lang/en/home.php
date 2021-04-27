@@ -1,6 +1,8 @@
 <?Php
 return [
 
+'test'=>'الخاصةtest',
+
     'contactus'=>'contact us',
     
     'helpcenter'=>'Help Center',
@@ -15,56 +17,55 @@ return [
     'writeyourmessage'=>'write your message',
     
     //
-'welcometostore'=>'مرحبا بكم في المتجر',
-'mostliked'=>'الأكثر إعجابا',
-'sale'=>'تخفيض السعر',
-'new'=>'الجديد',
-'women'=>'امرأة',
-'new'=>'الجديد',
-'men'=>'رجال',
-'accessories'=>'مستلزمات',
-'shoes'=>'أحذية',
-'fallwinterclearancesale'=>'مبيعات التخليص في فصل الشتاء',
-'getupto'=>'استيقظ',
-'50%off'=>'
-خصم 50',
-'summer'=>'الصيف',
-'2018'=>'ألفين و ثمانية عشر',
-'newarrivals'=>'ا,لوافدون الجدد',
-'newcollection'=>'مجموعة جديدة',
-'handbags'=>'حقائب اليد
+'welcometostore'=>'welcome to store',
+'mostliked'=>'most liked',
+'sale'=>'sale',
+'new'=>'new',
+'women'=>'women',
+'new'=>'new',
+'men'=>'men',
+'accessories'=>'accessories',
+'shoes'=>'shoes',
+'fallwinterclearancesale'=>' fall winter clearance sale   ',
+'getupto'=>'get upto',
+'50%off'=>'50% off
 ',
-'topsellingofweek'=>'الأكثر مبيعًا في الأسبوع',
-'INSTAGRAM'=>'انستغرام',
-'@FOLLOW'=>'@ إتبع',
-'uson'=>'الولايات المتحدة'
-,'freeshipping'=>'الشحن مجانا',
-'FreeshippingonallUSorderororderabove$99'=>'شحن مجاني لجميع الطلبات الأمريكية أو الطلبات التي تزيد عن 99 دولارًا
+'summer'=>'summer',
+'2018'=>'2018',
+'newarrivals'=>'new arrivals ',
+'newcollection'=>'new collection ',
+'handbags'=>'handbags 
 ',
-'SUPPORT24/7'=>'دعم 24/7',
-'Contactus24hoursaday,7daysaweek'=>'اتصل بنا 24 ساعة في اليوم ، 7 أيام في الأسبوع
+'topsellingofweek'=>'  top selling of week ',
+'INSTAGRAM'=>'INSTAGRAM',
+'@FOLLOW'=>'@FOLLOW',
+'uson'=>'uson '
+,'freeshipping'=>'free shipping ',
+'FreeshippingonallUSorderororderabove$99'=>  'Free shipping on all US order or order above $99
 ',
-'30DAYSRETURN'=>'30 يوم العودة',
-'Simplyreturnitwithin24daysforanexchange'=>'ما عليك سوى إعادته خلال 24 يومًا للاستبدال
+'SUPPORT24/7'=>'SUPPORT 24/7',
+'Contactus24hoursaday,7daysaweek'=>  'Contact us 24 hours a day,7 days a week
 ',
-'BEINTOUCHWITHUS:'=>'كن على اتصال معنا:
+'30DAYSRETURN'=>' 30 DAYS RETURN ',
+'Simplyreturnitwithin24daysforanexchange'=>'Simply return it within 24 days for an exchange
 ',
-'enteryouremail'=>'أدخل بريدك الإلكتروني',
-'joinus'=>'انضم إلينا'
-,'information'=>'معلومة',
-'contactus'=>'اتصل بنا',
-'NewinLokal'=>'نوين لوكال',
-'Apparel'=>'ثياب',
-'Face + body'=>'الوجه + الجسم',
-'Brands'=>'العلامات التجارية',
-'categories'=>'التصنيفات',
-'CONTACTS'=>'جهات الاتصال',
-'Phone:+96555456559'=>'هاتف: +96555456559',
-'E-mail:contact@lokalkw.com'=>'الاتصال عبر البريد الالكتروني@
+'BEINTOUCHWITHUS:'=>' BE IN TOUCH WITH US
 ',
+'enteryouremail'=>'enter your email ',
+'joinus'=>'اjoin us'
+,'information'=>'information',
+'contactus'=>'contact us ',
+'NewinLokal'=>'New in Lokal ',
+'Apparel'=>'Apparel',
+'Face + body'=>'Face + body',
+'Brands'=>'Brands ',
+'categories'=>'categories',
+'CONTACTS'=>' CONTACTS',
+'Phone:+96555456559'=>'Phone:+96555456559',
+'E-mail:contact@lokalkw.com'=>' E-mail:contact@lokalkw.com',
 
-'lokal'=>'لوكال',
-'&copy; Lokalkw 2020. All Rights Reserved'=>'&ينسخ؛ Lokalkw 2020. جميع الحقوق محفوظة
+'lokal'=>'lokal',
+'&copy; Lokalkw 2020. All Rights Reserved'=>'&copy; Lokalkw 2020. All Rights Reserved
 ',
 
 //contact us
@@ -72,31 +73,57 @@ return [
 'contactus'=>'
     اتصل بنا',
     
-    'helpcenter'=>'مركز المساعدة',
+    'helpcenter'=>'help center',
     
-    '+96555456559-contact@lokalkw.com'=>'+96555456559 - contact@lokalkw.com',
-    'MONtoFRI9am-6pmSAT9am-2pm'=>'من الاثنين إلى الجمعة ، 9 صباحًا - 6 مساءً ، 9 صباحًا - 2 مساءً ',
-    'Showroom'=>'قاعة عرض',
-    'addressCityState,ZipCountry'=>'العنوان ، المدينة ، الدولة ، الرمز البريدي
+    '+96555456559-contact@lokalkw.com'=>'++96555456559-contact@lokalkw.com',
+    'MONtoFRI9am-6pmSAT9am-2pm'=>' MON to FRI 9am-6pm SAT9am-2pm' ,
+    'Showroom'=>'Showroom ',
+    'addressCityState,ZipCountry'=>'addressCityState,ZipCountry
     ',
-    'orders'=>'الطلب',
+    'orders'=>'orders',
 
 
-    'yourname'=>'اسمك',
-    'youremail'=>'بريدك الالكتروني',
-    'writeyourmessage'=>'اكتب رسالت,ك',
+    'yourname'=>'your name',
+    'youremail'=>'your email ',
+    'writeyourmessage'=>' write your message',
     
     //about us
-    'WelcometoLOCAL'=>'محلي
-مرحبا بكم في',
-'Amarketplacethatjoinslocalhome-businessesandspecialkuwaitibrands.'=>'سوق يجمع بين الأعمال المنزلية المحلية والعلامات التجارية الكويتية الخاصة.
+    'WelcometoLOCAL'=>' Welcome to LOCAL',
+'Amarketplacethatjoinslocalhome-businessesandspecialkuwaitibrands.'=>'  A market place that joins local home-businesses and special kuwaiti brands
 ',
-'HereyouwillfindeverythingLOKAL.'=>'ه
-نا ستجد كل شيءلوكال'
-,
-'IfyouhaveanyLOKALproductandwanttopromoteitwithuswerehappytoconnect!'=>'إذا كان لديك أي منتج من منتجات LOKAL وترغب في الترويج له معنا ، يسعدنا التواصل معنا!
+'HereyouwillfindeverythingLOKAL.'=>'Here you will find everything LOKAL',
+'IfyouhaveanyLOKALproductandwanttopromoteitwithuswerehappytoconnect!'=>'If you have any LOKAL product and want to promote it with us were happy to connect',
+
+///
+'SIGNINORCREATEANACCOUNT'=>'SIGN IN OR CREATE AN ACCOUNT',
+'Login'=>'Login',
+
+'Ifyouhaveanaccountwithus,pleaselogin.'=>'If you have an account with us, please log in.',
+'E-MAIL'=>'E-MAIL',
+'*RequiredFields'=>'*Required Fields',
+'password'=>'password',
+'enterpassword'=>'Enter Password',
+'Login'=>'Login',
+'forgotpassword'=>'forgot Passwordر
 ',
-''
+'Newcustomer'=>'New customer',
+'Email'=>'Email',
+'Password *'=>'Password *',
+'ConfirmPassword*'=>'Confirm Password *',
+'FirstName*'=>'First Name*',
+
+'LastName*'=>'Last Name*',
+'select'=>'select',
+'DateOfBirth*'=>'Date Of Birth*',
+'Gender*'=>'Gender *',
+'PhoneNumber*'=>'Phone Number*',
+'Iaccepttoallthetermsandconditions.'=>' I accept to all the terms and conditions.',
+'register'=>'register',
+'confirmpassword'=>'confirm password',
+'pleaseselectyourcontactno'=>'pleaseselectyourcontactno',
+'VendorRequestForm'=>'Vendor Request Form',
+'enteryourfirstname'=>'Enter Your First Name'
+
 
 
 

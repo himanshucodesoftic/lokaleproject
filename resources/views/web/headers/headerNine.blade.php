@@ -251,8 +251,8 @@ close
 								</div>
 								<div class="tt-dropdown-inner" style="border:2px solid red;">
 									<ul>
-										<li class="active"><a href="locale/ch">English</a></li>
-										<li class="rtlbutton rtlbutton-js active"><a href="locale/en">Deutsch</a></li>
+										<li class="active"><a href="locale/en">English</a></li>
+										<li class="rtlbutton rtlbutton-js active"><a href="locale/db">Deutsch</a></li>
 										<div id="tt-boxedbutton">
 
 <div class="rtlbutton boxbutton-js">

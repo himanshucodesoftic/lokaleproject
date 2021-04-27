@@ -1,8 +1,8 @@
 <div class="container-indent">
 		<div class="container-fluid">
 			<div class="tt-block-title">
-				<h2 class="tt-title"><a target="_blank" href="{{url('https://www.instagram.com/lokal_kw/')}}">@ FOLLOW</a> US ON</h2>
-				<div class="tt-description">INSTAGRAM</div>
+				<h2 class="tt-title"><a target="_blank" href="{{url('https://www.instagram.com/lokal_kw/')}}">@lang('home.@FOLLOW')</a> @lang('home.uson')</h2>
+				<div class="tt-description">@lang('home.INSTAGRAM')</div>
 			</div>
 			<div class="row">
 				<div id="instafeed" class="instafeed-fluid" data-access-token="IGQVJXX1hydHVETWFEMGIzeFFmYzIyU1ZAjTHREakhBU1ZAHU0JOZAXJmSWtfbUotMnNHVGxUTUxXckIwVUlhVk1QTEhfQXliNkVoejlILS1Kem40NU1fSWszOTZAhT0dOZAWZAqLXZA1QWxKSHNhSTdpRmN5WQZDZD" data-limitimg="6"></div>
@@ -18,8 +18,8 @@
 							<i class="icon-f-48"></i>
 						</div>
 						<div class="tt-col-description">
-							<h4 class="tt-title">FREE SHIPPING</h4>
-							<p>Free shipping on all US order or order above $99</p>
+							<h4 class="tt-title">@lang('home.freeshipping')</h4>
+							<p>@lang('home.FreeshippingonallUSorderororderabove$99')</p>
 						</div>
 					</a>
 				</div>
@@ -29,8 +29,8 @@
 							<i class="icon-f-35"></i>
 						</div>
 						<div class="tt-col-description">
-							<h4 class="tt-title">SUPPORT 24/7</h4>
-							<p>Contact us 24 hours a day, 7 days a week</p>
+							<h4 class="tt-title">@lang('home.SUPPORT24/7')</h4>
+							<p>@lang('home.Contactus24hoursaday,7daysaweek')</p>
 						</div>
 					</a>
 				</div>
@@ -40,8 +40,8 @@
 							<i class="icon-e-09"></i>
 						</div>
 						<div class="tt-col-description">
-							<h4 class="tt-title">30 DAYS RETURN</h4>
-							<p>Simply return it within 24 days for an exchange.</p>
+							<h4 class="tt-title">@lang('home.30DAYSRETURN')</h4>
+							<p>@lang('home.Simplyreturnitwithin24daysforanexchange')</p>
 						</div>
 					</a>
 				</div>
@@ -57,13 +57,13 @@
 						<div class="tt-newsletter">
 							<div class="tt-mobile-collapse">
 								<h4 class="tt-collapse-title">
-									BE IN TOUCH WITH US:
+									@lang('home.BEINTOUCHWITHUS')
 								</h4>
 								<div class="tt-collapse-content">
 									<form id="newsletterform" class="form-inline form-default" method="post" novalidate="novalidate" action="#">
 										<div class="form-group">
-											<input type="text" name="email" class="form-control" placeholder="Enter your e-mail">
-											<button type="submit" class="btn">JOIN US</button>
+											<input type="text" name="email" class="form-control" placeholder="@lang('home.enteryouremail')">
+											<button type="submit" class="btn">	@lang('home.joinus')</button>
 										</div>
 									</form>
 								</div>
@@ -83,27 +83,24 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
 	<div class="tt-footer-col tt-color-scheme-01">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-lg-4 col-xl-4">
 					<div class="tt-mobile-collapse">
 						<h4 class="tt-collapse-title">
-							INFORMATION
+							@lang('home.information')
 						</h4>
 						<div class="tt-collapse-content">
 							<ul class="tt-list">
-								<li><a href="{{url('about')}}">About Us</a></li>
-								<li><a href="{{url('terms')}}">Term & Conditions</a></li>
-								
-								<li><a href="{{url('login')}}">My Account</a></li>
+							    
+							    
+							    @if(count($result['commonContent']['pages']))
+								@foreach($result['commonContent']['pages'] as $page)
+									<li> <a href="{{ URL::to('/page?name='.$page->slug)}}"><i ></i>{{$page->name}}</a> </li>
+								@endforeach
+							  @endif
+							
 								<li><a href="{{url('contact')}}">Contact Us</a></li>
 								
 							</ul>
@@ -113,15 +110,15 @@
 				<div class="col-md-7 col-lg-4 col-xl-4">
 					<div class="tt-mobile-collapse">
 						<h4 class="tt-collapse-title">
-							CATEGORIES
+							@lang('home.categories')
 						</h4>
 						<div class="tt-collapse-content">
 							<ul class="tt-list">
-								<li><a href="{{url('#')}}">New in Lokal</a></li>
-								<li><a href="{{url('#')}}">Apparel</a></li>
-								<li><a href="{{url('#')}}">Accessories</a></li>
-								<li><a href="{{url('#')}}">Face + body</a></li>
-								<li><a href="{{url('#')}}">Brands</a></li>
+								<li><a href="{{url('#')}}">@lang('home.NewinLokal')</a></li>
+								<li><a href="{{url('#')}}">@lang('home.Apparel')</a></li>
+								<li><a href="{{url('#')}}">@lang('home.accessories')</a></li>
+								<li><a href="{{url('#')}}">@lang('home.Face + body')</a></li>
+								<li><a href="{{url('#')}}">@lang('home.Brands')</a></li>
 							</ul>
 						</div>
 					</div>
@@ -135,9 +132,9 @@
 							<div class="tt-collapse-content">
 								<address>
 									<!--<p><span>Address:</span> 2548 Broaddus Maple Court Avenue, Madisonville KY 4783, United States of America</p>-->
-									<p><span>Phone:</span> +96555456559</p>
+									<p><span>@lang('home.Phone:+96555456559')</span> </p>
 									<!--p><span>Hours:</span> 7 Days a week from 10 am to 6 pm</p>-->
-									<p><span>E-mail:</span> <a href="mailto:info@mydomain.com" style="color:#2b5a80!important;">contact@lokalkw.com</a></p>
+									<p><span>E-mail:</span> <a href="mailto:info@mydomain.com" style="color:#2b5a80!important;">@lang('home.E-mail:contact@lokalkw.com')</a></p>
 								</address>
 							</div>
 						</div>
@@ -166,15 +163,15 @@
 					<div class="tt-col-item tt-logo-col">
 						<!-- logo -->
 						<a class="tt-logo tt-logo-alignment" href="{{url('/')}}">
-							<img  src="https://lokalkw.com/images/logo.png"  data-src="https://lokalkw.com/images/logo.png" alt="">
-							<span class="tt-title" style="color:#2b5a80">Lokal</span>
+						
+							<span class="tt-title" style="color:#2b5a80">@lang('home.lokal')</span>
 						</a>
 						<!-- /logo -->
 					</div>
 					<div class="tt-col-item">
 						<!-- copyright -->
 						<div class="tt-box-copyright">
-							&copy; Wokiee 2020. All Rights Reserved
+						@lang('home.&copy; Lokalkw 2020. All Rights Reserved')
 						</div>
 						<!-- /copyright -->
 					</div>

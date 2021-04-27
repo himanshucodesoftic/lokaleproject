@@ -20,14 +20,14 @@ class language
     public function handle($request, Closure $next)
     {
       if(file_exists(storage_path('installed'))){
-    		if(Session::has('locale')){
-    			$locale = Session::get('locale', Config::get('app.locale'));
-    		}else{
-    		   $languages = DB::table('languages')->where('is_default','=','1')->get();
-    		   $request->session()->put('direction', $languages[0]->direction);
-    		   $locale = $languages[0]->code;
-    		}
-
+    		// if(Session::has('locale')){
+    		// 	$locale = Session::get('locale', Config::get('app.locale'));
+    		// }else{
+    		//    $languages = DB::table('languages')->where('is_default','=','1')->get();
+    		//    $request->session()->put('direction', $languages[0]->direction);
+    		//    $locale = $languages[0]->code;
+    		// }
+$locale='db';
     		App::setLocale($locale);
       }
         return $next($request);

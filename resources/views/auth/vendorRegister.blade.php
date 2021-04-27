@@ -1,7 +1,7 @@
 @extends('web.layout')
 
 @section('content')
-<div class="tt-breadcrumb"  style="border:2px solid red">
+<div class="tt-breadcrumb"  >
 	<div class="container">
 		<ul>
 			<li><a href="{{url('/')}}">Home</a></li>
@@ -45,7 +45,7 @@
 	<div class="container-indent">
 		<div class="container">
 			<h1 class="tt-title-subpages noborder">
-Vendor Request Form</h1>
+@lang('home.VendorRequestForm')</h1>
 			<div class="tt-login-form">
 				<div class="row justify-content-center">
 					<div class="col-md-8 col-lg-6">
@@ -62,8 +62,8 @@ Vendor Request Form</h1>
 <div class="col-md-6">
 
 <div class="form-group">
-										<label for="loginLastName">First Name*</label>
-										<input type="text"name="firstName"  class="form-control" id="loginLastName" placeholder="Enter Your First Name">
+										<label for="loginLastName">@lang('home.FirstName*')</label>
+										<input type="text"name="firstName"  class="form-control" id="loginLastName" placeholder="@lang('home.enteryourfirstname')">
 									</div>
 
 
@@ -72,7 +72,7 @@ Vendor Request Form</h1>
 <div class="col-md-6">
 
 <div class="form-group">
-										<label for="loginLastName">Last Name*</label>
+										<label for="loginLastName">@lang('home.LastName*')</label>
 										<input type="text" name="lastName" class="form-control" id="loginLastName" placeholder="Enter Your Last Name">
 									</div>
 

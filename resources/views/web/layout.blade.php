@@ -12,18 +12,22 @@
 
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="/web/css/app.theme.7.css">
-<script src="/web/js/app.js"></script>
+
+<link rel="stylesheet" type="text/css" href="{{url('/web/css/app.theme.7.css')}}">
+<script src="{{asset('/web/js/app.js')}}"></script>
 
 <!-- BASE CSS -->
 
 <!-- SPECIFIC CSS -->
-<link href="web/css/theme_css/home_1.css" rel="stylesheet">
+<link href="{{url('web/css/theme_css/home_1.css')}}" rel="stylesheet">
 <!-- <link href="http://127.0.0.1:8000/web/css/theme_css/contact.css" rel="stylesheet"> -->
 <!-- <link href="http://127.0.0.1:8000/web/css/theme_css/checkout.css" rel="stylesheet"> -->
 <!-- YOUR CUSTOM CSS -->
-<link href="web/css/theme_css/custom.css" rel="stylesheet">
-<link href="web/css/theme_css/listing.css" rel="stylesheet">
+<link href="{{url('web/css/theme_css/custom.css')}}" rel="stylesheet">
+<link href="{{url('web/css/theme_css/listing.css')}}" rel="stylesheet">
+
+
+
 	<link rel="stylesheet" href="{{url('css/style.css')}}">
 	<script
     src="{{asset('https://code.jquery.com/jquery-3.3.1.js')}}"
