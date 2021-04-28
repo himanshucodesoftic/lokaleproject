@@ -3,11 +3,11 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1> {{ trans('labels.EditBanner') }} <small>{{ trans('labels.EditBanner') }}...</small> </h1>
+            <h1> EditBanner <small>EditBanner...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li><a href="{{ URL::to('admin/banners')}}"><i class="fa fa-bars"></i> {{ trans('labels.ListingAllBanners') }}</a></li>
-                <li class="active">{{ trans('labels.EditBanner') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+                <li><a href="{{ URL::to('admin/banners')}}"><i class="fa fa-bars"></i> ListingAllBanners</a></li>
+                <li class="active">EditBanner</li>
             </ol>
         </section>
 
@@ -21,7 +21,7 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">{{ trans('labels.EditBanner') }} </h3>
+                            <h3 class="box-title">EditBanner </h3>
                         </div>
 
                         <!-- /.box-header -->
@@ -58,7 +58,7 @@
                                                         @endforeach
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                    {{ trans('labels.ChooseLanguageText') }}</span>
+                                                    ChooseLanguageText</span>
                                                 </div>
                                               </div>
 
@@ -66,14 +66,14 @@
                                                 <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Title') }} </label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::text('banners_title', $result['banners'][0]->banners_title, array('class'=>'form-control','id'=>'banners_title')) !!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.BannerTitletext') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">BannerTitletext</span>
                                                 </div>
                                             </div>
 
                                             
 
                                             <div class="form-group" id="imageIcone">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Image') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Image</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <!-- Modal -->
                                                     <div class="modal fade embed-images" id="ModalmanufacturedICone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -81,7 +81,7 @@
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
                                                                     <button type="button" class="close" data-dismiss="modal" id="closemodal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                                    <h3 class="modal-title text-primary" id="myModalLabel">{{ trans('labels.Choose Image') }} </h3>
+                                                                    <h3 class="modal-title text-primary" id="myModalLabel">Choose Image </h3>
                                                                 </div>
                                                                 <div class="modal-body manufacturer-image-embed">
                                                                     @if(isset($allimage))
@@ -94,9 +94,9 @@
                                                                     @endif
                                                                 </div>
                                                                 <div class="modal-footer">
-                                                                    <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >{{ trans('labels.Add Image') }}</a>
+                                                                    <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >Add Image</a>
                                                                     <button type="button" class="btn btn-default refresh-image"><i class="fa fa-refresh"></i></button>
-                                                                    <button type="button" class="btn btn-success" id="selectedICONE" data-dismiss="modal">{{ trans('labels.Done') }}</button>
+                                                                    <button type="button" class="btn btn-success" id="selectedICONE" data-dismiss="modal">Done</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -112,7 +112,7 @@
                                                           </button>
                                                       </div>
                                                     </div>
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.ImageText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">ImageText</span>
 
                                                     <br>
                                                 </div>
@@ -122,25 +122,25 @@
                                                 <label for="name" class="col-sm-2 col-md-3 control-label"></label>
                                                 <div class="col-sm-10 col-md-4">
 
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.OldImage') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">OldImage</span>
                                                     <br>
 
                                                     <img src="{{asset($result['banners'][0]->path)}}" alt="" width=" 100px">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Type') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Type</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select class="form-control" name="type" id="bannerType">
                                                         <option value="category" @if($result['banners'][0]->type=='category') selected @endif>
-                                                            {{ trans('labels.Show Categegoires') }}</option>
+                                                        Categegoires</option>
                                                         <option value="product" @if($result['banners'][0]->type=='product') selected @endif>Product</option>
                                                         <option value="top seller" @if($result['banners'][0]->type=='top seller') selected @endif>Top Seller</option>
                                                         <option value="deals" @if($result['banners'][0]->type=='deals') selected @endif>Deals</option>
                                                         <option value="most liked" @if($result['banners'][0]->type=='most liked') selected @endif>Most Liked</option>
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                {{ trans('labels.AddBannerText') }}</span>
+                                                    AddBannerText<span>
                                                 </div>
                                             </div>
 
@@ -155,7 +155,7 @@
                                               </div>-->
 
                                             <div class="form-group categoryContent" @if($result['banners'][0]->type!='category') style="display: none" @endif >
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Categories') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Categories</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select class="form-control" name="categories_id" id="categories_id">
                                                         @foreach($result['categories'] as $category)
@@ -163,7 +163,7 @@
                                                         @endforeach
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                    {{ trans('labels.CategoriesbannerText') }}</span>
+                                                    CategoriesbannerText</span>
                                                 </div>
                                             </div>
 
@@ -176,7 +176,7 @@
                                                         @endforeach
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                    {{ trans('labels.ProductsBannerText') }}</span>
+                                                    ProductsBannerText</span>
                                                 </div>
                                             </div>
 
@@ -194,7 +194,7 @@
                                               </div>-->
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.ExpiryDate') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">ExpiryDate</label>
                                                 <div class="col-sm-10 col-md-4">
 
 
@@ -206,27 +206,27 @@
 
                                                     @endif
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                    {{ trans('labels.ExpiryDateBanner') }}</span>
+                                                    ExpiryDateBanner</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Status') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Status</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select class="form-control" name="status">
                                                         <option value="1" @if($result['banners'][0]->status==1) selected @endif>{{ trans('labels.Active') }}</option>
                                                         <option value="0" @if($result['banners'][0]->status==0) selected @endif>{{ trans('labels.Inactive') }}</option>
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                      {{ trans('labels.StatusBannerText') }}</span>
+                                                    StatusBannerText</span>
                                                 </div>
                                             </div>
 
 
                                             <!-- /.box-body -->
                                             <div class="box-footer text-center">
-                                                <button type="submit" class="btn btn-primary">{{ trans('labels.Submit') }}</button>
-                                                <a href="{{ URL::to('admin/banners')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <a href="{{ URL::to('admin/banners')}}" type="button" class="btn btn-default">back</a>
                                             </div>
                                             <!-- /.box-footer -->
                                             {!! Form::close() !!}

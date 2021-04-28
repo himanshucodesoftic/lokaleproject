@@ -446,6 +446,22 @@
 									</div>
 
 
+
+
+
+									<div class="form-group">
+										<label for="loginInputPassword">@lang('home.image')</label>
+										<input type="file" class="form-cntrl-file" data-file_types="jpg|jpeg|gif|png"
+                                        accept="image/png, image/jpeg" name="image" id="" placeholder="Add Media">	</div>
+
+
+
+
+
+
+
+
+
                                     <div class="row">
 <div class="col-md-12">
 <div class="form-group">

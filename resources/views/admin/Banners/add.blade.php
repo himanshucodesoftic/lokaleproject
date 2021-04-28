@@ -3,11 +3,11 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1> {{ trans('AddBanner') }} <small>{{ trans('labels.AddBanner') }}...</small> </h1>
+            <h1> AddBanner<small>AddBanner...</small> </h1>
             <ol class="breadcrumb">
                 <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
                 <li><a href="{{ URL::to('admin/banners')}}"><i class="fa fa-bars"></i> List All Banners</a></li>
-                <li class="active">{{ trans('labels.AddBanner') }}</li>
+                <li class="active">AddBanner</li>
             </ol>
         </section>
 
@@ -21,7 +21,7 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">{{ trans('labels.AddBanner') }}</h3>
+                            <h3 class="box-title">AddBanner</h3>
                         </div>
 
                         <!-- /.box-header -->
@@ -52,20 +52,20 @@
                                                         @endforeach
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                    {{ trans('labels.ChooseLanguageText') }}</span>
+                                                    ChooseLanguageText</span>
                                                 </div>
                                               </div>
                                               
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Title') }} </label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Title </label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::text('banners_title', '', array('class'=>'form-control field-validate','id'=>'banners_title')) !!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.BannerTitletext') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">BannerTitletext</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group" id="imageIcone">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Image') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Image</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <!-- Modal -->
                                                     <div class="modal fade embed-images" id="ModalmanufacturedICone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -73,7 +73,7 @@
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
                                                                     <button type="button" class="close" data-dismiss="modal" id="closemodal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                                    <h3 class="modal-title text-primary" id="myModalLabel">{{ trans('labels.Choose Image') }} </h3>
+                                                                    <h3 class="modal-title text-primary" id="myModalLabel">Choose Image </h3>
                                                                 </div>
                                                                 <div class="modal-body manufacturer-image-embed">
                                                                     @if(isset($allimage))
@@ -86,9 +86,9 @@
                                                                     @endif
                                                                 </div>
                                                                 <div class="modal-footer">
-                                                                    <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >{{ trans('labels.Add Image') }}</a>
+                                                                    <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >Add Image</a>
                                                                     <button type="button" class="btn btn-default refresh-image"><i class="fa fa-refresh"></i></button>
-                                                                    <button type="button" class="btn btn-success" id="selectedICONE" data-dismiss="modal">{{ trans('labels.Done') }}</button>
+                                                                    <button type="button" class="btn btn-success" id="selectedICONE" data-dismiss="modal">Done</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -104,24 +104,24 @@
                                                           </button>
                                                       </div>
                                                     </div>
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.ImageText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">ImageText</span>
 
                                                     <br>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Type') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Type</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select class="form-control" name="type" id="bannerType" onchange="bannerstypes()">
-                                                        <option value="category">{{ trans('labels.Show Categegoires') }}</option>
-                                                        <option value="product">{{ trans('labels.Product') }}</option>
-                                                        <option value="top seller">{{ trans('labels.TopSeller') }}</option>
-                                                        <option value="deals">{{ trans('labels.Deals') }}</option>
-                                                        <option value="most liked">{{ trans('labels.MostLiked') }}</option>
+                                                        <option value="category">Show Categegoires</option>
+                                                        <option value="product">Product</option>
+                                                        <option value="top seller">TopSeller</option>
+                                                        <option value="deals">Deals</option>
+                                                        <option value="most liked">MostLiked</option>
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                        {{ trans('labels.AddBannerText') }}</span>
+                                                    AddBannerText</span>
                                                 </div>
                                             </div>
 
@@ -133,7 +133,7 @@
                                               </div>-->
 
                                             <div class="form-group categoryContent">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Categories') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Categories</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select class="form-control" name="categories_id" id="categories_id">
                                                         @foreach($result['categories'] as $category)
@@ -146,7 +146,7 @@
                                             </div>
 
                                             <div class="form-group productContent" style="display: none">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Products') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Products</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select class="form-control" name="products_id" id="products_id">
                                                         @foreach($result['products'] as $products_data)
@@ -154,37 +154,37 @@
                                                         @endforeach
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                      {{ trans('labels.ProductsBannerText') }}</span>
+                                                    ProductsBannerText</span>
                                                 </div>
                                             </div>
 
 
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.ExpiryDate') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">ExpiryDate</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <input readonly class="form-control datepicker field-validate" type="text" name="expires_date" value="">
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                    {{ trans('labels.ExpiryDateBanner') }}</span>
+                                                    ExpiryDateBanner</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Status') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Status</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select class="form-control" name="status">
-                                                        <option value="1">{{ trans('labels.Active') }}</option>
-                                                        <option value="0">{{ trans('labels.InActive') }}</option>
+                                                        <option value="1">Active</option>
+                                                        <option value="0">InActive</option>
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                      {{ trans('labels.StatusBannerText') }}</span>
+                                                    StatusBannerText</span>
                                                 </div>
                                             </div>
 
                                             <!-- /.box-body -->
                                             <div class="box-footer text-center">
-                                                <button type="submit" class="btn btn-primary">{{ trans('labels.Submit') }}</button>
-                                                <a href="{{ URL::to('admin/banners')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <a href="{{ URL::to('admin/banners')}}" type="button" class="btn btn-default">back</a>
                                             </div>
                                             <!-- /.box-footer -->
                                             {!! Form::close() !!}

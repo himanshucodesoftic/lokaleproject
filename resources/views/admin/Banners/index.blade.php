@@ -3,10 +3,10 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1> {{ trans('labels.Banners') }} <small>{{ trans('labels.ListingAllBanners') }}...</small> </h1>
+            <h1> Banners <small>ListingAllBanners...</small> </h1>
             <ol class="breadcrumb">
                 <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li class="active">{{ trans('labels.Banners') }}</li>
+                <li class="active">Banners</li>
             </ol>
         </section>
 
@@ -20,7 +20,7 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header">
-                            {{--<h3 class="box-title">{{ trans('labels.ListingAllBanners') }} </h3>--}}
+                            {{--<h3 class="box-title">ListingAllBanners </h3>--}}
 
 
                             <div class="col-lg-6 form-inline" id="contact-form">
@@ -47,7 +47,7 @@
                                 <div class="col-lg-4 form-inline" id="contact-form12"></div>
                             </div>
                             <div class="box-tools pull-right">
-                                <a href="{{url('admin/banners/add')}}" type="button" class="btn btn-block btn-primary">{{ trans('labels.AddNewBanner') }}</a>
+                                <a href="{{url('admin/banners/add')}}" type="button" class="btn btn-block btn-primary">AddNewBanner</a>
                             </div>
                         </div>
 
@@ -97,7 +97,7 @@
                                             @endforeach
                                         @else
                                             <tr>
-                                                <td colspan="5">{{ trans('labels.NoRecordFound') }}</td>
+                                                <td colspan="5">NoRecordFound</td>
                                             </tr>
                                         @endif
                                         </tbody>
@@ -125,7 +125,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="deleteBannerModalLabel">{{ trans('labels.DeleteBanner') }}</h4>
+                            <h4 class="modal-title" id="deleteBannerModalLabel">DeleteBanner</h4>
                         </div>
                         {!! Form::open(array('url' =>'admin/banners/delete', 'name'=>'deleteBanner', 'id'=>'deleteBanner', 'method'=>'post', 'class' => 'form-horizontal', 'enctype'=>'multipart/form-data')) !!}
                         {!! Form::hidden('action',  'delete', array('class'=>'form-control')) !!}
@@ -134,8 +134,8 @@
                             <p>{{ trans('labels.DeleteBannerText') }}</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
-                            <button type="submit" class="btn btn-primary" id="deleteBanner">{{ trans('labels.Delete') }}</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="deleteBanner">Delete</button>
                         </div>
                         {!! Form::close() !!}
                     </div>

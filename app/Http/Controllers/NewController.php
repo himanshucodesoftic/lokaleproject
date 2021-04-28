@@ -91,11 +91,11 @@ public function vendorproduct(Request $request, $jspid)
 
         // $users = DB::select('select * from products');
 
-        $users = DB::select('SELECT vendors.vendor_id,	products.	products_id, products.products_image
+        $users = DB::select('SELECT vendors.vendor_id,	products.	products_slug, products.products_image
        FROM products
          INNER JOIN vendors
          ON vendors.vendor_id = products.vendor_id');
-        
+      
         return view('web.vendor_page',['users'=>$users]);
 
 

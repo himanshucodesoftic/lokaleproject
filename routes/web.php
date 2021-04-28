@@ -615,7 +615,7 @@ Route::get('/login', 'App\Http\Controllers\web\CustomersController@login');
 Route::post('/process-login', 'App\Http\Controllers\web\CustomersController@processLogin');
 
 
-Route::post('/confirmVendor', 'App\Http\Controllers\web\CustomersController@confirmVendor');
+Route::post('/confirmVendor', 'App\Http\Controllers\web\VendorController@index');
 
 Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->middleware('Customer');
 
@@ -801,9 +801,9 @@ Route::get('/vendorForm', 'App\Http\Controllers\web\CustomersController@vendor')
 return view('vendor');
 	});
 
-Route::get('vendor_list',"App\Http\Controllers\NewController@index");
+Route::get('vendor_list',"App\Http\Controllers\web\VendorController@index");
 
-Route::get('vendor_product/{jspid}',"App\Http\Controllers\NewController@vendorproduct");
+Route::get('vendor_product/{jspid}',"App\Http\Controllers\web\VendorController@vendorproduct");
 
 
 

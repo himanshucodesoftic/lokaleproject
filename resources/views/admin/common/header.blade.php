@@ -5,16 +5,16 @@
     <!-- Logo -->
     <a href="{{ URL::to('admin/dashboard/this_month')}}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini" style="font-size:12px"><b>{{ trans('labels.admin') }}</b></span>
+      <span class="logo-mini" style="font-size:12px"><b>admin</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>{{ trans('labels.admin') }}</b></span>
+      <span class="logo-lg"><b>admin</b></span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" id="linkid" data-toggle="offcanvas" role="button">
-        <span class="sr-only">{{ trans('labels.toggle_navigation') }}</span>
+        <span class="sr-only">toggle_navigation</span>
       </a>
 		<div id="countdown" style="
     width: 350px;
@@ -36,7 +36,7 @@
               <span class="label label-success"></span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">{{ trans('labels.you_have') }}  {{ trans('labels.new_orders') }}</li>
+              <li class="header">you_have  new_orders</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -82,16 +82,16 @@
 
                 <p>
                   {{ auth()->user()->first_name }} {{ auth()->user()->last_name }}
-                  <small>{{ trans('labels.administrator')}}</small>
+                  <small>administrator</small>
                 </p>
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="{{ URL::to('admin/admin/profile')}}" class="btn btn-default btn-flat">{{ trans('labels.profile_link')}}</a>
+                  <a href="{{ URL::to('admin/admin/profile')}}" class="btn btn-default btn-flat">profile_link</a>
                 </div>
                 <div class="pull-right">
-                  <a href="{{ URL::to('admin/logout')}}" class="btn btn-default btn-flat">{{ trans('labels.sign_out') }}</a>
+                  <a href="{{ URL::to('admin/logout')}}" class="btn btn-default btn-flat">sign_out</a>
                 </div>
               </li>
             </ul>

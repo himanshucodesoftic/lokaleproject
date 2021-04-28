@@ -8,7 +8,7 @@
 							<ul>
 						
 								<li data-transition="fade" class="second-slide" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
-									<img src="https://lokalkw.com/images/banner.jpg"   alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
+									<img src="{{asset('https://lokalkw.com/images/banner.jpg')}}"   alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
 									<div class="tp-caption tp-caption1 lft stb"
 										data-x="center"
 										data-y="center"
@@ -25,7 +25,7 @@
 									</div>
 								</li>
 								<li data-transition="fade" class="second-slide" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
-									<img src="https://lokalkw.com/images/banner.jpg"  alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
+									<img src="{{asset('https://lokalkw.com/images/banner.jpg')}}"  alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
 									<div class="tp-caption tp-caption1 lft stb"
 										data-x="center"
 										data-y="center"

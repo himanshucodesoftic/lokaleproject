@@ -323,9 +323,27 @@ class Images extends Model
 
 
 
-
+      public function vendor(){        
+        $allimagesth =  DB::table('vendors')
+        ->LeftJoin('products', function ($join) {
+          $join->on('products.products_image', '=', 'vendors.image')
+            ->where(function ($query) {
+              $query->where('products.products_slug', '=', 'THUMBNAIL');
+          });
+        });
+        $allimages = DB::table('images')
+        ->leftJoin('image_categories', 'images.id', '=', 'image_categories.image_id')
+        ->select('path','images.id','image_type')
+        ->where('image_categories.image_type','ACTUAL')
+        ->orderby('images.id','DESC')
+        ->get();         
+  
+        $result =$allimages->merge($allimagesth)->keyBy('id');
+        return $result;
+      }
+  
 
 
       
-
+    
 }
