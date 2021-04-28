@@ -3,8 +3,8 @@
 <div class="tt-breadcrumb">
 	<div class="container">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li>Account</li>
+			<li><a href="{{url('/')}}">@lang('home.home')</a></li>
+			<li>@lang('home.MyAccount')</li>
 		</ul>
 	</div>
 </div>
@@ -19,21 +19,21 @@
 
         @endif
 		<div class="container container-fluid-custom-mobile-padding">
-			<h1 class="tt-title-subpages noborder">My ACCOUNT</h1>
+			<h1 class="tt-title-subpages noborder">@lang('home.MyAccount')</h1>
 			<div class="tt-shopping-layout">
-				<h2 class="tt-title">ORDER </h2>
+				<h2 class="tt-title">@lang('home.orders') </h2>
 			
-				<div class="tt-data">November 20, 2016</div>
+				<div class="tt-data"></div>
 				<div class="tt-wrapper">
 					<div class="tt-table-responsive">
 						<table class="tt-table-shop-03">
 							<thead>
 								<tr>
-									<th>Order ID</th>
-									<th>Order Date</th>
-									<th>Price</th>
-									<th>TOTAL</th>
-                                    <th>Detail</th>
+									<th>@lang('home.orderid')</th>
+									<th>@lang('home.orderdate')</th>
+									<th>@lang('home.price')</th>
+									<th>@lang('home.total')</th>
+                                    <th>@lang('home.detail')</th>
 								</tr>
 							</thead>
 							<tbody>

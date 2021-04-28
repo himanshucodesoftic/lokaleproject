@@ -4,8 +4,8 @@
 <div class="tt-breadcrumb"  >
 	<div class="container">
 		<ul>
-			<li><a href="{{url('/')}}">Home</a></li>
-			<li>vendor form</li>
+			<li><a href="{{url('/')}}">@lang('home.home')</a></li>
+			<li>@lang('home.vendorform')</li>
 		</ul>
 	</div>
 </div>
@@ -73,7 +73,7 @@
 
 <div class="form-group">
 										<label for="loginLastName">@lang('home.LastName*')</label>
-										<input type="text" name="lastName" class="form-control" id="loginLastName" placeholder="Enter Your Last Name">
+										<input type="text" name="lastName" class="form-control" id="loginLastName" placeholder="@lang('home.enteryourlastname')">
 									</div>
 
 
@@ -91,8 +91,8 @@
 <div class="col-md-12">
 
 <div class="form-group">
-										<label for="loginLastName">Address*</label>
-										<input type="text" name="vendor_address" class="form-control" id="loginLastName" placeholder="Enter Your Address">
+										<label for="loginLastName">@lang('home.enteryouraddress')</label>
+										<input type="text" name="vendor_address" class="form-control" id="loginLastName" placeholder="@lang('home.enteryouraddress')">
 									</div>
 
 
@@ -113,8 +113,8 @@
 
 <div class="row">
 <div class="col-md-6">
-<label for="loginLastName">City*</label>
-										<input  type="text"name="vendor_city"class="form-control" id="loginLastName" placeholder="city">
+<label for="loginLastName">@lang('home.city')</label>
+										<input  type="text"name="vendor_city"class="form-control" id="loginLastName" placeholder="@lang('home.city')">
 								
 
 
@@ -122,11 +122,11 @@
 
 
 <div class="col-md-6">
-<label for="loginLastName">country</label>
+<label for="loginLastName">@lang('home.country')</label>
 
 <select id="country" class="form-control" name="country">
   
-<option >Select Country</option>
+<option >@lang('home.selectcountry')</option>
    <option value="Afganistan">Afghanistan</option>
    <option value="Albania">Albania</option>
    <option value="Algeria">Algeria</option>
@@ -386,8 +386,8 @@
 <div class="col-md-12">
 <div class="form-group">
 
-<label for="loginInputEmail">Phone Number</label>
-										<input type="text" name="phone_number"  class="form-control" id="loginInputEmail" placeholder="Enter your phone number">
+<label for="loginInputEmail">@lang('home.phonenumber')</label>
+										<input type="text" name="phone_number"  class="form-control" id="loginInputEmail" placeholder="@lang('home.enteryourphoneno')">
 								
 </div>
 
@@ -402,8 +402,8 @@
 <div class="col-md-12">
 <div class="form-group">
 
-<label for="loginInputEmail">vendor username</label>
-										<input type="text" name="vendor_name" class="form-control" id="loginInputEmail" placeholder="Vendor username">
+<label for="loginInputEmail">@lang('home.vendorusername')</label>
+										<input type="text" name="vendor_name" class="form-control" id="loginInputEmail" placeholder="@lang('home.vendorusername')">
 								
 </div>
 
@@ -418,8 +418,9 @@
 <div class="col-md-12">
 <div class="form-group">
 
-<label for="loginInputEmail">vendor Arabic username</label>
-										<input type="text" name="vendor_arabic_name" class="form-control" id="loginInputEmail" placeholder="Vendor arabic username">
+<label for="loginInputEmail">
+  @lang('home.vendorarabicusername')</label>
+										<input type="text" name="vendor_arabic_name" class="form-control" id="loginInputEmail" placeholder="@lang('home.vendorarabicusername')">
 								
 </div>
 
@@ -436,12 +437,12 @@
 
                                     
 									<div class="form-group">
-										<label for="loginInputEmail">E-MAIL Address *</label>
-										<input type="text" name="email" class="form-control" id="loginInputEmail" placeholder="Enter E-mail">
+										<label for="loginInputEmail">@lang('home.emailaddress')</label>
+										<input type="text" name="email" class="form-control" id="loginInputEmail" placeholder="@lang('home.emailaddress')">
 									</div>
 									<div class="form-group">
-										<label for="loginInputPassword">PASSWORD *</label>
-										<input type="text"name="password" class="form-control" id="loginInputPassword" placeholder="Enter Password">
+										<label for="loginInputPassword">@lang('home.password')</label>
+										<input type="text"name="password" class="form-control" id="loginInputPassword" placeholder="@lang('home.enterpassword')">
 									</div>
 
 
@@ -449,8 +450,7 @@
 <div class="col-md-12">
 <div class="form-group">
 <label>
-      <input type="checkbox" checked="checked" name="remember"> Confirm request means you agree on our Terms and Services   and  
-      <a href="{{url('terms')}}">
+      <input type="checkbox" checked="checked" name="remember"> @lang('home.ConfirmrequestmeansyouagreeonourTermsandServicesandPrivacyPolicy.')    <a href="{{url('terms')}}">
 Privacy Policy.
 </a>
     </label>
@@ -465,7 +465,7 @@ Privacy Policy.
 										<div class="col-auto">
 											<div class="form-group">
 
-                      <button class="btn btn-primary  btn-register"><b>Confirm Request</b></button>
+                      <button class="btn btn-primary  btn-register"><b>@lang('home.confirmrequest')</b></button>
       
             
 												<!-- <button class="btn btn-border"  type="submit">CONFIRM REQUEST</button> -->

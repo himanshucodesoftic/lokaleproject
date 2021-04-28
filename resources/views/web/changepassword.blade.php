@@ -4,8 +4,8 @@
 <div class="tt-breadcrumb">
 	<div class="container">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li>change password</li>
+			<li><a href="{{url('/')}}">@lang('home.home')</a></li>
+			<li>@lang('home.changepassword')</li>
 		</ul>
 	</div>
 </div>
@@ -20,7 +20,7 @@
             
           <div class="col-12 my-5">
               
-             <h5>Change Password</h5>
+             <h5>@lang('home.changepassword')</h5>
              
 
              <hr style="margin-bottom: 0;">
@@ -48,25 +48,24 @@
                         @csrf
 
                         <div class="from-group mb-3">
-                          <div class="col-12"> <label for="current_password">Current Password</label></div>
+                          <div class="col-12"> <label for="current_password">@lang('home.currentpassword')</label></div>
                           <div class="input-group col-12">                          
-                            <input name="current_password" type="password" class="form-control field-validate" id="current_password" placeholder="Current Password">
+                            <input name="current_password" type="password" class="form-control field-validate" id="current_password" placeholder="@lang('home.currentpassword')">
                             <!-- <span class="help-block error-content" hidden>@lang('website.Please enter current password')</span> -->
                           </div>
                         </div>
                         
                         <div class="from-group mb-3">
-                          <div class="col-12"> <label for="password">New Password</label></div>
+                          <div class="col-12"> <label for="password">@lang('home.newpassword')</label></div>
                           <div class="input-group col-12">                             
-                            <input name="new_password" type="password" class="form-control password" id="new_password" placeholder="New Password">
+                            <input name="new_password" type="password" class="form-control password" id="new_password" placeholder="@lang('home.newpassword')">
                             <!-- <span class="help-block error-content" hidden>@lang('website.Please enter your password and should be at least 6 characters long')</span> -->
                           </div>
                         </div>
-
-                        <div class="from-group mb-3">
-                          <div class="col-12"> <label for="confirm_password">Confirm Password</label></div>
+<div class="from-group mb-3">
+                          <div class="col-12"> <label for="confirm_password">@lang('home.confirmpassword')</label></div>
                           <div class="input-group col-12">                             
-                            <input name="confirm_password" type="password" class="form-control password" id="confirm_password" placeholder="Confirm Password">
+                            <input name="confirm_password" type="password" class="form-control password" id="confirm_password" placeholder="@lang('home.confirmpassword')">
                             <!-- <span class="help-block error-content" hidden>@lang('website.Please enter your password and should be at least 6 characters long')</span> -->
                           </div>
                         </div>
@@ -75,7 +74,7 @@
                         </div>
 
                           <div class="col-12 col-sm-12">
-                              <button type="submit" class="btn btn-secondary">@lang('website.Update')</button>                            
+                              <button type="submit" class="btn btn-secondary">@lang('home.update')</button>                            
                           </div>
                       </form>
                       </div>

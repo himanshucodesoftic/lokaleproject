@@ -1,7 +1,7 @@
 @extends('web.layout')
 @section('content')
 
-<section class="pro-content">
+<section class="pro-content" style="border:2px solid red;">
 <!-- Profile Content -->
 <section class="profile-content">
   <div class="container">
@@ -17,7 +17,7 @@
                   <!-- <small>Phone: {{ auth()->guard('customer')->user()->phone }} </small></h4> -->
                 </div>
                 <div class="col-12 col-sm-8 col-md-6 detail">                  
-                  <p class="mb-0 ">E-Mail:<span>{{auth()->guard('customer')->user()->email}}</span></p>
+                  <p class="mb-0 ">@lang('home.email')<span>{{auth()->guard('customer')->user()->email}}</span></p>
                 </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
        <div class="col-12 col-lg-3">
            <div class="heading">
                <h2>
-                 My Account
+                 @lang('home.myaccount')
                </h2>
                <hr >
              </div>
@@ -37,37 +37,40 @@
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/profile')}}">
                        <i class="fas fa-user"></i>
-                       Profile
+                       @lang('home.profile')
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/wishlist')}}">
                        <i class="fas fa-heart"></i>
-                       Wishlist
+                       @lang('home.Wishlist')
+                
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/orders')}}">
                        <i class="fas fa-shopping-cart"></i>
-                       Orders
+                       @lang('home.Orders') 
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/shipping-address')}}">
                        <i class="fas fa-map-marker-alt"></i>
-                       Shipping Address
+                        @lang('home.ShippingAddress')  
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/logout')}}">
                        <i class="fas fa-power-off"></i>
-                       Logout
+                       @lang('home.logout') 
+                    
                    </a>
                </li>
                <li class="list-group-item">
                    <a class="nav-link" href="{{ URL::to('/change-password')}}">
                        <i class="fas fa-unlock-alt"></i>
-                       Change Password
+                       @lang('home.changepassword') 
+                    
                    </a>
                </li>
              </ul>
@@ -75,7 +78,8 @@
        <div class="col-12 col-lg-9 ">
            <div class="heading">
                <h2>
-               Personal Information
+                @lang('home.personalinformation') 
+           
                </h2>
                <hr >
              </div>
@@ -135,20 +139,20 @@
                 @endif
 
                  <div class="form-group row">
-                   <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+                   <label for="firstName" class="col-sm-2 col-form-label">   @lang('home.firstname') </label>
                    <div class="col-sm-10">
                      <input type="text" required name="customers_firstname" class="form-control field-validate" id="inputName" value="{{ auth()->guard('customer')->user()->first_name }}" placeholder="@lang('website.First Name')">
                    </div>
                  </div>
                  <div class="form-group row">
-                   <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+                   <label for="lastName" class="col-sm-2 col-form-label">@lang('home.lastname')</label>
                    <div class="col-sm-10">
                      <input type="text" required name="customers_lastname" placeholder="@lang('website.Last Name')" class="form-control field-validate" id="lastName" value="{{ auth()->guard('customer')->user()->last_name }}">
                    </div>
                  </div>
 
                  <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label">Gender</label>
+                  <label for="inputPassword" class="col-sm-2 col-form-label">@lang('home.gender')</label>
                   <div class="from-group  select-control col-sm-4 ">
                  
                       <select class="form-control " name="gender" required id="exampleSelectGender1">
@@ -173,12 +177,12 @@
                 </div>
 
                 <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label">Phone</label>
+                  <label for="inputPassword" class="col-sm-2 col-form-label">@lang('home.phone')</label>
                   <div class="col-sm-10">
                     <input name="customers_telephone" type="tel"  placeholder="@lang('website.Phone Number')" value="{{ auth()->guard('customer')->user()->phone }}" class="form-control phone-validate">
                   </div>
                 </div>                
-                <button type="submit" class="btn btn-secondary swipe-to-top">Update</button>
+                <button type="submit" class="btn btn-secondary swipe-to-top">@lang('home.update')</button>
              </form>
 
          <!-- ............the end..... -->

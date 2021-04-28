@@ -804,3 +804,11 @@ return view('vendor');
 Route::get('vendor_list',"App\Http\Controllers\NewController@index");
 
 Route::get('vendor_product/{jspid}',"App\Http\Controllers\NewController@vendorproduct");
+
+
+
+Route::get('commingsoon',function()
+{
+
+return view('commingsoon');
+});

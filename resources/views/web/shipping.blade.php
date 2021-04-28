@@ -6,8 +6,8 @@
   <nav aria-label="breadcrumb">
       <div class="container">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{ URL::to('/')}}">@lang('website.Home')</a></li>
-            <li class="breadcrumb-item active" aria-current="page">@lang('website.Shipping Address')</li>
+            <li class="breadcrumb-item"><a href="{{ URL::to('/')}}">@lang('home.home')</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@lang('home.ShippingAddress')</li>
           </ol>
       </div>
     </nav>
@@ -20,7 +20,7 @@
       <div class="col-12 col-lg-3">
         <div class="heading">
             <h2>
-                @lang('website.My Account')
+                @lang('home.MyAccount')
             </h2>
             <hr >
           </div>
@@ -29,37 +29,37 @@
             <li class="list-group-item">
                 <a class="nav-link" href="{{ URL::to('/profile')}}">
                     <i class="fas fa-user"></i>
-                  @lang('website.Profile')
+                  @lang('home.profile')
                 </a>
             </li>
             <li class="list-group-item">
                 <a class="nav-link" href="{{ URL::to('/wishlist')}}">
                     <i class="fas fa-heart"></i>
-                 @lang('website.Wishlist')
+                 @lang('home.Wishlist')
                 </a>
             </li>
             <li class="list-group-item">
                 <a class="nav-link" href="{{ URL::to('/orders')}}">
                     <i class="fas fa-shopping-cart"></i>
-                  @lang('website.Orders')
+                  @lang('home.Orders')
                 </a>
             </li>
             <li class="list-group-item">
                 <a class="nav-link" href="{{ URL::to('/shipping-address')}}">
                     <i class="fas fa-map-marker-alt"></i>
-                 @lang('website.Shipping Address')
+                 @lang('home.ShippingAddress')
                 </a>
             </li>
             <li class="list-group-item">
                 <a class="nav-link" href="{{ URL::to('/logout')}}">
                     <i class="fas fa-power-off"></i>
-                  @lang('website.Logout')
+                  @lang('home.logout')
                 </a>
             </li>
             <li class="list-group-item">
               <a class="nav-link" href="{{ URL::to('/change-password')}}">
                   <i class="fas fa-unlock-alt"></i>
-                @lang('website.Change Password')
+                @lang('home.changepassword')
               </a>
           </li>
           </ul>
@@ -67,7 +67,9 @@
       <div class="col-12 col-lg-9 ">
           <div class="heading">
               <h2>
-                  @lang('website.Shipping Address')
+
+                @lang('home.ShippingAddress')
+              
               </h2>
               <hr >
             </div>
@@ -88,8 +90,8 @@
           <table class="table shipping-table">
             <thead>
               <tr>
-                <th scope="col">@lang('website.Default')</th>
-                <th scope="col" class="d-none d-md-block">@lang('website.Action')</th>
+                <th scope="col">@lang('home.default')</th>
+                <th scope="col" class="d-none d-md-block">@lang('home.action')</th>
               </tr>
             </thead>
             <tbody>
@@ -118,14 +120,14 @@
            @endforeach
            @else
             <tr>
-                <td valign="center">@lang('website.Shipping addresses are not added yet')</td>
+                <td valign="center">@lang('home.Shippingaddressesarenotaddedyet')</td>
               </tr>
            @endif
             </tbody>
           </table>
           <div class="heading mt-4">
             <h2>
-            @lang('website.Add Shipping Address')
+            @lang('home.AddShippingAddress')
             </h2>
             <hr>
           </div>

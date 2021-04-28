@@ -1,10 +1,10 @@
   <!-- Shop Page One content -->
-  <div class="container-fuild"  >
+  <div class="container-fuild" style="border:2px solid red;"   >
     <nav aria-label="breadcrumb">
         <div class="container">
             <ol class="breadcrumb">
               @if(!empty($result['category_name']) and !empty($result['sub_category_name']))
-              <li class="breadcrumb-item"><a href="{{ URL::to('/')}}">@lang('website.Home')</a></li>
+              <li class="breadcrumb-item"><a href="{{ URL::to('/')}}">@lang('home.home')</a></li>
               <li  class="breadcrumb-item"><a href="{{ URL::to('/shop')}}">@lang('website.Shop')</a></li>
              <li  class="breadcrumb-item"><a href="{{ URL::to('/shop?category='.$result['category_slug'])}}">{{$result['category_name']}}</a></li>
              <li  class="breadcrumb-item active">{{$result['sub_category_name']}}</li>

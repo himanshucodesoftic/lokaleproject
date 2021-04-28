@@ -116,7 +116,7 @@ return [
 'Password*'=>'كلمه السر *',
 'ConfirmPassword*'=>'تأكيد كلمة المرور*',
 'FirstName*'=>'الاسم الأول*',
-
+'confirmpassword'=>'تأكيد كلمة المرور',
 'LastName*'=>'الكنية*',
 
 'DateOfBirth*'=>'تاريخ الولادة*',
@@ -132,7 +132,120 @@ return [
 'VendorRequestForm'=>'نموذج طلب البائع',
 'FirstName*'=>'الاسم الأول*',
 'enteryourfirstname'=>'أدخل اسمك الأول',
-'enteryourlastname'=>'أدخل اسمك الأخير'
+'enteryourlastname'=>'أدخل اسمك الأخير',
+
+
+'address'=>'عنوان',
+'enteryouraddress'=>'العنوان
+',
+'city'=>'مدينة',
+'country'=>'بلد',
+'phonenumber'=>'رقم الهاتف',
+'enteryourphoneno'=>'أدخل رقم هاتفك',
+'vendorusername'=>'اسم البائع
+',
+'vendorarabicusername'=>'اسم المستخدم العربي
+',
+'emailaddress'=>'عنوان البريد الإلكتروني
+',
+'password'=>'كلمه السر
+',
+'enterpassword'=>'أدخل كلمة المرور
+',
+'ConfirmrequestmeansyouagreeonourTermsandServicesandPrivacyPolicy.'=>'تأكيد الطلب يعني أنك غير متصل بشروط الخدمة لدينا وسياسة الخصوصية
+',
+'confirmrequest'=>'تأكيد الطلب
+',
+'selectcountry'=>'حدد الدولة
+',
+'home'=>'الصفحة الرئيسية',
+'vendorform'=>'نموذج البائع
+',
+'shop'=>'متجر',
+'price'=>'سعر',
+'0'=>'صفر',
+'50'=>'خمسون',
+'100'=>'مائة',
+'200'=>'مائتان',
+'sort'=>'فرز',
+'Limit'=>'حد',
+'15'=>'خمسة عشر',
+'30'=>'ثلاثون',
+'60'=>'ستون',
+'filters'=>'المرشحات',
+'showing'=>'عرض',
+'loadmore'=>'تحميل المزيد',
+'YourSearchReturnsNoResults'=>'بحثك لم يحصل اية نتائج
+',
+
+'Reset'=>'إعادة ضبط',
+'apply'=>'تطبيق',
+'newest'=>'أحدث',
+'NoRecordFound'=>'لا يوجد سجلات',
+'vendors'=>'الباعة',
+'a-z'=>'من الألف إلى الياء',
+'z-a'=>'ض-أ',
+'hightolow'=>'عالي',
+'lowtohigh'=>'من أسفل إلى أعلى',
+'topseller'=>'أعلى بائع',
+'specialdetail'=>'تفاصيل خاصة',
+'mostliked'=>'الأكثر إعجابا',
+'15'=>'خمسة عشر',
+'30'=>'ثلاثون',
+'60'=>'ستون',
+
+
+
+
+
+
+'myaccount'=>'حسابي',
+'email'=>'البريد الإلكتروني',
+'personalinformation'=>'معلومات شخصية',
+'profile'=>'الملف الشخصي',
+'Wishlist'=>'قائمة الرغبات',
+'Orders'=>'الطلب ',
+'ShippingAddress'=>'عنوان الشحن',
+'logout'=>'تسجيل خروج',
+'changepassword'=>'تغيير كلمة المرور
+',
+'firstname'=>'الاسم الأول',
+'lastname'=>'الكنية',
+'gender'=>'جنس',
+'phone'=>'هاتف',
+'dob'=>'دوب',
+'update'=>'تحديث',
+'currentpassword'=>'كلمة السر الحالية',
+'newpassword'=>'كلمة السر الجديدة',
+'action'=>'
+عمل',
+'default'=>'إفتراضي',
+'MyAccount'=>'حسابي',
+'Shippingaddressesarenotaddedyet'=>'لم يتم إضافة عناوين الشحن بعد',
+'AddShippingAddress'=>
+'أضف عنوان الشحن',
+
+'orderid'=>'رقم التعريف الخاص بالطلب',
+'orderdate'=>'تاريخ الطلب
+',
+'price'=>'سعر',
+'total'=>'مجموع',
+'detail'=>'التفاصيل'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

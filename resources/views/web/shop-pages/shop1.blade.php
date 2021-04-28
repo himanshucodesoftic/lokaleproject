@@ -1,32 +1,29 @@
 
   
   
+  
   <div class="tt-breadcrumb" >
-	<div class="container">
-		<ul>
-    @if(!empty($result['category_name']) and !empty($result['sub_category_name']))
-			<li><a href="{{url('/')}}">Home</a></li>
-   
-      <li><a href="{{ URL::to('/shop')}}">shop</a></li>
-		
+    <div class="container">
+      <ul>
 
-      <li><a href="{{ URL::to('/shop?category='.$result['category_slug'])}}">{{$result['category_name']}}</a></li>
+        @if(!empty($result['category_name']) and !empty($result['sub_category_name']))
+        <li ><a href="{{ URL::to('/')}}" style="text-decoration:none;color:black">@lang('home.home')</a></li>
+        <li ><a href="{{ URL::to('/shop')}}">@lang('home.Shop')</a></li>
+        <li ><a
+            href="{{ URL::to('/shop?category='.$result['category_slug'])}}">{{$result['category_name']}}</a></li>
+        <li class="breadcrumb-item active">{{$result['sub_category_name']}}</li>
+        @elseif(!empty($result['category_name']) and empty($result['sub_category_name']))
+        <li >{{$result['category_name']}}</li>
+        @else
+        <li ><a href="{{ URL::to('/')}}" style="text-decoration:none;color:black">@lang('home.home')</a></li>
+        <li >@lang('home.Shop')</li>
+        @endif
+      
 
 
-
-      <li><a href="{{ URL::to('/shop')}}">{{$result['sub_category_name']}}</a></li>
-      @elseif(!empty($result['category_name']) and empty($result['sub_category_name']))
-      <li><a href="">{{$result['category_name']}}</a></li>
-      @else
-      <li><a href="{{url('/')}}">Home</a></li>
-   
-   <li><a href="{{ URL::to('/shop')}}">shop</a></li>
-       
-      @endif
-		</ul>
-	</div>
-</div>
-
+      </ul>
+    </div>
+  </div>
   
   
   
@@ -44,7 +41,7 @@
   <section class="pro-content" style="padding-bottom: 50px;">
     <div class="container">
       <div class="page-heading-title">
-        <h2> Shop
+        <h2> @lang('home.Shop')
         </h2>
 
       </div>
@@ -85,18 +82,18 @@
               @endif              
 
               <div class="filter_type version_2" style="border: 1px solid #ededed; margin: 20px 0px 15px 0px; padding: 0 15px;">
-								<h4><a style="padding: 13px 6px 6px; margin: 0px 0px 0 0px;">Price</a></h4>
+								<h4><a style="padding: 13px 6px 6px; margin: 0px 0px 0 0px;">@lang('home.price')</a></h4>
 								<div id="filter_4">
-									<ul>
+									<ul style="list-style-type: none;">
 										<li>
-											<label class="container_check">{{Session::get('symbol_left')}}0{{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}50{{Session::get('symbol_right')}}
+											<label class="container_check">{{Session::get('symbol_left')}}@lang('home.0'){{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}@lang('home.50'){{Session::get('symbol_right')}}
 												<input type="checkbox" value="0;50" onchange="changePriceRank(this)">
 												<span class="checkmark"></span>
 											</label>
 										</li>
                     @if($result['filters']['maxPrice'] >= 100)
 										<li>
-											<label class="container_check">{{Session::get('symbol_left')}}50{{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}100{{Session::get('symbol_right')}}
+											<label class="container_check">{{Session::get('symbol_left')}}@lang('home.50'){{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}@lang('home.100'){{Session::get('symbol_right')}}
 												<input type="checkbox" value="50;100" onchange="changePriceRank(this)">
 												<span class="checkmark"></span>
 											</label>
@@ -104,14 +101,14 @@
                     @endif
 										@if($result['filters']['maxPrice'] >= 200)
 										<li>
-											<label class="container_check">{{Session::get('symbol_left')}}100{{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}200{{Session::get('symbol_right')}}
+											<label class="container_check">{{Session::get('symbol_left')}}@lang('home.100'){{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}@lang('home.200'){{Session::get('symbol_right')}}
 												<input type="checkbox" value="100;200" onchange="changePriceRank(this)">
 												<span class="checkmark"></span>
 											</label>
 										</li>
                     @else
                     <li>
-											<label class="container_check">{{Session::get('symbol_left')}}100{{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}{{$result['filters']['maxPrice']}}{{Session::get('symbol_right')}}
+											<label class="container_check">{{Session::get('symbol_left')}}@lang('home.100'){{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}{{$result['filters']['maxPrice']}}{{Session::get('symbol_right')}}
 												<input type="checkbox" value="100;{{$result['filters']['maxPrice']}}" onchange="changePriceRank(this)">
 												<span class="checkmark"></span>
 											</label>
@@ -119,14 +116,14 @@
                     @endif
                     @if($result['filters']['maxPrice'] >= 300)
 										<li>
-											<label class="container_check">{{Session::get('symbol_left')}}200{{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}300{{Session::get('symbol_right')}}
+											<label class="container_check">{{Session::get('symbol_left')}}@lang('home.200'){{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}300{{Session::get('symbol_right')}}
 												<input type="checkbox" value="200;300" onchange="changePriceRank(this)">
 												<span class="checkmark"></span>
 											</label>
 										</li>
                     @else
                     <li>
-											<label class="container_check">{{Session::get('symbol_left')}}200{{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}{{$result['filters']['maxPrice']}}{{Session::get('symbol_right')}}
+											<label class="container_check">{{Session::get('symbol_left')}}@lang('home.200'){{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}{{$result['filters']['maxPrice']}}{{Session::get('symbol_right')}}
 												<input type="checkbox" value="200;{{$result['filters']['maxPrice']}}" onchange="changePriceRank(this)">
 												<span class="checkmark"></span>
 											</label>
@@ -134,7 +131,7 @@
                     @endif
                     @if($result['filters']['maxPrice'] > 300)
 										<li>
-											<label class="container_check">{{Session::get('symbol_left')}}300{{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}{{$result['filters']['maxPrice']}}{{Session::get('symbol_right')}}
+											<label class="container_check">{{Session::get('symbol_left')}}@lang('home.300'){{Session::get('symbol_right')}} — {{Session::get('symbol_left')}}{{$result['filters']['maxPrice']}}{{Session::get('symbol_right')}}
 												<input type="checkbox" value="300;{{$result['filters']['maxPrice']}}" onchange="changePriceRank(this)">
 												<span class="checkmark"></span>
 											</label>
@@ -193,42 +190,56 @@
                     }
                   ?>
 
-                  <a href="{{ URL::to('/shop')}}" class="btn btn-dark" id="apply_options"> @lang('website.Reset') </a>
+                  <a href="{{ URL::to('/shop')}}"  class="btn " id="apply_options">@lang('home.Reset') </a>
                   @if(app('request')->input('filters_applied')==1)
                   <button type="button" class="btn btn-secondary" id="apply_options_btn">
-                    @lang('website.Apply')</button>
+                @lang('home.apply')</button>
                   @else
                   <button type="button" class="btn btn-secondary" id="apply_options_btn">
-                    @lang('website.Apply')</button>
+                    @lang('home.apply')</button>
                   @endif
                 </div>
 
               </div>
             </form>
             @endif
+            <ul  style="list-style-type: none;">
+                
+                <li><a href="{{url('vendor_list')}}">@lang('home.vendors')</a></li>
+            </ul>
 
 
             @if(!empty($result['commonContent']['manufacturers']) and count($result['commonContent']['manufacturers'])>0)
-            <div class="range-slider-main" style='margin-bottom: 30px;'>
+            <div class="range-slider-main ml-4" style='margin-top: 30px;'>
               <a class=" main-manu" data-toggle="collapse" href="#brands" role="button" aria-expanded="false"
                 aria-controls="men-cloth" style="color:black;text-decoration:none;">
-                Brands
+             <h5>   Brands</h5>
               </a>
               
-              <div id="brands" style="margin-top: 13px;">
-                <ul class="unorder-list">
+              <div id="brands" style="margin-top:13px;" >
+                <ul style="list-style-type: none;">
                   @foreach($result['commonContent']['manufacturers'] as $item)
-                  <li class="list-item" >
+                  
+                  <li>
                     <a class="brands-btn list-item" style="text-decoration:none;color:black"href="{{ URL::to('/shop?brand='.$item->manufacturer_name)}}"
                       role="button">{{$item->manufacturer_name}}</a>
                   </li>
                   @endforeach
                 </ul>
+               
+                
+                
               </div>
             </div>
             @endif
             </div>
           </div>
+
+
+
+
+
+
 
           <div class="col-12 col-lg-9" >
             <!-- /top_banner -->
@@ -242,41 +253,41 @@
 									<!-- <li> -->
                     <div class="form-inline justify-content-end"><!-- form -->
                       <div class="form-group">
-                        <label>Sort</label>
+                        <label>@lang('home.sort')</label>
                         <div class="select-control">
                           <select name="type" id="sortbytype" class="form-control"
                           style="padding: 0 5px; border: none; width: 62px; height: 23px; background: transparent; font-size: 13px;">
                             <option value="desc" @if(app('request')->input('type')=='desc') selected
-                              @endif>Newest</option>
+                              @endif>@lang('home.newest')</option>
                             <option value="atoz" @if(app('request')->input('type')=='atoz') selected
-                              @endif>@lang('website.A - Z')</option>
+                              @endif>@lang('home.a-z')</option>
                             <option value="ztoa" @if(app('request')->input('type')=='ztoa') selected
-                              @endif>@lang('website.Z - A')</option>
+                              @endif>@lang('home.z-a')</option>
                             <option value="hightolow" @if(app('request')->input('type')=='hightolow') selected
-                              @endif>@lang('website.Price: High To Low')</option>
+                              @endif>@lang('home.hightolow')</option>
                             <option value="lowtohigh" @if(app('request')->input('type')=='lowtohigh') selected
-                              @endif>@lang('website.Price: Low To High')</option>
+                              @endif>@lang('home.lowtohigh')</option>
                             <option value="topseller" @if(app('request')->input('type')=='topseller') selected
-                              @endif>@lang('website.Top Seller')</option>
+                              @endif>@lang('home.topseller')</option>
                             <option value="special" @if(app('request')->input('type')=='special') selected
-                              @endif>@lang('website.Special Products')</option>
+                              @endif>@lang('home.specialdetail')</option>
                             <option value="mostliked" @if(app('request')->input('type')=='mostliked') selected
-                              @endif>@lang('website.Most Liked')</option>
+                              @endif>@lang('home.mostliked')</option>
                           </select>
                         </div>
                       </div>
                       &nbsp;&nbsp;
 
                       <div class="form-group">
-                        <label>Limit</label>
+                        <label>@lang('home.Limit')</label>
                         <div class="select-control">
                           <select class="form-control" name="limit" id="sortbylimit"
                           style="padding: 0 5px; border: none; width: 35px; height: 23px; background: transparent;font-size: 13px;">
-                            <option value="15" @if(app('request')->input('limit')=='15') selected @endif>15
+                            <option value="15" @if(app('request')->input('limit')=='15') selected @endif>@lang('home.15')
                             </option>
-                            <option value="30" @if(app('request')->input('limit')=='30') selected @endif>30
+                            <option value="30" @if(app('request')->input('limit')=='30') selected @endif>@lang('home.30')
                             </option>
-                            <option value="60" @if(app('request')->input('limit')=='60') selected @endif>60
+                            <option value="60" @if(app('request')->input('limit')=='60') selected @endif>@lang('home.60')
                             </option>
                           </select>
                         </div>
@@ -291,7 +302,7 @@
 
 									<!-- <li> -->
 										<a href="#0" class="open_filters">
-											<i class="ti-filter" ></i><span  >Filters</span>
+											<i class="ti-filter" ></i><span  >@lang('home.filters')</span>
 										</a>
 									<!-- </li> -->
 								</ul>
@@ -308,7 +319,7 @@
 
                       <div class="col-12 col-lg-6">
                         <div><!--   form -->
-                          <input ty pe="hidden" name="min_price" value="0">
+                          <input type="hidden" name="min_price" value="0">
                           <input type="hidden" name="max_price" value="{{$result['filters']['maxPrice']}}">
                           @if(isset($_GET['price']))
                           <input type="hidden" name="price" value="{{ $_GET['price'] }}">
@@ -358,7 +369,7 @@
                     @else
                     <div class="col-12 col-lg-4 col-sm-6 griding">
                       <br>
-                      <h3>@lang('website.No Record Found!')</h3>
+                      <h3>@lang('home.NoRecordFound')</h3>
                     </div>
                     @endif
 
@@ -373,10 +384,10 @@
             <div class="pagination justify-content-between" style="padding: 16px 25px;">
               <input id="record_limit" type="hidden" value="{{$result['limit']}}">
               <input id="total_record" type="hidden" value="{{$result['products']['total_record']}}">
-              <label for="staticEmail" class="col-form-label" style='display: flex; width: 50%; float: left;'> @lang('website.Showing')&nbsp;
+              <label for="staticEmail" class="col-form-label" style='display: flex; width: 50%; float: left;'>Showing&nbsp;
               <span class="showing_record">{{$result['limit']}}</span>&nbsp;@lang('website.of')&nbsp;
               <span class="showing_total_record">{{$result['products']['total_record']}}</span>
-                &nbsp;@lang('website.results')</label>
+                &nbsp;results</label>
 
               <div class=" justify-content-end">
 
