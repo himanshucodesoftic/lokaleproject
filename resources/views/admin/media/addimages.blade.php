@@ -3,11 +3,11 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> {{ trans('labels.AddNewImage') }} <small>{{ trans('labels.ListingAllImage') }}...</small> </h1>
+        <h1>AddNewImage <small>ListingAllImage...</small> </h1>
         <ol class="breadcrumb">
             <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i>
-                    {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-            <li class="active">{{ trans('labels.AddNewImage') }}</li>
+            breadcrumb_dashboard</a></li>
+            <li class="active">AddNewImage</li>
         </ol>
     </section>
 
@@ -22,7 +22,7 @@
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">{{ trans('labels.ListingAllImage') }} </h3>
+                        <h3 class="box-title">ListingAllImage </h3>
 
                         <div style="margin-right:88px;"class="box-tools pull-left">
                             <button id="btn" type="button" class="btn btn-block btn-danger">Delete</button>
@@ -38,7 +38,7 @@
                         </div>
                         <div class="box-tools pull-left">
                             <button type="button" class="btn btn-block btn-primary" data-toggle="modal"
-                                data-target="#myModal">{{ trans('labels.AddNew') }}</button>
+                                data-target="#myModal">AddNew</button>
 
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                                     <div class="thumbnail thumbnail-imges">
                                         <img class="test_image" image_id="{{$image->id}}" src="{{asset($image->path)}}" alt="...">
                                     </div>
-                                    <a class="btn btn-block btn-primary" href="{{url('admin/media/detail')}}/{{$image->id}}"> @lang('labels.ViewDetail')</a>
+                                    <a class="btn btn-block btn-primary" href="{{url('admin/media/detail')}}/{{$image->id}}"> ViewDetail</a>
                                 </div>
                                 @endforeach
                             @endif

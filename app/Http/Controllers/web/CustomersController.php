@@ -140,6 +140,29 @@ class CustomersController extends Controller
 
     public function confirmVendor(Request $request) {
       
+        $vendors = $this->customer->checkVendor($request);
+        if (!empty($vendors['email'])) {
+            $message = Lang::get("website.this email exist");            
+            return redirect()->back()->withErrors([$message])->withInput($request->all());
+        } else if (!empty($vendors['title'])) {
+            $message = Lang::get("website.this title exist");
+		    return redirect()->back()->withErrors([$message])->withInput($request->all());
+        } else if (!empty($vendors['request_email'])) {
+            $message = Lang::get("website.this email exist in request");
+		    return redirect()->back()->withErrors([$message])->withInput($request->all());
+        } else if (!empty($vendors['request_title'])) {
+            $message = Lang::get("website.this title exist in request");
+		    return redirect()->back()->withErrors([$message])->withInput($request->all());
+        }
+
+        $result = $this->customer->requestVendor($request);
+        if (!empty($result)) {
+            $message = Lang::get("website.Request sent successfully");
+		    return redirect()->back()->with('message', $message);
+        } else {
+            $error = Lang::get("website.Request sent error");
+		    return redirect()->back()->withErrors([$error])->withInput($request->all());
+        }
         
     }
     

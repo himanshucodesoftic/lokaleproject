@@ -125,7 +125,7 @@ $(function(){
 <script defer src="{{asset('js/bundle.js')}}"></script>
 
 
-<a href="#" class="tt-back-to-top" id="js-back-to-top">BACK TO TOP</a>
+
 
 @include('web.common.modal1')
 @include('web.common.scripts')
@@ -273,8 +273,6 @@ $(function(){
 <script>window.jQuery || document.write('<script src="external/jquery/jquery.min.js"><\/script>')</script>
 <script defer src="{{asset('js/bundle.js')}}"></script>
 
-
-<a href="#" class="tt-back-to-top" id="js-back-to-top">BACK TO TOP</a>
 
 @include('web.common.modal1')
 @include('web.common.scripts')

@@ -3,10 +3,10 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>  {{ trans('labels.languages') }} <small>{{ trans('labels.ListingAllLanguages') }}...</small> </h1>
+            <h1> languages<small>{ListingAllLanguages...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li class="active"> {{ trans('labels.languages') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+                <li class="active"> languages</li>
             </ol>
         </section>
 
@@ -24,9 +24,9 @@
                                     <input type="hidden"  value="{{csrf_token()}}">
                                     <div class="input-group-form search-panel ">
                                         <select type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" name="FilterBy" id="FilterBy"  >
-                                            <option value="" selected disabled hidden>{{trans('labels.Filter By')}}</option>
-                                            <option value="Language"  @if(isset($filter)) @if  ($filter == "Name") {{ 'selected' }} @endif @endif>{{trans('labels.Language')}}</option>
-                                            <option value="Code" @if(isset($filter)) @if  ($filter == "E-mail") {{ 'selected' }}@endif @endif>{{trans('labels.Code')}}</option>
+                                            <option value="" selected disabled hidden>Filter By</option>
+                                            <option value="Language"  @if(isset($filter)) @if  ($filter == "Name") {{ 'selected' }} @endif @endif>Language</option>
+                                            <option value="Code" @if(isset($filter)) @if  ($filter == "E-mail") {{ 'selected' }}@endif @endif>Code</option>
                                         </select>
                                         <input type="text" class="form-control input-group-form " name="parameter" placeholder="Search term..." id="parameter" @if(isset($parameter)) value="{{$parameter}}" @endif >
                                         <button class="btn btn-primary " id="submit" type="submit"><span class="glyphicon glyphicon-search"></span></button>
@@ -36,7 +36,7 @@
                                 <div class="col-lg-4 form-inline" id="contact-form12"></div>
                             </div>
                             <div class="box-tools pull-right">
-                                <a href="{{ URL::to('admin/languages/add')}}" type="button" style="display:inline-block; width: auto; margin-top: 0;" class="btn btn-block btn-primary">{{ trans('labels.AddNew') }}</a>
+                                <a href="{{ URL::to('admin/languages/add')}}" type="button" style="display:inline-block; width: auto; margin-top: 0;" class="btn btn-block btn-primary">AddNew</a>
                             </div>
                         </div>
 
@@ -58,7 +58,7 @@
                             <div class="row default-div hidden">
                                 <div class="col-xs-12">
                                     <div class="alert alert-success alert-dismissible" role="alert">
-                                        {{ trans('labels.DefaultLanguageChangedMessage') }}
+                                    DefaultLanguageChangedMessage
                                     </div>
                                 </div>
                             </div>
@@ -68,13 +68,13 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                         <tr>
-                                            <th>@sortablelink('languages_id', trans('labels.ID') )</th>
-                                            <th>@sortablelink('languages_id',  trans('labels.Default') )</th>
-                                            <th>@sortablelink('name',  trans('labels.Language') )</th>
-                                            <th>{{ trans('labels.Icon') }}</th>
-                                            <th>@sortablelink('code',  trans('labels.Code') )</th>
-                                            <th>@sortablelink('sort_order',  trans('labels.Sort') )</th>
-                                            <th>{{trans('labels.Action')}}</th>
+                                            <th>@sortablelink('languages_id', trans('ID') )</th>
+                                            <th>@sortablelink('languages_id',  trans('Default') )</th>
+                                            <th>@sortablelink('name',  trans('Language') )</th>
+                                            <th>{{ trans('Icon') }}</th>
+                                            <th>@sortablelink('code',  trans('Code') )</th>
+                                            <th>@sortablelink('sort_order',  trans('Sort') )</th>
+                                            <th>{{trans('Action')}}</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -103,7 +103,7 @@
                                             @endforeach
                                         @else
                                             <tr>
-                                                <td colspan="5">{{ trans('labels.Nolanguageexist') }}</td>
+                                                <td colspan="5">Nolanguageexist</td>
                                             </tr>
                                         @endif
                                         </tbody>
@@ -129,17 +129,17 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="deleteLanguagesModalLabel">{{ trans('labels.DeleteLanguages') }}</h4>
+                            <h4 class="modal-title" id="deleteLanguagesModalLabel">DeleteLanguages</h4>
                         </div>
                         {!! Form::open(array('url' =>'admin/languages/delete', 'name'=>'deletelanguages', 'id'=>'deletelanguages', 'method'=>'post', 'class' => 'form-horizontal', 'enctype'=>'multipart/form-data')) !!}
                         {!! Form::hidden('action',  'delete', array('class'=>'form-control')) !!}
                         {!! Form::hidden('id',  '', array('class'=>'form-control', 'id'=>'languages_id')) !!}
                         <div class="modal-body">
-                            <p>{{ trans('labels.confrimLanguageDelete') }}</p>
+                            <p>confrimLanguageDelete</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
-                            <button type="submit" class="btn btn-primary" id="deletelanguages">{{ trans('labels.Delete') }}</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="deletelanguages">Delete</button>
                         </div>
                         {!! Form::close() !!}
                     </div>

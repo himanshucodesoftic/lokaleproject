@@ -614,8 +614,9 @@ Route::get('/edit/{id}', 'VendorsController@edit')->middleware('edit_customer');
 Route::get('/login', 'App\Http\Controllers\web\CustomersController@login');
 Route::post('/process-login', 'App\Http\Controllers\web\CustomersController@processLogin');
 
+Route::post('/confirmVendor', 'App\Http\Controllers\web\CustomersController@confirmVendor');
 
-Route::post('/confirmVendor', 'App\Http\Controllers\web\VendorController@index');
+
 
 Route::get('/logout', 'App\Http\Controllers\web\CustomersController@logout')->middleware('Customer');
 

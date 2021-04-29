@@ -3,13 +3,13 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> {{ trans('labels.ImageDetail') }} <small>{{ trans('labels.ImageDetail') }}...</small> </h1>
+        <h1> ImageDetail<small>ImageDetail...</small> </h1>
         <ol class="breadcrumb">
             <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i>
-                    {{ trans('labels.breadcrumb_dashboard') }}</a></li>
+            breadcrumb_dashboard</a></li>
             <li><a href="{{ URL::to('admin/media/add') }}">
-                    {{ trans('labels.AddNewImage') }}</a></li>
-            <li class="active">{{ trans('labels.ImageDetail') }}</li>
+            AddNewImage</a></li>
+            <li class="active">ImageDetail</li>
         </ol>
     </section>
 

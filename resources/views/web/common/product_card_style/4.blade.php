@@ -91,8 +91,8 @@ echo $cat_name;
 								</ul>-->
 							</div>
 							<div class="tt-product-inside-hover">
-								<div class="tt-row-btn">
-									<a href="#" class="tt-btn-addtocart thumbprod-button-bg" data-toggle="modal" data-target="#modalAddToCartProduct" style="background-color:#2b5a80!important;">ADD TO CART</a>
+								<div class="tt-row-btn" >
+									<a href="{{ URL::to('/product-detail/'.$products->products_slug)}}" class="tt-btn-addtocart thumbprod-button-bg" style="background-color:#2b5a80!important;">View Details</a>
 								</div>
 								<div class="tt-row-btn modal_show">
 									<a href="#"    products_id="{{$products->products_id}}" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"></a>

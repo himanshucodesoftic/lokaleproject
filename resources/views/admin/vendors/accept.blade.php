@@ -3,11 +3,11 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> {{ trans('labels.AddVendor') }} <small>{{ trans('labels.AddVendor') }}...</small> </h1>
+        <h1> AddVendor <small>AddVendor...</small> </h1>
         <ol class="breadcrumb">
-            <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-            <li><a href="{{ URL::to('admin/vendors/requests')}}"><i class="fa fa-users"></i> {{ trans('labels.ListingAllRequests') }}</a></li>
-            <li class="active">{{ trans('labels.AddVendor') }}</li>
+            <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+            <li><a href="{{ URL::to('admin/vendors/requests')}}"><i class="fa fa-users"></i> breadcrumb_dashboard</a></li>
+            <li class="active">AddVendor</li>
         </ol>
     </section>
 
@@ -20,7 +20,7 @@
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">{{ trans('labels.AddVendor') }} </h3>
+                        <h3 class="box-title">AddVendor </h3>
                     </div>
 
                     <!-- /.box-header -->
@@ -97,7 +97,7 @@
                                                     </div>
 
                                                     <div id="imageselected">
-                                                    {!! Form::button(trans('labels.Add Image'), array('id'=>'newImage','class'=>"btn btn-primary ", 'data-toggle'=>"modal", 'data-target'=>"#Modalmanufactured" )) !!}
+                                                    {!! Form::button(trans('Add Image'), array('id'=>'newImage','class'=>"btn btn-primary ", 'data-toggle'=>"modal", 'data-target'=>"#Modalmanufactured" )) !!}
                                                     <br>
                                                     <div id="selectedthumbnail" class="selectedthumbnail col-md-5"> </div>
                                                     <div class="closimage">
@@ -107,14 +107,14 @@
                                                         </button>
                                                     </div>
                                                     </div>
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.UploadVendorImageText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">UploadVendorImageText</span>
                                                 </div>
                                             </div>                                            
                                         </div>
                                         <hr>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Name') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Name </label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('vendor_name',  $data['vendors']->title, array('class'=>'form-control field-validate', 'id'=>'vendor_name', 'readonly' => 'true')) !!}
                                           </div>
@@ -125,14 +125,14 @@
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Telephone') }}</label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Telephone</label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('vendor_phone',  $data['vendors']->phone, array('class'=>'form-control', 'id'=>'vendor_phone', 'readonly' => 'true')) !!}
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Address') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Address</label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('vendor_address',  $data['full_address'], array('class'=>'form-control field-validate', 'id'=>'vendor_address', 'readonly' => 'true')) !!}
                                           </div>
@@ -140,14 +140,14 @@
                                         <hr>                                        
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.EmailAddress') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">EmailAddress </label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('email',  $data['vendors']->email, array('class'=>'form-control email-validate', 'id'=>'email', 'readonly' => 'true')) !!}
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Owner') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Owner </label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('user_name',  $data['vendors']->first_name.' '.$data['vendors']->last_name, array('class'=>'form-control', 'id'=>'user_name', 'readonly' => 'true')) !!}                                              
                                           </div>
@@ -175,33 +175,33 @@
                                         <hr>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Current Status') }}</label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">.Current Status</label>
                                           <div class="col-sm-10 col-md-4">
                                             <label>
                                               <input type="radio" name="vendor_open" value="1" class="minimal" checked> {{ trans('labels.Open') }}
                                             </label><br>
 
                                             <label>
-                                              <input type="radio" name="vendor_open" value="0" class="minimal"> {{ trans('labels.Close') }}
+                                              <input type="radio" name="vendor_open" value="0" class="minimal"> Close
                                             </label>
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Status') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Status</label>
                                           <div class="col-sm-10 col-md-4">
                                             <select class="form-control" name="isActive">
-                                              <option value="1">{{ trans('labels.Active') }}</option>
-                                              <option value="0">{{ trans('labels.Inactive') }}</option>
+                                              <option value="1">Active</option>
+                                              <option value="0">Inactive</option>
                                             </select>
                                           <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
                                           {{ trans('labels.StatusText') }}</span>
                                           </div>
                                         </div>
                                         <div class="box-footer text-center">
-                                          <button type="submit" class="btn btn-primary" style="margin-right: 16px;">{{ trans('labels.Accept') }}</button>
-                                          <a data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.Decline') }}" id="deleteCustomerFrom" users_id="{{ $data['vendors']->id }}" type="button" class="btn btn-danger" style="margin-right: 16px;">{{ trans('labels.Decline') }}</a>
-                                          <a href="{{ URL::to('admin/vendors/requests')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                          <button type="submit" class="btn btn-primary" style="margin-right: 16px;">Accept</button>
+                                          <a data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.Decline') }}" id="deleteCustomerFrom" users_id="{{ $data['vendors']->id }}" type="button" class="btn btn-danger" style="margin-right: 16px;">Decline</a>
+                                          <a href="{{ URL::to('admin/vendors/requests')}}" type="button" class="btn btn-default">back</a>
                                         </div>
 
                                       {!! Form::close() !!}
@@ -223,7 +223,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="deleteCustomerModalLabel">{{ trans('labels.Decline') }}</h4>
+                <h4 class="modal-title" id="deleteCustomerModalLabel">Decline</h4>
               </div>
               {!! Form::open(array('url' =>'admin/vendors/decline', 'name'=>'deleteRequest', 'id'=>'deleteRequest', 'method'=>'post', 'class' => 'form-horizontal', 'enctype'=>'multipart/form-data')) !!}
               {!! Form::hidden('action', 'delete', array('class'=>'form-control')) !!}
@@ -232,8 +232,8 @@
                 <p>{{ trans('labels.DeclineVendorRequest') }}</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
-                <button type="submit" class="btn btn-primary">{{ trans('labels.Decline') }}</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Decline</button>
               </div>
               {!! Form::close() !!}
             </div>

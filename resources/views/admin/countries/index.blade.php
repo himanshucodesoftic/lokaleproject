@@ -3,10 +3,10 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>  {{ trans('labels.Countries') }} <small>{{ trans('labels.ListingCountries') }}...</small> </h1>
+            <h1> Countries <small>ListingCountries...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li class="active"> {{ trans('labels.Countries') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+                <li class="active"> Countries</li>
             </ol>
         </section>
 
@@ -24,10 +24,10 @@
                                     <input type="hidden"  value="{{csrf_token()}}">
                                     <div class="input-group-form search-panel ">
                                         <select type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" name="FilterBy" id="FilterBy"  >
-                                            <option value="" selected disabled hidden>{{trans('labels.Filter By')}}</option>
-                                            <option value="CountryName"  @if(isset($name)) @if  ($name == "CountryName") {{ 'selected' }} @endif @endif>{{trans('labels.Name')}}</option>
-                                            <option value="ISOCode2" @if(isset($name)) @if  ($name == "ISOCode2") {{ 'selected' }}@endif @endif>{{trans('labels.ISOCode2')}}</option>
-                                            <option value="ISOCode3" @if(isset($name)) @if  ($name == "ISOCode3") {{ 'selected' }}@endif @endif>{{trans('labels.ISOCode3')}}</option>
+                                            <option value="" selected disabled hidden>Filter By</option>
+                                            <option value="CountryName"  @if(isset($name)) @if  ($name == "CountryName") {{ 'selected' }} @endif @endif>Name</option>
+                                            <option value="ISOCode2" @if(isset($name)) @if  ($name == "ISOCode2") {{ 'selected' }}@endif @endif>ISOCode2</option>
+                                            <option value="ISOCode3" @if(isset($name)) @if  ($name == "ISOCode3") {{ 'selected' }}@endif @endif>ISOCode3</option>
                                         </select>
                                         <input type="text" class="form-control input-group-form " name="parameter" placeholder="Search term..." id="parameter" @if(isset($param)) value="{{$param}}" @endif >
                                         <button class="btn btn-primary " id="submit" type="submit"><span class="glyphicon glyphicon-search"></span></button>
@@ -60,11 +60,11 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                         <tr>
-                                            <th>@sortablelink('countries_id', trans('labels.ID') )</th>
-                                            <th>@sortablelink('countries_name', trans('labels.CountryName') )</th>
-                                            <th>@sortablelink('countries_iso_code_2', trans('labels.ISOCode2') )</th>
-                                            <th>@sortablelink('countries_iso_code_3', trans('labels.ISOCode3') )</th>
-                                            <th>{{ trans('labels.Action') }}</th>
+                                            <th>@sortablelink('countries_id', trans('ID') )</th>
+                                            <th>@sortablelink('countries_name', trans('CountryName') )</th>
+                                            <th>@sortablelink('countries_iso_code_2', trans('ISOCode2') )</th>
+                                            <th>@sortablelink('countries_iso_code_3', trans('ISOCode3') )</th>
+                                            <th>{{ trans('Action') }}</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -83,7 +83,7 @@
                                             @endforeach
                                         @else
                                             <tr>
-                                                <td colspan="5">{{ trans('labels.NoRecordFound') }}</td>
+                                                <td colspan="5">NoRecordFound</td>
                                             </tr>
                                         @endif
                                         </tbody>
@@ -109,17 +109,17 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="deleteCountryModalLabel">{{ trans('labels.DeleteCountry') }}</h4>
+                            <h4 class="modal-title" id="deleteCountryModalLabel">DeleteCountry</h4>
                         </div>
                         {!! Form::open(array('url' =>'admin/countries/delete', 'name'=>'deleteCountry', 'id'=>'deleteCountry', 'method'=>'post', 'class' => 'form-horizontal', 'enctype'=>'multipart/form-data')) !!}
                         {!! Form::hidden('action',  'delete', array('class'=>'form-control')) !!}
                         {!! Form::hidden('id',  '', array('class'=>'form-control', 'id'=>'countries_id')) !!}
                         <div class="modal-body">
-                            <p>{{ trans('labels.DeleteCountryText') }}</p>
+                            <p>DeleteCountryText</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
-                            <button type="submit" class="btn btn-primary" id="deleteCountry">{{ trans('labels.DeleteCountry') }}</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="deleteCountry">DeleteCountry</button>
                         </div>
                         {!! Form::close() !!}
                     </div>

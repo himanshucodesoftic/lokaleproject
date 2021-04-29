@@ -3,11 +3,11 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1> {{ trans('labels.AddOrderStatus') }} <small>{{ trans('labels.AddOrderStatus') }}...</small> </h1>
+            <h1> AddOrderStatus <small>AddOrderStatus...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li><a href="{{ URL::to('admin/orders/orderstatus')}}"><i class="fa fa-dashboard"></i>{{ trans('labels.ListingOrderStatus') }}</a></li>
-                <li class="active">{{ trans('labels.AddOrderStatus') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+                <li><a href="{{ URL::to('admin/orders/orderstatus')}}"><i class="fa fa-dashboard"></i>ListingOrderStatus</a></li>
+                <li class="active">AddOrderStatus</li>
             </ol>
         </section>
 
@@ -22,7 +22,7 @@
 
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">{{ trans('labels.AddOrderStatus') }}</h3>
+                            <h3 class="box-title">AddOrderStatus</h3>
                         </div>
 
                         <!-- /.box-header -->
@@ -48,13 +48,13 @@
                                             {!! Form::open(array('url' =>'admin/orders/addNewOrderStatus', 'method'=>'post', 'class' => 'form-horizontal form-validate', 'enctype'=>'multipart/form-data')) !!}
 
                                             <div class="form-group" hidden>
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Status Type') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Status Type</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select name="role_id" class="form-control" >
-                                                        <option value="2"  selected>{{ trans('labels.General') }}</option>
+                                                        <option value="2"  selected>General</option>
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                      {{ trans('labels.StatusLanguageText') }}</span>
+                                                    StatusLanguageText</span>
                                                 </div>
                                             </div>
 
@@ -65,21 +65,21 @@
                                                     <div class="col-sm-10 col-md-4">
                                                         <input type="text" name="OrdersStatus_<?=$languages->languages_id?>" class="form-control field-validate"  >
                                                         <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.textRequiredFieldMessage') }} ({{ $languages->name }}).</span>
-                                                        <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                        <span class="help-block hidden">textRequiredFieldMessage</span>
                                                     </div>
                                                 </div>
                                             @endforeach
 
 
                                             <div class="form-group" style="display:none;">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Set Default') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Set Default</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select name="public_flag" class="form-control">
-                                                        <option value="0"  selected>{{ trans('labels.No') }}</option>
-                                                        <option value="1" >{{ trans('labels.Yes') }}</option>
+                                                        <option value="0"  selected>No</option>
+                                                        <option value="1" >Yes</option>
                                                     </select>
                                                     <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                      {{ trans('labels.StatusLanguageText') }}</span>
+                                                    StatusLanguageText</span>
                                                 </div>
                                             </div>
 
@@ -87,8 +87,8 @@
                                             <!-- /.box-body -->
                                             <div class="box-footer text-right">
                                                 <div class="col-sm-offset-2 col-md-offset-3 col-sm-10 col-md-4">
-                                                    <button type="submit" class="btn btn-primary">{{ trans('labels.Submit') }}</button>
-                                                    <a href="orderstatus" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                    <a href="orderstatus" type="button" class="btn btn-default">back</a>
                                                 </div>
                                             </div>
                                             <!-- /.box-footer -->

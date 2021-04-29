@@ -1,4 +1,3 @@
-
 @extends('newlayout')
 @section('content')
 
@@ -24,10 +23,10 @@
 <div class="col-6 col-md-4 col-lg-3">
 					<div class="tt-product thumbprod-center">
 						<div class="tt-image-box">
-							<a href="#" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"	data-tooltip="Quick View" data-tposition="left"></a>
-							<a href="#" class="tt-btn-wishlist" data-tooltip="Add to Wishlist" data-tposition="left"></a>
-							<a href="#" class="tt-btn-compare" data-tooltip="Add to Compare" data-tposition="left"></a>
-							<a href="product.html">
+							{{-- <a href="#" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"	data-tooltip="Quick View" data-tposition="left"></a> --}}
+							{{-- <a href="#" class="tt-btn-wishlist" data-tooltip="Add to Wishlist" data-tposition="left"></a> --}}
+							{{-- <a href="#" class="tt-btn-compare" data-tooltip="Add to Compare" data-tposition="left"></a> --}}
+							<a href="{{url('vendor_product')}}/{{$noti['id']}}">
 								<span class="tt-img"><img src="{{asset($noti['image'])}}" alt=""></span>
 								<span class="tt-img-roll-over"><img src="{{asset($noti['image'])}}" alt=""></span>
 								<span class="tt-label-location">
@@ -41,8 +40,13 @@
 									<li><a href="#"></a></li>
 								</ul>
 							</div>
-						
-							<h2 class="tt-title"><a href="{{url('vendor_product')}}/{{$noti['id']}}"> {{ $noti['vendor_name'] }}</a></h2>
+
+							<h2 class="tt-title"><a href="{{url('vendor_product')}}/{{$noti['id']}}"> {{ $noti['vendor_name'] }}
+							
+							<br>
+							{{ $noti['vendor_name_arabic'] }}
+							
+							</a></h2>
 							<div class="tt-price">
 							
 							</div>
@@ -83,9 +87,6 @@
 
 </div>
 </div>
-
-
-
 
 
 

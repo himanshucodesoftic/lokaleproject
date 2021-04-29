@@ -1,4 +1,3 @@
-
 @extends('newlayout')
 @section('content')
 
@@ -17,19 +16,22 @@
 
 
 
-@foreach($jp_obj as $noti)
-
+@foreach($productlist as $noti)
+@foreach($result['products'] as $product)
+<option value="{{$product->products_slug}}" @if($result['menus'][0]->link == $product->products_slug) selected @endif>{{ $product->products_name}}</option>
+@endforeach
 
 
 <div class="col-6 col-md-4 col-lg-3">
+	
 					<div class="tt-product thumbprod-center">
 						<div class="tt-image-box">
 							<a href="#" class="tt-btn-quickview" data-toggle="modal" data-target="#ModalquickView"	data-tooltip="Quick View" data-tposition="left"></a>
 							<a href="#" class="tt-btn-wishlist" data-tooltip="Add to Wishlist" data-tposition="left"></a>
 							<a href="#" class="tt-btn-compare" data-tooltip="Add to Compare" data-tposition="left"></a>
-							<a href="product.html">
-								<span class="tt-img"><img src="" alt=""></span>
-								<span class="tt-img-roll-over"><img src="" alt=""></span>
+							<a href="{{ URL::to('/product-detail/'.$products->products_slug)}}">
+								<span class="tt-img"><img src="{{asset($noti['products_image'])}}" alt=""></span>
+								<span class="tt-img-roll-over"><img src="{{asset($noti['products_image'])}}" alt=""></span>
 								<span class="tt-label-location">
 									<!--<span class="tt-label-our-stock">Out Of Stock</span>-->
 								</span>
@@ -63,6 +65,7 @@
 							</div>
 						</div>
 					</div>
+					
 				</div>
 
 
@@ -82,8 +85,6 @@
 
 </div>
 </div>
-
-
 
 
 

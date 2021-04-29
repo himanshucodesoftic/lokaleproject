@@ -3,11 +3,11 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1> {{ trans('labels.languages') }} <small>{{ trans('labels.AddNewLanguage') }}...</small> </h1>
+            <h1> languages <small>AddNewLanguage...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li><a href="{{ URL::to('admin/languages/display')}}"><i class="fa fa-language"></i>{{ trans('labels.languages') }}</a></li>
-                <li class="active">{{ trans('labels.AddLanguage') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+                <li><a href="{{ URL::to('admin/languages/display')}}"><i class="fa fa-language"></i>languages</a></li>
+                <li class="active">AddLanguage</li>
             </ol>
         </section>
 
@@ -21,7 +21,7 @@
 
                     <div class="box">
                       <div class="box-header">
-                          <h3 class="box-title">{{ trans('labels.AddLanguage') }}</h3>
+                          <h3 class="box-title">AddLanguage</h3>
                       </div>
 
                         <!-- /.box-header -->
@@ -52,34 +52,34 @@
                                                 </label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::text('name',  '', array('class'=>'form-control field-validate', 'id'=>'name'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.exampleLanguageName') }}</span>
-                                                    <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">exampleLanguageName</span>
+                                                    <span class="help-block hidden">textRequiredFieldMessage</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Code') }}<span style="color:red;">*</span></label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Code<span style="color:red;">*</span></label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::text('code',  '', array('class'=>'form-control field-validate', 'id'=>'code'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.exampleLanguageCode') }}</span>
-                                                    <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">exampleLanguageCode</span>
+                                                    <span class="help-block hidden">textRequiredFieldMessage</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Direction') }}<span style="color:red;">*</span></label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Direction<span style="color:red;">*</span></label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select class="form-control field-validate" id="direction" name="directions">
-                                                        <option value="rtl">{{ trans('labels.RightToLeft') }}</option>
-                                                        <option value="ltr">{{ trans('labels.LeftToRight') }}</option>
+                                                        <option value="rtl">RightToLeft</option>
+                                                        <option value="ltr">LeftToRight</option>
                                                     </select>
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.LanguageDirection') }}</span>
-                                                    <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">LanguageDirection</span>
+                                                    <span class="help-block hidden">textRequiredFieldMessage</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group" id="imageIcone">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Icon') }}<span style="color:red;">*</span></label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Icon<span style="color:red;">*</span></label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <!-- Modal -->
                                                     <div class="modal fade embed-images" id="ModalmanufacturedICone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -87,7 +87,7 @@
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
                                                                     <button type="button" class="close" data-dismiss="modal" id="closemodal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                                    <h3 class="modal-title text-primary" id="myModalLabel">{{ trans('labels.Choose Image') }} </h3>
+                                                                    <h3 class="modal-title text-primary" id="myModalLabel">Choose Image </h3>
                                                                 </div>
                                                                 <div class="modal-body manufacturer-image-embed">
 
@@ -102,15 +102,15 @@
                                                                     @endif
                                                                 </div>
                                                                 <div class="modal-footer">
-                                                                    <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >{{ trans('labels.Add Icon') }}</a>
+                                                                    <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >Add Icon</a>
                                                                     <button type="button" class="btn btn-default refresh-image"><i class="fa fa-refresh"></i></button>
-                                                                    <button type="button" class="btn btn-success" id="selectedICONE" data-dismiss="modal">{{ trans('labels.Done') }}</button>
+                                                                    <button type="button" class="btn btn-success" id="selectedICONE" data-dismiss="modal">Done</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div id="imageselected">
-                                                      {!! Form::button(trans('labels.Add Icon'), array('id'=>'newIcon','class'=>"btn btn-primary field-validate", 'data-toggle'=>"modal", 'data-target'=>"#ModalmanufacturedICone" )) !!}
+                                                      {!! Form::button(trans('lAdd Icon'), array('id'=>'newIcon','class'=>"btn btn-primary field-validate", 'data-toggle'=>"modal", 'data-target'=>"#ModalmanufacturedICone" )) !!}
                                                       <br>
                                                       <div id="selectedthumbnailIcon" class="selectedthumbnail col-md-5"> </div>
                                                       <div class="closimage">
@@ -120,7 +120,7 @@
                                                           </button>
                                                       </div>
                                                     </div>
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.Language icon size should be 30x20') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">Language icon size should be 30x20</span>
 
                                                     <br>
                                                 </div>
@@ -129,8 +129,8 @@
                                             <!-- /.box-body -->
                                             <div class="box-footer text-right">
                                                 <div class="col-sm-offset-2 col-md-offset-3 col-sm-10 col-md-4">
-                                                    <button type="submit" class="btn btn-primary">{{ trans('labels.Submit') }}</button>
-                                                    <a href="{{ URL::to('admin/languages/display')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                    <a href="{{ URL::to('admin/languages/display')}}" type="button" class="btn btn-default">back</a>
                                                 </div>
                                             </div>
                                             <!-- /.box-footer -->

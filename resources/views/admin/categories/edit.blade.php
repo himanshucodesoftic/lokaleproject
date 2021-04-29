@@ -3,11 +3,11 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> {{ trans('labels.EditCategories') }} <small>{{ trans('labels.EditCategories') }}...</small> </h1>
+        <h1> EditCategories <small>EditCategories...</small> </h1>
         <ol class="breadcrumb">
-            <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-            <li><a href="{{ URL::to('admin/categories/display')}}"><i class="fa fa-database"></i> {{ trans('labels.Categories') }}</a></li>
-            <li class="active">{{ trans('labels.EditCategories') }}</li>
+            <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+            <li><a href="{{ URL::to('admin/categories/display')}}"><i class="fa fa-database"></i> Categories</a></li>
+            <li class="active">EditCategories</li>
         </ol>
     </section>
 
@@ -20,7 +20,7 @@
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">{{ trans('labels.EditCategories') }} </h3>
+                        <h3 class="box-title">EditCategories </h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
@@ -47,12 +47,12 @@
                                         {!! Form::hidden('oldIcon', $result['editSubCategory'][0]->icon , array('id'=>'oldIcon')) !!}
                                         @if($result['editSubCategory'][0]->id >0 )
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Category') }}</label>
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">Category</label>
                                             <div class="col-sm-10 col-md-4">
                                                 <select class="form-control" name="parent_id">
                                                     {{print_r($result['categories'])}}
                                                 </select>
-                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.ChooseMainCategory') }}</span>
+                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">ChooseMainCategory</span>
                                             </div>
                                         </div>
                                         @else
@@ -64,36 +64,36 @@
 
                                         @foreach($result['description'] as $description_data)
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Name') }} ({{ $description_data['language_name'] }})</label>
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">Name ({{ $description_data['language_name'] }})</label>
                                             <div class="col-sm-10 col-md-4">
                                                 <input type="text" name="category_name_<?=$description_data['languages_id']?>" class="form-control field-validate" value="{{$description_data['name']}}">
-                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.CategoryName') }} ({{ $description_data['language_name'] }}).</span>
-                                                <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">CategoryName ({{ $description_data['language_name'] }}).</span>
+                                                <span class="help-block hidden">textRequiredFieldMessage</span>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Description') }} ({{ $description_data['language_name'] }})</label>
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">Description ({{ $description_data['language_name'] }})</label>
                                             <div class="col-sm-10 col-md-8">
                                                 <textarea id="editor_<?=$description_data['languages_id']?>" name="description_<?=$description_data['languages_id']?>" class="form-control"  rows="10" cols="80">{{$description_data['descriptions']}}</textarea>
-                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.Description') }} ({{ $description_data['language_name'] }})</span>
+                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">Description ({{ $description_data['language_name'] }})</span>
                                                 <br>
                                             </div>
                                         </div>
 
                                         @endforeach
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.slug') }} </label>
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">slug </label>
                                             <div class="col-sm-10 col-md-4">
                                                 <input type="hidden" name="old_slug" value="{{$result['editSubCategory'][0]->slug}}">
                                                 <input type="text" name="slug" class="form-control field-validate" value="{{$result['editSubCategory'][0]->slug}}">
-                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">{{ trans('labels.slugText') }}</span>
-                                                <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;margin-top: 0;">slugText</span>
+                                                <span class="help-block hidden">textRequiredFieldMessage</span>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Image') }}</label>
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">Image</label>
                                             <div class="col-sm-10 col-md-4">
                                                 <!-- Modal -->
                                                 <div class="modal fade" id="Modalmanufactured" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -101,7 +101,7 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header">
                                                                 <button type="button" class="close" data-dismiss="modal" id="closemodal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                                <h3 class="modal-title text-primary" id="myModalLabel">{{ trans('labels.Choose Image') }} </h3>
+                                                                <h3 class="modal-title text-primary" id="myModalLabel">Choose Image </h3>
                                                             </div>
                                                             <div class="modal-body manufacturer-image-embed">
                                                                 @if(isset($allimage))
@@ -114,14 +114,14 @@
                                                                 @endif
                                                             </div>
                                                             <div class="modal-footer">
-                                                              <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >{{ trans('labels.Add Image') }}</a>
+                                                              <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >Add Image</a>
                                                               <button type="button" class="btn btn-default refresh-image"><i class="fa fa-refresh"></i></button>
                                                               <button type="button" class="btn btn-primary" id="selected" data-dismiss="modal">Done</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                  {!! Form::button(trans('labels.Add Image'), array('id'=>'newImage','class'=>"btn btn-primary ", 'data-toggle'=>"modal", 'data-target'=>"#Modalmanufactured" )) !!}
+                                                  {!! Form::button(trans('Add Image'), array('id'=>'newImage','class'=>"btn btn-primary ", 'data-toggle'=>"modal", 'data-target'=>"#Modalmanufactured" )) !!}
                                                   <br>
                                                   <div id="selectedthumbnail" class="selectedthumbnail col-md-5"> </div>
                                                   <div class="closimage">
@@ -130,7 +130,7 @@
                                                           <span aria-hidden="true">&times;</span>
                                                       </button>
                                                   </div>
-                                                  <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.UploadSubCategoryImage') }}</span>
+                                                  <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">UploadSubCategoryImage</span>
 
                                             </div>
                                         </div>
@@ -138,14 +138,14 @@
                                         <div class="form-group">
                                             <label for="name" class="col-sm-2 col-md-3 control-label"></label>
                                             <div class="col-sm-10 col-md-4">
-                                              <span class="help-block " style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.OldImage') }}</span>
+                                              <span class="help-block " style="font-weight: normal;font-size: 11px;margin-bottom: 0;">OldImage</span>
                                               <br>
                                               <img src="{{asset($result['editSubCategory'][0]->imgpath)}}" alt="" width=" 100px">
                                             </div>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Icon') }}</label>
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">Icon</label>
                                             <div class="col-sm-10 col-md-4">
                                                 {{--{!! Form::file('newIcon', array('id'=>'newIcon')) !!}--}}
 
@@ -155,7 +155,7 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header">
                                                                 <button type="button" class="close" data-dismiss="modal" id="closemodal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                                <h3 class="modal-title text-primary" id="myModalLabel">{{ trans('labels.Choose Image') }} </h3>
+                                                                <h3 class="modal-title text-primary" id="myModalLabel">Choose Image </h3>
                                                             </div>
                                                             <div class="modal-body manufacturer-image-embed">
                                                                 @if(isset($allimage))
@@ -168,7 +168,7 @@
                                                                 @endif
                                                             </div>
                                                             <div class="modal-footer">
-                                                              <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >{{ trans('labels.Add Image') }}</a>
+                                                              <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left" >Add Image</a>
                                                               <button type="button" class="btn btn-default refresh-image"><i class="fa fa-refresh"></i></button>
                                                                 <button type="button" class="btn btn-primary" id="selectedICONE" data-dismiss="modal">Done</button>
                                                             </div>
@@ -176,7 +176,7 @@
                                                     </div>
                                                 </div>
                                                 <div id="imageselected">
-                                                    {!! Form::button(trans('labels.Add Icon'), array('id'=>'newIcon','class'=>"btn btn-primary ", 'data-toggle'=>"modal", 'data-target'=>"#ModalmanufacturedICone" )) !!}
+                                                    {!! Form::button(trans('Add Icon'), array('id'=>'newIcon','class'=>"btn btn-primary ", 'data-toggle'=>"modal", 'data-target'=>"#ModalmanufacturedICone" )) !!}
                                                     <br>
                                                     <div id="selectedthumbnailIcon" class="selectedthumbnail col-md-5"> </div>
                                                     <div class="closimage">
@@ -186,7 +186,7 @@
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.UploadSubCategoryIcon') }}</span>
+                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">UploadSubCategoryIcon</span>
                                             </div>
                                         </div>
 
@@ -194,7 +194,7 @@
                                         <div class="form-group">
                                             <label for="name" class="col-sm-2 col-md-3 control-label"></label>
                                             <div class="col-sm-10 col-md-4">
-                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.OldImage') }}</span>
+                                                <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">OldImage</span>
                                                 <br>
                                                 <img src="{{asset($result['editSubCategory'][0]->iconpath)}}" alt="" width=" 100px">
 
@@ -202,26 +202,26 @@
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Status') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Status </label>
                                           <div class="col-sm-10 col-md-4">
                                             <select class="form-control" name="categories_status">
-                                                  <option value="1" @if($result['editSubCategory'][0]->categories_status=='1') selected @endif>{{ trans('labels.Active') }}</option>
-                                                  <option value="0" @if($result['editSubCategory'][0]->categories_status=='0') selected @endif>{{ trans('labels.Inactive') }}</option>
+                                                  <option value="1" @if($result['editSubCategory'][0]->categories_status=='1') selected @endif>Active</option>
+                                                  <option value="0" @if($result['editSubCategory'][0]->categories_status=='0') selected @endif>Inactive</option>
                                             </select>
                                           <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                          {{ trans('labels.GeneralStatusText') }}</span>
+                                          GeneralStatusText</span>
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Available') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Available </label>
                                           <div class="col-sm-10 col-md-4">
                                             <select class="form-control" name="categories_available">
-                                                  <option value="1" @if($result['editSubCategory'][0]->cat_visibility=='1') selected @endif>{{ trans('labels.Enabled') }}</option>
-                                                  <option value="0" @if($result['editSubCategory'][0]->cat_visibility=='0') selected @endif>{{ trans('labels.Disabled') }}</option>
+                                                  <option value="1" @if($result['editSubCategory'][0]->cat_visibility=='1') selected @endif>Enabled</option>
+                                                  <option value="0" @if($result['editSubCategory'][0]->cat_visibility=='0') selected @endif>Disabled</option>
                                             </select>
                                           <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                          {{ trans('labels.GeneralStatusText') }}</span>
+                                          GeneralStatusText</span>
                                           </div>
                                         </div>
 
@@ -231,8 +231,8 @@
 
                             <!-- /.box-body -->
                             <div class="box-footer text-center">
-                                <button type="submit" class="btn btn-primary">{{ trans('labels.Submit') }}</button>
-                                <a href="{{ URL::to('admin/categories/display')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a href="{{ URL::to('admin/categories/display')}}" type="button" class="btn btn-default">back</a>
                             </div>
                             <!-- /.box-footer -->
 

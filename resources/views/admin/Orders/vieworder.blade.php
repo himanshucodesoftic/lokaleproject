@@ -3,11 +3,11 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1> {{ trans('labels.ViewOrder') }} <small> {{ trans('labels.ViewOrder') }}...</small> </h1>
+    <h1>ViewOrder<small> ViewOrder...</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-      <li><a href="{{ URL::to('admin/orders/display')}}"><i class="fa fa-dashboard"></i>  {{ trans('labels.ListingAllOrders') }}</a></li>
-      <li class="active"> {{ trans('labels.ViewOrder') }}</li>
+      <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+      <li><a href="{{ URL::to('admin/orders/display')}}"><i class="fa fa-dashboard"></i>  ListingAllOrders</a></li>
+      <li class="active">ViewOrder</li>
     </ol>
   </section>
 
@@ -19,7 +19,7 @@
        <div class="row">
       	<div class="alert alert-success alert-dismissible">
            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-           <h4><i class="icon fa fa-check"></i> {{ trans('labels.Successlabel') }}</h4>
+           <h4><i class="icon fa fa-check"></i>Successlabel</h4>
             {{ session()->get('message') }}
         </div>
         </div>
@@ -30,7 +30,7 @@
       	<div class="row">
         	<div class="alert alert-warning alert-dismissible">
                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-               <h4><i class="icon fa fa-warning"></i> {{ trans('labels.WarningLabel') }}</h4>
+               <h4><i class="icon fa fa-warning"></i> WarningLabel</h4>
                 {{ session()->get('error') }}
             </div>
           </div>
@@ -39,7 +39,7 @@
       <div class="row">
         <div class="col-xs-12">
           <h2 class="page-header" style="padding-bottom: 25px; margin-top:0;">
-            <i class="fa fa-globe"></i> {{ trans('labels.OrderID') }}# {{ $data['orders_data'][0]->orders_id }}  
+            <i class="fa fa-globe"></i> OrderID# {{ $data['orders_data'][0]->orders_id }}  
             
             <small style="display: inline-block" class="label label-primary">
             @if($data['orders_data'][0]->ordered_source == 1)
@@ -48,7 +48,7 @@
             {{ trans('labels.Application') }}
             @endif
             </small>
-            <small style="display: inline-block">{{ trans('labels.OrderedDate') }}: {{ date('m/d/Y', strtotime($data['orders_data'][0]->date_purchased)) }}</small>
+            <small style="display: inline-block">OrderedDate: {{ date('m/d/Y', strtotime($data['orders_data'][0]->date_purchased)) }}</small>
             <a href="{{ URL::to('admin/orders/invoiceprint/'.$data['orders_data'][0]->orders_id)}}" target="_blank"  class="btn btn-default pull-right"><i class="fa fa-print"></i> {{ trans('labels.Print') }}</a>
             @if($result['commonContent']['setting']['is_enable_location']==1 and $data['orders_data'][0]->orders_status_id == 7 )
               @if($data['current_boy'])
@@ -77,7 +77,7 @@
       <!-- info row -->
       <div class="row invoice-info">
         <div class="col-sm-4 invoice-col">
-          {{ trans('labels.CustomerInfo') }}:
+        CustomerInfo:
           <address>
             <strong>{{ $data['orders_data'][0]->customers_name }}</strong><br>
             {{ $data['orders_data'][0]->customers_street_address }} <br>
@@ -88,15 +88,15 @@
         </div>
         <!-- /.col -->
         <div class="col-sm-4 invoice-col">
-          {{ trans('labels.ShippingInfo') }}
+        ShippingInfo
           <address>
             <strong>{{ $data['orders_data'][0]->delivery_name }}</strong><br>
             {{ $data['orders_data'][0]->delivery_street_address }} <br>
             {{ $data['orders_data'][0]->delivery_city }}, {{ $data['orders_data'][0]->delivery_state }} {{ $data['orders_data'][0]->delivery_postcode }}, {{ $data['orders_data'][0]->delivery_country }}<br>
 
-            <strong>{{ trans('labels.Phone') }}: </strong>{{ $data['orders_data'][0]->delivery_phone }}<br>
-           <strong> {{ trans('labels.ShippingMethod') }}:</strong> {{ $data['orders_data'][0]->shipping_method }} <br>
-           <strong> {{ trans('labels.ShippingCost') }}:</strong> 
+            <strong>Phone: </strong>{{ $data['orders_data'][0]->delivery_phone }}<br>
+           <strong> ShippingMethod:</strong> {{ $data['orders_data'][0]->shipping_method }} <br>
+           <strong> ShippingCost:</strong> 
            @if(!empty($data['orders_data'][0]->shipping_cost)) 
            @if(!empty($result['commonContent']['currency']->symbol_left) && $result['commonContent']['currency']->symbol_left == $data['orders_data'][0]->currency)  {{ $data['orders_data'][0]->currency }}  {{$data['orders_data'][0]->shipping_cost  * $data['orders_data'][0]->currency_value }} @else  {{$data['orders_data'][0]->shipping_cost  * $data['orders_data'][0]->currency_value }}  {{ $data['orders_data'][0]->currency }} @endif<br>
             @else --- @endif <br>
@@ -104,7 +104,7 @@
         </div>
         <!-- /.col -->
         <div class="col-sm-4 invoice-col">
-         {{ trans('labels.BillingInfo') }}
+        BillingInfo
           <address>
             <strong>{{ $data['orders_data'][0]->billing_name }}</strong><br>
             {{ $data['orders_data'][0]->billing_street_address }} <br>
@@ -121,12 +121,12 @@
           <table class="table table-striped">
             <thead>
             <tr>
-              <th>{{ trans('labels.Qty') }}</th>
-              <th>{{ trans('labels.Image') }}</th>
-              <th>{{ trans('labels.ProductName') }}</th>
-              <th>{{ trans('labels.ProductModal') }}</th>
-              <th>{{ trans('labels.Options') }}</th>
-              <th>{{ trans('labels.Price') }}</th>
+              <th>Qty</th>
+              <th>Image</th>
+              <th>ProductName</th>
+              <th>ProductModal</th>
+              <th>Options</th>
+              <th>Price</th>
             </tr>
             </thead>
             <tbody>
@@ -146,9 +146,9 @@
                 </td>
                 <td>
                 @foreach($products->attribute as $attributes)
-                	<b>{{ trans('labels.Name') }}:</b> {{ $attributes->products_options }}<br>
-                    <b>{{ trans('labels.Value') }}:</b> {{ $attributes->products_options_values }}<br>
-                    <b>{{ trans('labels.Price') }}:</b> 
+                	<b>Name:</b> {{ $attributes->products_options }}<br>
+                    <b>Value:</b> {{ $attributes->products_options_values }}<br>
+                    <b>Price:</b> 
                     @if(!empty($result['commonContent']['currency']->symbol_left) && $result['commonContent']['currency']->symbol_left == $data['orders_data'][0]->currency)  {{ $data['orders_data'][0]->currency }}  {{ $attributes->options_values_price * $data['orders_data'][0]->currency_value }} @else  {{ $attributes->options_values_price * $data['orders_data'][0]->currency_value }}  {{ $data['orders_data'][0]->currency }} @endif<br />
 
                 @endforeach</td>
@@ -176,11 +176,11 @@
            	{{ str_replace('_',' ', $data['orders_data'][0]->payment_method) }}
           </p>
           @if(!empty($data['orders_data'][0]->coupon_code))
-              <p class="lead" style="margin-bottom:10px">{{ trans('labels.Coupons') }}:</p>
+              <p class="lead" style="margin-bottom:10px">Coupons:</p>
                 <table class="text-muted well well-sm no-shadow stripe-border table table-striped" style="text-align: center; ">
                 	<tr>
-                        <th style="text-align: center; ">{{ trans('labels.Code') }}</th>
-                        <th style="text-align: center; ">{{ trans('labels.Amount') }}</th>
+                        <th style="text-align: center; ">Code</th>
+                        <th style="text-align: center; ">Amount</th>
                     </tr>
                 	@foreach( json_decode($data['orders_data'][0]->coupon_code) as $couponData)
                     	<tr>
@@ -188,13 +188,13 @@
                             <td>{{ $couponData->amount}}
 
                                 @if($couponData->discount_type=='percent_product')
-                                    ({{ trans('labels.Percent') }})
+                                Percent
                                 @elseif($couponData->discount_type=='percent')
-                                    ({{ trans('labels.Percent') }})
+                                Percent
                                 @elseif($couponData->discount_type=='fixed_cart')
-                                    ({{ trans('labels.Fixed') }})
+                                Fixed
                                 @elseif($couponData->discount_type=='fixed_product')
-                                    ({{ trans('labels.Fixed') }})
+                                  Fixed
                                 @endif
                             </td>
                         </tr>
@@ -208,7 +208,7 @@
           <img src="../../dist/img/credit/american-express.png" alt="American Express">
           <img src="../../dist/img/credit/paypal2.png" alt="Paypal">-->
 
-		  <p class="lead" style="margin-bottom:10px">{{ trans('labels.Orderinformation') }}:</p>
+		  <p class="lead" style="margin-bottom:10px">Orderinformation:</p>
           <p class="text-muted well well-sm no-shadow" style="text-transform:capitalize; word-break:break-all;">
            @if(trim($data['orders_data'][0]->order_information) != '[]' or !empty($data['orders_data'][0]->order_information))
            		{{ $data['orders_data'][0]->order_information }}
@@ -222,7 +222,7 @@
           <div class="table-responsive ">
             <table class="table order-table">
               <tr>
-                <th style="width:50%">{{ trans('labels.Subtotal') }}:</th>
+                <th style="width:50%">Subtotal:</th>
                 <td>
                 @if(!empty($result['commonContent']['currency']->symbol_left) && $result['commonContent']['currency']->symbol_left == $data['orders_data'][0]->currency)  {{ $data['orders_data'][0]->currency }}  {{$data['subtotal']  * $data['orders_data'][0]->currency_value }} @else  {{$data['subtotal']  * $data['orders_data'][0]->currency_value }}  {{ $data['orders_data'][0]->currency }} @endif<br>
 
@@ -235,20 +235,20 @@
               <!--  </td>-->
               <!--</tr>-->
               <tr>
-                <th>{{ trans('labels.ShippingCost') }}:</th>
+                <th>ShippingCost:</th>
                 <td>
                 @if(!empty($result['commonContent']['currency']->symbol_left) && $result['commonContent']['currency']->symbol_left == $data['orders_data'][0]->currency)  {{ $data['orders_data'][0]->currency }}  {{$data['orders_data'][0]->shipping_cost  * $data['orders_data'][0]->currency_value }} @else  {{$data['orders_data'][0]->shipping_cost  * $data['orders_data'][0]->currency_value }}  {{ $data['orders_data'][0]->currency }} @endif<br>
                   </td>
               </tr>
               @if(!empty($data['orders_data'][0]->coupon_code))
               <tr>
-                <th>{{ trans('labels.DicountCoupon') }}:</th>
+                <th>DicountCoupon:</th>
                 <td>
                 @if(!empty($result['commonContent']['currency']->symbol_left) && $result['commonContent']['currency']->symbol_left == $data['orders_data'][0]->currency)  {{ $data['orders_data'][0]->currency }}  {{$data['orders_data'][0]->coupon_amount  * $data['orders_data'][0]->currency_value }} @else  {{$data['orders_data'][0]->coupon_amount  * $data['orders_data'][0]->currency_value }}  {{ $data['orders_data'][0]->currency }} @endif<br>                  
               </tr>
               @endif
               <tr>
-                <th>{{ trans('labels.Total') }}:</th>
+                <th>Total:</th>
                 <td>
                 @if(!empty($result['commonContent']['currency']->symbol_left) && $result['commonContent']['currency']->symbol_left == $data['orders_data'][0]->currency)  {{ $data['orders_data'][0]->currency }}  {{$data['orders_data'][0]->order_price  * $data['orders_data'][0]->currency_value }} @else  {{$data['orders_data'][0]->order_price  * $data['orders_data'][0]->currency_value }}  {{ $data['orders_data'][0]->currency }} @endif<br>
 
@@ -264,7 +264,7 @@
      {!! Form::hidden('customers_id', $data['orders_data'][0]->customers_id, array('class'=>'form-control', 'id'=>'device_id')) !!}
         <div class="col-xs-6">
         <hr>
-          <p class="lead">{{ trans('labels.ChangeStatus') }}:</p>
+          <p class="lead">ChangeStatus:</p>
 
             <div class="col-md-12">
               <div class="form-group">
@@ -302,7 +302,7 @@
             </div>
             <div class="col-md-12">
                <div class="form-group">
-                <label>{{ trans('labels.Comments') }}:</label>
+                <label>Comments:</label>
                 {!! Form::textarea('comments',  '', array('class'=>'form-control', 'id'=>'comments', 'rows'=>'4'))!!}
                 <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.CommentsOrderText') }}</span>
               </div>
@@ -337,7 +337,7 @@
                     <hr>
                     @if( $data['orders_data'][0]->orders_status_id == 2 or $data['orders_data'][0]->orders_status_id ==
                     6)
-                    <p class="lead">{{ trans('labels.Delivery By') }}:
+                    <p class="lead">Delivery By:
                         <strong>
                             @foreach( $data['delivery_boys'] as $delivery_boy)
                             @if(!empty($data['current_boy']))
@@ -356,9 +356,9 @@
                     <div class="col-md-12">
                         <div class="form-group">
 
-                            <label>{{ trans('labels.Choose Delivery Boy') }}:</label>
+                            <label>Choose Delivery Boy:</label>
                             <select class="form-control" id="is_new_boy" required name="deliveryboy_id">
-                                <option value="">{{ trans('labels.Choose Delivery Boy') }}</option>
+                                <option value="">Choose Delivery Boy</option>
                                 @foreach( $data['delivery_boys'] as $delivery_boy)
                                 <option value="{{ $delivery_boy->id }}" @if(!empty($data['current_boy'])) @if(
                                     $data['current_boy']->deliveryboy_id == $delivery_boy->id) selected="selected"
@@ -369,12 +369,12 @@
                                 @endforeach
                             </select>
                             <span class="help-block"
-                                style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.Choose Delivery Boy') }}</span>
+                                style="font-weight: normal;font-size: 11px;margin-bottom: 0;">Choose Delivery Boy</span>
                         </div>
                     </div>
 
                     <button type="submit" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i>
-                      {{ trans('labels.Submit') }} </button>
+                    Submit</button>
                     @endif  
                     @endif
 
@@ -389,9 +389,9 @@
             <table id="example1" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>{{ trans('labels.Date') }}</th>
-                  <th>{{ trans('labels.Status') }}</th>
-                  <th>{{ trans('labels.Comments') }}</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Comments</th>
                 </tr>
               </thead>
               <tbody>

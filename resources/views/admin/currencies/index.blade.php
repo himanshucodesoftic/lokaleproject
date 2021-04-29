@@ -3,10 +3,10 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1> {{ trans('labels.Currencies') }} <small>{{ trans('labels.ListingAllCurrencies') }}...</small> </h1>
+            <h1> Currencies<small>ListingAllCurrencies...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li class="active">{{ trans('labels.Currencies') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+                <li class="active">Currencies</li>
             </ol>
         </section>
 
@@ -20,7 +20,7 @@
                     <div class="box">
                         <div class="box-header">
                             <div class="box-tools pull-right">
-                                <a href="{{ URL::to('admin/currencies/add')}}" type="button" class="btn btn-block btn-primary">{{ trans('labels.AddNew') }}</a>
+                                <a href="{{ URL::to('admin/currencies/add')}}" type="button" class="btn btn-block btn-primary">AddNew</a>
                             </div>
                             </br>
                         </div>
@@ -46,17 +46,17 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                         <tr>
-                                            <th>@sortablelink('id', trans('labels.ID') )</th>
-                                            <th>{{ trans('labels.Title') }}</th>
-                                            <th>{{ trans('labels.code') }}</th>
-                                            <th>{{ trans('labels.symbol') }}</th>
-                                            <th>{{ trans('labels.Position') }}</th>
-                                            <th style="display: none">{{ trans('labels.decimal_point') }}</th>
-                                            <th style="display: none">{{ trans('labels.thousands_point') }}</th>
-                                            <th>{{ trans('labels.decimal_places') }}</th>
-                                            <th>{{ trans('labels.value') }}</th>
-                                            <th style="display: none">@sortablelink('created_at', trans('labels.created_at') )</th>
-                                            <th>{{ trans('labels.Action') }}</th>
+                                            <th>@sortablelink('id', trans('ID') )</th>
+                                            <th>Title</th>
+                                            <th>code</th>
+                                            <th>symbol</th>
+                                            <th>Position</th>
+                                            <th style="display: none">decimal_point</th>
+                                            <th style="display: none">thousands_point</th>
+                                            <th>decimal_places</th>
+                                            <th>value</th>
+                                            <th style="display: none">@sortablelink('created_at', trans('created_at') )</th>
+                                            <th>Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -72,9 +72,9 @@
 
                                                         <td>
                                                             @if(!empty($currency->symbol_left))
-                                                                @lang('labels.Left')
+                                                                @lang('Left')
                                                             @else
-                                                                @lang('labels.Right')
+                                                                @lang('Left')
                                                             @endif
                                                         </td>
 
@@ -83,8 +83,8 @@
                                                         <td>{{ $currency->decimal_places }}</td>
                                                         <td>{{ $currency->value }}</td>
                                                         <td style="display: none">
-                                                            <strong>{{ trans('labels.AddedDate') }}: </strong> {{ $currency->created_at }}<br>
-                                                            <strong>{{ trans('labels.ModifiedDate') }}: </strong>{{ $currency->updated_at }}
+                                                            <strong>AddedDate: </strong> {{ $currency->created_at }}<br>
+                                                            <strong>ModifiedDate: </strong>{{ $currency->updated_at }}
                                                         </td>
                                                         <td>
                                                         @if($currency->id!=1)
@@ -99,7 +99,7 @@
                                             @endforeach
                                         @else
                                             <tr>
-                                                <td colspan="7">{{ trans('labels.NoRecordFound') }}</td>
+                                                <td colspan="7">NoRecordFound</td>
                                             </tr>
                                         @endif
                                         </tbody>
@@ -134,8 +134,8 @@
                             <p>{{ trans('labels.DeleteText') }}</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
-                            <button type="submit" class="btn btn-primary" id="deleteBanner">{{ trans('labels.Delete') }}</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="deleteBanner">Delete</button>
                         </div>
                         {!! Form::close() !!}
                     </div>

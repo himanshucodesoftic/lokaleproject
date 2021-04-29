@@ -8,10 +8,10 @@
         </style>
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1> {{ trans('labels.Orders') }} <small>{{ trans('labels.ListingAllOrders') }}...</small> </h1>
+            <h1> Orders <small>ListingAllOrders...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li class="active">{{ trans('labels.Orders') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+                <li class="active">Orders</li>
             </ol>
         </section>
 
@@ -67,15 +67,15 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                         <tr>
-                                            <th>{{ trans('labels.ID') }}</th>
-                                            <th>{{ trans('labels.CustomerName') }}</th>
-                                            <th>{{ trans('labels.Order Source') }}</th>
-                                            <th>{{ trans('labels.OrderTotal') }}</th>
-                                            <th>{{ trans('labels.DatePurchased') }}</th>
-                                            <th>{{ trans('labels.Product Name') }}</th>
-                                            <th>{{ trans('labels.Status') }} </th>
+                                            <th>ID</th>
+                                            <th>CustomerName</th>
+                                            <th>.Order Source</th>
+                                            <th>OrderTotal</th>
+                                            <th>DatePurchased</th>
+                                            <th>Product Name</th>
+                                            <th>Status </th>
                                             
-                                            <th>{{ trans('labels.Action') }}</th>
+                                            <th>Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -86,9 +86,9 @@
                                                     <td>{{ $orderData->customers_name }}</td>
                                                     <td>
                                                         @if($orderData->ordered_source == 1)
-                                                        {{ trans('labels.Website') }}
+                                                        Website
                                                         @else
-                                                        {{ trans('labels.Application') }}
+                                                        Application
                                                         @endif</td>
                                                     <td>
                                                         
@@ -126,7 +126,7 @@
                                             @endforeach
                                         @else
                                             <tr>
-                                                <td colspan="6"><strong>{{ trans('labels.NoRecordFound') }}</strong></td>
+                                                <td colspan="6"><strong>NoRecordFound</strong></td>
                                             </tr>
                                         @endif
                                         </tbody>
@@ -151,17 +151,17 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="deleteModalLabel">{{ trans('labels.DeleteOrder') }}</h4>
+                            <h4 class="modal-title" id="deleteModalLabel">DeleteOrder</h4>
                         </div>
                         {!! Form::open(array('url' =>'admin/orders/deleteOrder', 'name'=>'deleteOrder', 'id'=>'deleteOrder', 'method'=>'post', 'class' => 'form-horizontal', 'enctype'=>'multipart/form-data')) !!}
                         {!! Form::hidden('action',  'delete', array('class'=>'form-control')) !!}
                         {!! Form::hidden('orders_id',  '', array('class'=>'form-control', 'id'=>'orders_id')) !!}
                         <div class="modal-body">
-                            <p>{{ trans('labels.DeleteOrderText') }}</p>
+                            <p>DeleteOrderText</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
-                            <button type="submit" class="btn btn-primary" id="deleteOrder">{{ trans('labels.Delete') }}</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="deleteOrder">Close</button>
                         </div>
                         {!! Form::close() !!}
                     </div>

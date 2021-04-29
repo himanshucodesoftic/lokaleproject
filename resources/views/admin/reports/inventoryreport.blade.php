@@ -3,10 +3,10 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1> {{ trans('labels.Inventory Report') }} <small>{{ trans('labels.Inventory Report') }}...</small> </h1>
+    <h1>Inventory Report<small>Inventory Report...</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-      <li class="active">{{ trans('labels.Inventory Report') }}</li>
+      <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+      <li class="active">Inventory Report</li>
     </ol>
   </section>
 
@@ -21,7 +21,7 @@
           <!-- MAP & BOX PANE -->
           <div class="box box-success">
             <div class="box-header with-border">
-              <h3 class="box-title">{{ trans('labels.Filter') }}</h3>
+              <h3 class="box-title">Filter</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -38,21 +38,21 @@
               <div class="box-body">
                 <div class="col-xs-3">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">{{ trans('labels.Choose start and end date') }}</label>
+                    <label for="exampleInputEmail1">Choose start and end date</label>
                     <input class="form-control reservation dateRange" placeholder="{{ trans('labels.Choose start and end date') }}" readonly value="{{app('request')->input('dateRange')}}" name="dateRange" aria-label="Text input with multiple buttons ">
                   </div>
                 </div>
 
                 <div class="col-xs-3">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">{{ trans('labels.Choose Product') }}</label>
+                    <label for="exampleInputEmail1">Choose Product</label>
                     <select type="button" required class="btn btn-default select2 form-control product_type" data-toggle="dropdown" name="products_id" id="products_id"  >
                         <option value="">{{trans('labels.Choose Product')}}</option>
                         @foreach($result['products'] as $product)
                         <option value="{{$product->products_id}}"  @if( app('request')->input('products_id')) @if  (app('request')->input('products_id') == $product->products_id) {{ 'selected' }} @endif @endif>{{$product->products_name}}</option>
                         @endforeach
                         <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                            {{ trans('labels.Product Type Text') }}.
+                        Product Type Text.
                         </span>
                     </select>
                   </div>
@@ -87,14 +87,14 @@
       <div class="col-md-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">{{ trans('labels.Inventory Report') }} </h3>
+            <h3 class="box-title">Inventory Report </h3>
 
             <div class="box-tools pull-right">
               <form action="{{ URL::to('admin/inventoryreportprint')}}" target="_blank" >
                 <input type="hidden" name="page" value="invioce">
                 <input type="hidden" name="products_id" value="{{app('request')->input('products_id')}}">
                 <input type="hidden" name="dateRange" value="{{app('request')->input('dateRange')}}">
-                <button type='submit' class="btn btn-default pull-right"><i class="fa fa-print"></i> {{ trans('labels.Print') }}</button>
+                <button type='submit' class="btn btn-default pull-right"><i class="fa fa-print"></i> Print</button>
               </form>
              
             </div>
@@ -119,10 +119,10 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>{{ trans('labels.Date') }}</th>
-                      <th>{{ trans('labels.In Stock') }}</th>
-                      <th>{{ trans('labels.Out Stock') }}</th>
-                      <th>{{ trans('labels.Reference') }}</th>
+                      <th>Date</th>
+                      <th>In Stock</th>
+                      <th>Out Stock</th>
+                      <th>Out Stock</th>
                     </tr>
                   </thead>
                    <tbody>

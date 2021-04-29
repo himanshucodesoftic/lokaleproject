@@ -3,11 +3,11 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1>{{ trans('labels.Drivers Report Detail') }} <small>{{ trans('labels.Drivers Report Detail') }}...</small> </h1>
+        <h1>{{ trans('labels.Drivers Report Detail') }} <small>Drivers Report Detail...</small> </h1>
         <ol class="breadcrumb">
             <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i>
-                    {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-            <li class="active">{{ trans('labels.Drivers Report Detail') }}</li>
+            breadcrumb_dashboard</a></li>
+            <li class="active">Drivers Report Detail</li>
         </ol>
     </section>
 
@@ -21,7 +21,7 @@
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">{{ trans('labels.Driver Listing') }} </h3>
+                        <h3 class="box-title">Driver Listing </h3>
                     </div>
 
                     <!-- /.box-header -->
@@ -31,12 +31,12 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>{{ trans('labels.#') }}</th>
-                                            <th>{{ trans('labels.OrderID') }}</th>
-                                            <th>{{ trans('labels.CustomerName') }}</th>
-                                            <th>{{ trans('labels.Vendor') }}</th>
-                                            <th>{{ trans('labels.Date') }}</th>
-                                            <th>{{ trans('labels.OrdersStatus') }}</th>
+                                            <th>#</th>
+                                            <th>OrderID</th>
+                                            <th>CustomerName</th>
+                                            <th>Vendor</th>
+                                            <th>Date</th>
+                                            <th>OrdersStatus</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -54,7 +54,7 @@
                                         @endforeach
                                         @else
                                         <tr>
-                                            <td colspan="6"><strong>{{ trans('labels.NoRecordFound') }}</strong></td>
+                                            <td colspan="6"><strong>NoRecordFound</strong></td>
                                         </tr>
                                         @endif
                                     </tbody>

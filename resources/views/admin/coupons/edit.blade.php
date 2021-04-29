@@ -3,11 +3,11 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1> {{ trans('labels.EditCoupons') }} <small>{{ trans('labels.EditCoupons') }}...</small> </h1>
+            <h1> EditCoupons <small>EditCoupons...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
                 <li><a href="{{ URL::to('admin/coupons/display')}}"><i class="fa fa-dashboard"></i>All Coupons</a></li>
-                <li class="active">{{ trans('labels.EditCoupons') }}</li>
+                <li class="active">EditCoupons</li>
             </ol>
         </section>
 
@@ -22,7 +22,7 @@
 
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">{{ trans('labels.EditCoupons') }}</h3>
+                            <h3 class="box-title">EditCoupons</h3>
                         </div>
 
                         <!-- /.box-header -->
@@ -70,19 +70,19 @@
                                             {!! Form::hidden('id',  $result['coupon'][0]->coupans_id)!!}
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Coupon') }} </label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Coupon </label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::text('code',  $result['coupon'][0]->code, array('class'=>'form-control field-validate', 'id'=>'code'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.AddCouponsTaxt') }}</span>
-                                                    <span class="help-block hidden">{{ trans('labels.AddCouponsTaxt') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">AddCouponsTaxt</span>
+                                                    <span class="help-block hidden">AddCouponsTaxt</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.CouponDescription') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">CouponDescription</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::textarea('description',  $result['coupon'][0]->description, array('class'=>'form-control', 'rows'=>'5', 'id'=>'description'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.CouponDescriptionText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">CouponDescriptionText</span>
                                                 </div>
                                             </div>
                                         <!--<div class="box">
@@ -91,7 +91,7 @@
                             </div>
                             </div>-->
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Discounttype') }} </label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Discounttype </label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select name="discount_type" class='form-control'>
                                                         <option value="fixed_cart" @if($result['coupon'][0]->discount_type == 'fixed_cart') selected @endif>Cart Discount</option>
@@ -99,78 +99,78 @@
                                                         <!-- <option value="fixed_product" @if($result['coupon'][0]->discount_type == 'fixed_product') selected @endif>Product Discount</option>
                                                         <option value="percent_product" @if($result['coupon'][0]->discount_type == 'percent_product') selected @endif>Product % Discount</option> -->
                                                     </select>
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.DiscounttypeText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">DiscounttypeText</span>
 
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.CouponAmount') }}
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">CouponAmount
                                                 </label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::text('amount',  $result['coupon'][0]->amount, array('class'=>'form-control', 'id'=>'amount'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.CouponAmountText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">CouponAmountText</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group" style="display:none;">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.AllowFreeShipping') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">AllowFreeShipping</label>
                                                 <div class="col-sm-10 col-md-4" style="padding-top: 7px;">
                                                     <label style="margin-bottom:0">
                                                         {!! Form::checkbox('free_shipping', 1, $result['coupon'][0]->free_shipping, ['class' => 'minimal']) !!}
                                                     </label>
-                                                    &nbsp; {{ trans('labels.AllowFreeShippingText') }}
+                                                    &nbsp; AllowFreeShippingText
 
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.CouponExpiryDate') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">CouponExpiryDate</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::text('expiry_date',  date('d/m/Y', strtotime($result['coupon'][0]->expiry_date)), array('class'=>'form-control field-validate datepicker', 'id'=>'datepicker', 'readonly'=>'readonly'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.CouponExpiryDateText') }}</span>
-                                                    <span class="help-block hidden">{{ trans('labels.CouponExpiryDateText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">CouponExpiryDateText</span>
+                                                    <span class="help-block hidden">CouponExpiryDateText</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Minimumspend') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Minimumspend</label>
                                                 <div class="col-sm-10 col-md-4">
-                                                    {!! Form::text('minimum_amount', $result['coupon'][0]->minimum_amount, array('class'=>'form-control', 'placeholder'=>trans('labels.NoMinimum'), 'id'=>'minimum_amount'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.MinimumspendText') }}</span>
+                                                    {!! Form::text('minimum_amount', $result['coupon'][0]->minimum_amount, array('class'=>'form-control', 'placeholder'=>trans('NoMinimum'), 'id'=>'minimum_amount'))!!}
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">MinimumspendText</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group" style="display:none;">
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.MaximumSpend') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('MaximumSpend') }}</label>
                                                 <div class="col-sm-10 col-md-4">
-                                                    {!! Form::text('maximum_amount', $result['coupon'][0]->maximum_amount, array('class'=>'form-control', 'placeholder'=>trans('labels.NoMaximum'), 'id'=>'maximum_amount'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.MaximumSpendText') }}</span>
+                                                    {!! Form::text('maximum_amount', $result['coupon'][0]->maximum_amount, array('class'=>'form-control', 'placeholder'=>trans('NoMaximum'), 'id'=>'maximum_amount'))!!}
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">MaximumSpendText</span>
                                                 </div>
                                             </div>
                                             <input type="hidden" name="maximum_amount"  value="0" />
 
                                             <div class="form-group" style="display:none;">>
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.IndividualUseOnly') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">IndividualUseOnly</label>
                                                 <div class="col-sm-10 col-md-4"  style="padding-top: 7px; line-height: 22px;">
                                                     <label  style="margin-bottom: 0px;">
                                                         {!! Form::checkbox('individual_use', 1, $result['coupon'][0]->individual_use, ['class' => 'minimal']) !!}
                                                     </label>
-                                                    &nbsp; {{ trans('labels.IndividualUseOnlyText') }}
+                                                    &nbsp; IndividualUseOnlyText
                                                 </div>
                                             </div>
 
                                             <div class="form-group" style="display:none;">>
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.ExcludeSaleItems') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">ExcludeSaleItems</label>
                                                 <div class="col-sm-10 col-md-4"  style="padding-top: 7px; line-height: 22px;">
                                                     <label  style="margin-bottom: 0px;">
                                                         {!! Form::checkbox('exclude_sale_items', 1, $result['coupon'][0]->exclude_sale_items, ['class' => 'minimal']) !!}
                                                     </label>
-                                                    &nbsp; {{ trans('labels.ExcludeSaleItemsText') }}
+                                                    &nbsp;ExcludeSaleItemsText
                                                 </div>
                                             </div>
 
                                             <div class="form-group" style="display:none;">>
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Products') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">Products</label>
                                                 <div class="col-sm-10 col-md-4 couponProdcuts">
                                                     <select name="product_ids[]" multiple class="form-control select2">
                                                         @foreach($result['products'] as $products)
@@ -182,30 +182,30 @@
                                             </div>
 
                                             <div class="form-group" style="display:none;">>
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.ExcludeProducts') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">ExcludeProducts</label>
                                                 <div class="col-sm-10 col-md-4 couponProdcuts">
                                                     <select name="exclude_product_ids[]" multiple class="form-control select2 ">
                                                         @foreach($result['products'] as $products)
                                                             <option value="{{ $products->products_id }}" @if(in_array($products->products_id, explode(',', $result['coupon'][0]->exclude_product_ids))) selected @endif>{{ $products->products_name }} {{ $products->products_model }}</option>
                                                         @endforeach
                                                     </select>
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.ExcludeProductsText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">ExcludeProductsText</span>
                                                 </div>
                                             </div>
 
                                             <div class="form-group" style="display:none;">>
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.IncludeCategories') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">IncludeCategories</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select name="product_categories[]" multiple class="form-control select2">
                                                         @foreach($result['categories'] as $categories)
                                                             <option value="{{ $categories->categories_id }}" @if(in_array($categories->categories_id, explode(',', $result['coupon'][0]->product_categories))) selected @endif>{{ $categories->categories_name }}</option>
                                                         @endforeach
                                                     </select>
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.IncludeCategoriesText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">IncludeCategoriesText</span>
                                                 </div>
                                             </div>
                                             <div class="form-group" style="display:none;">>
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.ExcludeCategories') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">ExcludeCategories</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select name="excluded_product_categories[]" multiple class="form-control select2">
                                                         @foreach($result['categories'] as $categories)
@@ -217,7 +217,7 @@
                                             </div>
 
                                             <div class="form-group" style="display:none;">>
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.EmailRestrictions') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">EmailRestrictions</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     <select name="email_restrictions[]" multiple class="form-control select2">
                                                         @foreach($result['emails'] as $emails)
@@ -229,24 +229,24 @@
                                             </div>
 
                                             <div class="form-group" >
-                                                <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.UsageLimitPerCoupon') }}</label>
+                                                <label for="name" class="col-sm-2 col-md-3 control-label">UsageLimitPerCoupon</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::number('usage_limit', $result['coupon'][0]->usage_limit, array('class'=>'form-control', 'placeholder'=>'Unlimited', 'id'=>'usage_limit'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.UsageLimitPerCouponText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">UsageLimitPerCouponText</span>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.UsageLimitPerUser') }}</label>
                                                 <div class="col-sm-10 col-md-4">
                                                     {!! Form::number('usage_limit_per_user', $result['coupon'][0]->usage_limit_per_user, array('class'=>'form-control', 'placeholder'=>'Unlimited', 'id'=>'usage_limit_per_user'))!!}
-                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.UsageLimitPerUserText') }}</span>
+                                                    <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">UsageLimitPerUserText</span>
                                                 </div>
                                             </div>
 
                                             <!-- /.box-body -->
                                             <div class="box-footer text-center">
-                                                <button type="submit" class="btn btn-primary">{{ trans('labels.Submit') }}</button>
-                                                <a href="{{ URL::to('admin/coupons/display')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <a href="{{ URL::to('admin/coupons/display')}}" type="button" class="btn btn-default">back</a>
                                             </div>
                                             <!-- /.box-footer -->
                                             {!! Form::close() !!}

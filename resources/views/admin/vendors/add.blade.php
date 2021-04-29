@@ -3,11 +3,11 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> {{ trans('labels.AddVendor') }} <small>{{ trans('labels.AddVendor') }}...</small> </h1>
+        <h1> AddVendor <small>AddVendor...</small> </h1>
         <ol class="breadcrumb">
-            <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-            <li><a href="{{ URL::to('admin/vendors/display')}}"><i class="fa fa-users"></i> {{ trans('labels.ListingAllVendors') }}</a></li>
-            <li class="active">{{ trans('labels.AddVendor') }}</li>
+            <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+            <li><a href="{{ URL::to('admin/vendors/display')}}"><i class="fa fa-users"></i> ListingAllVendors</a></li>
+            <li class="active">AddVendor</li>
         </ol>
     </section>
 
@@ -20,7 +20,7 @@
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">{{ trans('labels.AddVendor') }} </h3>
+                        <h3 class="box-title">AddVendor </h3>
                     </div>
 
                     <!-- /.box-header -->
@@ -53,7 +53,7 @@
                                       {!! Form::open(array('url' =>'admin/vendors/add', 'method'=>'post', 'class' => 'form-horizontal form-validate', 'enctype'=>'multipart/form-data')) !!}
                                         
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Image') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Image </label>
                                           <div class="col-sm-10 col-md-4">
 
                                             <!-- Modal -->
@@ -76,7 +76,7 @@
                                                     @endif
                                                   </div>
                                                   <div class="modal-footer">
-                                                    <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left">{{ trans('labels.Add Image') }}</a>
+                                                    <a href="{{url('admin/media/add')}}" target="_blank" class="btn btn-primary pull-left">Add Image</a>
                                                     <button type="button" class="btn btn-default refresh-image"><i class="fa fa-refresh"></i></button>
                                                     <button type="button" class="btn btn-primary" id="selected" data-dismiss="modal">Done</button>
                                                   </div>
@@ -85,7 +85,7 @@
                                             </div>
 
                                             <div id="imageselected">
-                                              {!! Form::button(trans('labels.Add Image'), array('id'=>'newImage','class'=>"btn btn-primary ", 'data-toggle'=>"modal", 'data-target'=>"#Modalmanufactured" )) !!}
+                                              {!! Form::button(trans('Add Image'), array('id'=>'newImage','class'=>"btn btn-primary ", 'data-toggle'=>"modal", 'data-target'=>"#Modalmanufactured" )) !!}
                                               <br>
                                               <div id="selectedthumbnail" class="selectedthumbnail col-md-5"> </div>
                                               <div class="closimage">
@@ -95,72 +95,72 @@
                                                 </button>
                                               </div>
                                             </div>
-                                            <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.UploadVendorImageText') }}</span>
+                                            <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">UploadVendorImageText</span>
                                           </div>
                                         </div>
                                         <hr>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Name') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Name </label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('vendor_name',  '', array('class'=>'form-control field-validate', 'id'=>'vendor_name')) !!}
-                                            <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.VendorNameText') }}</span>
-                                            <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                            <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">VendorNameText</span>
+                                            <span class="help-block hidden">textRequiredFieldMessage</span>
                                           </div>
 
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('vendor_name_arabic',  '', array('class'=>'form-control field-validate', 'id'=>'vendor_name_arabic')) !!}
-                                            <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.VendorNameArabicText') }}</span>
-                                            <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                            <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">VendorNameArabicText</span>
+                                            <span class="help-block hidden">textRequiredFieldMessage</span>
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Telephone') }}</label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Telephone</label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('vendor_phone',  '', array('class'=>'form-control field-validate', 'id'=>'vendor_phone')) !!}
                                             <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                            {{ trans('labels.TelephoneText') }}</span>
+                                            TelephoneText</span>
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Address') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Address </label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('vendor_address',  '', array('class'=>'form-control field-validate', 'id'=>'vendor_address')) !!}
-                                            <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">{{ trans('labels.VendorAddressText') }}</span>
-                                            <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                            <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">VendorAddressText</span>
+                                            <span class="help-block hidden">textRequiredFieldMessage</span>
                                           </div>
                                         </div>
                                         <hr>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.EmailAddress') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">EmailAddress </label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::text('email',  '', array('class'=>'form-control email-validate', 'id'=>'email')) !!}
                                               <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                              {{ trans('labels.EmailText') }}</span>
-                                            <span class="help-block hidden"> {{ trans('labels.EmailError') }}</span>
+                                              EmailText</span>
+                                            <span class="help-block hidden"> EmailError</span>
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Password') }}</label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Password</label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::password('password', array('class'=>'form-control field-validate', 'id'=>'password')) !!}
                                             <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                            {{ trans('labels.PasswordText') }}</span>
-                                            <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                            PasswordText</span>
+                                            <span class="help-block hidden">textRequiredFieldMessage</span>
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Confirm Password') }}</label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Confirm Password</label>
                                           <div class="col-sm-10 col-md-4">
                                             {!! Form::password('confirm_password', array('class'=>'form-control field-validate', 'id'=>'confirm_password')) !!}
                                             <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                            {{ trans('labels.ConfirmPasswordText') }}</span>
-                                            <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                            ConfirmPasswordText</span>
+                                            <span class="help-block hidden">textRequiredFieldMessage</span>
                                           </div>
                                         </div>                                        
                                           
@@ -183,32 +183,33 @@
                                         <hr>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Current Status') }}</label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Current Status</label>
                                           <div class="col-sm-10 col-md-4">
                                             <label>
-                                              <input type="radio" name="vendor_open" value="1" class="minimal" checked> {{ trans('labels.Open') }}
+                                              <input type="radio" name="vendor_open" value="1" class="minimal" checked>                                               <input type="radio" name="vendor_open" value="1" class="minimal" checked> {{ trans('labels.Open') }}
+
                                             </label><br>
 
                                             <label>
-                                              <input type="radio" name="vendor_open" value="0" class="minimal"> {{ trans('labels.Close') }}
+                                              <input type="radio" name="vendor_open" value="0" class="minimal">Close
                                             </label>
                                           </div>
                                         </div>
 
                                         <div class="form-group">
-                                          <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Status') }} </label>
+                                          <label for="name" class="col-sm-2 col-md-3 control-label">Close </label>
                                           <div class="col-sm-10 col-md-4">
                                             <select class="form-control" name="isActive">
-                                              <option value="1">{{ trans('labels.Active') }}</option>
-                                              <option value="0">{{ trans('labels.Inactive') }}</option>
+                                              <option value="1">Active</option>
+                                              <option value="0">Inactive</option>
                                             </select>
                                           <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                          {{ trans('labels.StatusText') }}</span>
+                                          StatusText</span>
                                           </div>
                                         </div>
                                         <div class="box-footer text-center">
-                                            <button type="submit" class="btn btn-primary">{{ trans('labels.Submit') }}</button>
-                                            <a href="{{ URL::to('admin/vendors/display')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <a href="{{ URL::to('admin/vendors/display')}}" type="button" class="btn btn-default">back</a>
                                         </div>
 
                                       {!! Form::close() !!}

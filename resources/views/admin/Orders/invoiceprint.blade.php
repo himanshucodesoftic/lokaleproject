@@ -17,14 +17,14 @@
        @if(session()->has('message'))
       	<div class="alert alert-success alert-dismissible">
            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-           <h4><i class="icon fa fa-check"></i> {{ trans('labels.Successlabel') }}</h4>
+           <h4><i class="icon fa fa-check"></i> Successlabel</h4>
             {{ session()->get('message') }}
         </div>
         @endif
         @if(session()->has('error'))
         	<div class="alert alert-warning alert-dismissible">
                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-               <h4><i class="icon fa fa-warning"></i> {{ trans('labels.WarningLabel') }}</h4>
+               <h4><i class="icon fa fa-warning"></i> WarningLabel</h4>
                 {{ session()->get('error') }}
             </div>
         @endif
@@ -35,8 +35,8 @@
       <div class="row">
         <div class="col-xs-12">
           <h2 class="page-header" style="padding-bottom: 25px">
-            <i class="fa fa-globe"></i> {{ trans('labels.OrderID') }}# {{ $data['orders_data'][0]->orders_id }} 
-            <small class="pull-right">{{ trans('labels.OrderedDate') }}: {{ date('m/d/Y', strtotime($data['orders_data'][0]->date_purchased)) }}</small>
+            <i class="fa fa-globe"></i> OrderID# {{ $data['orders_data'][0]->orders_id }} 
+            <small class="pull-right">OrderedDate: {{ date('m/d/Y', strtotime($data['orders_data'][0]->date_purchased)) }}</small>
           </h2>
         </div>
         <!-- /.col -->
@@ -44,7 +44,7 @@
       <!-- info row -->
       <div class="row invoice-info">
         <div class="col-sm-4 invoice-col">
-          {{ trans('labels.CustomerInfo') }}:
+        CustomerInfo:
           <address>
             <strong>{{ $data['orders_data'][0]->customers_name }}</strong><br>
             {{ $data['orders_data'][0]->customers_street_address }} <br>
@@ -55,7 +55,7 @@
         </div>
         <!-- /.col -->
         <div class="col-sm-4 invoice-col">
-          {{ trans('labels.ShippingInfo') }}
+        ShippingInfo
           <address>
             <strong>{{ $data['orders_data'][0]->delivery_name }}</strong><br>
             {{ trans('labels.Phone') }}: {{ $data['orders_data'][0]->delivery_phone }}<br>
@@ -70,7 +70,7 @@
         </div>
         <!-- /.col -->
         <div class="col-sm-4 invoice-col">
-         {{ trans('labels.BillingInfo') }} 
+        BillingInfo
           <address>
             <strong>{{ $data['orders_data'][0]->billing_name }}</strong><br>
             {{ trans('labels.Phone') }}: {{ $data['orders_data'][0]->billing_phone }}<br>
@@ -88,11 +88,11 @@
           <table class="table table-striped">
             <thead>
             <tr>
-              <th>{{ trans('labels.Qty') }}</th>
-              <th>{{ trans('labels.ProductName') }}</th>
-              <th>{{ trans('labels.ProductModal') }}</th>
-              <th>{{ trans('labels.Options') }}</th>
-              <th>{{ trans('labels.Price') }}</th>
+              <th>Qty</th>
+              <th>ProductName</th>
+              <th>ProductModal</th>
+              <th>Options</th>
+              <th>Price</th>
             </tr>
             </thead>
             <tbody>
@@ -130,16 +130,16 @@
       <div class="row">
         <!-- accepted payments column -->
         <div class="col-xs-7">
-          <p class="lead" style="margin-bottom:10px">{{ trans('labels.PaymentMethods') }}:</p>
+          <p class="lead" style="margin-bottom:10px">PaymentMethods:</p>
           <p class="text-muted well well-sm no-shadow" style="text-transform:capitalize">
            	{{ str_replace('_',' ', $data['orders_data'][0]->payment_method) }}
           </p>
           @if(!empty($data['orders_data'][0]->coupon_code))
-              <p class="lead" style="margin-bottom:10px">{{ trans('labels.Coupons') }}:</p>
+              <p class="lead" style="margin-bottom:10px">Coupons:</p>
                 <table class="text-muted well well-sm no-shadow stripe-border table table-striped" style="text-align: center; ">
                 	<tr>
-                        <th style="text-align: center; ">{{ trans('labels.Code') }}</th>
-                        <th style="text-align: center; ">{{ trans('labels.Amount') }}</th>
+                        <th style="text-align: center; ">Code</th>
+                        <th style="text-align: center; ">Amount</th>
                     </tr>
                 	@foreach( json_decode($data['orders_data'][0]->coupon_code) as $couponData)
                     	<tr>
@@ -170,32 +170,32 @@
           <div class="table-responsive ">
             <table class="table order-table">
               <tr>
-                <th style="width:50%">{{ trans('labels.Subtotal') }}:</th>
+                <th style="width:50%">Subtotal:</th>
                 <td>
                   @if(!empty($result['commonContent']['currency']->symbol_left)) {{$result['commonContent']['currency']->symbol_left}} @endif {{ $data['subtotal'] }} @if(!empty($result['commonContent']['currency']->symbol_right)) {{$result['commonContent']['currency']->symbol_right}} @endif
                   </td>
               </tr>
               <tr>
-                <th>{{ trans('labels.Tax') }}:</th>
+                <th>Tax:</th>
                 <td>
                   @if(!empty($result['commonContent']['currency']->symbol_left)) {{$result['commonContent']['currency']->symbol_left}} @endif {{ $data['orders_data'][0]->total_tax }} @if(!empty($result['commonContent']['currency']->symbol_right)) {{$result['commonContent']['currency']->symbol_right}} @endif
                   </td>
               </tr>
               <tr>
-                <th>{{ trans('labels.ShippingCost') }}:</th>
+                <th>ShippingCost:</th>
                 <td>
                   @if(!empty($result['commonContent']['currency']->symbol_left)) {{$result['commonContent']['currency']->symbol_left}} @endif {{ $data['orders_data'][0]->shipping_cost }} @if(!empty($result['commonContent']['currency']->symbol_right)) {{$result['commonContent']['currency']->symbol_right}}@endif
                   </td>
               </tr>
               @if(!empty($data['orders_data'][0]->coupon_code))
               <tr>
-                <th>{{ trans('labels.DicountCoupon') }}:</th>
+                <th>DicountCoupon:</th>
                 <td>                  
                   @if(!empty($result['commonContent']['currency']->symbol_left)) {{$result['commonContent']['currency']->symbol_left}} @endif {{ $data['orders_data'][0]->coupon_amount }} @if(!empty($result['commonContent']['currency']->symbol_right)) {{$result['commonContent']['currency']->symbol_right}} @endif</td>
               </tr>
               @endif
               <tr>
-                <th>{{ trans('labels.Total') }}:</th>
+                <th>Total:</th>
                 <td>
                   @if(!empty($result['commonContent']['currency']->symbol_left)) {{$result['commonContent']['currency']->symbol_left}} @endif {{ $data['orders_data'][0]->order_price }} @if(!empty($result['commonContent']['currency']->symbol_right)) {{$result['commonContent']['currency']->symbol_right}} @endif</td>
                   </td>
@@ -205,7 +205,7 @@
               
         </div>     
         <div class="col-xs-12">
-        	<p class="lead" style="margin-bottom:10px">{{ trans('labels.Orderinformation') }}:</p>
+        	<p class="lead" style="margin-bottom:10px">Orderinformation:</p>
         	<p class="text-muted well well-sm no-shadow" style="text-transform:capitalize; word-break:break-all;">
             @if(trim($data['orders_data'][0]->order_information) != '[]' and !empty($data['orders_data'][0]->order_information))
            		{{ $data['orders_data'][0]->order_information }}

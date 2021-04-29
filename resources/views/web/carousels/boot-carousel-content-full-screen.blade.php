@@ -1,14 +1,14 @@
-<div id="tt-pageContent" style="height:300px;" >
+<div id="tt-pageContent" >
 	<div class="container-indent nomargin" >
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row" style="height:500px;">
 				<div class="slider-revolution revolution-default">
 					<div class="tp-banner-container">
 						<div class="tp-banner revolution">
 							<ul>
 						
 								<li data-transition="fade" class="second-slide" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
-									<img src="{{asset('https://lokalkw.com/images/banner.jpg')}}"   alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
+									<img src="{{url('images/banner1.jpg')}}"   alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
 									<div class="tp-caption tp-caption1 lft stb"
 										data-x="center"
 										data-y="center"
@@ -25,7 +25,7 @@
 									</div>
 								</li>
 								<li data-transition="fade" class="second-slide" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
-									<img src="{{asset('https://lokalkw.com/images/banner.jpg')}}"  alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
+									<img src="{{url('images/banner2.jpg')}}"  alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
 									<div class="tp-caption tp-caption1 lft stb"
 										data-x="center"
 										data-y="center"
@@ -42,7 +42,7 @@
 									</div>
 								</li>
 								<li data-transition="fade" class="second-slide" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
-									<img src="https://lokalkw.com/images/banner.jpg"  alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
+									<img src="{{url('images/banner3.jpg')}}"  alt="slide1"   data-bgfit="cover" data-bgrepeat="no-repeat" >
 									<div class="tp-caption tp-caption1 lft stb"
 										data-x="center"
 										data-y="center"

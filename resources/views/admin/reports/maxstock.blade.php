@@ -3,10 +3,10 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1> {{ trans('labels.Max Stock Report') }} <small>{{ trans('labels.Max Stock Report') }}...</small> </h1>
+    <h1> Max Stock Report <small>Max Stock Report...</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-      <li class="active">{{ trans('labels.Max Stock Report') }}</li>
+      <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+      <li class="active">Max Stock Report</li>
     </ol>
   </section>
 
@@ -17,12 +17,12 @@
       <div class="col-md-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">{{ trans('labels.Max Stock Report') }} </h3>
+            <h3 class="box-title">Max Stock Report </h3>
 
             <div class="box-tools pull-right">
               <form action="{{ URL::to('admin/maxstockprint')}}" target="_blank">
                 <input type="hidden" name="page" value="invioce">
-                <button type='submit' class="btn btn-default pull-right"><i class="fa fa-print"></i> {{ trans('labels.Print') }}</button>
+                <button type='submit' class="btn btn-default pull-right"><i class="fa fa-print"></i> Print</button>
               </form>
             </div>
           </div>
@@ -33,10 +33,10 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>{{ trans('labels.ProductID') }}</th>
-                      <th>{{ trans('labels.ProductName') }}</th>
-                      <th>{{ trans('labels.Max Level') }}</th>
-                      <th>{{ trans('labels.Current Stock') }}</th>
+                      <th>ProductID</th>
+                      <th>ProductName</th>
+                      <th>Max Level</th>
+                      <th>Current Stock</th>
                       <th></th>
                     </tr>
                   </thead>

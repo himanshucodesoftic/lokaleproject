@@ -50,13 +50,13 @@
         <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                      <th>{{ trans('labels.Coupon Code') }}</th>
-                      <th>{{ trans('labels.Discount') }}</th>
-                      <th>{{ trans('labels.OrderID') }}</th>
-                      <th>{{ trans('labels.CustomerName') }}</th>
-                      <th>{{ trans('labels.OrderTotal') }}</th>
-                      <th>{{ trans('labels.Order Date') }}</th>
-                      <th>{{ trans('labels.Action') }}</th>
+                      <th>Coupon Code</th>
+                      <th>Discount</th>
+                      <th>OrderID</th>
+                      <th>CustomerName</th>
+                      <th>OrderTotal</th>
+                      <th>Order Date</th>
+                      <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -79,7 +79,7 @@
                     @endforeach
                   @else
                   	<tr>
-                    	<td colspan="6"><strong>{{ trans('labels.NoRecordFound') }}</strong></td>
+                    	<td colspan="6"><strong>NoRecordFound</strong></td>
                     </tr>
                   @endif
                   </tbody>

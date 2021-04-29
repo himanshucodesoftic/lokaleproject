@@ -3,11 +3,11 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> {{ trans('labels.Edit Currency') }} <small>{{ trans('labels.Edit Currency') }}...</small> </h1>
+        <h1> Edit Currency <small>Edit Currency...</small> </h1>
         <ol class="breadcrumb">
-            <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-            <li><a href="{{ URL::to('admin/currencies/display')}}"><i class="fa fa-gears"></i> {{ trans('labels.Currency') }}</a></li>
-            <li class="active">{{ trans('labels.Edit Currency') }}</li>
+            <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+            <li><a href="{{ URL::to('admin/currencies/display')}}"><i class="fa fa-gears"></i> Currency</a></li>
+            <li class="active">Edit Currency</li>
         </ol>
     </section>
 
@@ -20,7 +20,7 @@
             <div class="col-md-12">
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">{{ trans('labels.Edit Currency') }} </h3>
+                        <h3 class="box-title">Edit Currency</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
@@ -60,21 +60,21 @@
                                         <input type="hidden" name="warning" value="{{$result['warning']}}" />
                                         <div class="form-group">
                                             <label for="name"
-                                                class="col-sm-2 col-md-3 control-label">{{ trans('labels.title') }}
+                                                class="col-sm-2 col-md-3 control-label">title
                                             </label>
                                             <div class="col-sm-10 col-md-4">
                                                 {!! Form::text('title', $result['currency']->title, array('class'=>'form-control
                                                 field-validate', 'id'=>'title'))!!}
                                                 <span class="help-block"
                                                     style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                    {{ trans('labels.title') }}</span>
+                                                    title</span>
                                                 <span
-                                                    class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                    class="help-block hidden">textRequiredFieldMessage</span>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.Country') }} </label>
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">Country </label>
                                             <div class="col-sm-10 col-md-4">
                                                 <select class="form-control field-validate" name="code">
                                                   @foreach($currencies as $currency)
@@ -83,14 +83,14 @@
                                                 </select>
                                                 <span class="help-block"
                                                 style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                {{ trans('labels.Choose Country') }}</span>
+                                                Choose Country</span>
 
                                             </div>
                                           </div>
 
                                           <div class="form-group">
                                             <label for="name"
-                                                class="col-sm-2 col-md-3 control-label">{{ trans('labels.symbol') }}
+                                                class="col-sm-2 col-md-3 control-label">symbol
                                             </label>
                                             <div class="col-sm-10 col-md-4">
 
@@ -104,56 +104,56 @@
 
                                                 <span class="help-block"
                                                     style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                    {{ trans('labels.symbol text') }}</span>
+                                                    symbol text</span>
                                             </div>
                                         </div>
 
                                         <div class="form-group">
                                             <label for="name"
-                                                class="col-sm-2 col-md-3 control-label">{{ trans('labels.Position') }}</label>
+                                                class="col-sm-2 col-md-3 control-label">Position</label>
                                             <div class="col-sm-10 col-md-4">
                                                 <select class="form-control" name="position">
-                                                    <option value="left" @if(!empty($result['currency']->symbol_left)) selected @endif>{{ trans('labels.Left') }}</option>
-                                                    <option value="right" @if(!empty($result['currency']->symbol_right)) selected @endif>{{ trans('labels.Right') }}</option>
+                                                    <option value="left" @if(!empty($result['currency']->symbol_left)) selected @endif>Left</option>
+                                                    <option value="right" @if(!empty($result['currency']->symbol_right)) selected @endif>Right</option>
                                                 </select>
                                                 <span class="help-block"
                                             style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                            {{ trans('labels.Choose position of the currency') }}</span>
+                                            Choose position of the currency</span>
                                             </div>  
                                         </div>    
 
                                         <div class="form-group" style="display: none">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.decimal_point') }}
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">decimal_point
                                             </label>
                                             <div class="col-sm-10 col-md-4">
                                                 {!! Form::text('decimal_point',  $result['currency']->decimal_point, array('class'=>'form-control', 'id'=>'decimal_point'))!!}
                                                 <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                   {{ trans('labels.decimal_point') }}</span>
-                                                <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                decimal_point</span>
+                                                <span class="help-block hidden">textRequiredFieldMessage</span>
                                             </div>
                                         </div>
                                         <div class="form-group" style="display: none">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.thousands_point') }}
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">thousands_point
                                             </label>
                                             <div class="col-sm-10 col-md-4">
                                                 {!! Form::text('thousands_point',  $result['currency']->thousands_point, array('class'=>'form-control', 'id'=>'thousands_point'))!!}
                                                 <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                   {{ trans('labels.thousands_point') }}</span>
-                                                <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                thousands_point</span>
+                                                <span class="help-block hidden">textRequiredFieldMessage</span>
                                             </div>
                                         </div>
                                         <div class="form-group" >
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.decimal_places') }}
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">decimal_places
                                             </label>
                                             <div class="col-sm-10 col-md-4">
                                                 {!! Form::text('decimal_places',  $result['currency']->decimal_places, array('class'=>'form-control field-validate', 'id'=>'decimal_places'))!!}
                                                 <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                   {{ trans('labels.decimal_places') }}</span>
-                                                <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+                                                decimal_places</span>
+                                                <span class="help-block hidden">textRequiredFieldMessage</span>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="name" class="col-sm-2 col-md-3 control-label">{{ trans('labels.value') }}
+                                            <label for="name" class="col-sm-2 col-md-3 control-label">value
                                             </label>
                                             <div class="col-sm-10 col-md-4">
                                                 @if($result['currency']->is_default==1)
@@ -162,13 +162,13 @@
                                                     {!! Form::text('value',  $result['currency']->value, array('class'=>'form-control field-validate', 'id'=>'value'))!!}
                                                 @endif
                                                 <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                                   {{ trans('labels.value') }}</span>
+                                                value</span>
                                             </div>
                                         </div>
                                         <!-- /.box-body -->
                                         <div class="box-footer text-center">
-                                            <button type="submit" class="btn btn-primary">{{ trans('labels.Submit') }}</button>
-                                            <a href="{{ URL::to('admin/currencies/display')}}" type="button" class="btn btn-default">{{ trans('labels.back') }}</a>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <a href="{{ URL::to('admin/currencies/display')}}" type="button" class="btn btn-default">back</a>
                                         </div>
                                         <!-- /.box-footer -->
 

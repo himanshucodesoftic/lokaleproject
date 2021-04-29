@@ -3,10 +3,10 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1>{{ trans('labels.Coupon Report') }} <small>{{ trans('labels.Coupon Report') }}...</small> </h1>
+    <h1>Coupon Report<small>Coupon Report...</small> </h1>
     <ol class="breadcrumb">
       <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-      <li class="active">{{ trans('labels.Coupon Report') }}</li>
+      <li class="active">Coupon Report</li>
     </ol>
   </section>
 
@@ -22,7 +22,7 @@
           <!-- MAP & BOX PANE -->
           <div class="box box-success">
             <div class="box-header with-border">
-              <h3 class="box-title">{{ trans('labels.Filter') }}</h3>
+              <h3 class="box-title">Filter</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -37,14 +37,14 @@
               <div class="box-body">
                 <div class="col-xs-3">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">{{ trans('labels.Choose start and end date') }}</label>
+                    <label for="exampleInputEmail1">Choose start and end date</label>
                     <input class="form-control reservation dateRange" placeholder="{{ trans('labels.Choose start and end date') }}" readonly value="{{app('request')->input('dateRange')}}" name="dateRange" aria-label="Text input with multiple buttons ">
                   </div>
                 </div>
 
                 <div class="col-xs-3">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">{{ trans('labels.Coupon Code') }}</label>
+                    <label for="exampleInputEmail1">Coupon Code</label>
                     <input class="form-control" placeholder="{{ trans('labels.Coupon Code') }}" value="{{app('request')->input('couponcode')}}" name="couponcode" aria-label="Text input with multiple buttons ">
                   </div>
                 </div>
@@ -78,7 +78,7 @@
                       <input type="hidden" name="page" value="invioce">
                       <input type="hidden" name="couponcode" value="{{app('request')->input('couponcode')}}">
                       <input type="hidden" name="dateRange" value="{{app('request')->input('dateRange')}}">
-                      <button type='submit' class="btn btn-default pull-right"><i class="fa fa-print"></i> {{ trans('labels.Print') }}</button>
+                      <button type='submit' class="btn btn-default pull-right"><i class="fa fa-print"></i> Print</button>
                     </form>
                   </div>
                 </div>
@@ -91,13 +91,13 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                      <th>{{ trans('labels.Coupon Code') }}</th>
-                      <th>{{ trans('labels.Discount') }}</th>
-                      <th>{{ trans('labels.OrderID') }}</th>
-                      <th>{{ trans('labels.CustomerName') }}</th>
-                      <th>{{ trans('labels.OrderTotal') }}</th>
-                      <th>{{ trans('labels.Order Date') }}</th>
-                      <th>{{ trans('labels.Action') }}</th>
+                      <th>Coupon Code</th>
+                      <th>Discount</th>
+                      <th>OrderID</th>
+                      <th>CustomerName</th>
+                      <th>OrderTotal</th>
+                      <th>Order Date</th>
+                      <th>Action</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -120,7 +120,7 @@
                     @endforeach
                   @else
                   	<tr>
-                    	<td colspan="6"><strong>{{ trans('labels.NoRecordFound') }}</strong></td>
+                    	<td colspan="6"><strong>NoRecordFound</strong></td>
                     </tr>
                   @endif
                   </tbody>

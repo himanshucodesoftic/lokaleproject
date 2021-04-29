@@ -23,7 +23,7 @@
               @if(app('request')->input('dateRange'))
                 <div class="col-xs-6">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">{{ trans('labels.Date') }}</label>
+                    <label for="exampleInputEmail1">Date</label>
                     <p>{{app('request')->input('dateRange')}}</p>
                   </div>
                 </div>
@@ -31,7 +31,7 @@
                 @if( app('request')->input('products_id'))
                 <div class="col-xs-6">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">{{ trans('labels.Products') }}</label>
+                    <label for="exampleInputEmail1">Products</label>
                         @foreach($result['products'] as $product)
                         <p> @if( app('request')->input('products_id' ) == $product->products_id) {{ $product->products_name }} @endif </p>
                         @endforeach
@@ -69,10 +69,10 @@
             <table id="example1" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>{{ trans('labels.Date') }}</th>
-                  <th>{{ trans('labels.In Stock') }}</th>
-                  <th>{{ trans('labels.Out Stock') }}</th>
-                  <th>{{ trans('labels.Reference') }}</th>
+                  <th>Date</th>
+                  <th>In Stock</th>
+                  <th>Out Stock</th>
+                  <th>Reference</th>
                 </tr>
               </thead>
               <tbody>

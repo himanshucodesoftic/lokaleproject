@@ -3,10 +3,10 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>  {{ trans('labels.Coupons') }} <small>{{ trans('labels.ListingAllCoupons') }}...</small> </h1>
+            <h1>  Coupons <small>ListingAllCoupons...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li class="active"> {{ trans('labels.Coupons') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+                <li class="active"> Coupons</li>
             </ol>
         </section>
 
@@ -20,7 +20,7 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header">
-                            {{--<h3 class="box-title">{{ trans('labels.ListingAllCoupons') }} </h3>--}}
+                            {{--<h3 class="box-title">ListingAllCoupons </h3>--}}
 
                             <div class="col-lg-6 form-inline" id="contact-form">
 
@@ -31,7 +31,7 @@
                                     <div class="input-group-form search-panel ">
                                         <select type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown" name="FilterBy" id="FilterBy"  >
                                             <option value="" selected disabled hidden>Filter By</option>
-                                            <option value="Code"  @if(isset($name)) @if  ($name == "Code") {{ 'selected' }} @endif @endif>{{ trans('labels.Code') }}</option>
+                                            <option value="Code"  @if(isset($name)) @if  ($name == "Code") {{ 'selected' }} @endif @endif>Code</option>
                                         </select>
                                         {{--</div>--}}
 
@@ -70,13 +70,13 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                         <tr>
-                                            <th>@sortablelink('coupans_id', trans('labels.ID') )</th>
-                                            <th>@sortablelink('code', trans('labels.Code') )</th>
-                                            <th>@sortablelink('discount_type', trans('labels.CouponType') )</th>
-                                            <th>@sortablelink('amount', trans('labels.CouponAmount') )</th>
-                                            <th>@sortablelink('description', trans('labels.Description') )</th>
-                                            <th>@sortablelink('expiry_date', trans('labels.ExpiryDate') )</th>
-                                            <th>{{ trans('labels.Action') }}</th>
+                                            <th>@sortablelink('coupans_id', trans('ID') )</th>
+                                            <th>@sortablelink('code', trans('Code') )</th>
+                                            <th>@sortablelink('discount_type', trans('CouponType') )</th>
+                                            <th>@sortablelink('amount', trans('CouponAmount') )</th>
+                                            <th>@sortablelink('description', trans('Description') )</th>
+                                            <th>@sortablelink('expiry_date', trans('ExpiryDate') )</th>
+                                            <th>{{ trans('Action') }}</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -105,7 +105,7 @@
                                             @endforeach
                                         @else
                                             <tr>
-                                                <td colspan="8"><strong>{{ trans('labels.NoRecordFound') }}</strong></td>
+                                                <td colspan="8"><strong>NoRecordFound</strong></td>
                                             </tr>
                                         @endif
                                         </tbody>
@@ -132,18 +132,18 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="deleteCoupanModalLabel">{{ trans('labels.DeleteCoupon') }}</h4>
+                            <h4 class="modal-title" id="deleteCoupanModalLabel">DeleteCoupon</h4>
                         </div>
                         {!! Form::open(array('url' =>'admin/coupons/delete', 'name'=>'deleteCoupan', 'id'=>'deleteCoupan', 'method'=>'post', 'class' => 'form-horizontal', 'enctype'=>'multipart/form-data')) !!}
                         {!! Form::hidden('action',  'delete', array('class'=>'form-control')) !!}
                         {!! Form::hidden('id',  '', array('class'=>'form-control', 'id'=>'coupans_id')) !!}
                         <div class="modal-body">
-                            <p>{{ trans('labels.DeleteCouponText') }}</p>
+                            <p>DeleteCouponText</p>
                         </div>
                         <div class="modal-footer">
 
-                            <button type="submit" class="btn btn-danger" id="deleteCoupanBtn">{{ trans('labels.Delete') }} </button>
-                            <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
+                            <button type="submit" class="btn btn-danger" id="deleteCoupanBtn">Delete </button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
                         </div>
                         {!! Form::close() !!}

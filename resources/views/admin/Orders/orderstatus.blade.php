@@ -3,10 +3,10 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-            <h1>  {{ trans('labels.OrderStatus') }} <small>{{ trans('labels.ListingOrderStatus') }}...</small> </h1>
+            <h1>OrderStatus<small>ListingOrderStatus...</small> </h1>
             <ol class="breadcrumb">
-                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-                <li class="active"> {{ trans('labels.OrderStatus') }}</li>
+                <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i>breadcrumb_dashboard</a></li>
+                <li class="active"> OrderStatus</li>
             </ol>
         </section>
 
@@ -20,9 +20,9 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">{{ trans('labels.ListingOrderStatus') }} </h3>
+                            <h3 class="box-title">ListingOrderStatus </h3>
                             <div class="box-tools pull-right">
-                                <a href="addorderstatus" type="button" class="btn btn-block btn-primary">{{ trans('labels.AddOrderStatus') }}</a>
+                                <a href="addorderstatus" type="button" class="btn btn-block btn-primary">AddOrderStatus</a>
                             </div>
                         </div>
 
@@ -45,10 +45,10 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                         <tr>
-                                            <th>{{ trans('labels.ID') }}</th>
-                                            <th>{{ trans('labels.OrderStatus') }}</th>
-                                            <th style="display:none">{{ trans('labels.Default') }}</th>
-                                            <th>{{ trans('labels.Action') }}</th>
+                                            <th>ID</th>
+                                            <th>OrderStatus</th>
+                                            <th style="display:none">Default</th>
+                                            <th>Action</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -84,17 +84,17 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="deleteOrderStatusModalLabel">{{ trans('labels.DeleteOrderStatus') }}</h4>
+                            <h4 class="modal-title" id="deleteOrderStatusModalLabel">DeleteOrderStatus</h4>
                         </div>
                         {!! Form::open(array('url' =>'admin/orders/deleteOrderStatus', 'name'=>'deleteOrderStatus', 'id'=>'deleteOrderStatus', 'method'=>'post', 'class' => 'form-horizontal', 'enctype'=>'multipart/form-data')) !!}
                         {!! Form::hidden('action',  'delete', array('class'=>'form-control')) !!}
                         {!! Form::hidden('id',  '', array('class'=>'form-control', 'id'=>'orders_status_id')) !!}
                         <div class="modal-body">
-                            <p>{{ trans('labels.DeleteOrderStatusText') }}</p>
+                            <p>DeleteOrderStatusText</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
-                            <button type="submit" class="btn btn-primary" id="deleteOrderStatus">{{ trans('labels.Delete') }}</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" id="deleteOrderStatus">Delete</button>
                         </div>
                         {!! Form::close() !!}
                     </div>

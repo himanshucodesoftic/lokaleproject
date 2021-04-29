@@ -19,10 +19,10 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>{{ trans('labels.ProductID') }}</th>
-                <th>{{ trans('labels.ProductName') }}</th>
-                <th>{{ trans('labels.Max Level') }}</th>
-                <th>{{ trans('labels.Current Stock') }}</th>
+                <th>ProductID</th>
+                <th>ProductName</th>
+                <th>Max Level</th>
+                <th>Current Stock</th>
               </tr>
             </thead>
               <tbody>

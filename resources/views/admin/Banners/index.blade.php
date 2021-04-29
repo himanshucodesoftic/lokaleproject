@@ -131,7 +131,7 @@
                         {!! Form::hidden('action',  'delete', array('class'=>'form-control')) !!}
                         {!! Form::hidden('banners_id',  '', array('class'=>'form-control', 'id'=>'banners_id')) !!}
                         <div class="modal-body">
-                            <p>{{ trans('labels.DeleteBannerText') }}</p>
+                            <p>DeleteBannerText</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

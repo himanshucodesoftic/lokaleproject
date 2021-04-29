@@ -4,10 +4,10 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-            <small>{{ trans('labels.title_dashboard') }} {{$result['commonContent']['setting']['admin_version']}}</small>
+            <small>title_dashboard {{$result['commonContent']['setting']['admin_version']}}</small>
             </h1>
             <ol class="breadcrumb">
-                <li class="active"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</li>
+                <li class="active"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</li>
             </ol>
         </section>
        
@@ -21,12 +21,12 @@
                     <div class="inner">
                       <h3>{{ $result['totalCustomers'] }}</h3>
 
-                      <p>{{ trans('labels.customerRegistrations') }}</p>
+                      <p>customerRegistrations</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-person-add"></i>
                     </div>
-                    <a href="{{ URL::to('admin/customers/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.viewAllCustomers') }}">{{ trans('labels.viewAllCustomers') }}  <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{ URL::to('admin/customers/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="viewAllCustomers">viewAllCustomers  <i class="fa fa-arrow-circle-right"></i></a>
                   </div>
                 </div>
                 <!-- ./col -->
@@ -34,14 +34,14 @@
                   <!-- small box -->
                   <div class="small-box bg-green">
                     <div class="inner">
-                      <h3>{{ $result['totalProducts'] }}</h3>
+                      <h3>totalProducts</h3>
 
-                      <p>{{ trans('labels.totalProducts') }}</p>
+                      <p>totalProducts</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-pie-graph"></i>
                     </div>
-                    <a href="{{ URL::to('admin/products/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.viewAllProducts') }}">{{ trans('labels.viewAllProducts') }} <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{ URL::to('admin/products/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.viewAllProducts') }}">viewAllProducts <i class="fa fa-arrow-circle-right"></i></a>
                   </div>
                 </div>
                 
@@ -50,12 +50,12 @@
                     <div class="small-box bg-light-blue">
                       <div class="inner">
                       <h3>{{count($result['completed_orders'])}}</h3>
-                        <p>{{ trans('labels.CompleteOrders') }}</p>
+                        <p>CompleteOrders</p>
                       </div>
                       <div class="icon">
                         <i class="ion ion-bag"></i>
                       </div>
-                      <a href="{{ URL::to('admin/orders/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.viewAllOrders') }}">{{ trans('labels.viewAllOrders') }} <i class="fa fa-arrow-circle-right"></i></a>
+                      <a href="{{ URL::to('admin/orders/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.viewAllOrders') }}">viewAllOrders <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                 <!-- ./col -->
@@ -67,12 +67,12 @@
                   <div class="small-box bg-aqua">
                     <div class="inner">
                       <h3>{{ count($result['pending_orders']) }}</h3>
-        			        <p>{{ trans('labels.NewOrders') }}</p>
+        			        <p>NewOrders</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-bag"></i>
                     </div>
-                    <a href="{{ URL::to('admin/orders/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.NewOrders') }}">{{ trans('labels.NewOrders') }} <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{ URL::to('admin/orders/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.NewOrders') }}">NewOrders <i class="fa fa-arrow-circle-right"></i></a>
                   </div>
                 </div>
                 <!-- ./col -->
@@ -95,12 +95,12 @@
                       @endif
                       </b>
                       </h3>
-                        <p>{{ trans('labels.Total Money Earned') }}</p>
+                        <p>Total Money Earned</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-bag"></i>
                     </div>
-                    <a href="{{ URL::to('admin/orders/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.viewAllOrders') }}">{{ trans('labels.viewAllOrders') }} <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{ URL::to('admin/orders/display')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="viewAllOrders">viewAllOrders <i class="fa fa-arrow-circle-right"></i></a>
                   </div>
                 </div>
                 <!-- ./col -->
@@ -110,12 +110,12 @@
                   <div class="small-box bg-red">
                     <div class="inner">
                       <h3>{{ $result['outOfStock'] }} </h3>
-                      <p>{{ trans('labels.outOfStock') }}</p>
+                      <p>outOfStock</p>
                     </div>
                     <div class="icon">
                       <i class="ion ion-stats-bars"></i>
                     </div>
-                    <a href="{{ URL::to('admin/outofstock')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.outOfStock') }}">{{ trans('labels.outOfStock') }} <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="{{ URL::to('admin/outofstock')}}" class="small-box-footer" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.outOfStock') }}">outOfStock <i class="fa fa-arrow-circle-right"></i></a>
                   </div>
                 </div>
                 @endif
@@ -126,23 +126,23 @@
                 <div class="col-sm-12">
                     <div class="nav-tabs-custom">
                         <div class="box-header with-border">
-                            <h3 class="box-title"> {{ trans('labels.addedSaleReport') }}</h3>
+                            <h3 class="box-title"> addedSaleReport</h3>
                             <div class="box-tools pull-right">
-                                <p class="notify-colors"><span class="sold-content" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.totalsales') }}"></span> {{ trans('labels.totalsales') }}  <span class="purchased-content" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.totalcustomers') }}"></span>{{ trans('labels.totalcustomers') }} </p>
+                                <p class="notify-colors"><span class="sold-content" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.totalsales') }}"></span> totalsales  <span class="purchased-content" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.totalcustomers') }}"></span>totalcustomers </p>
                             </div>
                         </div>
                         {!! Form::hidden('reportBase',  $result['reportBase'] , array('id'=>'reportBase')) !!}
                         <ul class="nav nav-tabs">
-                            <li class="{{ Request::is('admin/dashboard/last_year') ? 'active' : '' }}"><a href="{{ url('admin/dashboard/last_year')}}">{{ trans('labels.lastYear') }}</a></li>
-                            <li class="{{ Request::is('admin/dashboard/last_month') ? 'active' : '' }}"><a href="{{ url('admin/dashboard/last_month')}}">{{ trans('labels.LastMonth') }}</a></li>
-                            <li class="{{ Request::is('admin/dashboard/this_month') ? 'active' : '' }}"><a href="{{ url('admin/dashboard/this_month')}}">{{ trans('labels.thisMonth') }}</a></li>
+                            <li class="{{ Request::is('admin/dashboard/last_year') ? 'active' : '' }}"><a href="{{ url('admin/dashboard/last_year')}}">lastYear</a></li>
+                            <li class="{{ Request::is('admin/dashboard/last_month') ? 'active' : '' }}"><a href="{{ url('admin/dashboard/last_month')}}">LastMonth</a></li>
+                            <li class="{{ Request::is('admin/dashboard/this_month') ? 'active' : '' }}"><a href="{{ url('admin/dashboard/this_month')}}">thisMonth</a></li>
                             <li style="width: 33%"><a href="#" data-toggle="tab">
                                     <div class="input-group ">
                                         <div class="input-group-btn">
-                                            <button type="button" class="btn btn-default" aria-label="Help">{{ trans('labels.custom') }}</button>
+                                            <button type="button" class="btn btn-default" aria-label="Help">custom</button>
                                         </div>
                                         <input class="form-control reservation dateRange" readonly value="" name="dateRange" aria-label="Text input with multiple buttons ">
-                                        <div class="input-group-btn"><button type="button" class="btn btn-primary getRange" >{{ trans('labels.go') }}</button> </div>
+                                        <div class="input-group-btn"><button type="button" class="btn btn-primary getRange" >go</button> </div>
                                     </div>
                                 </a></li>
                         </ul>
@@ -169,11 +169,11 @@
                             <div class="col-xs-12 col-lg-4">
                                 <div class="input-group">
                                     <div class="input-group-btn">
-                                        <button type="button" class="btn btn-default" aria-label="Help">{{ trans('labels.customDate') }}</button>
+                                        <button type="button" class="btn btn-default" aria-label="Help">customDate</button>
                                     </div>
                                     <input class="form-control" aria-label="Text input with multiple buttons">
                                     <div class="input-group-btn">
-                                        <button type="button" class="btn btn-primary">{{ trans('labels.go') }}</button>
+                                        <button type="button" class="btn btn-primary">go</button>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <p class="text-center">
-                                        <strong>{{ trans('labels.sales') }}: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                                        <strong>sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
                                     </p>
 
                                     <div class="chart">
@@ -212,7 +212,7 @@
                                     <div class="description-block border-right">
                                         <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
                                         <h5 class="description-header">$35,210.43</h5>
-                                        <span class="description-text">{{ trans('labels.total_revenue') }}</span>
+                                        <span class="description-text">total_revenue</span>
                                     </div>
                                     <!-- /.description-block -->
                                 </div>
@@ -221,7 +221,7 @@
                                     <div class="description-block border-right">
                                         <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
                                         <h5 class="description-header">$10,390.90</h5>
-                                        <span class="description-text">{{ trans('labels.total_cost') }}</span>
+                                        <span class="description-text">total_cost</span>
                                     </div>
                                     <!-- /.description-block -->
                                 </div>
@@ -230,7 +230,7 @@
                                     <div class="description-block border-right">
                                         <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
                                         <h5 class="description-header">$24,813.53</h5>
-                                        <span class="description-text">{{ trans('labels.total_profit') }}</span>
+                                        <span class="description-text">total_profit</span>
                                     </div>
                                     <!-- /.description-block -->
                                 </div>
@@ -239,7 +239,7 @@
                                     <div class="description-block">
                                         <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
                                         <h5 class="description-header">1200</h5>
-                                        <span class="description-text">{{ trans('labels.goal_completions') }}</span>
+                                        <span class="description-text">goal_completions</span>
                                     </div>
                                     <!-- /.description-block -->
                                 </div>
@@ -268,10 +268,10 @@
                             <!-- USERS LIST -->
                             <div class="box box-danger">
                                 <div class="box-header with-border">
-                                    <h3 class="box-title">{{ trans('labels.latest_customers') }}</h3>
+                                    <h3 class="box-title">latest_customers</h3>
 
                                     <div class="box-tools pull-right">
-                                        {{--<span class="label label-danger">{{ count($result['customers']) }} {{ trans('labels.new_members') }}</span>--}}
+                                        {{--<span class="label label-danger">{{ count($result['customers']) }} new_members</span>--}}
                                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                                         </button>
                                         <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
@@ -297,14 +297,14 @@
                                             @endforeach
                                         </ul>
                                     @else
-                                        <p style="padding: 8px 0 0 10px;">{{ trans('labels.no_customer_exist') }}</p>
+                                        <p style="padding: 8px 0 0 10px;">no_customer_exist</p>
                                 @endif
 
                                 <!-- /.users-list -->
                                 </div>
                                 <!-- /.box-body -->
                                 <div class="box-footer text-center">
-                                    <a href="{{ url('admin/customers/display')}}" class="uppercase" data-toggle="tooltip" data-placement="bottom" title="View All Customers">{{ trans('labels.viewAllCustomers') }}</a>
+                                    <a href="{{ url('admin/customers/display')}}" class="uppercase" data-toggle="tooltip" data-placement="bottom" title="View All Customers">viewAllCustomers</a>
                                 </div>
                                 <!-- /.box-footer -->
                             </div>
@@ -317,7 +317,7 @@
                     <!-- TABLE: LATEST ORDERS -->
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title">{{ trans('labels.NewOrders') }}</h3>
+                            <h3 class="box-title">NewOrders</h3>
 
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -331,10 +331,10 @@
                                 <table class="table no-margin">
                                     <thead>
                                     <tr>
-                                        <th>{{ trans('labels.OrderID') }}</th>
-                                        <th>{{ trans('labels.CustomerName') }}</th>
-                                        <th>{{ trans('labels.TotalPrice') }}</th>
-                                        <th>{{ trans('labels.Status') }} </th>
+                                        <th>OrderID</th>
+                                        <th>{CustomerName</th>
+                                        <th>TotalPrice</th>
+                                        <th>Status </th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -370,7 +370,7 @@
 
                                     @else
                                         <tr>
-                                            <td colspan="4">{{ trans('labels.noOrderPlaced') }}</td>
+                                            <td colspan="4">noOrderPlaced</td>
 
                                         </tr>
                                     @endif
@@ -384,7 +384,7 @@
                         <!-- /.box-body -->
                         <div class="box-footer clearfix">
                             <!--<a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>-->
-                            <a href="{{ URL::to('admin/orders/display') }}" class="btn btn-sm btn-default btn-flat pull-right" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.viewAllOrders') }}">{{ trans('labels.viewOrders') }}</a>
+                            <a href="{{ URL::to('admin/orders/display') }}" class="btn btn-sm btn-default btn-flat pull-right" data-toggle="tooltip" data-placement="bottom" title="{{ trans('labels.viewAllOrders') }}">viewOrders</a>
                         </div>
                         <!-- /.box-footer -->
                     </div>
@@ -398,7 +398,7 @@
 
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title">{{ trans('labels.GoalCompletion') }}</h3>
+                            <h3 class="box-title">GoalCompletion</h3>
 
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -413,7 +413,7 @@
                             <!-- /.progress-group -->
                             @if(count($result['total_orders'])>0)
                                 <div class="progress-group">
-                                    <span class="progress-text">{{ trans('labels.CompleteOrders') }}</span>
+                                    <span class="progress-text">CompleteOrders</span>
                                     <span class="progress-number"><b>{{ count($result['completed_orders']) }}</b>/{{ count($result['total_orders']) }}</span>
                                     <div class="progress sm">
                                         <div class="progress-bar progress-bar-green" style="width: {{ count($result['completed_orders'])*100/count($result['total_orders']) }}%"></div>
@@ -423,7 +423,7 @@
                             @if(count($result['total_orders'])>0)
                             <!-- /.progress-group -->
                                 <div class="progress-group">
-                                    <span class="progress-text">{{ trans('labels.PendingOrders') }}</span>
+                                    <span class="progress-text">PendingOrders</span>
                                     <span class="progress-number"><b>{{ count($result['pending_orders']) }}</b>/{{ count($result['total_orders']) }}</span>
                                     <div class="progress sm">
                                         <div class="progress-bar progress-bar-yellow" style="width: {{ count($result['pending_orders'])*100/count($result['total_orders']) }}%"></div>
@@ -433,7 +433,7 @@
                             @if(count($result['total_orders'])>0)
                             <!-- /.progress-group -->
                                 <div class="progress-group">
-                                    <span class="progress-text">{{ trans('labels.RefundOrders') }}</span>
+                                    <span class="progress-text">RefundOrders</span>
                                     <span class="progress-number"><b>{{ count($result['refunded_orders']) }}</b>/{{ count($result['total_orders']) }}</span>
                                     <div class="progress sm">
                                         <div class="progress-bar progress-bar-blue" style="width: {{ count($result['refunded_orders'])*100/count($result['total_orders']) }}%"></div>
@@ -443,7 +443,7 @@
                             @if(count($result['total_orders'])>0)
                             <!-- /.progress-group -->
                                 <div class="progress-group">
-                                    <span class="progress-text">{{ trans('labels.CancelOrders') }}</span>
+                                    <span class="progress-text">CancelOrders</span>
                                     <span class="progress-number"><b>{{ count($result['cancelled_orders']) }}</b>/{{ count($result['total_orders']) }}</span>
                                     <div class="progress sm">
                                         <div class="progress-bar progress-bar-red" style="width: {{ count($result['cancelled_orders'])*100/count($result['total_orders']) }}%"></div>
@@ -453,7 +453,7 @@
                         <!-- /.progress-group -->
                             @if(count($result['total_orders'])>0)
                                 <div class="progress-group">
-                                    <span class="progress-text">{{ trans('labels.InprocessOrders') }}</span>
+                                    <span class="progress-text">InprocessOrders</span>
                                     <span class="progress-number"><b>{{ count($result['inprocess']) }}</b>/{{ count($result['total_orders']) }}</span>
                                     <div class="progress sm">
                                         <div class="progress-bar progress-bar-red" style="width: {{ count($result['inprocess'])*100/count($result['total_orders']) }}%"></div>
@@ -465,7 +465,7 @@
                     </div>
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title">{{ trans('labels.RecentlyAddedProducts') }}</h3>
+                            <h3 class="box-title">RecentlyAddedProducts</h3>
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                                 </button>
@@ -492,7 +492,7 @@
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer text-center">
-                            <a href="{{ URL::to('admin/products/display') }}" class="uppercase" data-toggle="tooltip" data-placement="bottom" title="View All Products">{{ trans('labels.viewAllProducts') }}</a>
+                            <a href="{{ URL::to('admin/products/display') }}" class="uppercase" data-toggle="tooltip" data-placement="bottom" title="View All Products">viewAllProducts</a>
                         </div>
                         <!-- /.box-footer -->
                     </div>

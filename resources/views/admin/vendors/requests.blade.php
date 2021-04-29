@@ -3,10 +3,10 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1> {{ trans('labels.Requests') }} <small>{{ trans('labels.ListingAllRequests') }}...</small> </h1>
+        <h1> Requests <small>ListingAllRequests...</small> </h1>
         <ol class="breadcrumb">
-            <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-            <li class="active">{{ trans('labels.Requests') }}</li>
+            <li><a href="{{ URL::to('admin/dashboard/this_month')}}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
+            <li class="active">Requests</li>
         </ol>
     </section>
 
@@ -49,14 +49,14 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>{{trans('labels.ID')}}</th>
-                                            <th>@sortablelink('title', trans('labels.Title')) </th>
-                                            <th>{{trans('labels.Name')}} </th>
-                                            <th>{{ trans('labels.Email') }}</th>
-                                            <th>{{ trans('labels.Phone') }} </th>
-                                            <th>{{ trans('labels.Address') }}</th>
-                                            <th>{{ trans('labels.Status') }}</th>
-                                            <th>{{ trans('labels.Action') }}</th>
+                                            <th>ID</th>
+                                            <th>@sortablelink('title', trans('Title')) </th>
+                                            <th>Name </th>
+                                            <th>Email</th>
+                                            <th>Phone </th>
+                                            <th>Address</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -109,7 +109,7 @@
                                             @endforeach
                                         @else
                                         <tr>
-                                          <td colspan="4">{{ trans('labels.NoRecordFound') }}</td>
+                                          <td colspan="4">NoRecordFound</td>
                                         </tr>
                                         @endif
                                     </tbody>
@@ -133,17 +133,17 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="deleteCustomerModalLabel">{{ trans('labels.Decline') }}</h4>
+                        <h4 class="modal-title" id="deleteCustomerModalLabel">Decline</h4>
                     </div>
                     {!! Form::open(array('url' =>'admin/vendors/decline', 'name'=>'deleteRequest', 'id'=>'deleteRequest', 'method'=>'post', 'class' => 'form-horizontal', 'enctype'=>'multipart/form-data')) !!}
                     {!! Form::hidden('action', 'delete', array('class'=>'form-control')) !!}
                     {!! Form::hidden('users_id', '', array('class'=>'form-control', 'id'=>'users_id')) !!}
                     <div class="modal-body">
-                        <p>{{ trans('labels.DeclineVendorRequest') }}</p>
+                        <p>DeclineVendorRequest</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('labels.Close') }}</button>
-                        <button type="submit" class="btn btn-primary">{{ trans('labels.Decline') }}</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Decline</button>
                     </div>
                     {!! Form::close() !!}
                 </div>

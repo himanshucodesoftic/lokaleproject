@@ -12,18 +12,18 @@
 
     <div style="
     font-size: 25px;
-"><b> {{ trans('labels.welcome_message') }}</b>{{ trans('labels.welcome_message_to') }}</div>
+"><b> welcome_message</b>welcome_message_to</div>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
-    <p class="login-box-msg">{{ trans('labels.login_text') }}</p>
+    <p class="login-box-msg">login_text</p>
 
     <!-- if email or password are not correct -->
     @if( count($errors) > 0)
     	@foreach($errors->all() as $error)
             <div class="alert alert-danger" role="alert">
                   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                  <span class="sr-only">{{ trans('labels.Error') }}:</span>
+                  <span class="sr-only">Error:</span>
                   {{ $error }}
             </div>
          @endforeach
@@ -32,7 +32,7 @@
     @if(Session::has('loginError'))
         <div class="alert alert-danger" role="alert">
               <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-              <span class="sr-only">{{ trans('labels.Error') }}:</span>
+              <span class="sr-only">Error:</span>
               {!! session('loginError') !!}
         </div>
     @endif
@@ -42,16 +42,16 @@
        <div class="form-group has-feedback">
         {!! Form::email('email', '', array('class'=>'form-control email-validate', 'id'=>'email')) !!}
         <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                     {{ trans('labels.AdminEmailText') }}</span>
-       <span class="help-block hidden"> {{ trans('labels.AdminEmailText') }}</span>
+        AdminEmailText</span>
+       <span class="help-block hidden"> AdminEmailText</span>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
        <input type="password" name='password' class='form-control field-validate' value="">
        <span class="help-block" style="font-weight: normal;font-size: 11px;margin-bottom: 0;">
-                                   {{ trans('labels.AdminPasswordText') }}</span>
+       AdminPasswordText</span>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-       <span class="help-block hidden">{{ trans('labels.textRequiredFieldMessage') }}</span>
+       <span class="help-block hidden">textRequiredFieldMessage</span>
 
       </div>
   	  <img src="">

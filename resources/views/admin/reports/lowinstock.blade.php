@@ -3,10 +3,10 @@
 <div class="content-wrapper"> 
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1> {{ trans('labels.Low Stock Products') }} <small>{{ trans('labels.Low Stock Products') }}...</small> </h1>
+    <h1> Low Stock Products <small>Low Stock Products...</small> </h1>
     <ol class="breadcrumb">
       <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
-      <li class="active">{{ trans('labels.Low Stock Products') }}</li>
+      <li class="active">Low Stock Products</li>
     </ol>
   </section>
   
@@ -20,7 +20,7 @@
       <div class="col-md-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">{{ trans('labels.Low Stock Products') }} </h3>
+            <h3 class="box-title">Low Stock Products </h3>
           </div>          
           <!-- /.box-header -->
           <div class="box-body">
@@ -30,11 +30,11 @@
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>{{ trans('labels.ID') }}</th>
-                      <th>{{ trans('labels.Image') }}</th>
-                      <th>{{ trans('labels.Products') }}</th>
+                      <th>ID</th>
+                      <th>Image</th>
+                      <th>Products</th>
                       <!--<th>{{ trans('labels.Quantity') }}</th>-->
-                      <th>{{ trans('labels.ViewStock') }}</th>
+                      <th>ViewStock</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -57,7 +57,7 @@
                  @else 
                  <tr>
                  	<td colspan="4">
-                 		{{ trans('labels.NoRecordFound') }}
+                   NoRecordFound
                     </td>
                  </tr>
                  @endif

@@ -3,9 +3,9 @@
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
   <section class="content-header">
-    <h1> {{ trans('labels.Min Stock Report') }} <small>{{ trans('labels.Min Stock Report') }}...</small> </h1>
+    <h1> Min Stock Report <small>Min Stock Report...</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> {{ trans('labels.breadcrumb_dashboard') }}</a></li>
+      <li><a href="{{ URL::to('admin/dashboard/this_month') }}"><i class="fa fa-dashboard"></i> breadcrumb_dashboard</a></li>
       <li class="active">{{ trans('labels.Min Stock Report') }}</li>
     </ol>
   </section>
